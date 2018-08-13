@@ -1,8 +1,0 @@
----
-layout: json
-permalink_localized: 
-  en: posts.json
----
-
-{% assign postList = site.data._models.posts %}
-{% include json/post-list.json %}

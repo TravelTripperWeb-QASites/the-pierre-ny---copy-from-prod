@@ -24,16 +24,23 @@
 }
 
 //Full Width Template
-@mixin container-template-width {
+@mixin fluid-layout {
   @include make-container;
   max-width: 100%;
   margin: 0 auto;
 }
 
 // Fixed Width Template
-@mixin container-content-width {
+@mixin fixed-width-layout {
   @include make-container;
-  max-width: 1070px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Fixed Width Content
+@mixin fixed-width-content {
+  @include make-container;
+  max-width: 840px;
   margin: 0 auto;
 }
 
