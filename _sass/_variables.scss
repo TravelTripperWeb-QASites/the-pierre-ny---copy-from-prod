@@ -4,30 +4,20 @@
 
 // Typography
 $font-size-base: 1rem !default;
-$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-family: 'Roboto', sans-serif;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-$header-font-family: 'sunlight';
+$primary-header-font: 'TrajanPro-Bold';
+$secondary-header-font: 'roboto_condensedlight';
+$tertiary-header-font: 'roboto_condensedbold';
+$tag-line-font: 'roboto_condensedregular';
+$rare-heading-font: 'TrajanPro-Regular';
 
-// System typefaces
-$serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif !default;
-$monospace: Monaco, Consolas, 'Lucida Console', monospace !default;
 
-// Sans serif typefaces
-$sans-serif-narrow: $sans-serif !default;
-$helvetica: Helvetica, 'Helvetica Neue', Arial, sans-serif !default;
-
-// Serif typefaces
-$georgia: Georgia, serif !default;
-$times: Times, serif !default;
-$bodoni: 'Bodoni MT', serif !default;
-$calisto: 'Calisto MT', serif !default;
-$garamond: Garamond, serif !default;
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+$global-font-family: $base-font-family !default;
+$header-font-family: $primary-header-font !default;
+$caption-font-family: $tag-line-font !default;
 
 // Type scale
 $type-size-1: 2.441rem !default; // ~39.056px
@@ -40,20 +30,13 @@ $type-size-7: .6875rem !default; // ~11px
 $type-size-8: .625rem !default; // ~10px
 
 // Colors
-$gray: #7a8288 !default;
-$dark-gray: mix(#000, $gray, 40%) !default;
-$darker-gray: mix(#000, $gray, 60%) !default;
-$light-gray: mix(#fff, $gray, 50%) !default;
-$lighter-gray: mix(#fff, $gray, 90%) !default;
-$body-color: #fff !default;
-$background-color: #fff !default;
-$text-color: $dark-gray !default;
-$border-color: $lighter-gray !default;
-$primary-color: #7a8288 !default;
-$success-color: #62c462 !default;
-$warning-color: #f89406 !default;
-$danger-color: #ee5f5b !default;
-$info-color: #007a9c !default;
+$primary-color: #74503a;
+$primary-color-light: #b18b74;
+$secondary-color: #f7f7f7;
+$text-color: #231f20;
+$gray: #747474;
+$body-color: $white;
+$info-color: $primary-color !default;
 
 // Brands
 $facebook-color: #3b5998 !default;
