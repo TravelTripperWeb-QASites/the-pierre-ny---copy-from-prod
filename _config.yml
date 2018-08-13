@@ -1,3 +1,16 @@
+
+gems:
+- jekyll-sitemap
+keep_files:
+- assets
+rsync_copy:
+- _assets
+exclude:
+- sitemap.json
+- media.json
+- old_media.json
+- models.json
+
 # Site Settings
 # title: "Bedrock"
 # title_separator: "|"
