@@ -1,20 +1,2 @@
 // Gallery Page Elements
 // ==========================================================================
-.ttweb-gallery {
-  &__name {
-    
-  }
-  &__images {
-    &__image {
-      float: left;
-      width: 30%;
-      margin: 1em 1.6%;
-      height: 250px;
-    }
-  }
-  &:after {
-    display: block;
-    content: " ";
-    clear: both;
-  }
-}

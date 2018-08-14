@@ -10,5 +10,5 @@
       <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
     {% endif %}
   </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.data.hotel_settings.name | default: site.data.seo.default_title }}</span>
+  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
 </div>
