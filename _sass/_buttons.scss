@@ -1,0 +1,88 @@
+// Site wide buttons styling here
+
+.primary-btn {
+  display: inline-block;
+  padding: 20px 30px;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-8;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: .038rem;
+  background: $primary-color;
+  @include transition (all .5s);
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background: $text-color;
+  }
+
+  &.inverse {
+    color: $primary-color;
+    background: $white;
+
+    &:hover {
+      color: $white;
+      background: $primary-color;
+    }
+  }
+}
+
+.secondary-btn {
+  display: inline-block;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-9;
+  line-height: 2.5rem;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &::after {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 20px;
+    content: '';
+    background-image: url('../images/arrow-dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+
+  &.inverse {
+    color: $white;
+
+    &:after {
+      background-image: url('../images/arrow-light.png');
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.border-btn {
+  display: block;
+  width: 130px;
+  height: fit-content;
+  padding: 10px 0;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-10;
+  color: $white !important;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px rgba(255,255,255,.4);
+  @include transition (all .5s);
+
+  &:hover {
+    text-decoration: none;
+    border-color: rgba(255,255,255,1);
+  }
+}
+
+// Select button styling

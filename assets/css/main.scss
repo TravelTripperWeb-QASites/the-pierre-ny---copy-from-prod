@@ -3,11 +3,13 @@
 
 @import "bootstrap/bootstrap";
 @import "variables";
+@import "mixins";
+@import "fonts";
 @import "base";
+@import "buttons";
 @import "navigation";
 @import "header";
 @import "footer";
-@import "mixins";
 @import "utilities";
 @import "pages/shared";
 @import "pages/about";

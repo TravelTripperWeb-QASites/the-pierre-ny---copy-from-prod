@@ -20,14 +20,16 @@ $header-font-family: $primary-header-font !default;
 $caption-font-family: $tag-line-font !default;
 
 // Type scale
-$type-size-1: 2.441rem !default; // ~39.056px
-$type-size-2: 1.953rem !default; // ~31.248px
-$type-size-3: 1.563rem !default; // ~25.008px
-$type-size-4: 1.25rem !default; // ~20px
-$type-size-5: 1rem !default; // ~16px
-$type-size-6: .75rem !default; // ~12px
-$type-size-7: .6875rem !default; // ~11px
-$type-size-8: .625rem !default; // ~10px
+$type-size-1: 4.375rem !default; // ~70px
+$type-size-2: 3.438rem !default; // ~55px
+$type-size-3: 2.5rem !default; // ~40px
+$type-size-4: 2.188rem !default; // ~35px
+$type-size-5: 1.875rem !default; // ~30px
+$type-size-6: 1.563rem !default; // ~25px
+$type-size-7: 1.375rem !default; // ~22px
+$type-size-8: 1.25rem !default; // ~20px
+$type-size-9: 1rem !default; // ~16px
+$type-size-10: .875rem !default; // ~14px
 
 // Colors
 $primary-color: #74503a;
@@ -47,9 +49,7 @@ $twitter-color: #55acee !default;
 $youtube-color: #b00 !default;
 
 // Links
-$link-color: $info-color !default;
-$link-color-hover: mix(#000, $link-color, 25%) !default;
-$link-color-visited: mix(#fff, $link-color, 25%) !default;
+$link-color: $primary-color !default;
 
 // Other
 $border-radius: 4px !default;

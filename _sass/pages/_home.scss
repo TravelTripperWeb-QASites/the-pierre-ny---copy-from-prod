@@ -1,0 +1,9 @@
+// Home page styling here
+
+.home-page-banner {
+  @include fluid-layout;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
