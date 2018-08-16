@@ -1,9 +1,9 @@
 <!-- Top right nav -->
 <div class="top-nav d-flex justify-content-end">
   <div class="form-select">
-    <select>
-      <option value="English" selected>English</option>
-      <option value="中文">中文</option>
+    <select class="selectpicker" data-width="fit">
+      <option>English</option>
+      <option>中文</option>
     </select>
   </div>
   <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
@@ -12,19 +12,25 @@
 
 <!-- Main nav -->
 {% assign links = site.data.navigation.main %}
+{% assign link2 = site.data.navigation.secondary %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Bedrock</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
+<nav class="navbar navbar-expand-lg">
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav d-flex justify-content-between align-items-center">
     {% for link in links %}
+      <li class="nav-item{% if page.url == link.url %} active{% endif%}">
+        <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+      </li>
+    {% endfor %}
+    <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" /></a>
+    {% for link in link2 %}
       <li class="nav-item{% if page.url == link.url %} active{% endif%}">
         <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
       </li>
     {% endfor %}
     </ul>
   </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
 </nav>

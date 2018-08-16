@@ -1,23 +1,19 @@
 main:
-  - title: About
+  - title: About Hotel
     url: /about/
-  - title: Amenities
-    url: /amenities/
-  - title: Attractions
-    url: /attractions/
-  - title: Rooms
-    url: /rooms/
-  - title: Offers
-    url: /offers/
-  - title: Location
-    url: /location/
+  - title: Rooms & Suites
+    url: /rooms-suites/
   - title: Dining
     url: /dining/
   - title: Events
     url: /events/
+
+secondary:
+  - title: Entertainment
+    url: /entertainment/
+  - title: Special Offers
+    url: /offers/
+  - title: Awards
+    url: /awards/
   - title: Gallery
     url: /gallery/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
