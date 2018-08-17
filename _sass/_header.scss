@@ -6,8 +6,11 @@ header {
   right: 0;
   left: 0;
   z-index: 99;
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 15px;
 
+  .wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+  }
 }

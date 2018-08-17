@@ -17,8 +17,28 @@ main:
         url: /residences/
   - title: Dining
     url: /dining/
+    dropdown:
+      - title: Perrine
+        url: /dining/perrine/
+      - title: The Rotunda
+        url: /dining/the-rotunda/
+      - title: Two E Bar & Lounge
+        url: /dining/twoebar-lounge/
+      - title: Afternoon Tea
+        url: /dining/twoetea/
+      - title: Cocktails & Music
+        url: /dining/twoebar/
   - title: Events
     url: /events/
+    dropdown:
+      - title: Weddings
+        url: /events/weddings/
+      - title: Meetings
+        url: /events/meetings/
+      - title: Venues
+        url: /events/venues/
+      - title: Meet the Team
+        url: /meet-the-team/
   - title: Entertainment
     url: /entertainment/
   - title: Special Offers
