@@ -11,7 +11,7 @@
 
       li {
         text-align: center;
-        
+
         a {
           padding: 15px;
           font-family: $tertiary-header-font;
@@ -52,7 +52,7 @@
   border: 0;
 
   &:before {
-    display: inline-block;
+    display: none;
     width: 16px;
     height: 18px;
     margin-right: 7px;
@@ -60,6 +60,10 @@
     background: url('/assets/images/globe.png');
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+    }
   }
 }
 
@@ -129,8 +133,93 @@
 }
 
 .dropdown-toggle {
+  margin-left: 10px !important;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: 0;
+  }
+
   &:after {
-    margin-left: -20px !important;
+    margin-left: -5px !important;
     vertical-align: .355em !important;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: -28px !important;
+    }
+  }
+
+}
+
+.logo-mobile {
+  display: block;
+  width: 90px;
+  margin-top: 5px;
+
+  img {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  margin-top: -5px;
+  outline: 0;
+
+  span {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: $white;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    &:nth-child(1), &:nth-child(3) {
+      -webkit-transition: transform .35s ease-in-out;
+      -moz-transition: transform .35s ease-in-out;
+      -o-transition: transform .35s ease-in-out;
+      transition: transform .35s ease-in-out;
+    }
+  }
+
+  &:not(.collapsed) {
+    span {
+      &:nth-child(1) {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        opacity: .9;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        height: 12px;
+        visibility: hidden;
+        background-color: transparent;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        opacity: .9;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      }
+    }
   }
 }

@@ -1,14 +1,24 @@
 main:
   - title: About Hotel
     url: /about/
+    dropdown:
+      - title: History
+        url: /history/
+      - title: Location
+        url: /location/
+      - title: News
+        url: /news/
   - title: Rooms & Suites
     url: /rooms-suites/
+    dropdown:
+      - title: Amenities
+        url: /amenities/
+      - title: Residences
+        url: /residences/
   - title: Dining
     url: /dining/
   - title: Events
     url: /events/
-
-secondary:
   - title: Entertainment
     url: /entertainment/
   - title: Special Offers

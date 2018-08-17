@@ -68,10 +68,10 @@
 
 .border-btn {
   display: block;
-  width: 130px;
+  width: auto;
   height: fit-content;
   margin-left: 10px;
-  padding: 7px 0;
+  padding: 7px;
   font-family: $tertiary-header-font;
   font-size: $type-size-10;
   color: $white !important;
@@ -83,6 +83,11 @@
   &:hover {
     text-decoration: none;
     border-color: rgba(255,255,255,1);
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 130px;
+    padding: 7px 0;
   }
 }
 

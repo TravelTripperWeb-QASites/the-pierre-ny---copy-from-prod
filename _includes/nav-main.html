@@ -1,5 +1,12 @@
+<!-- Hotel logo mobile only visibility -->
+<a class="logo-mobile" href="/"><img src="/assets/images/logo.png" /></a>
 <!-- Top right nav -->
 <div class="top-nav d-flex justify-content-end">
+  <button class="navbar-toggler collapsed d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span> </span>
+    <span> </span>
+    <span> </span>
+	</button>
   <div class="form-select">
     <select class="selectpicker" data-width="fit">
       <option>English</option>
@@ -7,7 +14,7 @@
     </select>
   </div>
   <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-  <a class="border-btn" href="/contact">Contact</a>
+  <a class="border-btn d-none d-lg-block" href="/contact">Contact</a>
 </div>
 
 <!-- Main nav -->
@@ -17,20 +24,20 @@
 <nav class="navbar navbar-expand-lg">
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav d-flex justify-content-between align-items-center">
-    {% for link in links %}
+    {% for link in links limit:4 %}
       <li class="nav-item{% if page.url == link.url %} active{% endif%}">
         <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
       </li>
     {% endfor %}
-    <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" /></a>
+    <a class="navbar-brand d-none d-lg-block" href="/"><img src="/assets/images/logo.png" /></a>
     {% for link in link2 %}
       <li class="nav-item{% if page.url == link.url %} active{% endif%}">
         <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
       </li>
     {% endfor %}
+    <li class="nav-item d-md-block d-lg-none">
+      <a class="nav-link" href="/contact/">Contact</a>
+    </li>
     </ul>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
 </nav>
