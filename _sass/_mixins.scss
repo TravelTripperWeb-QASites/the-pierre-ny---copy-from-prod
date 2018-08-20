@@ -76,3 +76,9 @@
     @content;
   }
 }
+// background image
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}

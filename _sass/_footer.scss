@@ -128,3 +128,40 @@ footer {
     }
   }
 }
+
+.copyrights {
+  @include fixed-width-layout;
+  margin-bottom: 50px;
+
+  span {
+    font-size: $type-size-10;
+  }
+
+  a {
+    padding: 0 20px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover {
+      svg {
+        color: $primary-color-light;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+    span,.social-icons {
+      display: block;
+      width: 100%;
+      margin: 10px 0 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,6 +1,19 @@
 // Shared Page Elements
 // ==========================================================================
 
+
+.mr-15 {
+  margin-right: 0;
+  @include media-breakpoint-up(md) {
+    margin-right: 10px;
+  }
+}
+.ml-15 {
+  margin-left: 0;
+  @include media-breakpoint-up(md) {
+    margin-left: 10px;
+  }
+}
 .bg-cover {
   background-repeat: no-repeat;
   background-position: center center;
