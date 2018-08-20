@@ -21,14 +21,19 @@ h1 {
   letter-spacing: .131rem;
 
   &.variant {
-    font-size: $type-size-2;
-    line-height: 3.938rem;
+    font-size: $type-size-3;
+    line-height: 2.5rem;
     letter-spacing: .103rem;
   }
 
   @include media-breakpoint-up(md) {
     font-size: $type-size-1;
     line-height: 4.8rem;
+
+    &.variant {
+      font-size: $type-size-2;
+      line-height: 3.938rem;
+    }
   }
 }
 

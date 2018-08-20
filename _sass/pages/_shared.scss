@@ -32,6 +32,15 @@
 
   &.inner {
     height: 550px;
+
+    .banner-content {
+      max-width: 1024px;
+      transform: translateY(-30%);
+
+      @include media-breakpoint-up(xl) {
+        transform: translateY(-15%);
+      }
+    }
   }
 }
 
@@ -39,7 +48,7 @@
 .divider {
   width: 208px;
   height: 22px;
-  margin: 30px auto;
+  margin: 30px auto 25px;
 }
 
 //Banner Overlay
