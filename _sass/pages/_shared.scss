@@ -75,3 +75,10 @@
     margin-left: 10px;
   }
 }
+
+.mt--15 {
+  margin-top: 10px;
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
