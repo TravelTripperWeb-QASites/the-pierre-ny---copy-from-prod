@@ -27,3 +27,17 @@
 //     }
 //   }
 // }
+
+.categories {
+  &__container {
+    @include fixed-width-content;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style-type: none;
+    }
+  }
+}
