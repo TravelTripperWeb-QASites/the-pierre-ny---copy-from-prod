@@ -18,7 +18,7 @@ $(window)
     $('ul.navbar-nav li.dropdown a')
       .attr('data-toggle', 'disable');
     if ($(window)
-      .width() > 1201) {
+      .width() > 1200) {
       //Add Hover effect to menus
       jQuery('ul.navbar-nav li.dropdown')
         .hover(function () {
