@@ -61,7 +61,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       display: inline-block;
     }
   }
@@ -173,7 +173,7 @@
     width: 100%;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: none;
   }
 }
@@ -252,7 +252,7 @@
     margin-left: -5px !important;
     vertical-align: .355em !important;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       margin-left: -28px !important;
     }
   }
@@ -316,7 +316,7 @@
   .scroll-logo {
     display: none;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       display: block;
     }
   }
@@ -338,7 +338,7 @@
       }
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       display: none !important;
 
       .btn-transparent {
@@ -409,13 +409,13 @@
         }
       }
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(xl) {
         display: flex !important;
       }
 
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       margin: 15px 0;
 
       .nav-item {

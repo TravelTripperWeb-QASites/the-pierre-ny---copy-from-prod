@@ -2,7 +2,7 @@
 <a class="logo-mobile" href="/"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
 <!-- Top right nav -->
 <div class="top-nav d-flex justify-content-end">
-  <button class="navbar-toggler collapsed d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span> </span>
     <span> </span>
     <span> </span>
@@ -14,14 +14,14 @@
     </select>
   </div>
   <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-  <a class="border-btn d-none d-lg-block" href="/contact">Contact</a>
+  <a class="border-btn d-none d-xl-block" href="/contact">Contact</a>
 </div>
 
 <!-- Main nav -->
 {% assign links = site.data.navigation.main %}
 {% assign link2 = site.data.navigation.secondary %}
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav d-flex justify-content-between align-items-center">
     <a class="scroll-logo" href="/"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
@@ -37,7 +37,7 @@
         {% endif %}
       </li>
     {% endfor %}
-    <a class="navbar-brand d-none d-lg-block" href="/"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
+    <a class="navbar-brand d-none d-xl-block" href="/"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
     {% for link in links %}
       {% if forloop.index0 > 3 %}
         <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}" >
@@ -52,11 +52,11 @@
         </li>
       {% endif %}
     {% endfor %}
-    <li class="nav-item d-md-block d-lg-none">
+    <li class="nav-item d-lg-block d-xl-none">
       <a class="nav-link" href="/contact/">Contact</a>
     </li>
     <div class="top-nav d-flex justify-content-end">
-      <button class="navbar-toggler collapsed d-md-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span> </span>
         <span> </span>
         <span> </span>
@@ -68,7 +68,7 @@
         </select>
       </div>
       <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-      <a class="border-btn d-none d-lg-block" href="/contact">Contact</a>
+      <a class="border-btn d-none d-xl-block" href="/contact">Contact</a>
     </div>
     </ul>
   </div>
