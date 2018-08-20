@@ -1,25 +1,29 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
 
-.hero-banner {
-  position: relative;
-  height: 500px;
-  &:before {
-    @include absolute-position(0, 0, 0, 0, auto, auto);
-    background-image: url('/assets/images/overlay.png');
-    background-repeat: repeat-x;
-    background-position: top center;
-  }
-  &:after {
-    @include absolute-position(0, 0, 0, 0, auto, auto);
-    background-color: rgba($black, .35);
-  }
-  .banner-content {
-    position: relative;
-    z-index: 10;
-    h1 {
-      color: $white;
-      text-align: center;
-    }
-  }
-}
+// .hero-banner {
+//   position: relative;
+//   height: 500px;
+//   &:before {
+//     @include absolute-position(0, 0, 0, 0, auto, auto);
+//     background-image: url('/assets/images/overlay.png');
+//     background-repeat: repeat-x;
+//     background-position: top center;
+//   }
+//   &:after {
+//     @include absolute-position(0, 0, 0, 0, auto, auto);
+//     background-color: rgba($black, .35);
+//   }
+//   .banner-content {
+//     position: absolute;
+//     top: 50%;
+//     right: 0;
+//     left: 0;
+//     z-index: 10;
+//     text-align: center;
+//     transform: translateY(-50%);
+//     h1 {
+//       color: $white;
+//     }
+//   }
+// }
