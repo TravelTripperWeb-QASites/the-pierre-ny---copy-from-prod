@@ -2,7 +2,7 @@
 
 .intro {
   @include fixed-width-layout;
-  margin: 104px auto 99px;
+  margin: 0 auto 99px;
   .images-section {
     @include make-row;
 
@@ -44,7 +44,7 @@
 .heading-text {
   max-width: 785px;
   margin: auto;
-  padding: 104px 15px 34px 15px;
+  padding: 99px 15px 34px 15px;
   h2 {
     margin-bottom: 20px;
     line-height: 40px;
