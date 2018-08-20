@@ -90,13 +90,17 @@
     .shows-row {
       @include make-row;
     }
-    .show-image {
+    .shows-image {
       @include make-col-ready();
-      @include bg-cover;
+
       @include media-breakpoint-up(md) {
         @include make-col(6);
-        min-height: 695px;
         padding: 0;
+      }
+      .image {
+        @include bg-cover;
+        width: 100%;
+        min-height: 695px;
       }
     }
   }
