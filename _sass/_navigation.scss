@@ -170,6 +170,10 @@
         &:after {
           width: 0;
         }
+      }
+    }
+    &:hover {
+      .nav-link {
         &:before {
           @include media-breakpoint-up(xl) {
             transform: rotate(-180deg);
@@ -397,6 +401,15 @@
 
           @include media-breakpoint-up(xl) {
             right: -11px;
+          }
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        .dropdown-menu {
+          top: 55px !important;
+          &:before {
+            top: -6px;
+            border-bottom-color: $text-color;
           }
         }
       }
