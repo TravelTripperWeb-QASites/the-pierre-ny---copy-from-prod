@@ -42,9 +42,11 @@
 
 
 .intro {
-  margin: 104px auto 99px;
   @include fixed-width-layout;
+  margin: 104px auto 99px;
   .images-section {
+    @include make-row;
+
     .images {
       @include make-col-ready();
       @include bg-cover;
@@ -81,7 +83,7 @@
 
 
 .heading-text {
-  max-width: 890px;
+  max-width: 785px;
   margin: auto;
   padding: 104px 15px 34px 15px;
   h2 {
@@ -95,6 +97,7 @@
     text-align: center;
   }
 }
+
 .heading {
   position: absolute;
   bottom: 0;
@@ -111,8 +114,10 @@
     color: $white;
   }
 }
+
 .home-events {
   @include fixed-width-layout;
+  margin: 0 auto 99px;
   @extend .intro;
 }
 
@@ -123,7 +128,9 @@
 
   .shows {
     @include fixed-width-layout;
-
+    .shows-row {
+      @include make-row;
+    }
     .show-image {
       @include make-col-ready();
       @include bg-cover;
