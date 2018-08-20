@@ -47,3 +47,15 @@ main:
     url: /awards/
   - title: Gallery
     url: /gallery/
+
+footer:
+  - title: Contact us
+    url: /contact/
+  - title: Discover Taj Hotels
+    url: https://www.tajhotels.com/
+    external: true
+  - title: Join Taj Inner Circle
+    url: https://tajinnercircle.tajhotels.com/reward-programmes/tajinnercircle/index.html
+    external: true
+  - title: Privacy Policy
+    url: /privacy-policy/
