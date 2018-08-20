@@ -103,7 +103,23 @@
 
 .navbar-nav {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
+
+  li {
+    width: 80%;
+    padding: 5px 0;
+    border-bottom: solid 1px $border-color;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin: 0 auto;
+
+    li {
+      width: auto;
+      padding: 0;
+      border: 0;
+    }
+  }
 }
 
 .nav-item {
@@ -250,10 +266,10 @@
 
   &:after {
     margin-left: -5px !important;
-    vertical-align: .355em !important;
+    vertical-align: .4em !important;
 
     @include media-breakpoint-up(xl) {
-      margin-left: -28px !important;
+      margin-left: -30px !important;
     }
   }
 
@@ -368,6 +384,21 @@
 
       &:after {
         background: $text-color;
+      }
+    }
+  }
+
+  .nav-item {
+    &.dropdown {
+      .nav-link {
+        &:before {
+          top: 11px;
+          right: 10px;
+
+          @include media-breakpoint-up(xl) {
+            right: -11px;
+          }
+        }
       }
     }
   }
