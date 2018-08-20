@@ -2,7 +2,10 @@
 
 .intro {
   @include fixed-width-layout;
-  margin: 0 auto 99px;
+  margin: 0 auto 45px;
+  @include media-breakpoint-up(md) {
+    margin: 0 auto 99px;
+  }
   .images-section {
     @include make-row;
 
@@ -44,7 +47,10 @@
 .heading-text {
   max-width: 785px;
   margin: auto;
-  padding: 99px 15px 34px 15px;
+  padding: 45px 15px 34px 15px;
+  @include media-breakpoint-up(md) {
+    padding: 99px 15px 34px 15px;
+  }
   h2 {
     margin-bottom: 20px;
     line-height: 40px;
@@ -78,7 +84,10 @@
 
 .home-events {
   @include fixed-width-layout;
-  margin: 0 auto 99px;
+  margin: 0 auto 47px;
+  @include media-breakpoint-up(md) {
+    margin: 0 auto 99px;
+  }
   @extend .intro;
 }
 
@@ -86,7 +95,10 @@
 .entertainment {
   @include fluid-layout;
   @include  bg-cover;
-  padding-bottom: 99px;
+  padding-bottom: 45px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 99px;
+  }
   .shows {
     @include fixed-width-layout;
     .shows-row {
