@@ -1,46 +1,5 @@
 // Home page styling here
 
-.home-page-banner {
-  position: relative;
-  @include fluid-layout;
-  height: 690px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  .banner-content {
-    @include vertical-center;
-    max-width: 840px;
-    margin: 0 auto;
-    color: $white;
-    text-align: center;
-    transform: translateY(-43%);
-
-    h6 {
-      padding: 10px 0 30px;
-
-      @include media-breakpoint-up(md) {
-        padding: 20px 0 50px;
-      }
-    }
-
-    @include media-breakpoint-up(xl) {
-      transform: translateY(-35%);
-    }
-  }
-}
-
-.overlay-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('/assets/images/home/overlay-bg.png');
-  background-repeat: repeat-x;
-}
-
-
 .intro {
   margin: 104px auto 0;
   @include fixed-width-layout;
