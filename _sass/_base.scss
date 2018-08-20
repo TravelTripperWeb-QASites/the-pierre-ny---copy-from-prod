@@ -16,14 +16,19 @@ body {
 
 h1 {
   font-family: $header-font-family;
-  font-size: $type-size-1;
-  line-height: 5rem;
+  font-size: $type-size-2;
+  line-height: 3.938rem;
   letter-spacing: .131rem;
 
   &.variant {
     font-size: $type-size-2;
     line-height: 3.938rem;
     letter-spacing: .103rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-1;
+    line-height: 4.8rem;
   }
 }
 
