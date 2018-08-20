@@ -42,18 +42,22 @@
   </div>
 </div>
 
-
-<!-- <div class="container d-flex justify-content-between">
+<!-- Copyrights & Social Share -->
+<div class="copyrights d-flex justify-content-between">
+  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
   <div class="social-icons">
-    {% if site.data.ui-text[site.default_lang].follow_label %}
-      <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>
+    {% if site.data.social.facebook.username %}
+      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.instagram.username %}
+      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     {% endif %}
-    {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+    {% if site.data.social.pinterest.username %}
+      <a href="https://www.pinterest.com/{{ site.data.social.pinterest.username }}" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
     {% endif %}
+
   </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
-</div> -->
+</div>
