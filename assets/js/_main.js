@@ -119,3 +119,31 @@ $(window)
       }
     });
   });
+
+  //home offers slick
+  setTimeout(function() {
+    $('#commonCarousel').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: false,
+      adaptiveHeight: true,
+      centerPadding: '15px',
+      responsive: [{
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+    $('.loading').css('display', 'none');
+  },2500);
