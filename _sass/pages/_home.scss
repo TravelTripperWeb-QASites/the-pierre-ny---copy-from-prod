@@ -2,31 +2,34 @@
 
 .intro {
   @include fixed-width-layout;
-  margin: 0 auto 45px;
+  margin: 0 auto 35px;
   @include media-breakpoint-up(md) {
     margin: 0 auto 99px;
   }
+
   .images-section {
     @include make-row;
 
     .images {
       @include make-col-ready();
+      padding: 0;
       @include bg-cover;
       @include media-breakpoint-up(md) {
         @include make-col(6);
         padding: 0;
       }
+
       .image-full {
         position: relative;
         min-height: 375px;
         @include bg-cover;
-
         margin-bottom: 15px;
         @include media-breakpoint-up(md) {
           min-height: 770px;
           margin-bottom: 0;
         }
       }
+
       .image-text {
         position: relative;
         min-height: 280px;
@@ -34,29 +37,30 @@
         @include media-breakpoint-up(md) {
           min-height: 380px;
         }
+
         &.mt-15 {
           margin-top: 10px;
         }
       }
-
     }
   }
 }
 
-
 .intro-text {
   max-width: 785px;
   margin: auto;
-  padding: 45px 15px 34px 15px;
+  padding: 35px 15px 35px;
   @include media-breakpoint-up(md) {
-    padding: 99px 15px 34px 15px;
+    padding: 99px 15px 44px;
   }
+
   h2 {
     margin-bottom: 20px;
-    line-height: 40px;
     text-align: center;
   }
+
   p {
+    margin-bottom: 0;
     font-size: $type-size-9;
     color: $text-color;
     text-align: center;
@@ -67,15 +71,14 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 17px;
-  padding-left: 17px;
+  padding: 50px 17px 17px;
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.75) 98%,rgba(0,0,0,.75) 100%);
   @include media-breakpoint-up(md) {
     padding-top: 250px;
     padding-bottom: 35px;
     padding-left: 35px;
   }
+
   h6 {
     font-family: $rare-heading-font;
     color: $white;
@@ -92,44 +95,57 @@
   @include media-breakpoint-up(md) {
     margin: 0 auto 99px;
   }
-  @extend .intro;
+  @extend .intro; //extened the intro section scss
 }
-
-//Entertainment
+//Entertainment section
 .entertainment {
   @include fluid-layout;
-  @include  bg-cover;
-  padding-bottom: 45px;
+  @include bg-cover;
+  padding-right: 0;
+  padding-bottom: 35px;
+  padding-left: 0;
   @include media-breakpoint-up(md) {
     padding-bottom: 99px;
   }
+
   .shows {
     @include fixed-width-layout;
+
     .shows-row {
       @include make-row;
     }
+
     .shows-image {
       @include make-col-ready();
-      margin-bottom: 15px;
       padding: 0;
       @include media-breakpoint-up(md) {
         @include make-col(6);
-        margin-bottom: 0;
         padding: 0;
       }
-      .s-image {
-        @include bg-cover;
-        position: relative;
-        width: auto;
-        min-height: 300px;
-        margin-bottom: 0;
+    }
 
-        @include media-breakpoint-up(md) {
-          min-height: 400px;
-        }
-        @include media-breakpoint-up(lg) {
-          min-height: 500px;
-        }
+    .shows-image-small {
+      @include make-col-ready();
+      padding: 0;
+      @include media-breakpoint-up(md) {
+        @include make-col(3);
+        padding: 0;
+      }
+    }
+
+    .s-image {
+      @include bg-cover;
+      position: relative;
+      width: auto;
+      min-height: 300px;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        min-height: 400px;
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        min-height: 500px;
+        margin-bottom: 0;
       }
     }
   }
@@ -137,12 +153,71 @@
 
 .instagram {
   padding-top: 0;
-  padding-bottom: 130px;
+  padding-bottom: 30px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 75px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 130px;
+  }
+
   h2 {
     text-align: center;
   }
 
   .wrapper {
-    @include fixed-width-layout ;
+    @include fixed-width-layout;
+    margin-top: 20px;
+    @include media-breakpoint-up(md) {
+      margin-top: 40px;
+    }
+
+    .feed {
+      @include make-col-ready();
+      @include bg-cover;
+      padding: 0;
+      border-top: 7px solid $white;
+      border-right: 0 solid $white;
+      border-bottom: 7px solid $white;
+      border-left: 0 solid $white;
+      @include media-breakpoint-up(md) {
+        @include make-col(3);
+        padding: 0;
+        border: 5px solid $white;
+      }
+
+      a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        color: $white;
+        text-decoration: none;
+        @include transition (all 0.5s);
+
+        p {
+          position: absolute;
+          bottom: 21px;
+          left: 20px;
+          width: 100px;
+          margin: auto;
+          font-size: 14px;
+          opacity: 0;
+
+          .svg-inline--fa {
+            margin: 0 5px;
+          }
+        }
+
+        &:hover {
+          background: rgba(000,000,000,.4);
+
+          p {
+            opacity: 100;
+          }
+        }
+      }
+    }
   }
 }
