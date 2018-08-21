@@ -58,8 +58,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('/assets/images/home/overlay-bg.png');
+  background-image: url('/assets/images/overlay-bg.png');
   background-repeat: repeat-x;
+
+  &.reverse {
+    background-image: url('/assets/images/overlay-bg-reverse.png');
+    background-position: bottom left;
+  }
 }
 
 

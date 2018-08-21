@@ -18,15 +18,46 @@ meta_tags:
 </section>
 
 <section class="events-listing">
-  <ul>
-    <li style="background-image:url('/assets/images/events/event-sample.jpg');">
+
+    <!-- Category section -->
+    <div class="event-category-intro" style="background-image:url('/assets/images/events/event-sample.jpg');">
+      <div class="overlay-bg reverse"></div>
       <div class="intro-text">
         <h2>Summer of Rosé</h2>
         <p>Our outdoor event series continues! Join Perrine and Château Miraval on July 26th for A Midsummer Night's Soirée featuring food, music and endless Miraval Côtes de Provence Rosé! Tickets now on sale.</p>
       </div>
+    </div>
 
-    </li>
-  </ul>
+    <!-- Event Details Accordion -->
+    <div class="event-details accordion" id="accordionExample">
+      <div class="card">
+
+        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+          <!-- Event Schedule -->
+          <div class="schedule">
+            <span>Thursday - Saturday</span>
+            <h4>6:30-9:30 PM</h4>
+          </div>
+
+          <!-- Event Title -->
+          <h3>Live jazz with Antonio Ciacca</h3>
+          
+          <!-- Accordion Control -->
+          <div class="controls">
+            <i class="far fa-minus"></i>
+          </div>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 </section>
 
 {% comment %}
