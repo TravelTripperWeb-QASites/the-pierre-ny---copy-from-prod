@@ -3,16 +3,94 @@
 
 //Events Listing
 .events-listing {
-  ul {
-    padding: 0;
+  margin-top: 100px;
 
-    li {
-      @include fixed-width-layout;
-      height: 600px;
-      list-style: none;
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: cover;
+  .event-category-intro {
+    position: relative;
+    @include fixed-width-layout;
+    height: 600px;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    .intro-text {
+      position: absolute;
+      right: 0;
+      bottom: 100px;
+      left: 0;
+
+      h2,p {
+        color: $white;
+      }
+      p {
+        font-family: $tag-line-font;
+        font-size: $type-size-8;
+        line-height: 1.875rem;
+        letter-spacing: .063rem;
+      }
     }
   }
+
+  // Event Detils section
+  .event-details {
+    position: relative;
+    top: -35px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .card {
+      border: 1px solid $item-border-color;
+      border-radius: 0;
+
+      .card-header {
+        padding: 15px 0;
+        cursor: pointer;
+        background: $item-bg-color;
+        border-radius: 0;
+
+        .schedule {
+          float: left;
+          padding: 0 75px;
+          border-right: solid 1px $item-border-color-light;
+
+          span {
+            display: inline-block;
+            font-family: $tertiary-header-font;
+            font-size: $type-size-9;
+            line-height: 2.5rem;
+            color: $white;
+            text-transform: uppercase;
+          }
+          h4 {
+            color: $white;
+          }
+        }
+        h3 {
+          float: left;
+          padding: 20px 75px 0;
+          color: $white;
+        }
+        // Control Icons
+        .controls {
+          float: right;
+        }
+
+
+        &.collapsed {
+          background: $white;
+
+          .schedule {
+            border-right-color: rgba(35,31,32,.3);
+          }
+
+          span, h3, h4 {
+            color: $text-color;
+          }
+        }
+
+      }
+    }
+  }
+
 }
