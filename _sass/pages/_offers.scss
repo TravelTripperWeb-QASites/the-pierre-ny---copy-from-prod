@@ -159,3 +159,35 @@
     }
   }
 }
+
+.common-carousel {
+  padding: 40px 0;
+  background-color: $secondary-color;
+  .common-carousel-inner {
+    @include fixed-width-layout;
+    // .common-carousel-row {
+    //   @include make-row;
+    // }
+    .item {
+      padding: 0 15px;
+      .img-block {
+        height: 250px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      .content {
+        padding: 20px;
+        background-color: $white;
+      }
+    }
+    .slick-arrow {
+      
+    }
+  }
+  a {
+    &.primary-btn {
+      margin: 50px 0 10px;
+    }
+  }
+}
