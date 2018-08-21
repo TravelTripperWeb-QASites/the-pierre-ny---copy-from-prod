@@ -1,2 +1,18 @@
 // Events Page Elements
 // ==========================================================================
+
+//Events Listing
+.events-listing {
+  ul {
+    padding: 0;
+
+    li {
+      @include fixed-width-layout;
+      height: 600px;
+      list-style: none;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+}
