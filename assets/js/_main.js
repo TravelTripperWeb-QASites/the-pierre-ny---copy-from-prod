@@ -62,10 +62,6 @@ $(window)
     }
   });
 
-//Accordion Collapse
-$('.collapse')
-  .collapse()
-
 // Instagram API script
 $(window)
   .on("load", function (e) {
