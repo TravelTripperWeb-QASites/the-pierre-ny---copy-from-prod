@@ -143,7 +143,7 @@
     display: inline-block;
     margin-bottom: 20px;
     font-family: $tag-line-font;
-    font-size: $type-size-11;
+    font-size: $type-size-10;
     letter-spacing: .02rem;
     &:hover {
       text-decoration: none;
@@ -182,4 +182,39 @@
     }
   }
 
+}
+
+
+// Room details styles
+
+.room-single {
+  @include fixed-width-content;
+  text-align: center;
+  &__intro {
+
+  }
+  &__content {
+    padding: 0 100px 50px;
+    background-color: $secondary-color;
+    .nav-tabs {
+      border-bottom: 0;
+      .nav-item {
+        margin-bottom: 0;
+        .nav-link {
+          padding: 10px 30px !important;
+          font-family: $tag-line-font;
+          font-size: $type-size-11;
+          color: $primary-color;
+          letter-spacing: 1px;
+          background-color: $white;
+          border: 0;
+          border-radius: 0;
+          &.active {
+            color: $white;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
