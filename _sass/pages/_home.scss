@@ -44,7 +44,7 @@
 }
 
 
-.heading-text {
+.intro-text {
   max-width: 785px;
   margin: auto;
   padding: 45px 15px 34px 15px;
@@ -79,6 +79,10 @@
   h6 {
     font-family: $rare-heading-font;
     color: $white;
+    @include media-breakpoint-down(md) {
+      font-size: 1.125rem;
+      line-height: 1.125rem;
+    }
   }
 }
 
@@ -110,24 +114,35 @@
       padding: 0;
       @include media-breakpoint-up(md) {
         @include make-col(6);
-        margin-bottom: 15px;
+        margin-bottom: 0;
         padding: 0;
       }
       .s-image {
         @include bg-cover;
         position: relative;
         width: auto;
-        min-height: 355px;
+        min-height: 300px;
         margin-bottom: 0;
 
         @include media-breakpoint-up(md) {
-          min-height: 455px;
+          min-height: 400px;
         }
         @include media-breakpoint-up(lg) {
-          min-height: 695px;
-
+          min-height: 500px;
         }
       }
     }
+  }
+}
+
+.instagram {
+  padding-top: 0;
+  padding-bottom: 130px;
+  h2 {
+    text-align: center;
+  }
+
+  .wrapper {
+    @include fixed-width-layout ;
   }
 }
