@@ -61,3 +61,7 @@ $(window)
         });
     }
   });
+
+//Accordion Collapse
+$('.collapse')
+  .collapse()
