@@ -1,6 +1,10 @@
 // Events Page Elements
 // ==========================================================================
 
+.events-wrapper {
+  margin-bottom: 100px; 
+}
+
 //Events Listing
 .events-listing {
   margin-top: 100px;
@@ -37,7 +41,7 @@
     position: relative;
     top: -60px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto -60px;
 
     .card {
       border: 1px solid $item-border-color;
@@ -82,6 +86,7 @@
           }
 
           @include media-breakpoint-up(xl) {
+            min-width: 380px;
             padding: 0 75px;
           }
         }
