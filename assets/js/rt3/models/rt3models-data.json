@@ -1,0 +1,6 @@
+---
+---
+{% assign rooms-details-en = site.data._models.rooms | where:"language","en" | jsonfy%}
+{% assign rooms-details-cn = site.data._models.rooms | where:"language","cn" | jsonfy %}
+{"roomsDetails":{ {% for room in rooms-details-en %}"{{room.room-id }}": {"additionalInfo": {{ room.additional-info | jsonify}},"room_features": {{ room.room_features | jsonify}},"replaceReztrip": {% if room.replace-reztrip-details%}true {%else%}false{%endif%}, "title":{{ room.title | jsonify}},"service_amenities":{{ room.service_amenities | jsonify}},"replaceAmenities": {% if room.replace-reztrip-amenities%}true {%else%}false{%endif%}, "short_info": {{room.short_info | markdownify | strip | jsonify}}, "gallery": {{room.gallery | jsonify}} } {% unless forloop.last %},{% endunless %}{% endfor %}},
+"roomsDetails-cn":{ {% for room in rooms-details-cn %}"{{room.room-id }}": {"additionalInfo": {{ room.additional-info | jsonify}},"room_features": {{ room.room_features | jsonify}},"replaceReztrip": {% if room.replace-reztrip-details%}true {%else%}false{%endif%}, "service_amenities":{{ room.service_amenities | jsonify}},"replaceAmenities": {% if room.replace-reztrip-amenities%}true {%else%}false{%endif%}, "short_info": {{room.short_info | markdownify | strip | jsonify}}, "gallery": {{room.gallery | jsonify}} } {% unless forloop.last %},{% endunless %}{% endfor %}}}
