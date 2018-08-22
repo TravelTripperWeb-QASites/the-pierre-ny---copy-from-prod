@@ -1,6 +1,10 @@
 // Events Page Elements
 // ==========================================================================
 
+.events-wrapper {
+  margin-bottom: 100px;
+}
+
 //Events Listing
 .events-listing {
   margin-top: 100px;
@@ -35,15 +39,21 @@
   // Event Detils section
   .event-details {
     position: relative;
-    top: -35px;
+    top: -60px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto -60px;
 
     .card {
       border: 1px solid $item-border-color;
+      border-bottom: 0;
       border-radius: 0;
 
+      &:last-child {
+        border-bottom: 1px solid $item-border-color;
+      }
+
       .card-header {
+        position: relative;
         padding: 15px 0;
         cursor: pointer;
         background: $item-bg-color;
@@ -51,31 +61,87 @@
 
         .schedule {
           float: left;
-          padding: 0 75px;
-          border-right: solid 1px $item-border-color-light;
+          padding: 0 20px;
+          border-right: 0;
 
           span {
             display: inline-block;
             font-family: $tertiary-header-font;
-            font-size: $type-size-9;
-            line-height: 2.5rem;
+            font-size: $type-size-11;
+            line-height: .875rem;
             color: $white;
             text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {
+              font-size: $type-size-9;
+              line-height: 2.5rem;
+            }
           }
           h4 {
             color: $white;
+
+            @include media-breakpoint-down(md) {
+              font-size: $type-size-9;
+              line-height: 1.5rem;
+            }
+          }
+
+          @include media-breakpoint-up(md) {
+            min-width: 170px;
+            padding: 0 20px;
+            border-right: solid 1px $item-border-color-light;
+          }
+
+          @include media-breakpoint-up(lg) {
+            min-width: 340px;
+            padding: 0 50px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            min-width: 380px;
+            padding: 0 75px;
           }
         }
+
         h3 {
           float: left;
-          padding: 20px 75px 0;
+          max-width: 300px;
+          padding: 5px 20px 0;
           color: $white;
-        }
-        // Control Icons
-        .controls {
-          float: right;
+
+          @include media-breakpoint-up(md) {
+            max-width: 100%;
+            padding: 20px 20px 0;
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding: 20px 50px 0;
+          }
+
+          @include media-breakpoint-up(xl) {
+            padding: 20px 75px 0;
+          }
         }
 
+        // Control Icons
+        .controls {
+          @include vertical-center;
+          position: absolute;
+          right: 50px;
+
+          svg {
+            font-size: 24px;
+            color: $white;
+          }
+
+          .fa-minus {
+            display: block;
+          }
+
+          .fa-plus {
+            display: none;
+          }
+        }
 
         &.collapsed {
           background: $white;
@@ -84,8 +150,141 @@
             border-right-color: rgba(35,31,32,.3);
           }
 
-          span, h3, h4 {
+          span, h3, h4, svg {
             color: $text-color;
+          }
+
+          .controls {
+
+            .fa-minus {
+              display: none;
+            }
+
+            .fa-plus {
+              display: block;
+            }
+          }
+
+        }
+
+      }
+
+      .card-body {
+        padding: 30px;
+
+        .wrapper {
+          text-align: center;
+
+          p {
+            max-width: 930px;
+            margin: 0 auto;
+            font-family: $tag-line-font;
+            font-size: $type-size-8;
+            line-height: 1.875rem;
+            letter-spacing: .025rem;
+          }
+
+          .opentable-widget {
+
+            p {
+              display: block;
+              padding: 20px 0 40px;
+              font-family: $tag-line-font;
+              font-size: $type-size-9;
+              color: $text-color;
+            }
+
+            h6 {
+              padding: 40px 0 10px;
+              color: $primary-color;
+              text-align: center;
+              text-transform: uppercase;
+            }
+
+            .secondary-btn {
+              margin: 25px 30px;
+            }
+
+            .ot-dtp-picker {
+
+              &.wide {
+                width: 100%;
+                max-width: 750px;
+                margin: 0 auto;
+              }
+
+              .ot-title {
+                display: none;
+              }
+
+              .ot-dtp-picker-form {
+                display: inline-block;
+                height: 100%;
+                border-radius: 0;
+                outline: solid 4px rgba(0,0,0,.1);
+
+                @include media-breakpoint-up(lg) {
+                  display: inherit;
+                  height: 60px;
+                }
+              }
+
+              .ot-dtp-picker-selector {
+                position: relative;
+                width: 100%;
+                height: 60px;
+                border-bottom: solid 1px $border-color;
+                border-left: 0;
+
+                @include media-breakpoint-up(lg) {
+                  width: 170px;
+                  border-bottom: 0;
+                  border-left: solid 1px $border-color;
+                }
+
+                select {
+                  left: 0;
+                  width: 100%;
+                }
+
+                .ot-dtp-picker-selector-link {
+                  padding: 18px 20px 20px 0;
+
+                  &:before {
+                    display: none;
+                  }
+
+                  &:after {
+                    right: 20px;
+                  }
+                }
+              }
+
+              .ot-dtp-picker-button {
+                width: 100%;
+                height: 58px;
+                font-family: $tertiary-header-font;
+                font-size: $type-size-9;
+                text-transform: uppercase;
+                background-color: $primary-color;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                @include transition (all .5s);
+
+                &:hover {
+                  background-color: $text-color;
+                }
+
+                @include media-breakpoint-up(lg) {
+                  width: 205px;
+                }
+              }
+
+              .ot-powered-by {
+                display: none;
+              }
+            }
           }
         }
 

@@ -1,0 +1,44 @@
+{
+  "title": {
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "banner_image": {
+    "type": "image",
+    "required": true
+  },
+  "listing_image": {
+    "type": "image"
+  },
+  "date": {
+  },
+  "short_description": {
+    "type": "text",
+    "required": true
+  },
+  "slider_images": {
+    "type": "image",
+    "multiple": true
+  },
+  "offer_includes": {
+    "type": "richtext",
+    "required": true
+  },
+  "terms": {
+    "type": "richtext",
+    "required": true
+  },
+  "booking_link": {
+    "required": true
+  },
+  "order": {
+    "type": "integer",
+    "required": true
+  },
+  "unpublish": {
+    "type": "boolean"
+  }
+}

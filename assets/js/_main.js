@@ -61,6 +61,12 @@ $(window)
           window.location.href = link;
         });
     }
+    $(".categories__list li").hover(function(){
+      $(this).find(".list-dropdown").slideDown(100);
+  }, function(){
+      $(this).find(".list-dropdown").slideUp(100);
+  });
+
   });
 
 // Instagram API script
@@ -119,3 +125,33 @@ $(window)
       }
     });
   });
+
+  //home offers slick
+  setTimeout(function() {
+    $('#commonCarousel').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: false,
+      adaptiveHeight: true,
+      centerPadding: '15px',
+      responsive: [{
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '15px'
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '15px'
+          }
+        }
+      ]
+    });
+    $('.loading').css('display', 'none');
+  },2500);

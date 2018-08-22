@@ -7,14 +7,55 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Offers Banner here -->
+<section class="page-banner inner" style="background-image:url('/assets/images/home/banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">Special Offers</h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    <h6>Enjoy a Luxurious experience for exceptional value at the pierre. Browse our special offers below.</h6>
+  </div>
+</section>
 
-  Name:
+{% assign offers = site.data._models.special_offers | sort: "order" %}
+<!-- Offers Menu -->
+<section class="offers-menu">
+  <div class="offers-menu-inner">
+    <ul>
+      {% for offer in offers %}
+        {% unless offer.unpublish == true %}
+          <li><a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 
-    Offers Listing Page
-
-  Description:
-
-    Display offer list from RezTrip.
-
-{% endcomment %}
+<!-- Offers Listing -->
+<section class="offers-listing">
+  <div class="offers-listing-inner">
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <div class="offer-block">
+          <a href="/offers/{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
+            <figure>
+              {% if offer.listing_image and offer.listing_image.url_medium !="" %}
+              <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
+                <h4>{{ offer.title }}</h4>
+              </div>
+              {% else %}
+              <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
+                <h4>{{ offer.title }}</h4>
+              </div>
+              {% endif %}
+            </figure>
+          </a>
+          <div class="offer-content">
+            <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            <a class="secondary-btn" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
+          </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>

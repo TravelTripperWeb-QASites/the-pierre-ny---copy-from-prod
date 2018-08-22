@@ -92,3 +92,30 @@
   background-position: center center;
   background-size: cover;
 }
+
+.crest-holder {
+  position: relative;
+  width: 200px;
+  margin: 30px auto 35px;
+  text-align: center;
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    content: '';
+    background-color: $primary-color;
+  }
+  &:after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 9;
+    width: 80px;
+    height: 1px;
+    content: '';
+    background-color: $primary-color;
+    transform: translateY(-50%);
+  }
+}
