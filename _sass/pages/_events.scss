@@ -1,6 +1,10 @@
 // Events Page Elements
 // ==========================================================================
 
+.events-wrapper {
+  margin-bottom: 100px;
+}
+
 //Events Listing
 .events-listing {
   margin-top: 100px;
@@ -37,7 +41,7 @@
     position: relative;
     top: -60px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto -60px;
 
     .card {
       border: 1px solid $item-border-color;
@@ -63,25 +67,38 @@
           span {
             display: inline-block;
             font-family: $tertiary-header-font;
-            font-size: $type-size-9;
-            line-height: 2.5rem;
+            font-size: $type-size-11;
+            line-height: .875rem;
             color: $white;
             text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {
+              font-size: $type-size-9;
+              line-height: 2.5rem;
+            }
           }
           h4 {
             color: $white;
+
+            @include media-breakpoint-down(md) {
+              font-size: $type-size-9;
+              line-height: 1.5rem;
+            }
           }
 
           @include media-breakpoint-up(md) {
+            min-width: 170px;
             padding: 0 20px;
             border-right: solid 1px $item-border-color-light;
           }
 
           @include media-breakpoint-up(lg) {
+            min-width: 340px;
             padding: 0 50px;
           }
 
           @include media-breakpoint-up(xl) {
+            min-width: 380px;
             padding: 0 75px;
           }
         }
@@ -169,7 +186,7 @@
 
           .opentable-widget {
 
-            span {
+            p {
               display: block;
               padding: 20px 0 40px;
               font-family: $tag-line-font;

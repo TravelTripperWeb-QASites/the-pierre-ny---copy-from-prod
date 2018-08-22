@@ -17,9 +17,11 @@ meta_tags:
   </div>
 </section>
 
+<!-- Events Listing here -->
+<section class="events-wrapper">
 {% assign event_categories = site.data._models.events | sort: "sort_order" %}
 {% for item in event_categories %}
-  <section class="events-listing">
+  <div class="events-listing">
 
       <!-- Category section -->
       <div class="event-category-intro" style="background-image:url('{{ item.category_image.url }}');">
@@ -36,12 +38,12 @@ meta_tags:
         {% for event in item.event_listing %}
           <!-- Event -->
           <div class="card">
-            <div class="card-header" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
+            <div class="card-header collapsed" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
 
               <!-- Event Schedule -->
               <div class="schedule">
-                <span>{{ event.start_day }} - {% if event.end_day != "" %}{{ event.end_day }}{% endif %}</span>
-                <h4>{{ event.from_time }} - {% if event.to_time != "" %}{{ event.to_time }}{% endif %} {{ event.am_or_pm }}</h4>
+                <span>{{ event.start_day }}{% if event.end_day and event.end_day != "" %} - {{ event.end_day }}{% endif %}</span>
+                <h4>{{ event.from_time }} - {{ event.to_time }} {{ event.am_or_pm }}</h4>
               </div>
 
               <!-- Event Title -->
@@ -54,7 +56,7 @@ meta_tags:
               </div>
             </div>
 
-            <div id="{{ event.event_collapse_id }}" class="collapse {% if forloop.index0 %}show{% endif %}" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
+            <div id="{{ event.event_collapse_id }}" class="collapse" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
                   <p>{{ event.event_detail }}</p>
@@ -64,7 +66,7 @@ meta_tags:
                       <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
                       <a class="secondary-btn" href="{{ event.view_menu_url }}">View menus</a>
                     </div>
-                    <span>{{ event.event_contact }}</span>
+                    {{ event.event_contact }}
                   </div>
 
                 </div>
@@ -72,13 +74,11 @@ meta_tags:
             </div>
           </div>
         {% endfor %}
-
       </div>
 
-  </section>
+  </div>
 {% endfor %}
-
-
+</section>
 <!-- <div class="card">
 
   <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -117,27 +117,3 @@ meta_tags:
   </div>
 
 </div> -->
-
-{% comment %}
-
-  Name:
-
-    Events Page
-
-  Description:
-
-    Display events[item] from a content model.
-
-  Usage:
-
-    Assign content model on page then display using [item].
-
-    eg. {% assign events = site.data._models.events %}
-        {% for item in events %}
-          {{ item.title }}
-          {{ item.location }}
-          {{ item.start_date | date: "%B %d %Y" }} - {{ item.end_date | date: "%B %d %Y" }}
-          {{ item.description | strip_html | truncatewords: 18 }}
-        {% endfor %}
-
-{% endcomment %}
