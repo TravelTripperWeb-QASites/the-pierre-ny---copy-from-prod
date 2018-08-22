@@ -1,0 +1,55 @@
+{
+  "event_listing": [
+    {
+      "event_name": "Live jazz with Antonio Ciacca",
+      "event_heading_id": "livejazz",
+      "event_collapse_id": "antonio",
+      "event_detail": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required",
+      "start_day": "Everyday",
+      "from_time": "2",
+      "to_time": "10",
+      "am_or_pm": "PM",
+      "event_booking_id": "00000",
+      "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
+      "view_menu_url": "#"
+    },
+    {
+      "event_name": "Theater Pizzazz Review",
+      "event_heading_id": "theater",
+      "event_collapse_id": "pizzazz",
+      "event_detail": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "start_day": "Friday",
+      "end_day": "Sunday",
+      "from_time": "8:30",
+      "to_time": "2:30",
+      "am_or_pm": "AM",
+      "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
+      "event_booking_id": "11111",
+      "view_menu_url": "#"
+    }
+  ],
+  "category_title": "Jazz & Two E Hours",
+  "category_id": "twoehours",
+  "category_intro": "Discover Two E's new Icons of Jazz  series featuring Antonio & special guests!",
+  "category_image": {
+    "name": "jazz-n-twoehours",
+    "file_name": "jazz-n-twoehours.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/jazz-n-twoehours.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-22-063949",
+    "file_type": "image/jpeg",
+    "width": 1400,
+    "height": 600,
+    "file_size": 164488,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/large_jazz-n-twoehours.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/medium_jazz-n-twoehours.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/small_jazz-n-twoehours.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/xsmall_jazz-n-twoehours.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/thumb_jazz-n-twoehours.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/jazz-n-twoehours.jpg",
+    "alt": "Jazz and Two E Hours",
+    "caption": ""
+  },
+  "sort_order": 2
+}
