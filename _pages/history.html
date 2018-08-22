@@ -1,0 +1,69 @@
+---
+layout: default
+title: Historic New York Hotels | The Pierre Hotel NY
+meta_description:
+permalink: /history/
+meta_tags:
+  robots:
+---
+
+<!-- History Banner here -->
+<section class="page-banner inner" style="background-image:url('/assets/images/history/hero.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">THE PIERRE HISTORY</h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    <h6>THE MAKING OF A LEGEND</h6>
+  </div>
+</section>
+<section "history-intro">
+  <div class="intro-text">
+    <h2>For over 85 years, The Pierre has set the standard for timeless elegance and unrivaled hospitality in New York city.</h2>
+  </div>
+
+  <!-- History slider -->
+  {% assign history = site.data._models.history | sort: 'title' %}
+  <div class="container" id="timeline">
+    <div id="historyCarousel" class="carousel slide carousel-fade">
+      <ol class="carousel-indicators" role="tablist" tabindex="0">
+        {%for item in history%}
+        <li data-target="#historyCarousel" role="tab" data-slide-to="{{forloop.index0}}" {% if forloop.first%}class="active" {% endif %}>
+          <h5>{{item.title}}</h5></li>
+        {% endfor %}
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner" role="tablist">
+        {%for item in history %}
+        <div class="carousel-item {% if forloop.first%} active {% endif %}" role="tabpanel">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
+                <div class="your-class" id="slideimage{{forloop.index0}}">
+                  {% endif %}
+                  <div class="hotel-image" style="background-image: url({{item.history_image1.url_large}});"> </div>
+                  {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
+                  <div class="hotel-image" style="background-image: url({{item.history_image2.url_large}});">
+                  </div>
+                  {% endif %} {% if item.history_image3.url_large and item.history_image3.url_large != ''%}
+                  <div class="hotel-image" style="background-image: url({{item.history_image3.url_large}});">
+                  </div>
+                  {% endif %} {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
+                </div>
+                {% endif %}
+              </div>
+              <div class="col-md-5">
+                <div class="hotel-details" tabindex="0">
+                  <h5>{{item.period_in_time}}</h5>
+                  {{item.details}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!-- History slider -->
+</section>

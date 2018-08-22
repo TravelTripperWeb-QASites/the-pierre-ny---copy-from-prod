@@ -1,0 +1,250 @@
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+//*WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+//now override the 3.3 new styles for modern browsers & apply opacity
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.active.right,
+  .carousel-fade .carousel-inner > .item.next {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-fade .carousel-inner > .item.active.left,
+  .carousel-fade .carousel-inner > .item.prev {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-fade .carousel-inner > .item.active,
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.accolades-history {
+  margin-top: 60px;
+
+  h2 {
+    color: #231f20 !important;
+  }
+  background-color: #f8f7f7;
+}
+
+#historyCarousel {
+  margin-top: 70px;
+  padding-top: 0;
+  line-height: 16.5pt;
+
+  .carousel-indicators {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block !important;
+    width: inherit;
+    margin-left: inherit;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      min-width: 100px;
+      height: auto;
+      margin-bottom: 28px;
+      text-indent: 12px;
+      background: none;
+      border: none;
+      @include media-breakpoint-up(sm) {
+        min-width: 174px;
+        margin-bottom: 0;
+        text-indent: 27px;
+      }
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+
+      &:after {
+        position: absolute;
+        top: 45%;
+        right: auto;
+        left: 11px;
+        width: 6px;
+        height: 6px;
+        margin: 0 auto;
+        content: '';
+        background-color: #b9b9b9;
+        border-radius: 50%;
+        @include media-breakpoint-up(md) {
+          top: 48%;
+          left: 15px;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 28px;
+        content: '';
+        border: .15rem solid $white;
+        border-radius: 50%;
+        @include media-breakpoint-up(sm) {
+          top: 20%;
+          width: 38px;
+          height: 38px;
+        }
+      }
+
+      &.active {
+        h5 {
+          opacity: 1;
+        }
+
+        &:after {
+          background-color: #231f20;
+        }
+
+        &:before {
+          border: .15rem solid $primary-color;
+        }
+      }
+
+      h5 {
+        margin: 0;
+        font-family: 'roboto_condensedlight';
+        font-size: 25px;
+        line-height: 25px;
+        color: #231f20;
+        letter-spacing: 1px;
+        opacity: .6;
+        @include media-breakpoint-up(sm) {
+          font-size: 50px;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+
+  .carousel-inner {
+    .col-md-7 {
+      @include media-breakpoint-up(md) {
+        padding-left: 180px;
+      }
+
+      .hotel-image {
+        width: 100%;
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include media-breakpoint-up(sm) {
+          min-height: 560px;
+        }
+      }
+    }
+  }
+
+  .hotel-details {
+    padding-right: 0;
+    @include media-breakpoint-up(sm) {
+      padding-right: 25px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 20px;
+      font-family: 'sunlight';
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    h5 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: 'roboto_condensedlight';
+      font-size: 36px;
+      color: $primary-color;
+    }
+
+    h6 {
+
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+    }
+  }
+}
+
+.your-class{
+
+   .slick-arrow{
+      display: inline-block;
+      // text-indent: -1000px;
+      position: absolute;
+      z-index: 20;
+      background-color: transparent;
+      border: 0;
+      height: 40px;
+      width:40px;
+      background-color: $primary-color;
+      color: #000;
+      font-size:0;
+      width: 30px;
+      padding-top: 10px;
+     opacity: .5;
+      &.slick-prev{
+
+          left: 0;
+          top: 50%;
+       &:before{
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f053";
+      }
+      }
+      &.slick-next{
+
+        right: 0;
+        top: 50%;
+       &:before{
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f054";
+
+      }
+      }
+   }
+
+}
