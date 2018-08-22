@@ -46,7 +46,7 @@
       "start_day": {
         "required": true,
         "type": "select",
-        "options": ["Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"],
+        "options": ["Everyday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "hint": "Choose only start Day incase of single day event"
       },
       "end_day": {
