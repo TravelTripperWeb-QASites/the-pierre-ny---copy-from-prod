@@ -119,16 +119,29 @@
     }
     .carousel-control-prev, .carousel-control-next {
       position: absolute;
-      top: 48%;
+      top: 50%;
       bottom: auto;
       width: 35px;
       height: 35px;
       background-color: rgba(0, 0, 0, .5);
       opacity: 1;
+      transform: translate(0, -50%);
       @include transition(all .5s ease);
       &:hover {
         background-color: rgba(0, 0, 0, 1);
       }
+    }
+    .carousel-control-prev {
+      background-image: url('/assets/images/previous.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 10px;
+    }
+    .carousel-control-next {
+      background-image: url('/assets/images/next.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 10px;
     }
   }
   .content {
@@ -165,9 +178,6 @@
   background-color: $secondary-color;
   .common-carousel-inner {
     @include fixed-width-layout;
-    // .common-carousel-row {
-    //   @include make-row;
-    // }
     .item {
       padding: 0 15px;
       .img-block {
@@ -182,7 +192,42 @@
       }
     }
     .slick-arrow {
-      
+      position: absolute;
+      z-index: 2;
+      width: 35px;
+      height: 35px;
+      background-color: $primary-color;
+      opacity: 1;
+      @include transition(all .5s ease);
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+    .slick-prev {
+      @media screen and(min-width: 1530px) {
+        left: -50px;
+      }
+      left: 0;
+      background-image: url('/assets/images/previous.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 10px;
+      &:before {
+        content: '';
+      }
+    }
+    .slick-next {
+      @media screen and(min-width: 1530px) {
+        right: -50px;
+      }
+      right: 0;
+      background-image: url('/assets/images/next.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 10px;
+      &:before {
+        content: '';
+      }
     }
   }
   a {
