@@ -141,12 +141,14 @@ $(window)
           breakpoint: 990,
           settings: {
             slidesToShow: 2,
+            centerPadding: '15px'
           }
         },
         {
           breakpoint: 500,
           settings: {
             slidesToShow: 1,
+            centerPadding: '15px'
           }
         }
       ]

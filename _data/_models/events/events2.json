@@ -1,15 +1,14 @@
 {
-  "event_listing": [
-    {
+  "event_listing": [{
       "event_name": "Live jazz with Antonio Ciacca",
       "event_heading_id": "livejazz",
       "event_collapse_id": "antonio",
       "event_detail": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required",
       "start_day": "Everyday",
-      "from_time": "2",
-      "to_time": "10",
+      "from_time": "2:00",
+      "to_time": "10:00",
       "am_or_pm": "PM",
-      "event_booking_id": "00000",
+      "event_booking_id": "34024",
       "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
       "view_menu_url": "#"
     },
@@ -24,7 +23,7 @@
       "to_time": "2:30",
       "am_or_pm": "AM",
       "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
-      "event_booking_id": "11111",
+      "event_booking_id": "34024",
       "view_menu_url": "#"
     }
   ],
