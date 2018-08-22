@@ -28,7 +28,7 @@ meta_tags:
         {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %}
         {% unless page.url == offer_url %}
           {% unless offer.unpublish == true %}
-            <li><a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
+            <li><a href="/offers/{{ offer.url_friendly_name }}/">{{ offer.title }}</a></li>
           {% endunless %}
         {% endunless %}
       {% endfor %}
@@ -48,7 +48,7 @@ meta_tags:
     <div id="offerDetailImages" class="carousel slide img-carousel" data-ride="carousel">
       <div class="carousel-inner">
         {% for image in page.slider_images %}
-        <div class="carousel-item active" style="background-image:url('/assets/images/offers/carousel-img.png');">
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background-image:url('{{ image.url }}');">
         </div>
         {% endfor %}
       </div>
