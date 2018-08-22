@@ -17,7 +17,7 @@ meta_tags:
   </div>
 </section>
 
-{% assign event_categories = site.data._models.events %}
+{% assign event_categories = site.data._models.events | sort: "sort_order" %}
 {% for item in event_categories %}
   <section class="events-listing">
 
@@ -54,7 +54,7 @@ meta_tags:
               </div>
             </div>
 
-            <div id="{{ event.event_collapse_id }}" class="collapse show" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
+            <div id="{{ event.event_collapse_id }}" class="collapse {% if forloop.index0 %}show{% endif %}" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
                   <p>{{ event.event_detail }}</p>
