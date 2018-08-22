@@ -17,103 +17,106 @@ meta_tags:
   </div>
 </section>
 
-<section class="events-listing">
+{% assign event_categories = site.data._models.events %}
+{% for item in event_categories %}
+  <section class="events-listing">
 
-    <!-- Category section -->
-    <div class="event-category-intro" style="background-image:url('/assets/images/events/event-sample.jpg');">
-      <div class="overlay-bg reverse"></div>
-      <div class="intro-text">
-        <h2>Summer of Rosé</h2>
-        <p>Our outdoor event series continues! Join Perrine and Château Miraval on July 26th for A Midsummer Night's Soirée featuring food, music and endless Miraval Côtes de Provence Rosé! Tickets now on sale.</p>
-      </div>
-    </div>
-
-    <!-- Event Details Accordion -->
-    <div class="event-details accordion" id="accordionExample">
-
-      <!-- First Event -->
-      <div class="card">
-
-        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-          <!-- Event Schedule -->
-          <div class="schedule">
-            <span>Thursday - Saturday</span>
-            <h4>6:30-9:30 PM</h4>
-          </div>
-
-          <!-- Event Title -->
-          <h3>Live jazz with Antonio Ciacca</h3>
-
-          <!-- Accordion Control -->
-          <div class="controls">
-            <i class="fa fa-minus"></i>
-            <i class="fa fa-plus"></i>
-          </div>
+      <!-- Category section -->
+      <div class="event-category-intro" style="background-image:url('{{ item.category_image.url }}');">
+        <div class="overlay-bg reverse"></div>
+        <div class="intro-text">
+          <h2>{{ item.category_title }}</h2>
+          <p>{{ item.category_intro }}</p>
         </div>
+      </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            <div class="wrapper">
-              <p>Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required</p>
-              <div class="opentable-widget">
-                <h6>Make a Reservation</h6>
-                <div class="d-xl-flex justify-content-center">
-                  <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=34024&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
-                  <a class="secondary-btn" href="#">View menus</a>
-                </div>
-                <span>Contact Two E Bar & Lounge, at <a href="tel:646-396-3303">646 396 3303</a> or <a href="mailto:TwoE@tajhotels.com">TwoE@tajhotels.com</a></span>
+      <!-- Event Details Accordion -->
+      <div class="event-details accordion" id="{{ item.category_id }}">
+
+        {% for event in item.event_listing %}
+          <!-- Event -->
+          <div class="card">
+            <div class="card-header" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
+
+              <!-- Event Schedule -->
+              <div class="schedule">
+                <span>{{ event.start_day }} - {% if event.end_day != "" %}{{ event.end_day }}{% endif %}</span>
+                <h4>{{ event.from_time }} - {% if event.to_time != "" %}{{ event.to_time }}{% endif %} {{ event.am_or_pm }}</h4>
               </div>
 
-            </div>
-          </div>
-        </div>
+              <!-- Event Title -->
+              <h3>{{ event.event_name }}</h3>
 
-      </div>
-
-      <!-- Second Event -->
-      <div class="card">
-
-        <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-
-          <!-- Event Schedule -->
-          <div class="schedule">
-            <span>Thursday - Saturday</span>
-            <h4>6:30-9:30 PM</h4>
-          </div>
-
-          <!-- Event Title -->
-          <h3>Live jazz with Antonio Ciacca</h3>
-
-          <!-- Accordion Control -->
-          <div class="controls">
-            <i class="fa fa-minus"></i>
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            <div class="wrapper">
-              <p>Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required</p>
-              <div class="opentable-widget">
-                <h6>Make a Reservation</h6>
-                <div class="d-xl-flex justify-content-center">
-                  <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=34024&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
-                  <a class="secondary-btn" href="#">View menus</a>
-                </div>
-                <span>Contact Two E Bar & Lounge, at <a href="tel:646-396-3303">646 396 3303</a> or <a href="mailto:TwoE@tajhotels.com">TwoE@tajhotels.com</a></span>
+              <!-- Accordion Control -->
+              <div class="controls">
+                <i class="fa fa-minus"></i>
+                <i class="fa fa-plus"></i>
               </div>
+            </div>
 
+            <div id="{{ event.event_collapse_id }}" class="collapse show" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
+              <div class="card-body">
+                <div class="wrapper">
+                  <p>{{ event.event_detail }}</p>
+                  <div class="opentable-widget">
+                    <h6>Make a Reservation</h6>
+                    <div class="d-xl-flex justify-content-center">
+                      <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+                      <a class="secondary-btn" href="{{ event.view_menu_url }}">View menus</a>
+                    </div>
+                    <span>{{ event.event_contact }}</span>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        {% endfor %}
 
       </div>
 
+  </section>
+{% endfor %}
+
+
+<!-- <div class="card">
+
+  <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+
+
+    <div class="schedule">
+      <span>Thursday - Saturday</span>
+      <h4>6:30-9:30 PM</h4>
     </div>
 
-</section>
+
+    <h3>Live jazz with Antonio Ciacca</h3>
+
+
+    <div class="controls">
+      <i class="fa fa-minus"></i>
+      <i class="fa fa-plus"></i>
+    </div>
+  </div>
+
+  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div class="card-body">
+      <div class="wrapper">
+        <p>Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required</p>
+        <div class="opentable-widget">
+          <h6>Make a Reservation</h6>
+          <div class="d-xl-flex justify-content-center">
+            <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=34024&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+            <a class="secondary-btn" href="#">View menus</a>
+          </div>
+          <span>Contact Two E Bar & Lounge, at <a href="tel:646-396-3303">646 396 3303</a> or <a href="mailto:TwoE@tajhotels.com">TwoE@tajhotels.com</a></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div> -->
 
 {% comment %}
 
