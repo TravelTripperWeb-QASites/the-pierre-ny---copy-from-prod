@@ -17,19 +17,16 @@ meta_tags:
   </div>
 </section>
 
+{% assign offers = site.data._models.special_offers | sort: "order" %}
 <!-- Offers Menu -->
 <section class="offers-menu">
   <div class="offers-menu-inner">
     <ul>
-      <li><a href="#">Offer Title One</a></li>
-      <li><a href="#">Offer Title Two</a></li>
-      <li><a href="#">Offer Title Three</a></li>
-      <li><a href="#">Offer Title Four</a></li>
-      <li><a href="#">Offer Title Five</a></li>
-      <li><a href="#">Offer Title Six</a></li>
-      <li><a href="#">Offer Title Seven</a></li>
-      <li><a href="#">Offer Title Eight</a></li>
-      <li><a href="#">Offer Title Nine</a></li>
+      {% for offer in offers %}
+        {% unless offer.unpublish == true %}
+          <li><a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
     </ul>
   </div>
 </section>
@@ -37,70 +34,28 @@ meta_tags:
 <!-- Offers Listing -->
 <section class="offers-listing">
   <div class="offers-listing-inner">
-    <div class="offer-block">
-      <a href="" title="Offer title here">
-        <figure>
-          <div class="offer-img" style="background-image:url('/assets/images/offers/offer-img.jpg');">
-            <h4>Offer Title Here</h4>
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <div class="offer-block">
+          <a href="/special-offers/{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
+            <figure>
+              {% if offer.listing_image and offer.listing_image.url_medium !="" %}
+              <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
+                <h4>{{ offer.title }}</h4>
+              </div>
+              {% else %}
+              <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
+                <h4>{{ offer.title }}</h4>
+              </div>
+              {% endif %}
+            </figure>
+          </a>
+          <div class="offer-content">
+            <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            <a class="secondary-btn" href="/special-offers/{{ offer.url_friendly_name }}/">View Details</a>
           </div>
-        </figure>
-      </a>
-      <div class="offer-content">
-        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <a href="" title="Offer title here">
-        <figure>
-          <div class="offer-img" style="background-image:url('/assets/images/offers/offer-img.jpg');">
-            <h4>Offer Title Here</h4>
-          </div>
-        </figure>
-      </a>
-      <div class="offer-content">
-        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <a href="" title="Offer title here">
-        <figure>
-          <div class="offer-img" style="background-image:url('/assets/images/offers/offer-img.jpg');">
-            <h4>Offer Title Here</h4>
-          </div>
-        </figure>
-      </a>
-      <div class="offer-content">
-        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <a href="" title="Offer title here">
-        <figure>
-          <div class="offer-img" style="background-image:url('/assets/images/offers/offer-img.jpg');">
-            <h4>Offer Title Here</h4>
-          </div>
-        </figure>
-      </a>
-      <div class="offer-content">
-        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <a href="" title="Offer title here">
-        <figure>
-          <div class="offer-img" style="background-image:url('/assets/images/offers/offer-img.jpg');">
-            <h4>Offer Title Here</h4>
-          </div>
-        </figure>
-      </a>
-      <div class="offer-content">
-        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
   </div>
 </section>

@@ -1,0 +1,126 @@
+---
+layout: default
+title: Offer Details
+meta_description:
+meta_tags:
+  robots:
+---
+
+{% assign offers = site.data._models.special_offers | sort: "order" %}
+<!-- Offers Banner here -->
+<section class="page-banner" style="background-image: url('{{ page.banner_image.url }}');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">{{ page.title }}</h1>
+    {% if page.date %}
+      <p class="theme-line-3">{{ page.date }}</p>
+    {% endif %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    <!-- <h6>Enjoy a Luxurious experience for exceptional value at the pierre. Browse our special offers below.</h6> -->
+    <a class="primary-btn inverse mt-4" href="{{ page.booking_link }}" target="_blank">Book this offer</a>
+  </div>
+</section>
+
+<!-- Offers Menu -->
+<section class="offers-menu">
+  <div class="offers-menu-inner">
+    <ul>
+      {% for offer in offers %}
+        {% assign offer_url = offer.url_friendly_name | prepend: '/special-offers/' | append: '/' %}
+        {% unless page.url == offer_url %}
+          {% unless offer.unpublish == true %}
+            <li><a href="/special-offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
+          {% endunless %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="offer-details">
+  <div class="offers-desc">
+    <h2>{{ page.title }}</h2>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/linebig.png" alt="Divider between sections" />
+    </div>
+    <p>{{ page.short_description }}</p>
+  </div>
+  <div class="offer-details-inner m-0 align-items-center">
+    <div id="offerDetailImages" class="carousel slide img-carousel" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for image in page.slider_images %}
+        <div class="carousel-item active" style="background-image:url('/assets/images/offers/carousel-img.png');">
+        </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#offerDetailImages" data-slide="prev" title="Carousel Prev">
+      </a>
+      <a class="carousel-control-next" href="#offerDetailImages" data-slide="next" title="Carousel Next">
+      </a>
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <h6>OFFER INCLUDES</h6>
+        <!-- <ul>
+          <li>Complimentary basic Wi-Fi</li>
+          <li>Daily Newspaper</li>
+          <li>Fitness Center access</li>
+          <li>Jaguar courtesy car, subject to availabiity</li>
+        </ul> -->
+        {{ page.offer_includes }}
+        <h6>TERMS & CONDITIONS</h6>
+        <!-- <ul>
+          <li>Maximum two night stay to avail this offer</li>
+          <li>100% non-refundable and fully deposited at the time of booking</li>
+          <li>Non-cancellable at time of booking. Reservation may not be transferred or modified in any way.</li>
+          <li>Rate Excludes Taxes</li>
+          <li>Guarantee/ Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</li>
+        </ul> -->
+        {{ page.terms }}
+        <a class="primary-btn" href="{{ page.booking_link }}">Book this Offer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="common-carousel">
+  <h2 class="text-center">Other Offers</h2>
+  <div class="crest-holder">
+		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
+	</div>
+  <div class="common-carousel-inner">
+    <div class="slick-controls" id="commonCarousel">
+      <div class="item">
+        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
+        <div class="content">
+          <h4>Offer Title One</h4>
+          <a href="#" class="secondary-btn">View this Special</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
+        <div class="content">
+          <h4>Offer Title Two</h4>
+          <a href="#" class="secondary-btn">View this Special</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
+        <div class="content">
+          <h4>Offer Title Three</h4>
+          <a href="#" class="secondary-btn">View this Special</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
+        <div class="content">
+          <h4>Offer Title Four</h4>
+          <a href="#" class="secondary-btn">View this Special</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="primary-btn" href="/offers/">View More Offers</a>
+  </div>
+</section>
