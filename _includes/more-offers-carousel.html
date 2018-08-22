@@ -1,0 +1,25 @@
+{% assign offers = site.data._models.special_offers | sort: "order" %}
+<section class="common-carousel">
+  <h2 class="text-center">Other Offers</h2>
+  <div class="crest-holder">
+		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
+	</div>
+  <div class="common-carousel-inner">
+    <div class="slick-controls" id="commonCarousel">
+      {% for offer in offers %} {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %} {% unless page.url == offer_url %} {% unless offer.unpublish == true %}
+      <div class="item">
+        <a href="/offers/{{ offer.url_friendly_name }}" title="{{ offer.title }}">
+          <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
+        </a>
+        <div class="content">
+          <h4><a href="/offers/{{ offer.url_friendly_name }}">{{ offer.title }}</a></h4>
+          <a href="/offers/{{ offer.url_friendly_name }}" class="secondary-btn">View this Special</a>
+        </div>
+      </div>
+      {% endunless %} {% endunless %} {% endfor %}
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="primary-btn" href="/offers/">View More Offers</a>
+  </div>
+</section>
