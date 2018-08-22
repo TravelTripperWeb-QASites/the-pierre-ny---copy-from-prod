@@ -42,8 +42,8 @@ meta_tags:
 
               <!-- Event Schedule -->
               <div class="schedule">
-                <span>{{ event.start_day }} - {% if event.end_day != "" %}{{ event.end_day }}{% endif %}</span>
-                <h4>{{ event.from_time }} - {% if event.to_time != "" %}{{ event.to_time }}{% endif %} {{ event.am_or_pm }}</h4>
+                <span>{{ event.start_day }}{% if event.end_day and event.end_day != "" %} - {{ event.end_day }}{% endif %}</span>
+                <h4>{{ event.from_time }} - {{ event.to_time }} {{ event.am_or_pm }}</h4>
               </div>
 
               <!-- Event Title -->
@@ -66,7 +66,7 @@ meta_tags:
                       <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
                       <a class="secondary-btn" href="{{ event.view_menu_url }}">View menus</a>
                     </div>
-                    <span>{{ event.event_contact }}</span>
+                    {{ event.event_contact }}
                   </div>
 
                 </div>
