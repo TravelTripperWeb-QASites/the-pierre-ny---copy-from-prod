@@ -1,0 +1,28 @@
+{
+  "title": "SHAREABLE SMALL PLATES",
+  "event_listing": [{
+      "event_name": "PRETZEL BITES | 9",
+      "event_detail": "sea salt, nori mustard, pimento cheese sauce"
+    },
+    {
+      "event_name": "STEAMED MUSSELS | 18",
+      "event_detail": "chorizo, garlic, chardonnay, tomato-fennel, cream, herb butter"
+    },
+    {
+      "event_name": "FRIED BRUSSELS SPROUTS | 11",
+      "event_detail": "bacon jam, red eye gravy, candied pecans, blue cheese"
+    },
+    {
+      "event_name": "FRIED CALAMARI | 14",
+      "event_detail": "lemon, broccoli, fresno chilies, sweet chili aioli"
+    },
+    {
+      "event_name": "AHI TUNA NACHOS | 13",
+      "event_detail": "avocado, mango, fresno chilies, chives, shiso, cilantro, crispy wonton chips, sriracha aioli, sesame seeds"
+    },
+    {
+      "event_name": "WINGS | 13",
+      "event_detail": "chili-garlic bbq, green onions, peanuts, carrots, celery, buttermilk ranch"
+    }
+  ]
+}
