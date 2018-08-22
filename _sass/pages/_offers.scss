@@ -176,6 +176,17 @@
 .common-carousel {
   padding: 40px 0;
   background-color: $secondary-color;
+  &.bg-white {
+    background-color: $white;
+  }
+  .common-carousel-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
   .common-carousel-inner {
     @include fixed-width-layout;
     .item {
