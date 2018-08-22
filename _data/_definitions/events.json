@@ -1,0 +1,82 @@
+{
+  "category_title": {
+    "label": "Category Name",
+    "required": true,
+    "hint": "Enter event categroy name"
+  },
+  "category_id": {
+    "label": "Category Id",
+    "required": true,
+    "hint": "Should be in lowercase without spaces"
+  },
+  "category_intro": {
+    "label": "Category Intro",
+    "required": true,
+    "hint": "Short description of event category here"
+  },
+  "category_image": {
+    "label": "Category Image",
+    "required": true,
+    "type": "image"
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true,
+    "hint": "Enter sort order for sub categories"
+  },
+  "event_listing": {
+    "type": "nested",
+    "multiple": true,
+    "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
+    "fields": {
+      "event_name": {
+        "required": true
+      },
+      "event_heading_id": {
+        "required": true,
+        "hint": "Should be in lowercase without spaces"
+      },
+      "event_collapse_id": {
+        "required": true,
+        "hint": "Should be in lowercase without spaces"
+      },
+      "event_detail": {
+        "required": true
+      },
+      "start_day": {
+        "required": true,
+        "type": "select",
+        "options": ["Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"],
+        "hint": "Choose only start Day incase of single day event"
+      },
+      "end_day": {
+        "type": "select",
+        "options": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "hint": "select this only if it's a multiple day event"
+      },
+      "from_time": {
+        "required": true
+      },
+      "to_time": {
+        "required": true
+      },
+      "am_or_pm": {
+        "required": true,
+        "type": "select",
+        "options": ["AM", "PM"]
+      },
+      "event_contact": {
+        "required": true,
+        "type": "richtext",
+        "hint": "Please add text with urls if any. To do so, get into code mode."
+      },
+      "event_booking_id": {
+        "required": true,
+        "hint": "Enter booking id from OpentTable widget here"
+      },
+      "view_menu_url": {
+        "hint": "Enter menu url here"
+      }
+    }
+  }
+}
