@@ -44,6 +44,7 @@
       border-radius: 0;
 
       .card-header {
+        position: relative;
         padding: 15px 0;
         cursor: pointer;
         background: $item-bg-color;
@@ -51,8 +52,8 @@
 
         .schedule {
           float: left;
-          padding: 0 75px;
-          border-right: solid 1px $item-border-color-light;
+          padding: 0 20px;
+          border-right: 0;
 
           span {
             display: inline-block;
@@ -65,18 +66,46 @@
           h4 {
             color: $white;
           }
+
+          @include media-breakpoint-up(md) {
+            padding: 0 20px;
+            border-right: solid 1px $item-border-color-light;
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding: 0 50px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            padding: 0 75px;
+          }
         }
 
         h3 {
           float: left;
-          padding: 20px 75px 0;
+          max-width: 300px;
+          padding: 5px 20px 0;
           color: $white;
+
+          @include media-breakpoint-up(md) {
+            max-width: 100%;
+            padding: 20px 20px 0;
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding: 20px 50px 0;
+          }
+
+          @include media-breakpoint-up(xl) {
+            padding: 20px 75px 0;
+          }
         }
 
         // Control Icons
         .controls {
-          float: right;
-          padding: 30px 50px 0;
+          @include vertical-center;
+          position: absolute;
+          right: 50px;
 
           svg {
             font-size: 24px;
@@ -120,7 +149,7 @@
 
       .card-body {
         padding: 30px;
-        
+
         .wrapper {
           text-align: center;
 
@@ -167,17 +196,33 @@
               }
 
               .ot-dtp-picker-form {
-                height: 60px;
+                display: inline-block;
+                height: 100%;
                 border-radius: 0;
                 outline: solid 4px rgba(0,0,0,.1);
+
+                @include media-breakpoint-up(lg) {
+                  display: inherit;
+                  height: 60px;
+                }
               }
 
               .ot-dtp-picker-selector {
-                width: 170px;
+                position: relative;
+                width: 100%;
                 height: 60px;
+                border-bottom: solid 1px $border-color;
+                border-left: 0;
+
+                @include media-breakpoint-up(lg) {
+                  width: 170px;
+                  border-bottom: 0;
+                  border-left: solid 1px $border-color;
+                }
 
                 select {
-                  width: auto;
+                  left: 0;
+                  width: 100%;
                 }
 
                 .ot-dtp-picker-selector-link {
@@ -194,7 +239,7 @@
               }
 
               .ot-dtp-picker-button {
-                width: 205px;
+                width: 100%;
                 height: 58px;
                 font-family: $tertiary-header-font;
                 font-size: $type-size-9;
@@ -207,6 +252,10 @@
 
                 &:hover {
                   background-color: $text-color;
+                }
+
+                @include media-breakpoint-up(lg) {
+                  width: 205px;
                 }
               }
 
