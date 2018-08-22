@@ -189,6 +189,13 @@
       .content {
         padding: 20px;
         background-color: $white;
+        h4 {
+          a {
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
     .slick-arrow {
