@@ -61,6 +61,12 @@ $(window)
           window.location.href = link;
         });
     }
+    $(".categories__list li").hover(function(){
+      $(this).find(".list-dropdown").slideDown(100);
+  }, function(){
+      $(this).find(".list-dropdown").slideUp(100);
+  });
+
   });
 
 // Instagram API script
