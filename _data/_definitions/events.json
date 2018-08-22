@@ -46,13 +46,12 @@
       "start_day": {
         "required": true,
         "type": "select",
-        "options": ["Everyday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "hint": "Choose only start Day incase of single day event"
+        "options": ["Everyday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
       },
       "end_day": {
         "type": "select",
         "options": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "hint": "select this only if it's a multiple day event"
+        "hint": "Select this only if it's a multiple day event"
       },
       "from_time": {
         "required": true
