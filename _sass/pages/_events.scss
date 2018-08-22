@@ -41,7 +41,12 @@
 
     .card {
       border: 1px solid $item-border-color;
+      border-bottom: 0;
       border-radius: 0;
+
+      &:last-child {
+        border-bottom: 1px solid $item-border-color;
+      }
 
       .card-header {
         position: relative;
