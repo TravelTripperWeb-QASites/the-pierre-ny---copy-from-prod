@@ -16,7 +16,6 @@ meta_tags:
       <p class="theme-line-3">{{ page.date }}</p>
     {% endif %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <!-- <h6>Enjoy a Luxurious experience for exceptional value at the pierre. Browse our special offers below.</h6> -->
     <a class="primary-btn inverse mt-4" href="{{ page.booking_link }}" target="_blank">Book this offer</a>
   </div>
 </section>
@@ -26,10 +25,10 @@ meta_tags:
   <div class="offers-menu-inner">
     <ul>
       {% for offer in offers %}
-        {% assign offer_url = offer.url_friendly_name | prepend: '/special-offers/' | append: '/' %}
+        {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %}
         {% unless page.url == offer_url %}
           {% unless offer.unpublish == true %}
-            <li><a href="/special-offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
+            <li><a href="/offers/{{ offer.url_friendly_name }}/">{{ offer.title }}</a></li>
           {% endunless %}
         {% endunless %}
       {% endfor %}
@@ -49,7 +48,7 @@ meta_tags:
     <div id="offerDetailImages" class="carousel slide img-carousel" data-ride="carousel">
       <div class="carousel-inner">
         {% for image in page.slider_images %}
-        <div class="carousel-item active" style="background-image:url('/assets/images/offers/carousel-img.png');">
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background-image:url('{{ image.url }}');">
         </div>
         {% endfor %}
       </div>
@@ -83,44 +82,4 @@ meta_tags:
   </div>
 </section>
 
-<section class="common-carousel">
-  <h2 class="text-center">Other Offers</h2>
-  <div class="crest-holder">
-		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
-	</div>
-  <div class="common-carousel-inner">
-    <div class="slick-controls" id="commonCarousel">
-      <div class="item">
-        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
-        <div class="content">
-          <h4>Offer Title One</h4>
-          <a href="#" class="secondary-btn">View this Special</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
-        <div class="content">
-          <h4>Offer Title Two</h4>
-          <a href="#" class="secondary-btn">View this Special</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
-        <div class="content">
-          <h4>Offer Title Three</h4>
-          <a href="#" class="secondary-btn">View this Special</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('/assets/images/offers/offer-img.jpg');"></div>
-        <div class="content">
-          <h4>Offer Title Four</h4>
-          <a href="#" class="secondary-btn">View this Special</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center">
-    <a class="primary-btn" href="/offers/">View More Offers</a>
-  </div>
-</section>
+{% include more-offers-carousel.html %}
