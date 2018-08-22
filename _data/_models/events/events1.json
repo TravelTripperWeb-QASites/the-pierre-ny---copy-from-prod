@@ -1,21 +1,19 @@
 {
   "title": "SHAREABLE SMALL PLATES",
-  "event_listing": [
-    {
-      "event_name": "A Midsummer Night's Soirée!",
-      "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "event_heading_id": "midsummer",
-      "event_collapse_id": "soiree",
-      "start_day": "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday",
-      "end_day": "Monday",
-      "from_time": "6:30",
-      "to_time": "9:30",
-      "am_or_pm": "PM",
-      "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
-      "event_booking_id": "34024",
-      "view_menu_url": "#"
-    }
-  ],
+  "event_listing": [{
+    "event_name": "A Midsummer Night's Soirée!",
+    "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "event_heading_id": "midsummer",
+    "event_collapse_id": "soiree",
+    "start_day": "Sunday",
+    "end_day": "Monday",
+    "from_time": "6:30",
+    "to_time": "9:30",
+    "am_or_pm": "PM",
+    "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
+    "event_booking_id": "34024",
+    "view_menu_url": "#"
+  }],
   "category_title": " Summer of Rosé",
   "category_id": "summerrose",
   "category_intro": "Our outdoor event series continues! Join Perrine and Château Miraval on July 26th for A Midsummer Night's Soirée featuring food, music and endless Miraval Côtes de Provence Rosé! Tickets now on sale. ",

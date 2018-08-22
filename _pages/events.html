@@ -36,7 +36,7 @@ meta_tags:
         {% for event in item.event_listing %}
           <!-- Event -->
           <div class="card">
-            <div class="card-header" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
+            <div class="card-header" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
 
               <!-- Event Schedule -->
               <div class="schedule">
@@ -54,7 +54,7 @@ meta_tags:
               </div>
             </div>
 
-            <div id="{{ event.event_collapse_id }}" class="collapse show" aria-labelledby="{{ event.event_heading_id }}" data-parent="{{ item.category_id }}">
+            <div id="{{ event.event_collapse_id }}" class="collapse show" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
                   <p>{{ event.event_detail }}</p>
