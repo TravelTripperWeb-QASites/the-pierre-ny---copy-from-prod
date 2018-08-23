@@ -1,0 +1,45 @@
+// History page styling
+
+.history {
+  @include fixed-width-layout;
+  margin: 70px auto;
+
+  .history-wrapper {
+    @include make-row;
+
+    .history-nav {
+      @include make-col-ready;
+      margin: 0;
+      padding: 0;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(2);
+        text-align: center;
+      }
+
+      li {
+        list-style: none;
+
+        a {
+          font-family: $secondary-header-font;
+          font-size: $type-size-4;
+          line-height: 2.5rem;
+          color: $text-color;
+        }
+      }
+    }
+
+    .history-details {
+      @include make-col-ready;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(10);
+      }
+
+      .history-images, .history-content {
+        -ms-flex: 1 1 auto !important;
+        flex: 1 1 auto !important;
+      }
+    }
+  }
+}

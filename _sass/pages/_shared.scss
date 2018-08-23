@@ -141,6 +141,7 @@
   }
 }
 
+
 .twocol {
   @include fluid-layout;
   background-color: $secondary-color;
@@ -222,4 +223,12 @@
       width: 100%;
     }
   }
+}
+//Quotation block styling
+.quote {
+  width: 100%;
+  padding: 90px 20px;
+  text-align: center;
+  text-transform: none;
+  background: $secondary-color;
 }
