@@ -160,11 +160,13 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+    display: flex;
+    align-items: center;
     .content-holder {
       margin: 0 auto;
       padding: 40px 15px;
       text-align: center;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         max-width: 90%;
       }
       @include media-breakpoint-up(lg) {
@@ -219,9 +221,18 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+    display: flex;
+    align-items: center;
+    background-color: $white;
     .logo-holder {
-      max-width: 300px;
-      margin: 0 auto;
+      max-width: 200px;
+      margin: 40px auto;
+      @include media-breakpoint-up(md) {
+        margin: 0 auto;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: 300px;
+      }
     }
     img {
       width: 100%;
