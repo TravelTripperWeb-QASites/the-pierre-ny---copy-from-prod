@@ -1,11 +1,13 @@
 {
-  "timeline_images": [
-    {
+  "timeline_images": [{
+    "history_image": {
+      "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
+      "alt": "1950s"
     }
-  ],
-  "year": 1940,
-  "year_id": "rtee",
-  "year_ada_id": "erfef",
-  "from_year_to_year": "1234",
-  "year_intro": "<p>weewvwe</p>"
+  }],
+  "year": 1932,
+  "year_id": "nineteenthirtytwo",
+  "year_ada_id": "nineteenthirtytwoada",
+  "from_year_to_year": "1932",
+  "year_intro": "<p>In 1932, the stately Georgian Room was opened with renowned Chef <strong>August Escoffier</strong>. It was transformed into an Art Deco supper club, ushering in two decades of Big Band entertaining.</p>\n<p>Star patrons included <strong>Coco Chanel</strong>, who made The Pierre her home when she first traveled to the US, and <strong>Henry Fonda</strong>, who celebrated his wedding to <strong>Frances Seymour</strong> in the rooftop ballroom.</p>"
 }
