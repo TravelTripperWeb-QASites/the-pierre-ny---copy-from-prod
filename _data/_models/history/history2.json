@@ -1,1 +1,20 @@
-
+{
+  "timeline_images": [{
+      "history_image": {
+        "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
+        "alt": "1950s"
+      }
+    },
+    {
+      "history_image": {
+        "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
+        "alt": "1960s"
+      }
+    }
+  ],
+  "year": 1930,
+  "year_id": "nineteenthirty",
+  "year_ada_id": "nineteenthirtyada",
+  "from_year_to_year": "1930",
+  "year_intro": "<p>After five years of planning, Frenchman Charles Pierre Casalasco's dream to build the world's most elegant hotel comes true. Backed by Walter P. Chrysler, E.F. Hutton, and a group of influential New Yorkers, The Pierre opens its doors on October 1, 1930.</p>\n<p>The world changes almost overnight. The Great Depression, Prohibition and speakeasies mark the end of the Gilded Age, ushering in the new Caf&eacute; Society. Bond holders take over and ask Charles Pierre to stay on as Managing Director. His first task - transforming his hotel into a playground for this new creative class.</p>"
+}
