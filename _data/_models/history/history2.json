@@ -1,12 +1,8 @@
 {
   "timeline_images": [{
-      "history_image": {
         "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
         "alt": "1950s"
-      }
-    },
-    {
-      "history_image": {
+      }, {
         "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
         "alt": "1960s"
       }
