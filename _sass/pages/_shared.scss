@@ -219,6 +219,10 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+    .logo-holder {
+      max-width: 300px;
+      margin: 0 auto;
+    }
     img {
       width: 100%;
     }
