@@ -163,9 +163,12 @@ setTimeout(function () {
     .css('display', 'none');
 }, 2500);
 
-$('#historySec')
-  .on('hidden.bs.collapse', function () {
-    $('.collapse')
-      .addClass('no-transition')
-      .collapse('toggle')
-  })
+
+$(".history-nav a")
+  .click(function () {
+    $(".history-nav a")
+      .removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below
+    $(this)
+      .addClass("active");
+  });
