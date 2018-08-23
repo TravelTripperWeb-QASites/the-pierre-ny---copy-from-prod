@@ -133,7 +133,7 @@ $(window)
 
 //home offers slick
 setTimeout(function () {
-  $('#commonCarousel')
+  $('#commonCarousel, #rotundaCarousel')
     .slick({
       dots: false,
       infinite: true,
