@@ -49,9 +49,9 @@ meta_tags:
           <div class="history-images">
             <div id="historyPics" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-                {% for image in details.history %}
+                {% for image in details.timeline_images %}
                   <div class="carousel-item {% if forloop.first%}active{% endif %}">
-                    <img class="d-block w-100" src="{{ image.timeline_images.url }}" alt="{{ image.timeline_images.alt }}">
+                    <img class="d-block w-100" src="{{ image.history_image.url }}" alt="{{ image.history_image.alt }}">
                   </div>
                 {% endfor %}
               </div>
