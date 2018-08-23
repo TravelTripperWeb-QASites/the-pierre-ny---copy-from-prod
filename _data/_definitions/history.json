@@ -1,5 +1,6 @@
 {
   "year": {
+    "type": "integer",
     "label": "Year",
     "required": true,
     "hint": "Enter Year"
