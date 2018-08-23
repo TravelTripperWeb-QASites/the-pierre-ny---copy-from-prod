@@ -30,7 +30,7 @@ meta_tags:
 </div>
 
 <!-- History section here -->
-{% assign history = site.data._models.history %}
+{% assign history = site.data._models.history | sort:'year' %}
 <section class="history">
 
   <div class="history-wrapper accordion" id="historySec">
@@ -38,36 +38,40 @@ meta_tags:
     <ul class="history-nav" role="tablist" tabindex="0">
       {% for year in history %}
         <li id="{{ year.year_ada_id }}" role="tab">
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#{{ year.year_id }}" aria-expanded="true" aria-controls="{{ year.year_id }}">{{ year.year }}</a>
+          <a {% if forloop.first%}class="active" {% endif %} href="javascript:void(0);" data-toggle="collapse" data-target="#{{ year.year_id }}" aria-expanded="true" aria-controls="{{ year.year_id }}">{{ year.year }}</a>
         </li>
       {% endfor %}
     </ul>
 
     {% for details in history %}
-      <div class="history-details collapse show" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
-        <div class="d-flex">
+      <div class="history-details collapse {% if forloop.index0 == 0 %}show{% endif %}" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
+        <div class="history-details-wrap">
           <div class="history-images">
             <div id="historyPics" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 {% for image in details.timeline_images %}
-                  <div class="carousel-item {% if forloop.first%}active{% endif %}">
-                    <img class="d-block w-100" src="{{ image.history_image.url }}" alt="{{ image.history_image.alt }}">
+                  <div class="carousel-item {% if forloop.first%}active{% endif %}" style="background-image:url('{{ image.history_image.url }}')">
+                    <!-- <img class="d-block w-100" src="{{ image.history_image.url }}" alt="{{ image.history_image.alt }}"> -->
                   </div>
                 {% endfor %}
               </div>
-              <a class="carousel-control-prev" href="#historyPics" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#historyPics" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              {% if details.timeline_images.size > 1 %}
+                <a class="carousel-control-prev" href="#historyPics" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#historyPics" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              {% endif %}
             </div>
           </div>
           <div class="history-content">
-            <h6>{{ details.from_year_to_year }}</h6>
-            <p>{{ details.year_intro }}</p>
+            <div class="wrap">
+              <h2>{{ details.from_year_to_year }}</h2>
+              <p>{{ details.year_intro }}</p>
+            </div>
           </div>
         </div>
       </div>

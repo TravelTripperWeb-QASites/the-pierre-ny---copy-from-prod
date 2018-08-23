@@ -247,3 +247,8 @@
   text-transform: none;
   background: $secondary-color;
 }
+
+//For Accordion transition
+.no-transition {
+  transition: none !important;
+}
