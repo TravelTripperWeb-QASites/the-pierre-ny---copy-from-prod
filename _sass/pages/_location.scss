@@ -10,6 +10,7 @@
     @include make-row;
   }
   .img-block {
+    @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(4);
     }
@@ -21,17 +22,46 @@
 
 .content-wrapper {
   @include fixed-width-layout;
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 99px;
+  }
   .content-wrapper-inner {
     @include make-row;
   }
   .left-content {
+    @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(8);
     }
+    .left-content-inner {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 80%;
+      }
+      h4 {
+        margin: 40px 0 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
   }
   .right-content {
+    @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(4);
+    }
+    .right-content-inner {
+      margin-bottom: 30px;
+      p {
+        span {
+          display: block;
+        }
+      }
+      h6 {
+        margin-bottom: 16px;
+      }
     }
   }
 }
