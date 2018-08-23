@@ -1,0 +1,33 @@
+{
+  "title": {
+    "required": true,
+    "placeholder": "Historical Timeline Decade"
+  },
+
+  "history_image1": {
+    "required": true,
+    "type": "image",
+    "instructions": "Main image"
+  },
+  "history_image2": {
+    "type": "image",
+    "instructions": "Optional images"
+  },
+  "history_image3": {
+    "type": "image",
+    "instructions": "Optional images"
+  },
+  "period_in_time": {
+    "required": true,
+    "instructions": "period in time (eg. 1956-1960)"
+  },
+  "Sub_title": {
+    "required": true,
+    "instructions": ""
+  },
+   "details": {
+    "required": true,
+    "type": "richtext"
+  }
+
+ }
