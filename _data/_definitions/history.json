@@ -27,7 +27,6 @@
     "hint": "Short description of event category here"
   },
   "timeline_images": {
-    "required": true,
     "type": "nested",
     "multiple": true,
     "hint": "Enter images of this particualr period.",
