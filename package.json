@@ -19,6 +19,6 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "uglify": "assets/js/angular.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/_main.js -c -o assets/js/main.min.js"
+    "uglify": "uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/_main.js -c -o assets/js/main.min.js"
   }
 }
