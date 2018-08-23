@@ -1,2 +1,37 @@
 // Location Page Elements
 // ==========================================================================
+
+.three-images {
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 99px;
+  }
+  .three-images-inner {
+    @include make-row;
+  }
+  .img-block {
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.content-wrapper {
+  @include fixed-width-layout;
+  .content-wrapper-inner {
+    @include make-row;
+  }
+  .left-content {
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+    }
+  }
+  .right-content {
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+}
