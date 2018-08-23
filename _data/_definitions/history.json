@@ -6,12 +6,12 @@
     "hint": "Enter Year"
   },
   "year_id": {
-    "label": "timeline_id",
+    "label": "Timeline Id",
     "required": true,
     "hint": "Should be in lowercase without spaces"
   },
   "year_ada_id": {
-    "label": "timeline_id",
+    "label": "ADA Id",
     "required": true,
     "hint": "Should be in lowercase without spaces"
   },
