@@ -95,6 +95,24 @@ p {
   margin-bottom: 1.3rem;
 }
 
+q {
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: $secondary-header-font;
+  font-size: $type-size-4;
+  line-height: 2.5rem;
+  color: $text-color;
+
+  &::before, &::after {
+    display: none;
+  }
+
+  span {
+    color: $primary-color;
+  }
+}
+
 u,
 ins {
   text-decoration: none;
