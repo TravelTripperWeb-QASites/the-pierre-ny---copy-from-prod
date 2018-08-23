@@ -1,0 +1,3 @@
+{
+    "Image": { "required": true, "type": "image" }
+}
