@@ -46,27 +46,6 @@
   }
 }
 
-.intro-text {
-  max-width: 785px;
-  margin: auto;
-  padding: 35px 15px 35px;
-  @include media-breakpoint-up(md) {
-    padding: 99px 15px 44px;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  p {
-    margin-bottom: 0;
-    font-size: $type-size-9;
-    color: $text-color;
-    text-align: center;
-  }
-}
-
 .heading {
   position: absolute;
   bottom: 0;
