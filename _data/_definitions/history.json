@@ -21,6 +21,7 @@
     "hint": "Enter from & to Years"
   },
   "year_intro": {
+    "type": "richtext",
     "label": "Category Intro",
     "required": true,
     "hint": "Short description of event category here"
