@@ -44,7 +44,7 @@ meta_tags:
     </ul>
 
     {% for details in history %}
-      <div class="history-details collapse show" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
+      <div class="history-details collapse {% if forloop.index0 == 0 %}show{% endif %}" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
         <div class="d-flex">
           <div class="history-images">
             <div id="historyPics" class="carousel slide" data-ride="carousel">
@@ -66,7 +66,7 @@ meta_tags:
             </div>
           </div>
           <div class="history-content">
-            <h6>{{ details.from_year_to_year }}</h6>
+            <h4>{{ details.from_year_to_year }}</h4>
             <p>{{ details.year_intro }}</p>
           </div>
         </div>

@@ -61,11 +61,16 @@ $(window)
           window.location.href = link;
         });
     }
-    $(".categories__list li").hover(function(){
-      $(this).find(".list-dropdown").slideDown(100);
-  }, function(){
-      $(this).find(".list-dropdown").slideUp(100);
-  });
+    $(".categories__list li")
+      .hover(function () {
+        $(this)
+          .find(".list-dropdown")
+          .slideDown(100);
+      }, function () {
+        $(this)
+          .find(".list-dropdown")
+          .slideUp(100);
+      });
 
   });
 
@@ -126,9 +131,10 @@ $(window)
     });
   });
 
-  //home offers slick
-  setTimeout(function() {
-    $('#commonCarousel').slick({
+//home offers slick
+setTimeout(function () {
+  $('#commonCarousel')
+    .slick({
       dots: false,
       infinite: true,
       speed: 300,
@@ -153,5 +159,13 @@ $(window)
         }
       ]
     });
-    $('.loading').css('display', 'none');
-  },2500);
+  $('.loading')
+    .css('display', 'none');
+}, 2500);
+
+$('#historySec')
+  .on('hidden.bs.collapse', function () {
+    $('.collapse')
+      .addClass('no-transition')
+      .collapse('toggle')
+  })
