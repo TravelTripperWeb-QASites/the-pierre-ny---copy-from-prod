@@ -23,7 +23,7 @@ meta_tags:
 
   <!-- History slider -->
   {% assign history = site.data._models.history | sort: 'title' %}
-  <div class="container" id="timeline">
+  <div class="years-timeline" id="timeline">
     <div id="historyCarousel" class="carousel slide carousel-fade">
       <ol class="carousel-indicators" role="tablist" tabindex="0">
         {%for item in history%}
@@ -35,9 +35,9 @@ meta_tags:
       <div class="carousel-inner" role="tablist">
         {%for item in history %}
         <div class="carousel-item {% if forloop.first%} active {% endif %}" role="tabpanel">
-          <div class="container">
+          <div class="images-slide">
             <div class="row">
-              <div class="col-md-7">
+              <div class="slide">
                 {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
                 <div class="your-class" id="slideimage{{forloop.index0}}">
                   {% endif %}
@@ -52,10 +52,9 @@ meta_tags:
                 </div>
                 {% endif %}
               </div>
-              <div class="col-md-5">
-                <div class="hotel-details" tabindex="0">
-                  <h5>{{item.period_in_time}}</h5>
-                  {{item.details}}
+              <div class="history-info ">
+                <div class="details" tabindex="0">
+                  <h5>{{item.period_in_time}}</h5> {{item.details}}
                 </div>
               </div>
             </div>
@@ -67,3 +66,36 @@ meta_tags:
   </div>
   <!-- History slider -->
 </section>
+
+<script>
+		$(document).ready(function() {
+
+			$('#historyCarousel').carousel('pause');
+			$("#slideimage0").slick({
+				autoplay: true,
+				arrows: false
+			});
+			$('#historyCarousel ol li').on("click", function() {
+				setTimeout(function() {
+					var slideimage = $('#historyCarousel ol li.active').attr('data-slide-to');
+					$('#slideimage' + slideimage).slick({
+						autoplay: true,
+						arrows: false
+					});
+
+				}, 500);
+			});
+
+
+
+		});
+		$('.carousel').carousel();
+		var caption = $('div.carousel-item:nth-child(1) .carousel-caption');
+		$('#right h1').html(caption.html());
+		caption.css('display', 'none');
+		$(".carousel").on('slide.bs.carousel', function(evt) {
+			var caption = $('div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+			$('#right h1').html(caption.html());
+			caption.css('display', 'none');
+		});
+	</script>

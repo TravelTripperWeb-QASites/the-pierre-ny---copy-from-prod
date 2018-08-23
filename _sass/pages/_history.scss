@@ -24,38 +24,41 @@
 }
 //*WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
 //now override the 3.3 new styles for modern browsers & apply opacity
-
 @media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-fade .carousel-inner > .item.active.right,
-  .carousel-fade .carousel-inner > .item.next {
+  .carousel-fade .carousel-inner > .carousel-item.active.right,
+  .carousel-fade .carousel-inner > .carousel-item.next {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 
-  .carousel-fade .carousel-inner > .item.active.left,
-  .carousel-fade .carousel-inner > .item.prev {
+  .carousel-fade .carousel-inner > .carousel-item.active.left,
+  .carousel-fade .carousel-inner > .carousel-item.prev {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 
-  .carousel-fade .carousel-inner > .item.active,
-  .carousel-fade .carousel-inner > .item.next.left,
-  .carousel-fade .carousel-inner > .item.prev.right {
+  .carousel-fade .carousel-inner > .carousel-item.active,
+  .carousel-fade .carousel-inner > .carousel-item.next.left,
+  .carousel-fade .carousel-inner > .carousel-item.prev.right {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
+.years-timeline {
+  @include fixed-width-layout;
+}
+
 .accolades-history {
   margin-top: 60px;
+  background-color: #f8f7f7;
 
   h2 {
-    color: #231f20 !important;
+    color: $text-color !important;
   }
-  background-color: #f8f7f7;
 }
 
 #historyCarousel {
@@ -74,10 +77,6 @@
       position: absolute;
     }
 
-    .container {
-      padding: 0;
-    }
-
     li {
       position: relative;
       display: inline-block;
@@ -86,7 +85,7 @@
       margin-bottom: 28px;
       text-indent: 12px;
       background: none;
-      border: none;
+      border: 0;
       @include media-breakpoint-up(sm) {
         min-width: 174px;
         margin-bottom: 0;
@@ -120,7 +119,7 @@
         width: 28px;
         height: 28px;
         content: '';
-        border: .15rem solid $white;
+        border: 0.15rem solid $white;
         border-radius: 50%;
         @include media-breakpoint-up(sm) {
           top: 20%;
@@ -135,22 +134,22 @@
         }
 
         &:after {
-          background-color: #231f20;
+          background-color: $text-color;
         }
 
         &:before {
-          border: .15rem solid $primary-color;
+          border: 0.15rem solid $primary-color;
         }
       }
 
       h5 {
         margin: 0;
-        font-family: 'roboto_condensedlight';
+        font-family: $secondary-header-font;
         font-size: 25px;
         line-height: 25px;
-        color: #231f20;
+        color: $text-color;
         letter-spacing: 1px;
-        opacity: .6;
+        opacity: 0.6;
         @include media-breakpoint-up(sm) {
           font-size: 50px;
           line-height: 56px;
@@ -160,8 +159,15 @@
   }
 
   .carousel-inner {
-    .col-md-7 {
+
+    .images-slide {
+      @include fixed-width-layout;
+    }
+
+    .slide {
+      @include make-col-ready();
       @include media-breakpoint-up(md) {
+        @include make-col(7);
         padding-left: 180px;
       }
 
@@ -178,73 +184,75 @@
     }
   }
 
-  .hotel-details {
-    padding-right: 0;
-    @include media-breakpoint-up(sm) {
-      padding-right: 25px;
+  .history-info {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(5);
     }
 
-    p {
-      margin: 0;
-      padding: 0 0 20px;
-      font-family: 'sunlight';
-      font-size: 16px;
-      line-height: 30px;
-    }
+    .details {
+      padding-right: 0;
+      @include media-breakpoint-up(sm) {
+        padding-right: 25px;
+      }
 
-    h5 {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      font-family: 'roboto_condensedlight';
-      font-size: 36px;
-      color: $primary-color;
-    }
+      p {
+        margin: 0;
+        padding: 0 0 20px;
+      }
 
-    h6 {
+      h5 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: $secondary-header-font;
+        font-size: $type-size-4;
+        color: $primary-color;
+      }
 
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .1rem;
+      h6 {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
     }
   }
 }
 
-.your-class{
+.your-class {
+  .slick-arrow {
+    position: absolute;
+    z-index: 20;
+    display: inline-block;
+    text-indent: -1000px;
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    background-color: $primary-color;
+    color: #000;
+    font-size: 0;
+    width: 30px;
+    padding-top: 10px;
+    opacity: 0.5;
 
-   .slick-arrow{
-      display: inline-block;
-      // text-indent: -1000px;
-      position: absolute;
-      z-index: 20;
-      background-color: transparent;
-      border: 0;
-      height: 40px;
-      width:40px;
-      background-color: $primary-color;
-      color: #000;
-      font-size:0;
-      width: 30px;
-      padding-top: 10px;
-     opacity: .5;
-      &.slick-prev{
+    &.slick-prev {
+      left: 0;
+      top: 50%;
 
-          left: 0;
-          top: 50%;
-       &:before{
-          font: normal normal normal 14px/1 FontAwesome;
-          content: "\f053";
+      &:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f053";
       }
-      }
-      &.slick-next{
+    }
 
-        right: 0;
-        top: 50%;
-       &:before{
-          font: normal normal normal 14px/1 FontAwesome;
-          content: "\f054";
+    &.slick-next {
+      right: 0;
+      top: 50%;
 
+      &:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f054";
       }
-      }
-   }
-
+    }
+  }
 }
