@@ -11,89 +11,67 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/history/hero.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">THE PIERRE HISTORY</h1>
+    {% regionblock history_title, type:header %}
+      <h1 class="variant">THE PIERRE HISTORY</h1>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>THE MAKING OF A LEGEND</h6>
+    {% regionblock history_subtitle, type:header %}
+      <h6>THE MAKING OF A LEGEND</h6>
+    {% endregionblock %}
   </div>
 </section>
-<section "history-intro">
-  <div class="intro-text">
-    <h2>For over 85 years, The Pierre has set the standard for timeless elegance and unrivaled hospitality in New York city.</h2>
-  </div>
 
-  <!-- History slider -->
-  {% assign history = site.data._models.history | sort: 'title' %}
-  <div class="years-timeline" id="timeline">
-    <div id="historyCarousel" class="carousel slide carousel-fade">
-      <ol class="carousel-indicators" role="tablist" tabindex="0">
-        {%for item in history%}
-        <li data-target="#historyCarousel" role="tab" data-slide-to="{{forloop.index0}}" {% if forloop.first%}class="active" {% endif %}>
-          <h5>{{item.title}}</h5></li>
-        {% endfor %}
-      </ol>
-      <!-- Carousel items -->
-      <div class="carousel-inner" role="tablist">
-        {%for item in history %}
-        <div class="carousel-item {% if forloop.first%} active {% endif %}" role="tabpanel">
-          <div class="images-slide">
-            <div class="row">
-              <div class="slide">
-                {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
-                <div class="your-class" id="slideimage{{forloop.index0}}">
-                  {% endif %}
-                  <div class="hotel-image" style="background-image: url({{item.history_image1.url_large}});"> </div>
-                  {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
-                  <div class="hotel-image" style="background-image: url({{item.history_image2.url_large}});">
+<div class="quote">
+  <q>
+    {% regionblock history_details, type:text %}
+      For over 85 years, The Pierre has set the standard for <span>timeless elegance</span> and <span>unrivaled hospitality in New York city</span>.
+    {% endregionblock %}
+  </q>
+</div>
+
+<!-- History section here -->
+{% assign history = site.data._models.history %}
+<section class="history">
+
+  <div class="history-wrapper accordion" id="historySec">
+
+    <ul class="history-nav" role="tablist" tabindex="0">
+      {% for year in history %}
+        <li id="{{ year.year_ada_id }}" role="tab">
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#{{ year.year_id }}" aria-expanded="true" aria-controls="{{ year.year_id }}">{{ year.year }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% for details in history %}
+      <div class="history-details collapse show" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
+        <div class="d-flex">
+          <div class="history-images">
+            <div id="historyPics" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                {% for image in details.history %}
+                  <div class="carousel-item {% if forloop.first%}active{% endif %}">
+                    <img class="d-block w-100" src="{{ image.timeline_images.url }}" alt="{{ image.timeline_images.alt }}">
                   </div>
-                  {% endif %} {% if item.history_image3.url_large and item.history_image3.url_large != ''%}
-                  <div class="hotel-image" style="background-image: url({{item.history_image3.url_large}});">
-                  </div>
-                  {% endif %} {% if item.history_image2.url_large and item.history_image2.url_large != ''%}
-                </div>
-                {% endif %}
+                {% endfor %}
               </div>
-              <div class="history-info ">
-                <div class="details" tabindex="0">
-                  <h5>{{item.period_in_time}}</h5> {{item.details}}
-                </div>
-              </div>
+              <a class="carousel-control-prev" href="#historyPics" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#historyPics" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
+          <div class="history-content">
+            <h6>{{ details.from_year_to_year }}</h6>
+            <p>{{ details.year_intro }}</p>
+          </div>
         </div>
-        {% endfor %}
       </div>
-    </div>
+    {% endfor %}
   </div>
-  <!-- History slider -->
+
 </section>
-
-<script>
-		$(document).ready(function() {
-
-			$('#historyCarousel').carousel('pause');
-			$("#slideimage0").slick({
-				autoplay: true,
-				arrows: false
-			});
-			$('#historyCarousel ol li').on("click", function() {
-				setTimeout(function() {
-					var slideimage = $('#historyCarousel ol li.active').attr('data-slide-to');
-					$('#slideimage' + slideimage).slick({
-						autoplay: true,
-						arrows: false
-					});
-
-				}, 500);
-			});
-
-		});
-		$('.carousel').carousel();
-		var caption = $('div.carousel-item:nth-child(1) .carousel-caption');
-		$('#right h1').html(caption.html());
-		caption.css('display', 'none');
-		$(".carousel").on('slide.bs.carousel', function(evt) {
-			var caption = $('div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
-			$('#right h1').html(caption.html());
-			caption.css('display', 'none');
-		});
-	</script>

@@ -1,33 +1,39 @@
 {
-  "title": {
+  "year": {
+    "type": "integer",
+    "label": "Year",
     "required": true,
-    "placeholder": "Historical Timeline Decade"
+    "hint": "Enter Year"
   },
-
-  "history_image1": {
+  "year_id": {
+    "label": "Timeline Id",
     "required": true,
-    "type": "image",
-    "instructions": "Main image"
+    "hint": "Should be in lowercase without spaces"
   },
-  "history_image2": {
-    "type": "image",
-    "instructions": "Optional images"
-  },
-  "history_image3": {
-    "type": "image",
-    "instructions": "Optional images"
-  },
-  "period_in_time": {
+  "year_ada_id": {
+    "label": "ADA Id",
     "required": true,
-    "instructions": "period in time (eg. 1956-1960)"
+    "hint": "Should be in lowercase without spaces"
   },
-  "Sub_title": {
+  "from_year_to_year": {
+    "label": "Timeline Period",
     "required": true,
-    "instructions": ""
+    "hint": "Enter from & to Years"
   },
-   "details": {
+  "year_intro": {
+    "type": "richtext",
+    "label": "Category Intro",
     "required": true,
-    "type": "richtext"
+    "hint": "Short description of event category here"
+  },
+  "timeline_images": {
+    "type": "nested",
+    "multiple": true,
+    "hint": "Enter images of this particualr period.",
+    "fields": {
+      "history_image": {
+        "type": "image"
+      }
+    }
   }
-
- }
+}
