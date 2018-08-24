@@ -8,7 +8,7 @@ meta_tags:
 ---
 
 <!-- History Banner here -->
-<section class="page-banner inner" style="background-image:url('/assets/images/history/hero.jpg');">
+<div class="page-banner inner" style="background-image:url('/assets/images/history/hero.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock history_title, type:header %}
@@ -19,7 +19,7 @@ meta_tags:
       <h6>THE MAKING OF A LEGEND</h6>
     {% endregionblock %}
   </div>
-</section>
+</div>
 
 <div class="quote">
   <q>
@@ -31,7 +31,7 @@ meta_tags:
 
 <!-- History section here -->
 {% assign history = site.data._models.history | sort:'year' %}
-<section class="history">
+<div class="history">
   <div class="history-wrapper accordion" id="historySec">
 
     <ul class="history-nav" role="tablist" tabindex="0">
@@ -76,13 +76,15 @@ meta_tags:
       </div>
     {% endfor %}
   </div>
-</section>
+</div>
 
-<!-- Gallery carousel here -->
-<div class="intro-text">
+<!-- Gallery carousel heading here -->
+<div class="intro-text pt-0">
   <h2>Gallery</h2>
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
 </div>
+
+<!-- Gallery carousel here -->
 <div class="pierre-slider">
 	<div>
   	<div class="slide-pageno" tabindex="0">
@@ -130,3 +132,17 @@ meta_tags:
 		<div class="img-title">Pierre Culinary Team Circa 1980</div>
 	</div>
 </div>
+
+<!-- Accolades logos -->
+<div class="accolades accolades-history">
+		<div class="container">
+			<div class="row">
+				{% region accoladaesHeading %}
+				<div class="col-sm-offset-1 col-md-2 col-sm-2 col-xs-12">{% region forbesAccImage %}</div>
+				<div class="col-md-2 col-sm-2 col-xs-12">{% region travelAccImage %}</div>
+				<div class="col-md-2 col-sm-3 col-xs-12">{% region diamondAccImage %}</div>
+				<div class="col-md-2 col-sm-2 col-xs-12">{% region earthAccImage %}</div>
+				<div class="col-md-2 col-sm-2 col-xs-12">{% region tripAccImage %}</div>
+			</div>
+		</div>
+	</div>

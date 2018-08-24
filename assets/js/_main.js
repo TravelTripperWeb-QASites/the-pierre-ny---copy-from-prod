@@ -163,7 +163,7 @@ setTimeout(function () {
     .css('display', 'none');
 }, 2500);
 
-
+//For History timeline navigation active state
 $(".history-nav a")
   .click(function () {
     $(".history-nav a")
@@ -171,4 +171,35 @@ $(".history-nav a")
     // $(".tab").addClass("active"); // instead of this do the below
     $(this)
       .addClass("active");
+  });
+
+//Gallery Slider
+
+$('.pierre-slider')
+  .slick({
+    autoplay: true,
+    dots: false,
+    centerMode: true,
+    centerPadding: '16%',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '4px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '4px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
