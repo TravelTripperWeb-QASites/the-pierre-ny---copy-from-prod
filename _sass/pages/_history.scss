@@ -74,7 +74,9 @@
       .history-images {
         .carousel-item {
           height: 350px;
-
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
           @include media-breakpoint-up (md) {
             height: 560px;
           }
@@ -283,6 +285,39 @@
 
     @include media-breakpoint-up(sm) {
       bottom: 60px;
+    }
+  }
+}
+
+//Accolades section styling
+.accolades {
+  margin: 70px auto;
+  padding: 50px;
+  text-align: center;
+  background: $secondary-color;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    text-align: center;
+    @include fixed-width-content;
+
+    .d-flex {
+      display: block !important;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        display: flex !important;
+
+        img {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
