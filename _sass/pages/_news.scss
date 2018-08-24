@@ -20,14 +20,16 @@
 
         img {
           width: 100%;
+          cursor: pointer;
         }
       }
       .content {
         h5 {
-
+          margin-top: 15px;
+          color: $primary-color;
         }
         p {
-
+          color: $text-color;
         }
       }
     }
