@@ -1,0 +1,35 @@
+// New page styling here
+
+.news-listing {
+  @include fixed-width-layout;
+
+  .wrapper {
+    @include make-row;
+
+    .news-item {
+      @include make-col-ready;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+
+      .image {
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        h5 {
+
+        }
+        p {
+
+        }
+      }
+    }
+  }
+}
