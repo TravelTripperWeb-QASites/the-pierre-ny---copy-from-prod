@@ -187,8 +187,13 @@
 .common-carousel {
   padding: 40px 0;
   background-color: $secondary-color;
-  &.bg-white {
+  &.other-carousel {
     background-color: $white;
+    .item {
+      .content {
+        background-color: $secondary-color !important;
+      }
+    }
   }
   .common-carousel-intro {
     max-width: 700px;
