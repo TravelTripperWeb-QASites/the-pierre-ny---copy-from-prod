@@ -80,6 +80,26 @@
       "git_file_name": "_assets/image_data/two-e-entrance.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075440/two-e-entrance.jpg",
       "alt": "two-e-entrance"
+    },
+    {
+      "name": "Pumpscones-05",
+      "file_name": "Pumpscones-05.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/Pumpscones-05.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-075438",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "file_size": 132650,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/large_Pumpscones-05.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/medium_Pumpscones-05.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/small_Pumpscones-05.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/xsmall_Pumpscones-05.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/thumb_Pumpscones-05.jpg",
+      "git_file_name": "_assets/image_data/Pumpscones-05.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/Pumpscones-05.jpg",
+      "alt": "Pumpscones-05"
     }
   ],
   "description": ""
