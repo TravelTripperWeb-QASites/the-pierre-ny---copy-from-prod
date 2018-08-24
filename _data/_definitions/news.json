@@ -3,7 +3,7 @@
     "label": "Category",
     "type": "select",
     "options": ["Print Media Coverage", "Online Media Coverage"],
-    "required": true,
+    "required": true
   },
   "title": {
     "label": "News Title",
