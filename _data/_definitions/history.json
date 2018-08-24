@@ -27,13 +27,8 @@
     "hint": "Short description of event category here"
   },
   "timeline_images": {
-    "type": "nested",
+    "type": "image",
     "multiple": true,
-    "hint": "Enter images of this particualr period.",
-    "fields": {
-      "history_image": {
-        "type": "image"
-      }
-    }
+    "hint": "Enter images of this particualr period."
   }
 }
