@@ -30,13 +30,17 @@
         }
 
         &:hover {
-          opacity: .8;
+          opacity: .5;
         }
       }
       .content {
         h5 {
           margin-top: 15px;
           color: $primary-color;
+        }
+        h6 {
+          font-size: $type-size-10;
+          line-height: 1rem;
         }
         p {
           color: $text-color;
