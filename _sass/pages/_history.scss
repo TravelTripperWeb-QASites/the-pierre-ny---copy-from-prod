@@ -321,3 +321,15 @@
     }
   }
 }
+
+.testimonials {
+  color: $text-color;
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+}
