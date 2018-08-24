@@ -100,6 +100,26 @@
       "git_file_name": "_assets/image_data/Pumpscones-05.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075438/Pumpscones-05.jpg",
       "alt": "Pumpscones-05"
+    },
+    {
+      "name": "02",
+      "file_name": "02.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/02.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-075436",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "file_size": 55370,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/large_02.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/medium_02.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/small_02.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/xsmall_02.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/thumb_02.jpg",
+      "git_file_name": "_assets/image_data/02.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075436/02.jpg",
+      "alt": "02"
     }
   ],
   "description": ""
