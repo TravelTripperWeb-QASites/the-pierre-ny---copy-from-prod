@@ -1,14 +1,48 @@
 {
   "timeline_images": [{
-        "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
-        "alt": "1950s"
-      }, {
-        "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
-        "alt": "1960s"
-      }],
+      "name": "large_1930_PierreHotel_1000x1725",
+      "file_name": "large_1930_PierreHotel_1000x1725.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/large_1930_PierreHotel_1000x1725.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-044026",
+      "file_type": "image/jpeg",
+      "width": 696,
+      "height": 1200,
+      "file_size": 374446,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/large_large_1930_PierreHotel_1000x1725.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/medium_large_1930_PierreHotel_1000x1725.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/small_large_1930_PierreHotel_1000x1725.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/xsmall_large_1930_PierreHotel_1000x1725.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/thumb_large_1930_PierreHotel_1000x1725.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044026/large_1930_PierreHotel_1000x1725.jpg",
+      "alt": "large_1930_PierreHotel_1000x1725",
+      "caption": ""
+    },
+    {
+      "name": "large_2000s_GentlemansLibrary1930",
+      "file_name": "large_2000s_GentlemansLibrary1930.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/large_2000s_GentlemansLibrary1930.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-044045",
+      "file_type": "image/jpeg",
+      "width": 853,
+      "height": 1200,
+      "file_size": 307758,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/large_large_2000s_GentlemansLibrary1930.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/medium_large_2000s_GentlemansLibrary1930.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/small_large_2000s_GentlemansLibrary1930.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/xsmall_large_2000s_GentlemansLibrary1930.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/thumb_large_2000s_GentlemansLibrary1930.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044045/large_2000s_GentlemansLibrary1930.jpg",
+      "alt": "large_2000s_GentlemansLibrary1930",
+      "caption": ""
+    }
+  ],
   "year": 1930,
   "year_id": "nineteenthirty",
   "year_ada_id": "nineteenthirtyada",
   "from_year_to_year": "1930",
-  "year_intro": "<p>After five years of planning, Frenchman Charles Pierre Casalasco's dream to build the world's most elegant hotel comes true. Backed by Walter P. Chrysler, E.F. Hutton, and a group of influential New Yorkers, The Pierre opens its doors on October 1, 1930.</p>\n<p>The world changes almost overnight. The Great Depression, Prohibition and speakeasies mark the end of the Gilded Age, ushering in the new Caf&eacute; Society. Bond holders take over and ask Charles Pierre to stay on as Managing Director. His first task - transforming his hotel into a playground for this new creative class.</p>"
+  "year_intro": "<p style=\"text-align: justify;\">After five years of planning, Frenchman<strong> Charles Pierre Casalasco</strong>'s dream to build the world's most elegant hotel comes true. Backed by <strong>Walter P. Chrysler, E.F. Hutton</strong>, and a group of influential New Yorkers, The Pierre opens its doors on October 1, 1930.&nbsp;&nbsp;</p>\n<p style=\"text-align: justify;\">The world changes almost overnight. The Great Depression, Prohibition and speakeasies mark the end of the Gilded Age, ushering in the new Caf&eacute; Society. Bond holders take over and ask Charles Pierre to stay on as Managing Director. His first task - transforming his hotel into a playground for this new creative class.</p>"
 }

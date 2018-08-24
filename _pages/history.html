@@ -49,8 +49,7 @@ meta_tags:
             <div id="historyPics" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 {% for image in details.timeline_images %}
-                  <div class="carousel-item {% if forloop.first%}active{% endif %}" style="background-image:url('{{ image.history_image.url }}')">
-                    <!-- <img class="d-block w-100" src="{{ image.history_image.url }}" alt="{{ image.history_image.alt }}"> -->
+                  <div class="carousel-item {% if forloop.first%}active{% endif %}" style="background-image:url('{{ image['url_large'] }}')">
                   </div>
                 {% endfor %}
               </div>
@@ -134,15 +133,35 @@ meta_tags:
 </div>
 
 <!-- Accolades logos -->
-<div class="accolades accolades-history">
-		<div class="container">
-			<div class="row">
-				{% region accoladaesHeading %}
-				<div class="col-sm-offset-1 col-md-2 col-sm-2 col-xs-12">{% region forbesAccImage %}</div>
-				<div class="col-md-2 col-sm-2 col-xs-12">{% region travelAccImage %}</div>
-				<div class="col-md-2 col-sm-3 col-xs-12">{% region diamondAccImage %}</div>
-				<div class="col-md-2 col-sm-2 col-xs-12">{% region earthAccImage %}</div>
-				<div class="col-md-2 col-sm-2 col-xs-12">{% region tripAccImage %}</div>
-			</div>
-		</div>
-	</div>
+<div class="accolades">
+  
+  {% regionblock accoladaesHeading, type="header" %}
+    <h2>Accolades</h2>
+  {% endregionblock %}
+
+	<div class="wrapper">
+    <div class="d-flex justify-content-between">
+
+      {% regionblock forbesAccImage, type="image" %}
+        <img src="/assets/images/history/forbes-2017.png" alt="forbes" />
+      {% endregionblock %}
+
+      {% regionblock travelAccImage, type="image" %}
+        <img src="/assets/images/history/trip-advisor.png" alt="trip advisor" />
+      {% endregionblock %}
+
+      {% regionblock diamondAccImage, type="image" %}
+        <img src="/assets/images/history/aaa-four-diamond.png" alt="aaa-four-diamond" />
+      {% endregionblock %}
+
+      {% regionblock earthAccImage, type="image" %}
+        <img src="https://cdn.traveltripper.io/site-assets/413_380_2004/media/2017-05-02-124035/earthcheck.png" alt="earth check" />
+      {% endregionblock %}
+
+      {% regionblock tripAccImage, type="image" %}
+        <img src="/assets/images/history/travel+leisure.png" alt="trip advisor" />
+      {% endregionblock %}
+
+    </div>
+  </div>
+</div>
