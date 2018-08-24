@@ -1,6 +1,4 @@
-[
-  {
-    "_template": "html",
-    "content": "<p style=\"margin: 0px;\"><img src=\"/imgs/history/trip-advisor.png\" alt=\"trip advisor\" /></p>"
-  }
-]
+[{
+  "_template": "image",
+  "content": "<img src=\"/assets/images/history/trip-advisor.png\" alt=\"trip advisor\"/>"
+}]
