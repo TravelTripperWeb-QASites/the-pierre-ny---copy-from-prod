@@ -1,7 +1,26 @@
 {
   "name": "Afternoon Tea Gallery",
   "photos": [
-
+    {
+      "name": "Two-E-Lounge-Room",
+      "file_name": "Two-E-Lounge-Room.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/Two-E-Lounge-Room.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-075441",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "file_size": 123223,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/large_Two-E-Lounge-Room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/medium_Two-E-Lounge-Room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/small_Two-E-Lounge-Room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/xsmall_Two-E-Lounge-Room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/thumb_Two-E-Lounge-Room.jpg",
+      "git_file_name": "_assets/image_data/Two-E-Lounge-Room.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/Two-E-Lounge-Room.jpg",
+      "alt": "Two-E-Lounge-Room"
+    }
   ],
   "description": ""
 }
