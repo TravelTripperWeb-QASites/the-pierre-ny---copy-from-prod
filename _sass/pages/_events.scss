@@ -184,108 +184,7 @@
             letter-spacing: .025rem;
           }
 
-          .opentable-widget {
 
-            p {
-              display: block;
-              padding: 20px 0 40px;
-              font-family: $tag-line-font;
-              font-size: $type-size-9;
-              color: $text-color;
-            }
-
-            h6 {
-              padding: 40px 0 10px;
-              color: $primary-color;
-              text-align: center;
-              text-transform: uppercase;
-            }
-
-            .secondary-btn {
-              margin: 25px 30px;
-            }
-
-            .ot-dtp-picker {
-
-              &.wide {
-                width: 100%;
-                max-width: 750px;
-                margin: 0 auto;
-              }
-
-              .ot-title {
-                display: none;
-              }
-
-              .ot-dtp-picker-form {
-                display: inline-block;
-                height: 100%;
-                border-radius: 0;
-                outline: solid 4px rgba(0,0,0,.1);
-
-                @include media-breakpoint-up(lg) {
-                  display: inherit;
-                  height: 60px;
-                }
-              }
-
-              .ot-dtp-picker-selector {
-                position: relative;
-                width: 100%;
-                height: 60px;
-                border-bottom: solid 1px $border-color;
-                border-left: 0;
-
-                @include media-breakpoint-up(lg) {
-                  width: 170px;
-                  border-bottom: 0;
-                  border-left: solid 1px $border-color;
-                }
-
-                select {
-                  left: 0;
-                  width: 100%;
-                }
-
-                .ot-dtp-picker-selector-link {
-                  padding: 18px 20px 20px 0;
-
-                  &:before {
-                    display: none;
-                  }
-
-                  &:after {
-                    right: 20px;
-                  }
-                }
-              }
-
-              .ot-dtp-picker-button {
-                width: 100%;
-                height: 58px;
-                font-family: $tertiary-header-font;
-                font-size: $type-size-9;
-                text-transform: uppercase;
-                background-color: $primary-color;
-                border: 0;
-                border-radius: 0;
-                box-shadow: none;
-                @include transition (all .5s);
-
-                &:hover {
-                  background-color: $text-color;
-                }
-
-                @include media-breakpoint-up(lg) {
-                  width: 205px;
-                }
-              }
-
-              .ot-powered-by {
-                display: none;
-              }
-            }
-          }
         }
 
       }
@@ -293,8 +192,6 @@
   }
 
 }
-
-//Custom styling for opentable-widget
 
 .opentable-widget {
 
@@ -331,25 +228,25 @@
 
     .ot-dtp-picker-form {
       display: inline-block;
-      height: 100%;
+      height: 100% !important;
       border-radius: 0;
       outline: solid 4px rgba(0,0,0,.1);
 
       @include media-breakpoint-up(lg) {
         display: inherit;
-        height: 60px;
+        height: 60px !important;
       }
     }
 
     .ot-dtp-picker-selector {
       position: relative;
-      width: 100%;
-      height: 60px;
-      border-bottom: solid 1px $border-color;
+      width: 100% !important;
+      height: 60px !important;
+      border-bottom: solid 1px $border-color !important;
       border-left: 0;
 
       @include media-breakpoint-up(lg) {
-        width: 170px;
+        width: 170px !important;
         border-bottom: 0;
         border-left: solid 1px $border-color;
       }
@@ -373,8 +270,8 @@
     }
 
     .ot-dtp-picker-button {
-      width: 100%;
-      height: 58px;
+      width: 100% !important;
+      height: 58px !important;
       font-family: $tertiary-header-font;
       font-size: $type-size-9;
       text-transform: uppercase;
@@ -389,7 +286,7 @@
       }
 
       @include media-breakpoint-up(lg) {
-        width: 205px;
+        width: 205px !important;
       }
     }
 
