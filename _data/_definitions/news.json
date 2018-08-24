@@ -1,0 +1,25 @@
+{
+  "category": {
+    "label": "Category",
+    "type": "select",
+    "options": ["Print Media Coverage", "Online Media Coverage"],
+    "required": true,
+  },
+  "title": {
+    "label": "News Title",
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "label": "News Image",
+    "required": true
+  },
+  "description": {
+    "label": "News Detail",
+    "required": true
+  },
+  "reference_url": {
+    "label": "Source URL",
+    "required": true
+  }
+}
