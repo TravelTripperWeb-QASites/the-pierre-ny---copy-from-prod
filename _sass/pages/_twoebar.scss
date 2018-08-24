@@ -1,0 +1,7 @@
+.reservations {
+  padding: 20px 0;
+  background-color: $primary-color;
+  .reservations-container {
+    @include fixed-width-content;
+  }
+}
