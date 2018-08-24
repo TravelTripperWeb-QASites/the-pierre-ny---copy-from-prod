@@ -9,3 +9,13 @@
     }
   }
 }
+
+.gallery-carousel {
+  padding-bottom: 50px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 90px;
+  }
+  h2 {
+    margin-bottom: 50px;
+  }
+}
