@@ -14,6 +14,9 @@
     "label": "News Image",
     "required": true
   },
+  "posted_date": {
+    "label": "Date Posted"
+  },
   "description": {
     "label": "News Detail",
     "required": true

@@ -17,10 +17,20 @@
       }
 
       .image {
+        display: block;
+        cursor: pointer;
+        @include transition(all .5s);
 
         img {
           width: 100%;
-          cursor: pointer;
+        }
+
+        a {
+          display: inline-block;
+        }
+
+        &:hover {
+          opacity: .8;
         }
       }
       .content {

@@ -73,6 +73,9 @@ meta_tags:
         </div>
         <div class="content">
           <h5>{{ post.title }}</h5>
+          {% if post.posted_date and post.posted_date != "" %}
+            <h6>{{ post.posted_date }}</h6>
+          {% endif %}
           <p>{{ post.description }}</p>
         </div>
       </div>
