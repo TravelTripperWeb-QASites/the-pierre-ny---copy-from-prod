@@ -12,7 +12,7 @@ main:
     url: /rooms-suites/
     dropdown:
       - title: Amenities
-        url: /amenities/
+        url: /luxury-manhattan-hotel-amenities/
       - title: Residences
         url: /residences/
   - title: Dining
