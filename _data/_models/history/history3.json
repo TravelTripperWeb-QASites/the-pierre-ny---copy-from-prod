@@ -1,10 +1,26 @@
 {
-  "timeline_images": [{
-    "history_image": {
-      "url": "//cdn.traveltripper.io/site-assets/413_380_10849/media/2018-01-11-112619/1950-Bird-Cage---Brioni-Photoshoot.jpg",
-      "alt": "1950s"
+  "timeline_images": [
+    {
+      "name": "large_1932_Escoffier_with_Opening_team_H1000x1861",
+      "file_name": "large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-044400",
+      "file_type": "image/jpeg",
+      "width": 1200,
+      "height": 645,
+      "file_size": 1069376,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/large_large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/medium_large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/small_large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/xsmall_large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/thumb_large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-24-044400/large_1932_Escoffier_with_Opening_team_H1000x1861.jpg",
+      "alt": "large_1932_Escoffier_with_Opening_team_H1000x1861",
+      "caption": ""
     }
-  }],
+  ],
   "year": 1932,
   "year_id": "nineteenthirtytwo",
   "year_ada_id": "nineteenthirtytwoada",
