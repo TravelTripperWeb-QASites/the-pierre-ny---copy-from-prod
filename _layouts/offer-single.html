@@ -45,7 +45,7 @@ meta_tags:
     <p>{{ page.short_description }}</p>
   </div>
   <div class="offer-details-inner m-0 align-items-center">
-    <div id="offerDetailImages" class="carousel slide img-carousel" data-ride="carousel">
+    <div id="offerDetailImages" class="carousel slide img-carousel p-0" data-ride="carousel">
       <div class="carousel-inner">
         {% for image in page.slider_images %}
         <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background-image:url('{{ image.url }}');">
