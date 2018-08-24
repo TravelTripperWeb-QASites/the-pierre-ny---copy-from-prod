@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/Two-E-Lounge-Room.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075441/Two-E-Lounge-Room.jpg",
       "alt": "Two-E-Lounge-Room"
+    },
+    {
+      "name": "two-e",
+      "file_name": "two-e.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/two-e.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-24-075439",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "file_size": 87808,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/large_two-e.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/medium_two-e.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/small_two-e.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/xsmall_two-e.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/thumb_two-e.jpg",
+      "git_file_name": "_assets/image_data/two-e.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-24-075439/two-e.jpg",
+      "alt": "two-e"
     }
   ],
   "description": ""
