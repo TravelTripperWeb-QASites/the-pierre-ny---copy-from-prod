@@ -345,10 +345,49 @@
   color: $text-color;
 
   .carousel-item {
-    height: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-align: center;
   }
 
-  h3 {
+  .controls {
+    position: relative;
+    max-width: 200px;
+    margin: 0 auto 50px;
+    text-align: center;
+
+    .carousel-control-next, .carousel-control-prev {
+      color: $primary-color;
+    }
+  }
+
+
+
+  q {
+    font-size: $type-size-6;
+
+    @inlcude media-breakpoint-up(md) {
+      font-size: $type-size-4;
+    }
+
+    &::before,&::after {
+      display: inline-block;
+    }
+  }
+
+  h6 {
+    font-size: $type-size-9;
     color: $primary-color;
+
+    &:before {
+      display: block;
+      width: 60px;
+      height: 2px;
+      margin: 30px auto 20px;
+      content: '';
+      background-color: $primary-color;
+
+    }
   }
 }
