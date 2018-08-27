@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/03.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070234/03.jpg",
       "alt": "Cocktails & Jazz"
+    },
+    {
+      "name": "02",
+      "file_name": "02.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/02.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-27-070233",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 600,
+      "file_size": 28032,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/large_02.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/medium_02.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/small_02.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/xsmall_02.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/thumb_02.jpg",
+      "git_file_name": "_assets/image_data/02.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-27-070233/02.jpg",
+      "alt": "Cocktails & Jazz"
     }
   ],
   "description": ""
