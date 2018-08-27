@@ -1,0 +1,84 @@
+---
+layout: default
+title:  News | The Pierre Hotel NY
+meta_description:
+permalink: /news/
+meta_tags:
+  robots:
+---
+
+<!-- News Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/news/press_banner_image.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock news_title, type:header %}
+      <h1 class="variant">IN THE NEWS</h1>
+    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    {% regionblock news_subtitle, type:header %}
+      <h6>A NEW YORK ICON, THE PIERRE IS CONTINUALLY RECOGNIZED IN THE MEDIA FOR ITS AWARD-WINNING FIVE-STAR SERVICE, ELEGANT ACCOMMODATIONS AND FINE DINING.</h6>
+    {% endregionblock %}
+  </div>
+</div>
+
+<div class="quote">
+  <q>
+    {% regionblock news_inro, type:text %}
+      Discover more about The Pierre in coverage from prestigious magazines such as <span>VOGUE, The New York Times and Forbes</span> highlighting interesting features at the hotel.
+    {% endregionblock %}
+  </q>
+</div>
+
+<!-- Print media coverage here -->
+
+<div class="intro-text">
+  <h2>Print Media Coverage</h2>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+</div>
+
+{% assign print = site.data._models.news | where: "category", "Print Media Coverage" %}
+
+<div class="news-listing">
+  <div class="wrapper">
+    {% for post in print %}
+      <div class="news-item">
+        <div class="image">
+          <a href="{{ post.reference_url }}" target="_blank">
+            <img src="{{ post.image.url_large }}" alt="{{ post.image.alt }}" />
+          </a>
+        </div>
+        <div class="content">
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="intro-text">
+  <h2>Online Media Coverage</h2>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+</div>
+
+{% assign online = site.data._models.news | where: "category", "Online Media Coverage" | sort: 'posted_date' %}
+<div class="news-listing mb-3">
+  <div class="wrapper">
+    {% for post in online %}
+      <div class="news-item">
+        <div class="image">
+          <a href="{{ post.reference_url }}" target="_blank">
+            <img src="{{ post.image.url_large }}" alt="{{ post.image.alt }}">
+          </a>
+        </div>
+        <div class="content">
+          <h5>{{ post.title }}</h5>
+          {% if post.posted_date and post.posted_date != "" %}
+            <h6>{{ post.posted_date | date: "%B %Y" }}</h6>
+          {% endif %}
+          <p>{{ post.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

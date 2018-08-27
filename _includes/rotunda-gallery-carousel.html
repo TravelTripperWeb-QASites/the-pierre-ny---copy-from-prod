@@ -1,0 +1,15 @@
+<section class="common-carousel">
+  <h2 class="text-center">ROTUNDA GALLERY</h2>
+  <div class="crest-holder">
+		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
+	</div>
+  <div class="common-carousel-inner">
+    <div class="slick-controls" id="rotundaCarousel">
+      {% for rotunda_gallery in site.data._models.the-rotunda-gallery  %}
+      <div class="item">
+        <img src="{{ rotunda_gallery.Image.url }}" alt="rotunda gallery">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
