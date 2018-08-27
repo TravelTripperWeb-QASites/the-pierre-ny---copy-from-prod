@@ -115,7 +115,7 @@
       @include make-col(6);
     }
     @include media-breakpoint-up(lg) {
-      @include make-col(4);
+      @include make-col(3);
     }
     margin-bottom: 50px;
     &--twocol {
@@ -141,7 +141,7 @@
     height: 300px;
     margin-bottom: 30px;
     @include media-breakpoint-up(lg) {
-      height: 450px;
+      height: 320px;
     }
     &:after {
       @include absolute-position(auto,0,0,0,auto,170px);
