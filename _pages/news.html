@@ -61,8 +61,8 @@ meta_tags:
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
 </div>
 
-{% assign online = site.data._models.news | where: "category", "Online Media Coverage" %}
-<div class="news-listing">
+{% assign online = site.data._models.news | where: "category", "Online Media Coverage" | sort: 'posted_date' %}
+<div class="news-listing mb-5">
   <div class="wrapper">
     {% for post in online %}
       <div class="news-item">
@@ -74,7 +74,7 @@ meta_tags:
         <div class="content">
           <h5>{{ post.title }}</h5>
           {% if post.posted_date and post.posted_date != "" %}
-            <h6>{{ post.posted_date }}</h6>
+            <h6>{{ post.posted_date | date: "%B %Y" }}</h6>
           {% endif %}
           <p>{{ post.description }}</p>
         </div>
