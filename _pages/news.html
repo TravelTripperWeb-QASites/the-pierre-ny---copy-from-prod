@@ -62,7 +62,7 @@ meta_tags:
 </div>
 
 {% assign online = site.data._models.news | where: "category", "Online Media Coverage" | sort: 'posted_date' %}
-<div class="news-listing mb-5">
+<div class="news-listing mb-3">
   <div class="wrapper">
     {% for post in online %}
       <div class="news-item">
