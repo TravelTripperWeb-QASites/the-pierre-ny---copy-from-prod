@@ -9,30 +9,44 @@
 
     .history-nav {
       @include make-col-ready;
-      margin: 0;
       padding: 0;
 
       @include media-breakpoint-up(md) {
         @include make-col(2);
+        margin: 0;
         text-align: center;
       }
 
       li {
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 5px 15px;
 
+        @include media-breakpoint-up(md) {
+          display: block;
+          margin-bottom: .5rem;
+          padding: 0;
+        }
         a {
           position: relative;
           display: block;
           max-width: 150px;
           margin: 0 auto;
           font-family: $secondary-header-font;
-          font-size: $type-size-4;
-          line-height: 2.5rem;
+          font-size: $type-size-6;
+          line-height: 1.875rem;
           color: $text-color;
+
+          @include media-breakpoint-up(md) {
+            font-size: $type-size-4;
+            line-height: 2.5rem;
+          }
 
           &:before {
             position: absolute;
             top: 8px;
             left: 5px;
+            display: none;
             width: 28px;
             height: 28px;
             content: '';
@@ -40,9 +54,14 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+
+            @include media-breakpoint-up(md) {
+              display: block;
+            }
           }
 
           &.active {
+            color: $primary-color;
 
             &:before {
               background-image: url('/assets/images/select-active.png');

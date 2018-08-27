@@ -15,7 +15,8 @@
     "required": true
   },
   "posted_date": {
-    "label": "Date Posted"
+    "label": "Date Posted",
+    "type": "date"
   },
   "description": {
     "label": "News Detail",
