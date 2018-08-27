@@ -1,0 +1,14 @@
+{
+  "testimonial": {
+    "label": "Testimonial",
+    "required": true
+  },
+  "guest_info": {
+    "label": "Guest Info",
+    "required": true
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true
+  }
+}
