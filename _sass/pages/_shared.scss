@@ -206,10 +206,15 @@
       }
     }
     h4 {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      color: $primary-color;
+      text-transform: uppercase;
       @include media-breakpoint-up(md) {
         margin-bottom: 40px;
       }
+    }
+    .btn-holder {
+      margin-top: 30px;
     }
     .twocol-list {
       margin: 0;
@@ -236,6 +241,12 @@
     display: flex;
     align-items: center;
     background-color: $white;
+    &.fixed-height {
+      height: 300px;
+      @include media-breakpoint-up(md) {
+        height: auto;
+      }
+    }
     .logo-holder {
       max-width: 200px;
       margin: 40px auto;
