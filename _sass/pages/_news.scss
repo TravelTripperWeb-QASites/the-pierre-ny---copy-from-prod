@@ -8,6 +8,7 @@
 
     .news-item {
       @include make-col-ready;
+      margin-bottom: 20px;
 
       @include media-breakpoint-up(sm) {
         @include make-col(6);

@@ -46,7 +46,7 @@ meta_tags:
       <div class="history-details collapse {% if forloop.index0 == 0 %}show{% endif %}" id="{{ details.year_id }}" aria-labelledby="{{ details.year_ada_id }}" data-parent="#historySec">
         <div class="history-details-wrap">
           <div class="history-images">
-            <div id="historyPics" class="carousel slide" data-ride="carousel">
+            <div id="{{ details.year_id }}historyPics" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 {% for image in details.timeline_images %}
                   <div class="carousel-item {% if forloop.first%}active{% endif %}" style="background-image:url('{{ image['url_large'] }}')">
@@ -54,11 +54,11 @@ meta_tags:
                 {% endfor %}
               </div>
               {% if details.timeline_images.size > 1 %}
-                <a class="carousel-control-prev" href="#historyPics" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#{{ details.year_id }}historyPics" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#historyPics" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#{{ details.year_id }}historyPics" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
