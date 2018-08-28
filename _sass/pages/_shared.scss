@@ -91,6 +91,16 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  &.bg-top {
+    background-position: top center;
+  }
+}
+
+.extra-padding {
+  @include media-breakpoint-up(lg) {
+    padding-top: 200px !important;
+    padding-bottom: 200px !important;
+  }
 }
 
 .crest-holder {
@@ -235,14 +245,17 @@
   }
   .twocol-image {
     @include make-col-ready();
-    @include media-breakpoint-up(md) {
-      @include make-col(6);
-    }
     display: flex;
     align-items: center;
     background-color: $white;
-    &.fixed-height {
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+
+    &.bg-image {
+      @extend .bg-cover;
       height: 300px;
+      background-position: top center;
       @include media-breakpoint-up(md) {
         height: auto;
       }
@@ -280,6 +293,10 @@
   font-size: $type-size-10;
   font-style: italic;
   font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .seperator {
