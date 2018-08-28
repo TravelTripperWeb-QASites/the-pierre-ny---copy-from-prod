@@ -1,7 +1,7 @@
 {
   "sort_order": 12,
-  "venue_name": "Alcove",
-  "url_friendly_name": "alcove-copy",
+  "venue_name": "Park/Lexington Combined",
+  "url_friendly_name": "park-lexington-combined",
   "venue_thumbnail": {
     "name": "Park-Thumbnail",
     "file_name": "Park-Thumbnail.jpg",
@@ -44,10 +44,10 @@
   },
   "venue_intro": "<p>The Park Room can be used alone or combined with The Lexington Room, and can host private meetings and conferences for up to <span class=\"ve\">forty guests</span>.</p>",
   "facility_chart": {
-    "dimensions": "13'-4\" x 16'-7\"",
-    "area": "223.78 sq. ft. / 20.79 m2",
-    "height": "11'-3\" l 3.44 m",
-    "location": "2nd Floor"
+    "dimensions": "51'-9\" x 14'.8\"",
+    "area": "1,067 sq. ft. / 99.13 m2",
+    "height": "9'-0\" l 2.74 m",
+    "location": "4th Floor"
   },
   "floor_plan": {
     "theater": "50",
