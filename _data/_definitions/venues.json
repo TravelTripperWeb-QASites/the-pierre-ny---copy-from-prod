@@ -3,7 +3,8 @@
     "label": "Venue Name",
     "required": true
   },
-  "seo_friendly_name": {
+  "url_friendly_name": {
+    "type": "url_slug",
     "label": "SEO Friendly Name",
     "required": true
   },
@@ -88,5 +89,10 @@
   "sort_order": {
     "label": "Order",
     "type": "integer"
+  },
+  "dont_show_inlist": {
+    "label": "Don't Show in List",
+    "type": "boolean",
+    "hint": "Check, if this Venue should show up only in facility chart."
   }
 }

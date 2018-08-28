@@ -27,13 +27,15 @@ meta_tags:
 <div class="venues-listing">
   <div class="wrapper">
     {% for venue in venues %}
-      <div class="item">
-        <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
-        <div class="content">
-          <h5>{{ venue.venue_name }}</h5>
-          <a class="secondary-btn" href="/events/venues/{{ venue.seo_friendly_name }}/">View this venue</a>
+      {% if venue.dont_show_inlist and venue.dont_show_inlist == "" %}
+        <div class="item">
+          <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
+          <div class="content">
+            <h5>{{ venue.venue_name }}</h5>
+            <a class="secondary-btn" href="/events/venues/{{ venue.url_friendly_name }}/">View this venue</a>
+          </div>
         </div>
-      </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
@@ -103,15 +105,17 @@ meta_tags:
       </thead>
       <tbody>
         {% for venue in venues %}
-          <tr>
-            <td scope="row">{{ venue.venue_name }}</td>
-            <td>{{ venue.floor_plan.theater }}</td>
-            <td>{{ venue.floor_plan.circular }}</td>
-            <td>{{ venue.floor_plan.ushaped }}</td>
-            <td>{{ venue.floor_plan.boardroom }}</td>
-            <td>{{ venue.floor_plan.classroom }}</td>
-            <td>{{ venue.floor_plan.reception }}</td>
-          </tr>
+          {% if venue.dont_show_inlist and venue.dont_show_inlist == "" %}
+            <tr>
+              <td scope="row">{{ venue.venue_name }}</td>
+              <td>{{ venue.floor_plan.theater }}</td>
+              <td>{{ venue.floor_plan.circular }}</td>
+              <td>{{ venue.floor_plan.ushaped }}</td>
+              <td>{{ venue.floor_plan.boardroom }}</td>
+              <td>{{ venue.floor_plan.classroom }}</td>
+              <td>{{ venue.floor_plan.reception }}</td>
+            </tr>
+          {% endif %}
         {% endfor %}
       </tbody>
     </table>
