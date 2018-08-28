@@ -37,6 +37,7 @@
 
 .pinterest-wrapper {
   @include fixed-width-layout;
+  max-width: 1200px; 
   margin-bottom: 50px;
   span {
     max-width: 100% !important;
