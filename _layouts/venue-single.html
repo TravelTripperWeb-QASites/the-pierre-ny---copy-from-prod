@@ -16,3 +16,114 @@ title: Venue Details
     <a class="primary-btn inverse" href="/request-for-proposal/">Request for Proposal</a>
   </div>
 </div>
+
+<!-- Venues Sub Nav -->
+<div class="venues-nav table-responsive-xl">
+  {% assign venues = site.data._models.venues | where: "dont_show_inlist", undefined | sort: "sort_order " %}
+  <ul class="d-flex justify-content-between">
+    {% for venue in venues %}
+      <li>
+        <a {% if page.url_friendly_name != venue.url_friendly_name %}href="/events/venues/{{ venue.url_friendly_name }}/"{% endif%}>{{ venue.venue_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- Venue Intro & Share -->
+<div class="quote light">
+  {{ page.venue_intro }}
+  <div class="social-share">
+    {% if site.data.social.facebook.username %}
+      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.instagram.username %}
+      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.twitter.username %}
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.pinterest.username %}
+      <a href="https://www.pinterest.com/{{ site.data.social.pinterest.username }}" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+    {% endif %}
+    <a href="mailto:thepierre.ny@tajhotels.com?Subject=Venue%20Proposal"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<!-- Facility Chart -->
+<div class="table-grid">
+  <h2>Facility Chart</h2>
+  <div class="wrapper table-responsive-md">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Venues</th>
+          <th scope="col">Dimension</th>
+          <th scope="col">Area</th>
+          <th scope="col">Height</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td scope="row">{{ page.venue_name }}</td>
+            <td>{{ page.facility_chart.dimensions }}</td>
+            <td>{{ page.facility_chart.area }}</td>
+            <td>{{ page.facility_chart.height }}</td>
+            <td>{{ page.facility_chart.location }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="d-sm-flex justify-content-center">
+    <a class="border-btn dark wp-more" href="{{ page.floor_plan_pdf.url }}" target="_blank">View Individual Floor Plan</a>
+    <a class="border-btn dark wp-more" href="{{ page.event_space_pdf.url }}" target="_blank">View Event Space</a>
+  </div>
+</div>
+
+<!-- Seating Style -->
+<div class="table-grid content-center no-bg">
+  <h2>Seating Style</h2>
+  <div class="wrapper table-responsive-md">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">
+            Venue
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="Theater"><br>Theater
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="Theater"><br>Circular
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="U-Shaped"><br>U-Shaped
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="Boardroom"><br>Boardroom
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="Classroom"><br>Classroom
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="Reception"><br>Reception
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">{{ page.venue_name }}</td>
+          <td>{{ page.floor_plan.theater }}</td>
+          <td>{{ page.floor_plan.circular }}</td>
+          <td>{{ page.floor_plan.ushaped }}</td>
+          <td>{{ page.floor_plan.boardroom }}</td>
+          <td>{{ page.floor_plan.classroom }}</td>
+          <td>{{ page.floor_plan.reception }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% include explore-venues-carousel.html %}
