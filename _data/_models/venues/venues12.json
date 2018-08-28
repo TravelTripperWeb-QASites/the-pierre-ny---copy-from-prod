@@ -1,7 +1,7 @@
 {
-  "sort_order": 11,
-  "venue_name": "Grand Ballroom Stage",
-  "url_friendly_name": "grand-ballroom-stage-copy",
+  "sort_order": 12,
+  "venue_name": "Alcove",
+  "url_friendly_name": "alcove",
   "venue_thumbnail": {
     "name": "Park-Thumbnail",
     "file_name": "Park-Thumbnail.jpg",
@@ -44,9 +44,9 @@
   },
   "venue_intro": "<p>The Park Room can be used alone or combined with The Lexington Room, and can host private meetings and conferences for up to <span class=\"ve\">forty guests</span>.</p>",
   "facility_chart": {
-    "dimensions": "12'-9\" x 43'-11\"",
-    "area": "556.12 sq. ft. / 51.67 m2",
-    "height": "15'-2 l 4.63 m",
+    "dimensions": "13'-4\" x 16'-7\"",
+    "area": "223.78 sq. ft. / 20.79 m2",
+    "height": "11'-3\" l 3.44 m",
     "location": "2nd Floor"
   },
   "floor_plan": {
