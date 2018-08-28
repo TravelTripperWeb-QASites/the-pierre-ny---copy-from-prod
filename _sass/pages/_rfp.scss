@@ -1,0 +1,8 @@
+.rfp-form {
+  @include fixed-width-content;
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
