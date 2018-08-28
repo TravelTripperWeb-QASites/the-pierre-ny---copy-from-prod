@@ -109,4 +109,4 @@ page_gen: #
       dir: 'offers'
     - data: 'venues'
       template: 'venue-single'
-      dir: 'venues'
+      dir: 'events/venues'
