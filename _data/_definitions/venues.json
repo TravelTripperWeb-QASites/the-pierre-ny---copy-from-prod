@@ -51,6 +51,7 @@
     }
   },
   "floor_plan": {
+    "required": true,
     "type": "nested",
     "hint": "Enter all the floor plan details",
     "fields": {
