@@ -8,18 +8,21 @@
     "required": true
   },
   "venue_thumbnail": {
-    "type": "Venue Thumbnal",
-    "multiple": true,
-    "hint": "Image size should be 362px X 325px"
+    "label": "Venue Thumbnal",
+    "type": "image",
+    "instructions": "Image size should be 362px X 325px",
+    "required": true
   },
   "venue_image": {
-    "type": "Venue Image",
-    "multiple": true,
-    "hint": "Image size should be 362px X 325px"
+    "label": "Venue Image",
+    "type": "image",
+    "instructions": "Image size should be 362px X 325px",
+    "required": true
   },
   "venue_intro": {
     "type": "richtext",
-    "label": "Venue Intro"
+    "label": "Venue Intro",
+    "required": true
   },
   "facility_chart": {
     "type": "nested",
