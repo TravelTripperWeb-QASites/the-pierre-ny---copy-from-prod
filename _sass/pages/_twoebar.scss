@@ -47,7 +47,12 @@
     h4 {
       margin-bottom: 25px;
     }
+    h6 {
+      font-size: $type-size-8;
+      color: $primary-color;
+    }
     .table {
+      font-size: $type-size-10;
       td {
         padding: 8px 20px;
         border-top: 0;
