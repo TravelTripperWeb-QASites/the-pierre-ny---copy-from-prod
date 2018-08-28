@@ -31,7 +31,7 @@ meta_tags:
         <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
         <div class="content">
           <h5>{{ venue.venue_name }}</h5>
-          <a class="secondary-btn" href="/events/venues/{{ venue.seo_friendly_name }}/">View this venue</a>
+          <a class="secondary-btn" href="/events/venues/{{ venue.url_friendly_name }}/">View this venue</a>
         </div>
       </div>
     {% endfor %}
