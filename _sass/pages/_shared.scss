@@ -20,6 +20,10 @@
     h6 {
       padding: 10px 0 30px;
 
+      a {
+        color: $white;
+      }
+
       @include media-breakpoint-up(md) {
         padding: 20px 0 50px;
       }
