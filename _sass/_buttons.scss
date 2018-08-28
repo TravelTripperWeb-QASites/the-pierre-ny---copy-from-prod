@@ -85,6 +85,21 @@
     border-color: rgba(255,255,255,1);
   }
 
+  &.dark {
+    color: $primary-color !important;
+    border-color: $primary-color;
+
+    &:hover {
+      color: $white !important;
+      background: $primary-color;
+    }
+  }
+
+  &.wp-more {
+    width: auto;
+    padding: 10px 25px;
+  }
+
   @include media-breakpoint-up(lg) {
     width: 130px;
     padding: 7px 0;

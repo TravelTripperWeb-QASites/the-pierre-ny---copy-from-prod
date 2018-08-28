@@ -23,6 +23,7 @@ h1 {
   font-family: $header-font-family;
   font-size: $type-size-2;
   line-height: 3.938rem;
+  text-transform: lowercase;
   letter-spacing: .131rem;
 
   &.variant {
@@ -46,6 +47,7 @@ h2 {
   font-family: $header-font-family;
   font-size: $type-size-5;
   line-height: 1.875rem;
+
   @include media-breakpoint-up(md) {
     font-size: $type-size-3;
     line-height: 2.5rem;
