@@ -138,7 +138,7 @@ setTimeout(function () {
       dots: false,
       infinite: true,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       centerMode: false,
       adaptiveHeight: true,
