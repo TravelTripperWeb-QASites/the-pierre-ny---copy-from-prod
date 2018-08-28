@@ -44,3 +44,49 @@
     }
   }
 }
+
+//Facility chart
+
+.table-grid {
+  width: 100%;
+  padding: 50px 0;
+  background-color: $secondary-color;
+
+  &.no-bg {
+    background-color: $white;
+  }
+
+  .wrapper {
+    @include fixed-width-layout;
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 15px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  table {
+    margin-bottom: 50px;
+    font-family: $secondary-header-font;
+  }
+
+  th {
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  &.content-center {
+    th,td {
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+}
