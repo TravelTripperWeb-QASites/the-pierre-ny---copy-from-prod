@@ -26,7 +26,6 @@
   },
   "facility_chart": {
     "type": "nested",
-    "multiple": true,
     "hint": "Enter all the facility chart details",
     "fields": {
       "dimensions": {
@@ -53,7 +52,6 @@
   },
   "floor_plan": {
     "type": "nested",
-    "multiple": true,
     "hint": "Enter all the floor plan details",
     "fields": {
       "theater": {
@@ -76,12 +74,12 @@
       }
     }
   },
-  "floor_plan": {
+  "floor_plan_pdf": {
     "required": true,
     "label": "Floor Plan PDF",
     "type": "image"
   },
-  "event-space": {
+  "event_space_pdf": {
     "required": true,
     "label": "Event Space PDF",
     "type": "image"
