@@ -1,0 +1,46 @@
+// Venues styling here
+
+.venues-listing {
+  @include fixed-width-layout;
+  margin: 15px auto 25px;
+
+  .wrapper {
+    @include make-row;
+
+    .item {
+      @include make-col-ready;
+      margin: 20px auto 10px;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(4);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include make-col(3);
+      }
+
+      .content {
+        padding: 20px;
+        background: $secondary-color;
+
+      }
+      h5 {
+        line-height: 1.7rem;
+        color: $primary-color;
+      }
+
+      .secondary-btn {
+        line-height: normal;
+        color: $text-color;
+
+        &:after {
+          background-image: url('../images/arrow-darker.png');
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Stunning Event Venues in New York | Venues at The Pierre NY
+meta_description:
+permalink: /events/venues/
+meta_tags:
+  robots:
+---
+
+<!-- Venues Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/events/venues/venues-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock venues_title, type:header %}
+      <h1 class="variant">World - Class Venues</h1>
+    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    {% regionblock venues_subtitle, type:header %}
+      <h6>Stunning Event Venues in NYC</h6>
+    {% endregionblock %}
+  </div>
+</div>
+
+<!-- Venues Listing here -->
+{% assign venue = site.data._models.venues | sort:'sort_order' %}
+<div class="venues-listing">
+  <div class="wrapper">
+    <div class="item">
+      <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
+      <div class="content">
+        <h5>{{ venue.venue_name }}</h5>
+        <a class="secondary-btn" href="/events/venues/{{ seo_friendly_name }}/">View this venue</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Facility Chart -->
