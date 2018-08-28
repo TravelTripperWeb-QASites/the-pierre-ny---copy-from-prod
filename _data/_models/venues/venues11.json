@@ -1,7 +1,7 @@
 {
   "sort_order": 8,
   "venue_name": "Park",
-  "seo_friendly_name": "park",
+  "url_friendly_name": "park",
   "venue_thumbnail": {
     "name": "Park-Thumbnail",
     "file_name": "Park-Thumbnail.jpg",

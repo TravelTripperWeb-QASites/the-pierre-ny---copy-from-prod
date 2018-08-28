@@ -1,7 +1,7 @@
 {
   "sort_order": 10,
   "venue_name": "Park Lexington",
-  "seo_friendly_name": "park-lexington",
+  "url_friendly_name": "park-lexington",
   "venue_thumbnail": {
     "name": "Park-Thumbnail",
     "file_name": "Park-Thumbnail.jpg",
