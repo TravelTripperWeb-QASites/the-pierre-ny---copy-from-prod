@@ -27,7 +27,7 @@ meta_tags:
 <div class="venues-listing">
   <div class="wrapper">
     {% for venue in venues %}
-      {% if venue.dont_show_inlist and venue.dont_show_inlist == "" %}
+      {% if venue.dont_show_inlist == undefined %}
         <div class="item">
           <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
           <div class="content">
@@ -105,7 +105,7 @@ meta_tags:
       </thead>
       <tbody>
         {% for venue in venues %}
-          {% if venue.dont_show_inlist and venue.dont_show_inlist == "" %}
+          {% if venue.dont_show_inlist == undefined %}
             <tr>
               <td scope="row">{{ venue.venue_name }}</td>
               <td>{{ venue.floor_plan.theater }}</td>
