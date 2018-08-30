@@ -219,3 +219,53 @@ function pinterestShare(img, desc) {
   );
   return false;
 }
+
+//Light Gallery with Filter
+$('#lightgallery')
+  .lightGallery({
+    selector: '.gallery-item',
+    exThumbImage: 'data-exthumbimage',
+    counter: false,
+    download: false,
+    fullScreen: false
+  });
+
+
+// Gallery and Events Filter Function
+$(".gallery-wrapper .sub-nav li a")
+  .on("click", function () {
+
+    // Remove active class from everything
+    $(".gallery-wrapper .sub-nav li a")
+      .each(function () {
+        $(this)
+          .removeClass('active');
+      });
+
+    // Add active class to selected option
+    $(this)
+      .addClass('active');
+
+    // Assign filter variable
+    var $filter = $(this)
+      .attr("data-filter");
+
+    // If we select "All," show all
+    if ($filter == 'all') {
+      $(".fancybox")
+        .attr("data-fancybox-group", "gallery")
+        .not(":visible")
+        .fadeIn();
+    } else {
+      $(".fancybox")
+        .fadeOut(0)
+        .filter(function () {
+          // set data-filter value as the data-rel value of selected
+          return $(this)
+            .data("filter") == $filter;
+        })
+        .attr("data-fancybox-group", $filter)
+        .fadeIn(1000); // set data-fancybox-group and show filtered elements
+    }
+
+  });
