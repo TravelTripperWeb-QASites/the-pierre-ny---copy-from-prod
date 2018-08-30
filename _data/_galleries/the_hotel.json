@@ -1,7 +1,26 @@
 {
   "name": "THE HOTEL",
   "photos": [
-
+    {
+      "name": "the-hotel-14",
+      "file_name": "the-hotel-14.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/the-hotel-14.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-074646",
+      "file_type": "image/jpeg",
+      "width": 1094,
+      "height": 1642,
+      "file_size": 363683,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/large_the-hotel-14.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/medium_the-hotel-14.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/small_the-hotel-14.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/xsmall_the-hotel-14.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/thumb_the-hotel-14.jpg",
+      "git_file_name": "_assets/image_data/the-hotel-14.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/the-hotel-14.jpg",
+      "alt": "the-hotel-14"
+    }
   ],
   "description": ""
 }
