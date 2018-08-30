@@ -40,7 +40,7 @@
       @include make-col(6);
     }
     @include media-breakpoint-up(lg) {
-      @include make-col(4);
+      @include make-col(3);
       margin-bottom: 50px;
     }
     figure {
@@ -48,7 +48,7 @@
     }
     .offer-img {
       position: relative;
-      height: 450px;
+      height: 300px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

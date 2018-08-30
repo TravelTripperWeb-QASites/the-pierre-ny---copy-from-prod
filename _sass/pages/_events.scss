@@ -199,7 +199,7 @@
     display: block;
     padding: 20px 0 40px;
     font-family: $tag-line-font;
-    font-size: $type-size-9;
+    font-size: $type-size-9 !important;
     color: $text-color;
   }
 
