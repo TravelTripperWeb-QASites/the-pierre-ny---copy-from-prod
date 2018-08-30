@@ -89,11 +89,15 @@
       }
     }
   }
+
+  .border-btn {
+    margin: 0 10px;
+  }
 }
 
 //Venues Sub nav
 
-.venues-nav {
+.sub-nav {
   width: 100%;
   background: $secondary-color;
 

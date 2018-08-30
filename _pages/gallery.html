@@ -7,23 +7,52 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Gallery Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/gallery/gallery-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock gallery_title, type:header %}
+      <h1 class="variant">Gallery</h1>
+    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    {% regionblock gallery_subtitle, type:header %}
+      <h6>Photos of the Luxuriuos Pierre</h6>
+    {% endregionblock %}
+  </div>
+</div>
 
-  Name:
+<!-- Gallery listing here -->
+<div class="gallery-wrapper" id="lightgallery">
 
-    Gallery Page
+  <!-- Gallery Filter -->
+  <div class="sub-nav table-responsive-xl">
+    {% assign categories = site.data._galleries | sort: sort_order %}
+    <ul class="d-flex justify-content-center">
+      <li> <a href="javascript:void(0);" class="active" data-filter="all">All</a></li>
+      {% for category in categories %}
+        {% assign catname = category[0] %}
+        <li>
+          <a href="javascript:void(0);" data-filter="{{ catname }}">{{ site.data._galleries[catname].name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 
-  Description:
-
-    Display gallery images from the media library.
-
-  Usage:
-
-    Create a new gallery from the 'manage galleries' tab, then display the
-    images by looping over the gallery items, referenced by the gallery name.
-
-    eg. {% for photo in site.data._galleries.GALLERY_NAME.photos %}
-          <img src="{{ photo.url }}" alt="{{ photo.description }}">
+  <!-- Gallery Image Listing -->
+  <div class="gallery-listing" id="lightgallery" data-offergallery="show">
+    <div class="wrapper">
+      {% for category in categories %}
+        {% assign catname = category[0] %}
+        {% for photo in site.data._galleries[catname].photos %}
+        <div class="gallery-item fancybox item" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
+          <div class="image" style="background-image: url('{{ photo.url_small }}')"><img src="{{ photo.url_small }}" class="hidden"></div>
+          <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
         {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
 
-{% endcomment %}
+</div>
