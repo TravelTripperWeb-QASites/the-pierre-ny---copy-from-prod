@@ -80,6 +80,26 @@
       "git_file_name": "_assets/image_data/events-9.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080221/events-9.jpg",
       "alt": "events-9"
+    },
+    {
+      "name": "events-8",
+      "file_name": "events-8.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/events-8.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-080220",
+      "file_type": "image/jpeg",
+      "width": 1500,
+      "height": 998,
+      "file_size": 426216,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/large_events-8.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/medium_events-8.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/small_events-8.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/xsmall_events-8.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/thumb_events-8.jpg",
+      "git_file_name": "_assets/image_data/events-8.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080220/events-8.jpg",
+      "alt": "events-8"
     }
   ],
   "description": ""
