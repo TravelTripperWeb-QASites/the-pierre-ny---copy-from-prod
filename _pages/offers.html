@@ -19,17 +19,18 @@ meta_tags:
 
 {% assign offers = site.data._models.special_offers | sort: "order" %}
 <!-- Offers Menu -->
-<section class="offers-menu">
-  <div class="offers-menu-inner">
-    <ul>
-      {% for offer in offers %}
-        {% unless offer.unpublish == true %}
-          <li><a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+
+<div class="sub-nav table-responsive-xl">
+  <ul class="d-flex justify-content-center flex-wrap">
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <li>
+          <a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</div>
 
 <!-- Offers Listing -->
 <section class="offers-listing">

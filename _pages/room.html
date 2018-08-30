@@ -1,0 +1,154 @@
+---
+layout: default
+title: Rooms
+meta_description:
+permalink: /room/
+meta_tags:
+  robots:
+---
+
+<div ng-controller="roomDetail" rt3-room-details="details">
+<input type="hidden" id="roomCode" value="[[ details.code ]]">
+
+<section class="page-banner inner">
+  <div class="overlay-bg"></div>
+  <input type="hidden" id="totPhotos" value="[[details.photos.length]]">
+  <div id="room-details-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators" rt3-roomcarousel-indicator>
+      <li data-target="#room-details-carousel" data-slide-to="[[$index]]" ng-class="{active: $first}" ng-repeat="photo in details.photos"></li>
+    </ol>
+    <div class="carousel-inner" room-gallery>
+      <div class="carousel-item" ng-class="{active: $first}" ng-repeat="photo in details.photos" style="background-image:url([[photo.large]]);"></div>
+    </div>
+    <div class="banner-content">
+      <h1 class="variant">[[details.name]]</h1>
+      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != 'CHECK AVAILABILITY' ? 'Book Now' : 'Check Availability']]</a>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="categories__container">
+    <ul class="categories__list">
+      <li><a href="/rooms-suites/#all" class="active">All</a></li>
+      <li><a href="/rooms-suites/#classic">Classic</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#cityview">City View</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#parkview">Park View</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#grandsuites">Grand Suites</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#residences">Residences</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="room-single">
+  <div class="room-single__intro">
+    <h2>In-Room Services & Amenities</h2>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  </div>
+  <div class="room-single__content">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#room_features">Features</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#room_floor_plan">Floor Plan</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+    <div class="tab-content">
+
+      <div id="room_features" class="container tab-pane active">
+
+        <article room-detail>
+          <h3>Room Features</h3>
+          [[ details.description ]]
+        </article>
+
+        <h3>Services & Amenities</h3>
+
+        <article room-amenities>
+           <ul>
+              <li ng-repeat="amenity in details.amenities">[[ amenity ]]</li>
+            </ul>
+        </article>
+
+        <div class="btn-holder">
+          <a class="primary-btn" href="{{ site.reztripUrl }}search?selected_room_category=[[ details.category ]]&selected_room=[[ details.code ]]" target="_blank">Book Now</a>
+        </div>
+
+      </div>
+
+      <div id="room_floor_plan" class="container tab-pane fade">
+
+        <article addition-detail></article>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <object data="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" type="application/pdf" width="100%" height="100%">
+                  <p class="pdf-no-support">This browser does not support PDFs. Please download the PDF to view it:.</p>
+                    <a ng-href="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" class="floor-plan-btn" target="_blank"><i class="map-icon"></i>View Floor Plan <span ng-show="floorPlanPdfs.length > 1"></span></a>
+                </object>
+                <a href="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" target="_blank" class="enlarge-btn">View Larger Version</a>
+              </div>
+
+              <div class="carousel-item">
+                <object data="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" type="application/pdf" width="100%" height="100%">
+                  <p class="pdf-no-support">This browser does not support PDFs. Please download the PDF to view it:.</p>
+                    <a ng-href="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" class="floor-plan-btn" target="_blank"><i class="map-icon"></i>View Floor Plan <span ng-show="floorPlanPdfs.length > 1"></span></a>
+                </object>
+                <a href="/assets/pdf/rooms/The-Rajput-Suite-New.pdf" target="_blank" class="enlarge-btn">View Larger Version</a>
+              </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+</div>
+
+{% include offers-carousel.html %}

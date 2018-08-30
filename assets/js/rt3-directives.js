@@ -8,15 +8,6 @@ angular.module('rezTrip')
       }
     };
   }])
-  .directive('rt3PortalInfo', ['rt3PortalInfo', function(rt3PortalInfo) {
-    return {
-      restrict: 'A',
-      scope: true,
-      link: function(scope, element, attrs) {
-        scope[attrs['rt3PortalInfo']] = rt3PortalInfo;
-      }
-    };
-  }])
   .directive('rt3SearchForm', ['rt3Search', function(rt3Search) {
     return {
       restrict: 'A',
@@ -71,21 +62,6 @@ angular.module('rezTrip')
       }
     }
   }])
- .directive('onSearchChanged', function (rt3Search) {
-      return {
-        scope: false,
-        restrict: 'A',
-        link: function (scope, element, attrs) {
-          scope.$watch('search.params', function (params) {
-            if (params.arrival_date && params.departure_date) {
-              scope.$eval(attrs.onSearchChanged);
-            }
-          }, true);
-
-          scope.$eval(attrs.onSearchChanged);
-        }
-      };
-    })
 .directive('rt3RateCalendar', ['rt3RateCalendar', function(rt3RateCalendar) {
     return {
       restrict: 'A',
@@ -141,14 +117,14 @@ angular.module('rezTrip')
                     if (!date1 || date2) {
                         $("#"+checkinEle).val(dateText);
                         $("#"+checkoutEle).val("");
-
+                        
                     } else if( selectedDate < date1 ) {
                         $("#"+checkinEle).val( $("#"+checkinEle).val() );
                         $("#"+checkoutEle).val( dateText );
-
+                        
                     } else {
                         $("#"+checkoutEle).val(dateText);
-
+                        
                     }
                     $(this).datepicker();
                 });

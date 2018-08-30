@@ -1,8 +1,116 @@
 .rfp-form {
   @include fixed-width-content;
+  max-width: 700px;
+  padding: 60px 30px;
   h4 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
   }
+  h6 {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    font-size: $type-size-10;
+  }
+  .form-control {
+    height: 50px;
+    font-family: $base-font-family;
+    font-size: $type-size-10;
+    color: $primary-color;
+    border-color: $border-color;
+    border-radius: 0;
+    box-shadow: none;
+    transition: $global-transition;
+    &:focus {
+      border-color: $primary-color-light;
+    }
+  }
+  select {
+    &.form-control {
+      height: 50px !important;
+    }
+  }
+  textarea {
+    &.form-control {
+      height: 100px;
+      resize: none;
+    }
+  }
+}
+
+.ui-widget {
+  font-family: $tag-line-font;
+  background-color: $secondary-color;
+  &.ui-widget-content {
+    padding: 5px;
+    border: 0;
+    @include media-breakpoint-up(md) {
+      padding: 15px;
+    }
+  }
+}
+.ui-widget-header {
+  font-family: $tertiary-header-font;
+  font-size: $type-size-9;
+  color: $gray;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+}
+.ui-corner-all {
+  border-radius: 0;
+}
+.ui-datepicker {
+  width: auto;
+  .ui-datepicker-next {
+    top: 0;
+    cursor: pointer;
+  }
+  .ui-datepicker-prev {
+    top: 0;
+    cursor: pointer;
+  }
+  .ui-datepicker-header {
+    padding: 0 0 15px;
+  }
+  th {
+    font-family: $tag-line-font;
+    font-size: $type-size-12;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 0;
+    a {
+      padding: 8px 9px;
+      @include media-breakpoint-up(md) {
+        padding: 10px 11px;
+      }
+    }
+    span {
+      padding: 8px 9px;
+      @include media-breakpoint-up(md) {
+        padding: 10px 11px;
+      }
+      text-align: center;
+    }
+  }
+}
+.ui-state-highlight {
+  color: $white !important;
+  background-color: $primary-color !important;
+  border: 0 !important;
+}
+.ui-state-default {
+  border: 0 !important;
+}
+.ui-state-active {
+  background-color: $primary-color !important;
+}
+.ui-state-hover {
+  border: 0 !important;
 }

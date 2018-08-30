@@ -1,0 +1,21 @@
+{
+  "F1K" : ["Superior-Room"],
+  "B1K" : ["Park-View-King" ,"Park-View-King-2"],
+  "E1K": ["Classic-Room-King", "Classic-Room"],
+  "E1S": ["Executive-Suite-Twin","Executive-Suite-w-Kitchen"],
+  "DSA": ["Executive-Suite-Twin","Executive-Suite-w-Kitchen"],
+  "D1K": ["Deluxe-Room","Deluxe-Room-2"],
+  "ADA": ["Deluxe-Room","Deluxe-Room-2"],
+  "C1K": ["City-View-Room-King-2" , "City-View-Room-King"],
+  "C2T": ["City-View-Room-King-2" , "City-View-Room-King"],
+  "C1S": ["City-View-Suite-King", "City-View-Suite-King-2"],
+  "CBS": ["City-View-Suite-King", "City-View-Suite-King-2"],
+  "CCS":["City-View-2-BR-Suite"],
+  "B1S": ["Premier-Suite-No-Kitchen","Premier-Suite-Pantry-Kitchen"],
+  "A1S": ["Metropolitan-Suite"],
+  "A1K":["Signature-Room-King"],
+  "C2S": ["The-Rajput-Suite","The-Rajput-Suite-w-Connector","Grand-Suite-1714-w-Connector","Grand-Suite-1714"],
+  "ABS":["The-Charles-Pierre-Suite-w-Connector","The-Charles-Pierre-Suite","The-Getty-Suite-w-Connector","The-Getty-Suite","The-Hutton-Suite-w-Connector","The-Hutton-Suite","The-Park-Suite"],
+  "AAS": ["The-Tata-Suite-w-Connector"],
+  "B2S":["The-Escoffier-Suite","Grand-Suite-627-w-Connectors","Grand-Suite-627","Grand-Suite-927"]
+}
