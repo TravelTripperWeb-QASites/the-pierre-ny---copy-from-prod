@@ -217,6 +217,9 @@
         padding: 20px;
         background-color: $white;
         h4 {
+          font-size: $type-size-6;
+          line-height: 1.875rem;
+
           a {
             &:hover {
               text-decoration: none;
