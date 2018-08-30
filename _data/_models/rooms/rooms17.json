@@ -1,0 +1,19 @@
+{
+  "title": "Metropolitan Suite",
+  "room-id": "A1S",
+  "language": "en",
+  "short_info": "The Metropolitan Suite features Manhattan residential style with high ceilings, and furnishings in rich golds and royal blues. This 970 square foot suite is located on the 8th floor.",
+  "additional-info": "<p>Featuring 970 square feet, the Metropolitan Suite features Manhattan residential style with high ceilings, and furnishings in rich golds and royal blues. The suite is located on the 8th floor.</p>",
+  "replace-reztrip-amenities": true,
+  "room_features": "<h3>Room Features</h3>\n<p>The Metropolitan Suite features Manhattan residential style with high ceilings, and furnishings in rich golds and royal blues. This 970 square foot suite is located on the 8th floor.</p>\n<h3>Bed &amp; Bath Experience</h3>\n<p>The Metropolitan Suite's&nbsp;beautiful foyer opens to an elegant living room comprised of two stylish sofas, coffee table and two side tables. A wall mounted 40&rdquo; TV hangs over the vanity fireplace, and two armor against the wall completes the room.</p>\n<p>The bedroom features a plush king sized bed, two nightstands with Bose Wave Studio radio featuring Bluetooth connectivity and alarm clock as also an executive writing desk and chair is located on the far side of the room.&nbsp; A 40&rdquo; TV on a console is across the bed next to a sofa.</p>\n<p>The Turkish marble-clad bathroom is spacious and features a dressing area, double vanity sink, glass enclosed shower, soaking tub, oversized showerheads, plush bathrobes and towels and luxurious Etro bath amenities. The Metropolitan Suite also features a half bathroom in the living room.</p>",
+  "service_amenities": "<p>Service includes 24 hour&nbsp;white gloved elevator attendants,&nbsp;Complimentary hotel Jaguar service&nbsp;subject to availability, an Award-winning Les Clefs d'Or Concierge team to assist guests.</p>\n<p>In-room comforts feature Complimentary high speed wi-fi for up to 4 devices, 24 hour in-room dining service, Housekeeping daily service twice, Overnight complimentary shoe shine, Plush terry cloth robes &amp; Pierre slippers, Exclusive Etro toiletries, On site 24-hour valet and hand-laundry services, complimentary dog amenities (for pets up to 15 pounds), Complimentary online newspapers and magazines on check in.&nbsp; For a full list of our guest services and amenities click&nbsp;<a href=\"https://www.thepierreny.com/luxury-manhattan-hotel-amenities/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p>",
+  "gallery": [
+    {
+      "url": "",
+      "alt": "",
+      "caption": "",
+      "description": ""
+    }
+  ],
+  "replace-reztrip-details": true
+}

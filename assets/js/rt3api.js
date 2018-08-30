@@ -193,7 +193,7 @@ Rt3Api.prototype.getRateShopping = function(searchParams) {
     function reformatParams(searchParams) {
        var params = searchParams;
 
-       params['adults[]'] = searchParams.adults || 1;
+       params['adults[]'] = searchParams.adults || 2;
        params['children[]'] = searchParams.children || 0;
        params.rooms = searchParams.rooms || 1;
 
@@ -211,8 +211,7 @@ Rt3Api.prototype.getBrgInfo = function(searchParams) {
         hotel_id: this.config.hotelId,
         portal_id: this.config.portalId,
         locale: this.config.defaultLocale,
-        currency: this.config.defaultCurrency,
-        ip_address : sessionStorage.ip_add
+        currency: this.config.defaultCurrency
     };
 
     var params = $.extend(defaultParams, searchParams);

@@ -11,6 +11,54 @@ $('.selectpicker')
     size: 4
   });
 
+// Arrival and Departure datepicker
+
+$("#arrival_date").datepicker({
+          dateFormat: "yy-mm-dd",
+    altField  : '#arrival_date',
+    altFormat : 'yy-mm-dd',
+          minDate: 0,
+          onSelect: function (date) {
+              var date2 = $('#arrival_date').datepicker('getDate');
+              date2.setDate(date2.getDate() + 1);
+              $('#departure_date').datepicker('setDate', date2);
+              //sets minDate to dt1 date + 1
+              $('#departure_date').datepicker('option', 'minDate', date2);
+          }
+      });
+      $('#departure_date').datepicker({
+          dateFormat: "yy-mm-dd",
+    altField  : '#departure_dates',
+    altFormat : 'yy-mm-dd',
+          onClose: function () {
+              var dt1 = $('#v').datepicker('getDate');
+              console.log(dt1);
+              var dt2 = $('#departure_date').datepicker('getDate');
+              if (dt2 <= dt1) {
+                  var minDate = $('#departure_date').datepicker('option', 'minDate');
+                  $('#departure_date').datepicker('setDate', minDate);
+              }
+          }
+      });
+
+// Filter
+
+$(".filter").on("click", function() {
+        var $this = $(this);
+        // if we click the active tab, do nothing
+        if (!$this.hasClass("active")) {
+            $(".filter").removeClass("active");
+            $this.addClass("active"); // set the active tab
+            var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
+            $filter == 'all' ? // if we select "view all", return to initial settings and show all
+                $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn()
+
+                : // otherwise
+                $(".fancybox").fadeOut(0).filter(function() {
+                    return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+                }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+        } // if
+    }); // on
 
 //Main Nav Dropdown
 $(window)

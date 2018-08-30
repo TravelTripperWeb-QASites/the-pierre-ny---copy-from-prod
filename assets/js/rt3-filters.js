@@ -55,14 +55,4 @@ angular.module('rezTrip')
         }
         return (!value) ? '' : retStr;
     };
-})
-.filter('roomSizeUnits', function () {
-    return function (value) {
-        if(value == 'ft<sup>2</sup>') {
-          return "sq ft"
-        } else if (value == 'm<sup>2</sup>') {
-          return "sq mt"
-        }
-        return value;
-    };
 });;

@@ -7,6 +7,8 @@ meta_tags:
   robots:
 ---
 
+<input type="hidden" id="listing" name="listing" value="[[browser.roomsv  ? true : false]]">
+
 <section class="page-banner inner" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
@@ -19,17 +21,17 @@ meta_tags:
 <section class="categories">
   <div class="categories__container">
     <ul class="categories__list">
-      <li><a href="" class="active">All</a></li>
-      <li><a href="">Classic</a></li>
-      <li><a href="">City View</a></li>
-      <li><a href="">Park View</a></li>
-      <li><a href="">Grand Suites</a></li>
-      <li><a href="">Residences</a></li>
+      <li><a data-rel="all" href="javascript:;" class="filter active">All</a></li>
+      <li><a data-rel="classic" href="javascript:;" class="filter">Classic</a></li>
+      <li><a data-rel="city" href="javascript:;" class="filter">City View</a></li>
+      <li><a data-rel="park" href="javascript:;" class="filter">Park View</a></li>
+      <li><a data-rel="grand" href="javascript:;" class="filter last">Grand Suites</a></li>
+      <li><a data-rel="residences" href="javascript:;" class="filter last">Residences</a></li>
     </ul>
   </div>
 </section>
 
-<section class="rooms">
+<section class="rooms fancybox" id="classic" data-filter="classic">
   <div class="rooms__intro">
     <h2>Classic</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
@@ -38,49 +40,27 @@ elegant rooms & suites with lofty ceilings and peaceful interior views.</p>
   </div>
   <div class="rooms__row">
 
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Superior King Room Interior View</h3>
+    <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
+      <div data-rt3room="[[room.code]]">
+        <a href="" class="rooms__head">
+          <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
+            <h3>[[room.name]]</h3>
+          </div>
+        </a>
+        <div class="rooms__body">
+          <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="rooms__rate" target="_blank">[[room.todayRate]]</a>
+          <p data-rt3room-info>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+          <div class="btn-holder">
+            <a class="border-btn light" href="/room/#[[room.name | formatNameForLink]]">View Details</a>
+          </div>
         </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="/rooms/superior-king-room-interior-view/">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="rooms">
+<section class="rooms fancybox" id="cityview" data-filter="city">
   <div class="rooms__intro">
     <h2>City View</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
@@ -89,88 +69,27 @@ define the luxurious rooms & suites in our City View Collection.</p>
   </div>
   <div class="rooms__row">
 
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
+    <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
+      <div data-rt3room="[[room.code]]">
+        <a href="" class="rooms__head">
+          <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
+            <h3>[[room.name]]</h3>
+          </div>
+        </a>
+        <div class="rooms__body">
+          <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="rooms__rate" target="_blank">[[room.todayRate]]</a>
+          <p data-rt3room-info>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+          <div class="btn-holder">
+            <a class="border-btn light" href="/room/#[[room.name | formatNameForLink]]">View Details</a>
+          </div>
         </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="rooms">
+<section class="rooms fancybox" id="parkview" data-filter="park">
   <div class="rooms__intro">
     <h2>Park View</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
@@ -179,36 +98,27 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
   </div>
   <div class="rooms__row">
 
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
+    <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
+      <div data-rt3room="[[room.code]]">
+        <a href="" class="rooms__head">
+          <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
+            <h3>[[room.name]]</h3>
+          </div>
+        </a>
+        <div class="rooms__body">
+          <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="rooms__rate" target="_blank">[[room.todayRate]]</a>
+          <p data-rt3room-info>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+          <div class="btn-holder">
+            <a class="border-btn light" href="/room/#[[room.name | formatNameForLink]]">View Details</a>
+          </div>
         </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="rooms">
+<section class="rooms fancybox" id="grandsuites" data-filter="grand">
   <div class="rooms__intro">
     <h2>Grand Suites</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
@@ -217,62 +127,27 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
   </div>
   <div class="rooms__row">
 
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
+    <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
+      <div data-rt3room="[[room.code]]">
+        <a href="" class="rooms__head">
+          <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
+            <h3>[[room.name]]</h3>
+          </div>
+        </a>
+        <div class="rooms__body">
+          <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="rooms__rate" target="_blank">[[room.todayRate]]</a>
+          <p data-rt3room-info>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+          <div class="btn-holder">
+            <a class="border-btn light" href="/room/#[[room.name | formatNameForLink]]">View Details</a>
+          </div>
         </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
-      </div>
-    </div>
-
-    <div class="rooms__item rooms__item--twocol">
-      <a href="" class="rooms__head">
-        <div class="rooms__image bg-cover" style="background-image:url('https://d31f902anbz5po.cloudfront.net/973/45792_5_master.jpg');">
-          <h3>Deluxe King ADA Room Manhattan View</h3>
-        </div>
-      </a>
-      <div class="rooms__body">
-        <a href="#" class="rooms__rate">$ 423</a>
-        <p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.</p>
-        <a class="secondary-btn" href="#">View Details</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="rooms">
+<section class="rooms fancybox" data-filter="residences">
   <div class="rooms__intro">
     <h2>Residences</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>

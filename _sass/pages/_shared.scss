@@ -5,14 +5,19 @@
   position: relative;
   @include fluid-layout;
   height: 690px;
+  padding-right: 0;
+  padding-left: 0;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   .banner-content {
     @include vertical-center;
+    z-index: 10;
     max-width: 840px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
     color: $white;
     text-align: center;
     transform: translateY(-43%);
@@ -45,6 +50,17 @@
         transform: translateY(-15%);
       }
     }
+    .carousel {
+      .banner-content {
+        position: absolute;
+        right: 0;
+        left: 0;
+      }
+    }
+    .carousel-item {
+      height: 550px;
+      @extend .bg-cover;
+    }
   }
 }
 
@@ -62,6 +78,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
   background-image: url('/assets/images/overlay-bg.png');
   background-repeat: repeat-x;
 

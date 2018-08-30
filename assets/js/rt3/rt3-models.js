@@ -21,11 +21,11 @@ $(function() {
 	};
 
     //model api for rooms and specials
-    var rt3Model_api = "/js/rt3/models/rt3models-data.json";
+    var rt3Model_api = "/assets/js/rt3/models/rt3models-data.json";
 
    /* ROOM PAGE CONTENT CHANGE*/
     if($("input#roomCode") && $('[rt3-room-details]').length > 0){  //if room code input is avail
-      
+
     		$("input#roomCode").on('inputchange', function () {  //after change the value of an room code input
     			var roomcode = this.value;
 
@@ -33,12 +33,15 @@ $(function() {
 					var amenities_container = $('[rt3-room-details]').find('[room-amenities]');  //room detail block
           var room_carousel_image = $('[rt3-room-details]').find('[room-gallery]');
 					var room_additional = $('[rt3-room-details]').find('[addition-detail]');
+					var room_carousel_indicator = $('[rt3-room-details]').find('[rt3-roomcarousel-indicator]');
+					var totPhotos = $("#totPhotos") ? $("#totPhotos").val() : 0;
     			$.getJSON( rt3Model_api, function(data) {  //fetch room data
 						if(data.roomsDetails[roomcode].gallery != null){
 							$.each( data.roomsDetails[roomcode].gallery, function (i, item){
-
+                var newindicatortotl = totPhotos++;
                 if(item.url_large && item.url_large !=''){
-                  room_carousel_image.append('<div class="item" style="background-image: url('+item.url_large+');"></div>');
+                  room_carousel_image.append('<div class="carousel-item" style="background-image: url('+item.url_large+');"></div>');
+									room_carousel_indicator.append('<li data-target="#room-details-carousel" data-slide-to="'+newindicatortotl+'"></li>');
                 }
 							});
 						}
