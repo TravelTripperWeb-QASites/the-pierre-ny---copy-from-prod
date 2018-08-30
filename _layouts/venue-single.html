@@ -18,9 +18,9 @@ title: Venue Details
 </div>
 
 <!-- Venues Sub Nav -->
-<div class="sub-nav table-responsive-xl">
+<div class="sub-nav">
   {% assign venues = site.data._models.venues | where: "dont_show_inlist", undefined | sort: "sort_order " %}
-  <ul class="d-flex justify-content-between">
+  <ul class="d-flex justify-content-center">
     {% for venue in venues %}
       <li>
         <a {% if page.url_friendly_name != venue.url_friendly_name %}href="/events/venues/{{ venue.url_friendly_name }}/"{% endif%}>{{ venue.venue_name }}</a>
