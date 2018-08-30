@@ -19,6 +19,6 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "uglify": "uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-thumbnail.js assets/js/lg-share.js assets/js/_main.js -c -o assets/js/main.min.js"
+    "uglify": "uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-thumbnail.js assets/js/lg-share.js assets/js/tt-widgets.js assets/js/_main.js -c -o assets/js/main.min.js"
   }
 }
