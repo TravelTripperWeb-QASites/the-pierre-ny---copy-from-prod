@@ -309,10 +309,14 @@
 //Quotation block styling
 .quote {
   width: 100%;
-  padding: 90px 20px;
+  padding: 50px 20px;
   text-align: center;
   text-transform: none;
   background: $secondary-color;
+
+  @include media-breakpoint-up(md) {
+    padding: 90px 20px;
+  }
 
   &.light {
     background: $white;
@@ -323,12 +327,17 @@
     max-width: 950px;
     margin: 0 auto;
     font-family: $secondary-header-font;
-    font-size: $type-size-4;
-    line-height: 2.5rem;
+    font-size: $type-size-5;
+    line-height: 2rem;
     color: $text-color;
 
     span {
       color: $primary-color;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: $type-size-4;
+      line-height: 2.5rem;
     }
   }
 }

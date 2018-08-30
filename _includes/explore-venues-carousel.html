@@ -1,9 +1,11 @@
 <section class="common-carousel">
-  <h2 class="text-center mb-4">Explore Venues</h2>
-  <p class="text-center">Browse our enviable collection of distinctive venues.</p>
-  <div class="crest-holder">
-		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
-	</div>
+  {% regionblock explore_venues_heading, type:header %}
+    <h2 class="text-center mb-4">Explore Venues</h2>
+  {% endregionblock %}
+  {% regionblock explore_venues_intro, type:text %}
+    <p class="text-center">Browse our enviable collection of distinctive venues.</p>
+  {% endregionblock %}
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
   <div class="common-carousel-inner">
     <div class="slick-controls" id="commonCarousel">
       {% assign model = site.data._models %}
