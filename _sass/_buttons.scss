@@ -26,6 +26,10 @@
       background: $primary-color;
     }
   }
+  &[type= 'submit'] {
+    cursor: pointer;
+    border: 0;
+  }
 }
 
 .secondary-btn {
@@ -65,7 +69,6 @@
     }
   }
 }
-
 .border-btn {
   display: block;
   width: auto;
@@ -103,6 +106,19 @@
   @include media-breakpoint-up(lg) {
     width: 130px;
     padding: 7px 0;
+  }
+  &.light {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px 25px;
+    color: $primary-color !important;
+    border-color: $primary-color;
+    &:hover {
+      color: $white !important;
+      background: $primary-color;
+    }
   }
 }
 

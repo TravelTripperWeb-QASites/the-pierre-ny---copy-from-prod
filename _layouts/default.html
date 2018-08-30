@@ -6,7 +6,7 @@
   {% include head/custom.html %}
 </head>
 
-<body>
+<body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-portal-info="portalInfo" rt3-rooms-browser="browser" ng-cloak>
 
   {% if site.data.tracking.analytics.provider and page.analytics != false %}
     {% case site.data.tracking.analytics.provider %}

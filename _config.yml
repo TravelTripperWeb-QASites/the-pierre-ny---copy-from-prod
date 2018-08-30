@@ -5,6 +5,7 @@ name: "The Pierre New York"
 description: "The Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown."
 url: https://www.thepierreny.com
 repository: "TravelTripperWeb-Sites/the-pierre-new-york" # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+reztripUrl: "https://thepierreny.reztrip.com/"
 booking_widget_url: https://thepierreny.reztrip.com/mobile
 
 email: thepierre.ny@tajhotels.com
