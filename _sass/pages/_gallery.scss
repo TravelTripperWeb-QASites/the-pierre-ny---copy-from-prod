@@ -23,17 +23,23 @@
     @include make-row;
 
     .gallery-item {
-      position: relative;
       @include make-col-ready;
+      position: relative;
+      margin-bottom: 30px;
+
       @include media-breakpoint-up(sm) {
         @include make-col(6);
       }
+
       @include media-breakpoint-up(md) {
         @include make-col(3);
       }
-      margin-bottom: 30px;
-      img {
-        max-width: 100%;
+
+
+      .image {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .overlay {
         @include transition(all .3s);
