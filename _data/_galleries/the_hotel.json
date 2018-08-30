@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/the-hotel-14.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/the-hotel-14.jpg",
       "alt": "the-hotel-14"
+    },
+    {
+      "name": "the-hotel-13",
+      "file_name": "the-hotel-13.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/the-hotel-13.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-074645",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 1200,
+      "file_size": 216372,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/large_the-hotel-13.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/medium_the-hotel-13.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/small_the-hotel-13.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/xsmall_the-hotel-13.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/thumb_the-hotel-13.jpg",
+      "git_file_name": "_assets/image_data/the-hotel-13.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074645/the-hotel-13.jpg",
+      "alt": "the-hotel-13"
     }
   ],
   "description": ""
