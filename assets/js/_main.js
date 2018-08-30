@@ -221,14 +221,15 @@ function pinterestShare(img, desc) {
 }
 
 //Light Gallery with Filter
-$('#lightgallery')
-  .lightGallery({
-    selector: '.gallery-item',
-    exThumbImage: 'data-exthumbimage',
-    counter: false,
-    download: false,
-    fullScreen: false
-  });
+// $('#lightgallery')
+//   .lightGallery({
+//     selector: '.gallery-item',
+//     exThumbImage: 'data-exthumbimage',
+//     counter: false,
+//     download: false,
+//     fullScreen: false
+//   });
+
 
 
 // Gallery and Events Filter Function
@@ -266,6 +267,29 @@ $(".gallery-wrapper .sub-nav li a")
         })
         .attr("data-fancybox-group", $filter)
         .fadeIn(1000); // set data-fancybox-group and show filtered elements
-    }
+      .fadeIn(1000); // set data-fancybox-group and show filtered elements
+      //reset lightgallery after filtering
+      setTimeout(function () {
+        var lightgallery = $('[data-offergallery]');
+        if (lightgallery.length > 0) {
+          lightgallery.data('lightGallery')
+            .destroy(true);
+          $('[data-offergallery]')
+            .lightGallery({
+              selector: ".item:visible",
+              counter: false,
+              share: false
+            });
+        }
 
+      }, 1000);
+    } // if
+  }); // on
+
+$('[data-offergallery]')
+  .lightGallery({
+    selector: '.item',
+    counter: false,
+    download: false,
+    fullScreen: false
   });
