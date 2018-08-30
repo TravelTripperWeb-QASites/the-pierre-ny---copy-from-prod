@@ -18,22 +18,9 @@ meta_tags:
 </section>
 
 {% assign offers = site.data._models.special_offers | sort: "order" %}
-<!-- Offers Menu -->
-
-<div class="sub-nav table-responsive-xl">
-  <ul class="d-flex justify-content-center flex-wrap">
-    {% for offer in offers %}
-      {% unless offer.unpublish == true %}
-        <li>
-          <a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a>
-        </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-</div>
 
 <!-- Offers Listing -->
-<section class="offers-listing">
+<section class="offers-listing mt-5">
   <div class="offers-listing-inner">
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
@@ -42,11 +29,11 @@ meta_tags:
             <figure>
               {% if offer.listing_image and offer.listing_image.url_medium !="" %}
               <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
-                <h4>{{ offer.title }}</h4>
+                <h3>{{ offer.title }}</h3>
               </div>
               {% else %}
               <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
-                <h4>{{ offer.title }}</h4>
+                <h3>{{ offer.title }}</h3>
               </div>
               {% endif %}
             </figure>
