@@ -21,22 +21,19 @@ meta_tags:
 </section>
 
 <!-- Offers Menu -->
-<section class="offers-menu">
-  <div class="offers-menu-inner">
-    <ul>
-      {% for offer in offers %}
-        {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %}
-        {% unless page.url == offer_url %}
-          {% unless offer.unpublish == true %}
-            <li><a href="/offers/{{ offer.url_friendly_name }}/">{{ offer.title }}</a></li>
-          {% endunless %}
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+<div class="sub-nav">
+  <ul class="d-flex justify-content-center flex-wrap full-width">
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <li>
+          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="/offers/{{ offer.url_friendly_name }}/"{% endif %}>{{ offer.title }}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</div>
 
-<section class="offer-details">
+<section class="offer-details mt-5">
   <div class="offers-desc">
     <h2>{{ page.title }}</h2>
     <div class="divider">
