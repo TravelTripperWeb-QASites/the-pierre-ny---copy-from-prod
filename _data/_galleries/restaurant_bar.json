@@ -160,6 +160,26 @@
       "git_file_name": "_assets/image_data/restaurant-7.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075628/restaurant-7.jpg",
       "alt": "restaurant-7"
+    },
+    {
+      "name": "restaurant-6",
+      "file_name": "restaurant-6.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/restaurant-6.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-075627",
+      "file_type": "image/jpeg",
+      "width": 800,
+      "height": 1042,
+      "file_size": 142215,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/large_restaurant-6.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/medium_restaurant-6.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/small_restaurant-6.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/xsmall_restaurant-6.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/thumb_restaurant-6.jpg",
+      "git_file_name": "_assets/image_data/restaurant-6.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075627/restaurant-6.jpg",
+      "alt": "restaurant-6"
     }
   ],
   "description": ""
