@@ -27,7 +27,7 @@ meta_tags:
   <!-- Gallery Filter -->
   <div class="sub-nav table-responsive-xl">
     {% assign categories = site.data._galleries | sort: sort_order %}
-    <ul class="d-flex justify-content-between">
+    <ul class="d-flex justify-content-center">
       <li> <a href="javascript:void(0);" class="active" data-filter="all">All</a></li>
       {% for category in categories %}
         {% assign catname = category[0] %}
@@ -40,17 +40,19 @@ meta_tags:
 
   <!-- Gallery Image Listing -->
   <div class="gallery-listing" id="lightgallery">
-    {% for category in categories %}
-      {% assign catname = category[0] %}
-      {% for photo in site.data._galleries[catname].photos %}
-      <div class="gallery-item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
-        <img src="{{ photo.url_small }}" alt="{{ photo.name }}" />
-        <div class="overlay">
-          <i class="fas fa-search-plus"></i>
+    <div class="wrapper">
+      {% for category in categories %}
+        {% assign catname = category[0] %}
+        {% for photo in site.data._galleries[catname].photos %}
+        <div class="gallery-item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
+          <img src="{{ photo.url_small }}" alt="{{ photo.name }}" />
+          <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
         </div>
-      </div>
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
+    </div>
   </div>
 
 </div>
