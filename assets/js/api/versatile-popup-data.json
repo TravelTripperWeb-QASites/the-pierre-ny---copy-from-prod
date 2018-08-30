@@ -1,0 +1,13 @@
+-- -
+-- -
+jsonCallback({
+  "special_rates": [{
+    "rate_plan_name": "{{site.data.versatile-popup-settings.title | jsonfy}}",
+    "short_description": "{{site.data.versatile-popup-settings.body | jsonfy}}",
+    "rate_plan_code": "{{site.data.versatile-popup-settings.offer-code}}",
+    "lead_photo_url": {
+      "yankee_large": "{{site.data.versatile-popup-settings.offer-image}}"
+    },
+    "promo_url": "{{site.data.versatile-popup-settings.offer-link}}"
+  }]
+});
