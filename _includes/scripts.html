@@ -24,3 +24,34 @@
 
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+{% if page.url contains 'gallery' %}
+
+  <script type="text/javascript">
+   $(document).ready(function(){
+      $('body').TTwidgets({
+         {% if site.data.tt_widgets.hotelId and  site.data.tt_widgets.hotelId !="" %}
+         hotel_id: '{{site.data.tt_widgets.hotelId}}',
+         {% endif %}
+         {% if site.data.tt_widgets.portalId and site.data.tt_widgets.portalId !="" %}
+         portal_id: '{{site.data.tt_widgets.portalId}}',
+         {% endif %}
+         offer_popup_widget: {
+            {% if site.data.tt_widgets.versatile_popup == 'true'%}
+            show: true
+            {% endif %}
+          },
+          offer_gallery:{
+            galleryselector: '.item',
+            buttonClass: 'rounded-btn'
+            {% if site.data.tt_widgets.offers_gallery == 'true'%}
+            ,
+            show: true
+            {% endif %}
+          }
+      });
+
+    });
+  </script>
+
+{% endif %}

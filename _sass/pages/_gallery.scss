@@ -35,6 +35,9 @@
         @include make-col(3);
       }
 
+      &.hidden {
+        display: none !important;
+      }
 
       .image {
         height: 300px;
