@@ -41,6 +41,11 @@
 	"gallery": {
 		"type": "image",
 		"multiple": true
-	}
+	},
+	"floor_plan_pdf": {
+    "label": "Floor Plan PDF",
+    "type": "image",
+		"multiple": true
+  }
 
 }
