@@ -1,3 +1,5 @@
+
+<!-- Explore More venues -->
 <section class="common-carousel">
   {% regionblock explore_venues_heading, type:header %}
     <h2 class="text-center mb-4">Explore Venues</h2>
@@ -7,71 +9,17 @@
   {% endregionblock %}
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
   <div class="common-carousel-inner">
+    {% assign venues = site.data._models.venues %}
     <div class="slick-controls" id="commonCarousel">
-      {% assign model = site.data._models %}
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.cotillion_room_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Cotillion Room</h4>
-          <a href="/events/venues/cotillion-room/" class="secondary-btn">View this Venue</a>
+      {%for venue in venues%}
+        <div class="item">
+          <div class="img-block" style="background-image:url('{{ venue.venue_thumbnail.url_large }}');"></div>
+          <div class="content">
+            <h4>{{ venue.venue_name }}</h4>
+            <a href="/events/venues/{{ venue.url_friendly_name }}/" class="secondary-btn">View this Venue</a>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.garden_foyer_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Garden Foyer</h4>
-          <a href="/events/venues/garden-foyer/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.lexington_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Lexington</h4>
-          <a href="/events/venues/lexington/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.madison_boardroom_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Madison Boardroom</h4>
-          <a href="/events/venues/madison-boardroom/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.park_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Park</h4>
-          <a href="/events/venues/park/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.regency_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Regency</h4>
-          <a href="/events/venues/regency/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.salon_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Salon</h4>
-          <a href="/events/venues/salon/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.grand_ballroom_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>The Grand Ballroom</h4>
-          <a href="/events/venues/grand-ballroom/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img-block" style="background-image:url('{{ model.wedgewood_image[0].Image.url }}');"></div>
-        <div class="content">
-          <h4>Wedgewood</h4>
-          <a href="/events/venues/wedgewood/" class="secondary-btn">View this Venue</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
   <div class="text-center">

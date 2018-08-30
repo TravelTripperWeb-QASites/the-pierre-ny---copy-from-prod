@@ -30,20 +30,18 @@ title: Venue Details
 </div>
 
 <!-- Venue Intro & Share -->
+
 <div class="quote light">
   {{ page.venue_intro }}
   <div class="social-share">
     {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-    {% endif %}
-    {% if site.data.social.instagram.username %}
-      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/sharer.php?caption={{ page.title }}&description={{ page.venue_intro | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&u={{site.url}}{{ page.url }}&picture=https:{{ page.venue_image.url_large }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="javascript:void(0);" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.pinterest.username %}
-      <a href="https://www.pinterest.com/{{ site.data.social.pinterest.username }}" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+      <a href="javascript:void(0);" onClick="pinterestShare('{{ page.venue_image.url_large }}', '{{site.url}}{{ page.url }}');"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
     {% endif %}
     <a href="mailto:thepierre.ny@tajhotels.com?Subject=Venue%20Proposal"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i></a>
