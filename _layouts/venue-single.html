@@ -18,7 +18,7 @@ title: Venue Details
 </div>
 
 <!-- Venues Sub Nav -->
-<div class="venues-nav table-responsive-xl">
+<div class="sub-nav table-responsive-xl">
   {% assign venues = site.data._models.venues | where: "dont_show_inlist", undefined | sort: "sort_order " %}
   <ul class="d-flex justify-content-between">
     {% for venue in venues %}

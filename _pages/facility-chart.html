@@ -1,0 +1,55 @@
+---
+layout: default
+title: Stunning Event Venues in New York | Venues at The Pierre NY
+meta_description:
+permalink: /events/venues/facility-chart/
+meta_tags:
+  robots:
+---
+
+<!-- Venues Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/events/venues/venues-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock facility_title, type:header %}
+      <h1 class="variant">Facility Chart</h1>
+    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    {% regionblock facility_subtitle, type:header %}
+      <h6>Stunning Event Venues in NYC</h6>
+    {% endregionblock %}
+  </div>
+</div>
+
+{% assign venues = site.data._models.venues | sort:'sort_order' %}
+
+<!-- Facility Chart -->
+<div class="table-grid">
+  <div class="wrapper table-responsive-md">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Venues</th>
+          <th scope="col">Dimension</th>
+          <th scope="col">Area</th>
+          <th scope="col">Height</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for venue in venues %}
+          <tr>
+            <td scope="row">{{ venue.venue_name }}</td>
+            <td>{{ venue.facility_chart.dimensions }}</td>
+            <td>{{ venue.facility_chart.area }}</td>
+            <td>{{ venue.facility_chart.height }}</td>
+            <td>{{ venue.facility_chart.location }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="d-sm-flex justify-content-center">
+    <a class="border-btn dark wp-more" href="javascript:window.print()">Print Facility Chart</a>
+  </div>
+</div>
