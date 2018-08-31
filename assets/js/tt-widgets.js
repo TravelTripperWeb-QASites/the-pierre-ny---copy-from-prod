@@ -154,9 +154,9 @@
           offer_gallery: {
             show: false,
             galleryselector: 'li',
-            customHTML: '<h4> Special Offer</h4>',
+            customHTML: '<h4>Special Offer</h4>',
             buttonText: 'Learn More',
-            buttonClass: 'btn btn-primary',
+            buttonClass: 'border-btn',
             pageLink: false,
             offerdetailPage: '/offer/', //offer detail page url
             description: false, // offer short description
