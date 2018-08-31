@@ -45,5 +45,21 @@
     "caption": ""
   },
   "title": "Superior King Room Interior View",
-  "replace-reztrip-amenities": true
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "Superior-Room",
+      "file_name": "Superior-Room.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123311/Superior-Room.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123311",
+      "file_size": 192469,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Superior-Room.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123311/Superior-Room.pdf",
+      "alt": "Superior Room",
+      "caption": ""
+    }
+  ]
 }
