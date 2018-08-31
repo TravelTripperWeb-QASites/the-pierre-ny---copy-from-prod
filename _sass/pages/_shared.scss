@@ -460,3 +460,15 @@
     margin: 20px auto;
   }
 }
+
+
+// Booking widget overriding stylesheet
+.ttweb-booking-widget__header {
+  background: $text-color;
+}
+.ttweb-booking-widget__body__date-selection__calendar .calendar-month table.calendar-month__grid .calendar-month__grid__date--in-selection {
+  background: $primary-color;
+}
+.ttweb-booking-widget button.ttweb-booking-widget__submit {
+  background-color: $primary-color;
+}
