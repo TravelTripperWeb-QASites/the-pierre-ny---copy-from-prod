@@ -5,6 +5,12 @@
   <script src="{{ '/assets/js/leaflet-plugin.js' | absolute_url }}"></script>
 {% endif %}
 
+<script>
+  function getIp(data) {
+    sessionStorage.ip_add = data.ip;
+  }
+</script>
+
 <!--[if gte IE 9]><!-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -28,6 +34,25 @@
 
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<!--New booking widget-->
+
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+
+<script>
+  TTWeb.Config.configure({
+    hotelId: '{{site.data.tt_widgets.hotelId}}', //'orwhatever your values are',
+    portalId: '{{site.data.tt_widgets.portalId}}',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+  });
+  $("[show-booking-widget]").bookingWidget({
+    // showRateCalendar: true,
+    showOfferCode: true
+  });
+</script>
 
 {% if page.url contains 'gallery' %}
 
