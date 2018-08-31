@@ -31,6 +31,9 @@
 
       @include media-breakpoint-up(md) {
         padding: 20px 0 50px;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
 

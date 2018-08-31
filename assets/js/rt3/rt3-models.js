@@ -82,7 +82,26 @@ $(function() {
     	   		         amenities_container.show();
     	   		   }
 
+              // floor plans pdf carousel
 
+							if(data.roomsDetails[roomcode].floor_plan_pdf != null){
+
+								$.each( data.roomsDetails[roomcode].floor_plan_pdf, function (i, pdf){
+	                if(pdf.url && pdf.url !=''){
+										var activeClassname="carousel-item active";
+                    $('#floorplans-pdf').find('.carousel-control-prev, .carousel-control-next').hide();
+										if(i > 0) {
+										  activeClassname = "carousel-item";
+											$('#floorplans-pdf').find('.carousel-control-prev, .carousel-control-next').show();
+										}
+										 var pdfcarousel = '<div class="'+activeClassname+'"> <object data="'+pdf.url+'" type="application/pdf" width="100%" height="100%"><p class="pdf-no-support">This browser does not support PDFs. Please download the PDF to view it:.</p> <a href="'+pdf.url+'" class="floor-plan-btn" target="_blank"><i class="map-icon"></i>View Floor Plan  </a> </object> <a href="'+pdf.url+'" target="_blank" class="enlarge-btn">View Larger Version</a></div>';
+										 if($('#floorplans-pdf')){
+	 											$("#floorplans-pdf").find('.carousel-inner').append(pdfcarousel);
+	 										}
+									 }
+								});
+
+							}
 
 
     	   		});
