@@ -1,0 +1,46 @@
+{
+  "name": "SPACES",
+  "photos": [
+    {
+      "name": "special-gallery5",
+      "file_name": "special-gallery5.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/special-gallery5.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-31-085526",
+      "file_type": "image/jpeg",
+      "width": 1246,
+      "height": 701,
+      "file_size": 170259,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/large_special-gallery5.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/medium_special-gallery5.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/small_special-gallery5.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/xsmall_special-gallery5.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/thumb_special-gallery5.jpg",
+      "git_file_name": "_assets/image_data/special-gallery5.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/special-gallery5.jpg",
+      "alt": "Special events at The Pierre"
+    },
+    {
+      "name": "special-gallery4",
+      "file_name": "special-gallery4.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/special-gallery4.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-31-085525",
+      "file_type": "image/jpeg",
+      "width": 1246,
+      "height": 701,
+      "file_size": 147283,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/large_special-gallery4.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/medium_special-gallery4.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/small_special-gallery4.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/xsmall_special-gallery4.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/thumb_special-gallery4.jpg",
+      "git_file_name": "_assets/image_data/special-gallery4.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085525/special-gallery4.jpg",
+      "alt": "Special events at The Pierre"
+    }
+  ],
+  "description": ""
+}
