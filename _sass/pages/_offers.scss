@@ -31,17 +31,25 @@
   @include fixed-width-layout;
   .offers-listing-inner {
     @include make-row;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
   }
   .offer-block {
     margin-bottom: 30px;
     padding: 0 15px;
     @include make-col-ready();
+
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     @include media-breakpoint-up(lg) {
-      @include make-col(3);
+      @include make-col(4);
       margin-bottom: 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      @include make-col(3);
     }
     figure {
       overflow: hidden;
