@@ -378,3 +378,82 @@
   margin-bottom: 20px;
   border-top: solid 1px $border-color;
 }
+
+//Preloader Styling here
+
+#preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: $white;
+  // change if the mask should have another color then white
+  // makes sure it stays on top
+}
+
+#status {
+  @include vertical-center;
+  margin: 0 auto;
+}
+
+.spinner-sm {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url('/assets/images/logo-symbol.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.spinner-sm:after,
+.spinner-sm:before {
+  display: block;
+  width: 90px;
+  height: 90px;
+  content: '';
+  border-radius: 50%;
+}
+
+.spinner-sm-1:after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top-color: $primary-color-light;
+  border-bottom-color: $primary-color-light;
+  opacity: .5;
+  animation: spinny .8s linear infinite;
+}
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+//LightGallery fixes
+.lg-sub-html {
+  .border-btn {
+    margin: 20px auto;
+  }
+}
