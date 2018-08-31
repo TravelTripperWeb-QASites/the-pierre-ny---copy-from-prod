@@ -15,5 +15,21 @@
       "description": ""
     }
   ],
-  "replace-reztrip-details": true
+  "replace-reztrip-details": true,
+  "floor_plan_pdf": [
+    {
+      "name": "The-Tata-Suite-w-Connector",
+      "file_name": "The-Tata-Suite-w-Connector.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123355/The-Tata-Suite-w-Connector.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123355",
+      "file_size": 412149,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Tata-Suite-w-Connector.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123355/The-Tata-Suite-w-Connector.pdf",
+      "alt": "The Tata Suite W Connector",
+      "caption": ""
+    }
+  ]
 }

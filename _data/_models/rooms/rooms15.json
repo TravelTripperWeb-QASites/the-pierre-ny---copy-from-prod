@@ -15,5 +15,35 @@
     }
   ],
   "replace-reztrip-details": true,
-  "replace-reztrip-amenities": true
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "The-Rajput-Suite-New",
+      "file_name": "The-Rajput-Suite-New.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123354/The-Rajput-Suite-New.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123354",
+      "file_size": 519890,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Rajput-Suite-New.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123354/The-Rajput-Suite-New.pdf",
+      "alt": "The Rajput Suite",
+      "caption": ""
+    },
+    {
+      "name": "Grand-Suite-1714-w-Connector",
+      "file_name": "Grand-Suite-1714-w-Connector.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123224/Grand-Suite-1714-w-Connector.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123224",
+      "file_size": 294900,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Grand-Suite-1714-w-Connector.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123224/Grand-Suite-1714-w-Connector.pdf",
+      "alt": "Grand Suite 1714 W Connector",
+      "caption": ""
+    }
+  ]
 }
