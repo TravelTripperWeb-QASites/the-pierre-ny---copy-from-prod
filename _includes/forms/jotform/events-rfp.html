@@ -1,5 +1,5 @@
 <!-- All Event types RFP  -->
-<h5 class="mb-4">Plan an Event</h5>
+<h4 class="mb-4">Plan an Event</h4>
 
 <form class="jotform-form" action="https://submit.jotform.me/submit/{% if page.url contains 'corporate-events' %}{{ site.data.forms.jotform.corporate-events-rfp }}{% elsif page.url contains 'special-events' %}{{ site.data.forms.jotform.special-events-rfp }}{% elsif page.url contains 'wedding-events' %}{{ site.data.forms.jotform.wedding-events-rfp }}{% endif %}/" method="post" name="form_71242185004445" id="{% if page.url contains 'corporate-events' %}{{ site.data.forms.jotform.corporate-events-rfp }}{% elsif page.url contains 'special-events' %}{{ site.data.forms.jotform.special-events-rfp }}{% elsif page.url contains 'wedding-events' %}{{ site.data.forms.jotform.wedding-events-rfp }}{% endif %}" accept-charset="utf-8">
   <input type="hidden" name="formID" value="{% if page.url contains 'corporate-events' %}{{ site.data.forms.jotform.corporate-events-rfp }}{% elsif page.url contains 'special-events' %}{{ site.data.forms.jotform.special-events-rfp }}{% elsif page.url contains 'wedding-events' %}{{ site.data.forms.jotform.wedding-events-rfp }}{% endif %}" />

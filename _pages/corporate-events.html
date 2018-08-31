@@ -22,12 +22,18 @@ meta_tags:
   {% include forms/jotform/events-rfp.html %}
 </div>
 
+<!-- Gallery carousel heading here -->
+<div class="intro-text pt-0 mt-5">
+  <h2>Legendary Spaces</h2>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+</div>
+
 {% assign categories = site.data._galleries | sort: sort_order %}
 
 <!-- Gallery carousel here -->
-<div class="pierre-slider">
+<div class="pierre-slider mb-5">
   {% for category in categories %}
-    {% assign catname = 'restaurant_bar' %}
+    {% assign catname = 'venues' %}
     {% for photo in site.data._galleries[catname].photos %}
     	<div>
       	<div class="slide-pageno" tabindex="0">
@@ -36,8 +42,10 @@ meta_tags:
       		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
       	</div>
       	<img src="{{ photo.url_large }}" class="width-full" alt="The Cotillion in 1950" />
-      	<div class="img-title">The Cotillion Room Circa 1950</div>
+      	<div class="img-title">{{ photo.alt }}</div>
     	</div>
     {% endfor %}
   {% endfor %}
 </div>
+
+{% include explore-venues-carousel.html %}
