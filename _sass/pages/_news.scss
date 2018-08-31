@@ -5,6 +5,8 @@
 
   .wrapper {
     @include make-row;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
 
     .news-item {
       @include make-col-ready;
@@ -13,8 +15,13 @@
       @include media-breakpoint-up(sm) {
         @include make-col(6);
       }
+
       @include media-breakpoint-up(md) {
         @include make-col(4);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include make-col(3);
       }
 
       .image {
