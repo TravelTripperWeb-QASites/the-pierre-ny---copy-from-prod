@@ -49,5 +49,63 @@
       "caption": ""
     }
   ],
-  "replace-reztrip-details": true
+  "replace-reztrip-details": true,
+  "floor_plan_pdf": [
+    {
+      "name": "The-Getty-Suite-New",
+      "file_name": "The-Getty-Suite-New.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123313/The-Getty-Suite-New.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123313",
+      "file_size": 602589,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Getty-Suite-New.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123313/The-Getty-Suite-New.pdf",
+      "alt": "The Getty Suite New",
+      "caption": ""
+    },
+    {
+      "name": "The-Charles-Pierre-Suite-New",
+      "file_name": "The-Charles-Pierre-Suite-New.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123312/The-Charles-Pierre-Suite-New.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123312",
+      "file_size": 541127,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Charles-Pierre-Suite-New.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123312/The-Charles-Pierre-Suite-New.pdf",
+      "alt": "The Charles Pierre Suite New",
+      "caption": ""
+    },
+    {
+      "name": "The-Hutton-Suite-New",
+      "file_name": "The-Hutton-Suite-New.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123353/The-Hutton-Suite-New.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123353",
+      "file_size": 526268,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Hutton-Suite-New.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123353/The-Hutton-Suite-New.pdf",
+      "alt": "The Hutton Suite New",
+      "caption": ""
+    },
+    {
+      "name": "The-Park-Suite",
+      "file_name": "The-Park-Suite.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123353/The-Park-Suite.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123353",
+      "file_size": 283978,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/The-Park-Suite.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123353/The-Park-Suite.pdf",
+      "alt": "The Park Suite",
+      "caption": ""
+    }
+  ]
 }
