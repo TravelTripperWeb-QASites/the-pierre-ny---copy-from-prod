@@ -42,7 +42,7 @@ elegant rooms & suites with lofty ceilings and peaceful interior views.</p>
 
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
       <div data-rt3room="[[room.code]]">
-        <a href="" class="rooms__head">
+        <a href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -71,7 +71,7 @@ define the luxurious rooms & suites in our City View Collection.</p>
 
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
       <div data-rt3room="[[room.code]]">
-        <a href="" class="rooms__head">
+        <a href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -100,7 +100,7 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
 
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
       <div data-rt3room="[[room.code]]">
-        <a href="" class="rooms__head">
+        <a href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -129,7 +129,7 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
 
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
       <div data-rt3room="[[room.code]]">
-        <a href="" class="rooms__head">
+        <a href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -147,7 +147,7 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
   </div>
 </section>
 
-<section class="rooms fancybox" data-filter="residences">
+<section class="rooms fancybox" id="residences" data-filter="residences">
   <div class="rooms__intro">
     <h2>Residences</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>

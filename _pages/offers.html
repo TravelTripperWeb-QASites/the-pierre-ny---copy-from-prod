@@ -3,7 +3,7 @@ layout: default
 language: en
 title: New York Luxury Hotel Deals | Special Offers at The Pierre
 meta_description: Book on the Official Website of the Pierre Hotel in NYC and take advantage of these Exclusive Special Offers. Great value New York City Luxury Hotel Deals.
-permalink: /offers/
+permalink: /special-offers/
 meta_tags:
   robots:
 ---
@@ -41,7 +41,7 @@ meta_tags:
           </a>
           <div class="offer-content">
             <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
-            <a class="secondary-btn" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
+            <a class="border-btn light" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
           </div>
         </div>
       {% endunless %}

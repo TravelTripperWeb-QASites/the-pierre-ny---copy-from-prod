@@ -30,5 +30,21 @@
     }
   ],
   "replace-reztrip-details": true,
-  "replace-reztrip-amenities": true
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "City-View-2-BR-Suite",
+      "file_name": "City-View-2-BR-Suite.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-2-BR-Suite.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123117",
+      "file_size": 210024,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/City-View-2-BR-Suite.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-2-BR-Suite.pdf",
+      "alt": "City View 2 BR Suite",
+      "caption": ""
+    }
+  ]
 }
