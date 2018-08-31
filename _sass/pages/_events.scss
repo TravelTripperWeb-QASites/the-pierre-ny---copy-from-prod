@@ -295,3 +295,25 @@
     }
   }
 }
+
+// Events RFP form
+.events-rfp-form {
+  @include fluid-layout;
+  padding: 50px 0;
+  text-align: center;
+  background-color: $secondary-color;
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+
+    input {
+      height: 60px;
+      margin-bottom: 15px;
+      font-size: $type-size-10;
+      border: solid 1px rgba(0,0,0,.1);
+      border-radius: 0;
+    }
+  }
+
+}
