@@ -11,8 +11,8 @@ email: thepierre.ny@tajhotels.com
 
 # Language Settings
 default_lang: 'en'
-languages: ['en']
-
+languages: ['en','zh']
+exclude_from_localizations: ["assets", "CNAME"]
 # Reading Files
 include:
   - _pages
@@ -47,7 +47,7 @@ keep_files:
   - .git
   - assets
 rsync_copy:
-  - _assets
+  - assets
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 

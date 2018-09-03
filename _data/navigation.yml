@@ -1,53 +1,66 @@
 main:
-  - title: About Hotel
-    url: /history/
-    dropdown:
-      - title: History
-        url: /history/
-      - title: Location
-        url: /location/
-      - title: News
-        url: /news/
-  - title: Rooms & Suites
-    url: /rooms-suites/
-    dropdown:
-      - title: Amenities
-        url: /luxury-manhattan-hotel-amenities/
-      - title: Residences
-        url: /residences/
-  - title: Dining
-    url: /dining/
-    dropdown:
-      - title: Perrine
-        url: /dining/perrine/
-      - title: The Rotunda
-        url: /dining/the-rotunda/
-      - title: Two E Bar & Lounge
-        url: /dining/twoebar-lounge/
-      - title: Afternoon Tea
-        url: /dining/twoetea/
-      - title: Cocktails & Music
-        url: /dining/twoebar/
-  - title: Events
-    url: /events/
-    dropdown:
-      - title: Weddings
-        url: /events/weddings/
-      - title: Meetings
-        url: /events/meetings/
-      - title: Venues
-        url: /events/venues/
-      - title: Meet the Team
-        url: /meet-the-team/
-  - title: Entertainment
-    url: /entertainment/
-  - title: Special Offers
-    url: /offers/
-  - title: Awards
-    url: /awards/
-  - title: Gallery
-    url: /gallery/
-
+  en:
+    - title: About Hotel
+      url: /history/
+      dropdown:
+        - title: History
+          url: /history/
+        - title: Location
+          url: /location/
+        - title: News
+          url: /news/
+    - title: Rooms & Suites
+      url: /rooms-suites/
+      dropdown:
+        - title: Amenities
+          url: /luxury-manhattan-hotel-amenities/
+        - title: Residences
+          url: /residences/
+    - title: Dining
+      url: /dining/
+      dropdown:
+        - title: Perrine
+          url: /dining/perrine/
+        - title: The Rotunda
+          url: /dining/the-rotunda/
+        - title: Two E Bar & Lounge
+          url: /dining/twoebar-lounge/
+        - title: Afternoon Tea
+          url: /dining/twoetea/
+        - title: Cocktails & Music
+          url: /dining/twoebar/
+    - title: Events
+      url: /events/
+      dropdown:
+        - title: Weddings
+          url: /events/weddings/
+        - title: Meetings
+          url: /events/meetings/
+        - title: Venues
+          url: /events/venues/
+        - title: Meet the Team
+          url: /meet-the-team/
+    - title: Entertainment
+      url: /entertainment/
+    - title: Special Offers
+      url: /offers/
+    - title: Awards
+      url: /awards/
+    - title: Gallery
+      url: /gallery/
+  zh:
+    - title: 客房和套房
+      url: /zh/rooms-suites/
+    - title: 特别优惠
+      url: /zh/special-offers/
+    - title: 餐饮
+      url: /zh/dining/
+    - title: 活动
+      url: /zh/events/
+    - title: 位置
+      url: /zh/location/
+    - title: 画廊
+      url: /zh/gallery/
 footer:
   - title: Contact us
     url: /contact/
