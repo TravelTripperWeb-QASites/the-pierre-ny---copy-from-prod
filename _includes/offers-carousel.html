@@ -1,16 +1,16 @@
 {% assign offers = site.data._models.special_offers | sort: "order" %}
 <section class="common-carousel other-carousel">
   <div class="common-carousel-intro">
-    <h2 class="text-center">Special Offers</h2>
-    <p>Indulge in the very best New York has to offer.</p>
+    <h2 class="text-center" tabindex="0">Special Offers</h2>
+    <p tabindex="0">Indulge in the very best New York has to offer.</p>
   </div>
   <div class="crest-holder">
 		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
 	</div>
   <div class="common-carousel-inner">
-    <div class="slick-controls" id="commonCarousel">
+    <div class="slick-controls" id="commonCarousel" role="listbox">
       {% for offer in offers %} {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %} {% unless page.url == offer_url %} {% unless offer.unpublish == true %}
-      <div class="item">
+      <div class="item" role="option">
         <a href="/offers/{{ offer.url_friendly_name }}" title="{{ offer.title }}">
           <div class="img-block" style="background-image:url('{{ offer.banner_image.url_small }}');"></div>
         </a>

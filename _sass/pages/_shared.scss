@@ -302,6 +302,9 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+    .tt-region {
+      width: 100%;
+    }
 
     &.bg-image {
       @extend .bg-cover;

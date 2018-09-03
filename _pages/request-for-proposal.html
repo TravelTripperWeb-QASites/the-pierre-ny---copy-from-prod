@@ -17,8 +17,8 @@ meta_tags:
 
 <section class="rfp-form">
   <h6>Please fill in below details for us to serve you better.</h6>
-  <form action="https://submit.jotform.me/submit/62060829017452/" method="post" name="form_62060829017452" id="62060829017452" accept-charset="utf-8">
-    <input type="hidden" name="formID" value="62060829017452" />
+  <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}" accept-charset="utf-8">
+    <input type="hidden" name="formID" value="{{ site.data.forms.jotform.rfp-id }}" />
     <div class="form-row">
       <div class="form-group col-md-6">
         <input type="text" class="form-control" name="q3_first-name" placeholder="First Name" aria-label="Type your first name" required>

@@ -12,15 +12,18 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Rooms & Suites</h1>
+    <h1 class="variant" tabindex="0">{% regionblock rooms_title, type:header %}Rooms & Suites{% endregionblock %}
+    </h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>Enjoy a Luxurious experience for exceptional value at the pierre.</h6>
+    {% regionblock rooms_description, type:header %}
+    <h6 tabindex="0">Enjoy a Luxurious experience for exceptional value at the pierre.</h6>
+    {% endregionblock %}
   </div>
 </section>
 
 <section class="categories">
   <div class="categories__container">
-    <ul class="categories__list">
+    <ul class="categories__list" tabindex="0">
       <li><a data-rel="all" href="javascript:;" class="filter active">All</a></li>
       <li><a data-rel="classic" href="javascript:;" class="filter">Classic</a></li>
       <li><a data-rel="city" href="javascript:;" class="filter">City View</a></li>
@@ -33,10 +36,14 @@ meta_tags:
 
 <section class="rooms fancybox" id="classic" data-filter="classic">
   <div class="rooms__intro">
-    <h2>Classic</h2>
+    {% regionblock rooms_classic_title, type:header %}
+    <h2 tabindex="0">Classic</h2>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
-    <p>An intimate respite from bustling New York City, our Classic Collection features soft,
+    {% regionblock rooms_classic_description, type:text %}
+    <p tabindex="0">An intimate respite from bustling New York City, our Classic Collection features soft,
 elegant rooms & suites with lofty ceilings and peaceful interior views.</p>
+    {% endregionblock %}
   </div>
   <div class="rooms__row">
 
@@ -62,10 +69,14 @@ elegant rooms & suites with lofty ceilings and peaceful interior views.</p>
 
 <section class="rooms fancybox" id="cityview" data-filter="city">
   <div class="rooms__intro">
-    <h2>City View</h2>
+    {% regionblock rooms_cityview_title, type:header %}
+    <h2 tabindex="0">City View</h2>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
-    <p>Captivating views of the Manhattan skyline and inspired, residential touches
+    {% regionblock rooms_cityview_description, type:text %}
+    <p tabindex="0">Captivating views of the Manhattan skyline and inspired, residential touches
 define the luxurious rooms & suites in our City View Collection.</p>
+    {% endregionblock %}
   </div>
   <div class="rooms__row">
 
@@ -91,10 +102,14 @@ define the luxurious rooms & suites in our City View Collection.</p>
 
 <section class="rooms fancybox" id="parkview" data-filter="park">
   <div class="rooms__intro">
-    <h2>Park View</h2>
+    {% regionblock rooms_parkview_title, type:header %}
+    <h2 tabindex="0">Park View</h2>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
-    <p>Central Park views offer a serene touch of nature amidst soaring skyscrapers and lend an
+    {% regionblock rooms_parkview_description, type:text %}
+    <p tabindex="0">Central Park views offer a serene touch of nature amidst soaring skyscrapers and lend an
 irresistible sense of romance to our stunning Park View Collection of rooms & suites.</p>
+    {% endregionblock %}
   </div>
   <div class="rooms__row">
 
@@ -120,10 +135,14 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
 
 <section class="rooms fancybox" id="grandsuites" data-filter="grand">
   <div class="rooms__intro">
-    <h2>Grand Suites</h2>
+    {% regionblock rooms_grandsuites_title, type:header %}
+    <h2 tabindex="0">Grand Suites</h2>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
-    <p>Grand Suites Collection offers the ultimate in exclusivity and tranquility.</p>
-    <p>During the month of June, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman.</p>
+    {% regionblock rooms_grandsuites_description, type:text %}
+    <p tabindex="0">Grand Suites Collection offers the ultimate in exclusivity and tranquility.</p>
+    <p tabindex="0">During the month of June, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman.</p>
+    {% endregionblock %}
   </div>
   <div class="rooms__row">
 
@@ -149,22 +168,32 @@ irresistible sense of romance to our stunning Park View Collection of rooms & su
 
 <section class="rooms fancybox" id="residences" data-filter="residences">
   <div class="rooms__intro">
-    <h2>Residences</h2>
+    {% regionblock rooms_residences_title, type:header %}
+    <h2 tabindex="0">Residences</h2>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
-    <p>Home to some of modern history’s most illustrious individuals - past and present - living at The Pierre has long stood as a mark of Upper East Side exclusivity.</p>
+    {% regionblock rooms_residences_description, type:text %}
+    <p tabindex="0">Home to some of modern history’s most illustrious individuals - past and present - living at The Pierre has long stood as a mark of Upper East Side exclusivity.</p>
+    {% endregionblock %}
   </div>
   <div class="rooms__row">
 
 <div class="rooms__luxury">
   <div class="rooms__luxury__image bg-cover" style="background-image:url('/assets/images/rooms/pierre-live-suite.jpg');">
     <div class="rooms__luxury__content">
-      <h2>Luxury Defined</h2>
-      <p>Enjoy our spacious and elegant Grand Suites through a long-term residential stay, making The Pierre a true home away from home. Our representative at The Corcoran Group will assist to make your stay memorable.</p>
-      <p><strong>Andres Perea-Garzon</strong><br>
+      {% regionblock rooms_residences_intro_title, type:header %}
+      <h2 tabindex="0">Luxury Defined</h2>
+      {% endregionblock %}
+      {% regionblock rooms_residences_intro_description, type:header %}
+      <p tabindex="0">Enjoy our spacious and elegant Grand Suites through a long-term residential stay, making The Pierre a true home away from home. Our representative at The Corcoran Group will assist to make your stay memorable.</p>
+      {% endregionblock %}
+      {% regionblock rooms_residences_content, type:text %}
+      <p><strong tabindex="0">Andres Perea-Garzon</strong><br>
         <a href="mailto:apg@corcoran.com">apg@corcoran.com</a><br>
-        d: <a href="tel:212.572.3186">212.572.3186</a><br>
-        f: <a href="tel:212.230.4055">212.230.4055</a><br>
-        ph: <a href="tel:646.580.0198">646.580.0198</a></p>
+        d: <a href="tel:212.572.3186" aria-label="Desk phone number 212.572.3186">212.572.3186</a><br>
+        f: <a href="tel:212.230.4055" aria-label="Fax Number 212.230.4055">212.230.4055</a><br>
+        ph: <a href="tel:646.580.0198" aria-label="Phone Number 646.580.0198">646.580.0198</a></p>
+      {% endregionblock %}
     </div>
   </div>
 </div>

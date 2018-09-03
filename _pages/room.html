@@ -29,7 +29,7 @@ meta_tags:
 
 <section class="categories">
   <div class="categories__container">
-    <ul class="categories__list">
+    <ul class="categories__list" tabindex="0">
       <li><a href="/rooms-suites/#all" class="active">All</a></li>
       <li><a href="/rooms-suites/#classic">Classic</a>
         <ul class="list-dropdown">
@@ -66,7 +66,7 @@ meta_tags:
 
 <section class="room-single">
   <div class="room-single__intro">
-    <h2>In-Room Services & Amenities</h2>
+    <h2 tabindex="0">In-Room Services & Amenities</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
   </div>
   <div class="room-single__content">
@@ -77,7 +77,7 @@ meta_tags:
       <a class="nav-link active" data-toggle="tab" href="#room_features">Features</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#room_floor_plan">Floor Plan</a>
+      <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">Floor Plan</a>
     </li>
   </ul>
 
@@ -86,14 +86,14 @@ meta_tags:
 
       <div id="room_features" class="container tab-pane active">
 
-        <article room-detail>
+        <article room-detail tabindex="0">
           <h3>Room Features</h3>
           [[ details.description ]]
         </article>
 
-        <h3>Services & Amenities</h3>
+        <h3 tabindex="0">Services & Amenities</h3>
 
-        <article room-amenities>
+        <article room-amenities tabindex="0">
            <ul>
               <li ng-repeat="amenity in details.amenities">[[ amenity ]]</li>
             </ul>
