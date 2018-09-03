@@ -11,16 +11,20 @@
         New York City, NY 10065
       </p>
       <p>
-        Tel:  <a href="tel:1 212 838 8000">1 212 838 8000</a><br>
-        Fax: 1 212 940 8109<br>
+        {% t 'tel' %}:  <a href="tel:1 212 838 8000">1 212 838 8000</a><br>
+        {% t 'fax' %}: 1 212 940 8109<br>
         <a href="mailto:thepierre.ny@tajhotels.com">thepierre.ny@tajhotels.com</a>
       </p>
     </div>
 
     <!-- Quicklinks block -->
     <div class="quick-links" tabindex="0">
-      <h5>Other Information</h5>
-      {% assign quick_links = site.data.navigation.footer %}
+      <h5>{% t 'other_info'%}</h5>
+      {% if site.active_lang == "en" %}
+      {% assign quick_links = site.data.navigation.footer.en %}
+      {% else %}
+      {% assign quick_links = site.data.navigation.footer.zh %}
+      {% endif %}
       <ul>
         {% for link in quick_links %}
           <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
@@ -32,9 +36,9 @@
 
     <!-- Stay in touch -->
     <div class="intouch" tabindex="0">
-      <h5>Stay In Touch</h5>
+      <h5>{% t 'keep_in_touch' %}</h5>
       <div class="wrap">
-        <p>Short explanation on why users need to sign up will go here and continue on two lines.</p>
+        <p>{% t 'newsltter_text' %}</p>
         {% include /forms/jotform/newsletter.html %}
       </div>
     </div>
