@@ -51,12 +51,24 @@ main:
   zh:
     - title: 客房和套房
       url: /zh/rooms-suites/
+      dropdown:
+        - title: 便利设施
+          url: /zh/luxury-manhattan-hotel-amenities/
+        - title: 居住条件
+          url: /zh/rooms-suites/#live
     - title: 特别优惠
       url: /zh/special-offers/
     - title: 餐饮
       url: /zh/dining/
     - title: 活动
       url: /zh/events/
+      dropdown:
+        - title: 婚礼
+          url: /zh/events/weddings/
+        - title: 会议
+          url: /zh/events/meetings/
+        - title: 场馆
+          url: /zh/events/venues/
     - title: 位置
       url: /zh/location/
     - title: 画廊
