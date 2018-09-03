@@ -80,6 +80,26 @@
       "git_file_name": "_assets/image_data/wedding4.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041155/wedding4.jpg",
       "alt": "Wedding Events At The Pierre"
+    },
+    {
+      "name": "wedding1",
+      "file_name": "wedding1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/wedding1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-09-03-041154",
+      "file_type": "image/jpeg",
+      "width": 1246,
+      "height": 701,
+      "file_size": 239765,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/large_wedding1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/medium_wedding1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/small_wedding1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/xsmall_wedding1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/thumb_wedding1.jpg",
+      "git_file_name": "_assets/image_data/wedding1.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041154/wedding1.jpg",
+      "alt": "Wedding Events At The Pierre"
     }
   ],
   "description": ""
