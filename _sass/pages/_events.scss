@@ -299,9 +299,15 @@
 // Events RFP form
 .events-rfp-form {
   @include fluid-layout;
-  padding: 50px 0;
+  padding: 50px 15px;
   text-align: center;
   background-color: $secondary-color;
+
+  p {
+    max-width: 460px;
+    margin: 0 auto 30px;
+    font-family: $secondary-header-font;
+  }
 
   form {
     max-width: 400px;
