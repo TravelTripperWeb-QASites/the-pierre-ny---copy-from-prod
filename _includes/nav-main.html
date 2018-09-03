@@ -9,24 +9,29 @@
     <span> </span>
 	</button>
   <div class="form-select">
-    <select class="selectpicker" data-width="fit">
-      <option>English</option>
-      <option>中文</option>
+    <select class="selectpicker" data-width="fit" id="language" onchange="location = this.options[this.selectedIndex].value;">
+      <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+      <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
     </select>
   </div>
-  <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-  <a class="border-btn d-none d-xl-block" href="mailto:thepierre.ny@tajhotels.com">Contact</a>
+    <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+  <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
 </div>
 
 <!-- Main nav -->
-{% assign links = site.data.navigation.main %}
-{% assign link2 = site.data.navigation.secondary %}
-
+{% if site.active_lang == "en" %}
+  {% assign links = site.data.navigation.main.en %}
+{% else %}
+  {% assign links = site.data.navigation.main.zh %}
+{% endif %}
 <nav class="navbar navbar-expand-xl">
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav d-flex justify-content-between align-items-center">
     <a class="scroll-logo" href="/"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
-    {% for link in links limit:4 %}
+     {% assign halfmenu = links.size | divided_by: 2 %}
+
+    {% for link in links %}
+     {% if forloop.index <= halfmenu %}
       <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
         <a class="nav-link" href="{{ link.url | absolute_url }}" {% if link.dropdown %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}><span>{{ link.title }}</span>{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
         {% if link.dropdown %}
@@ -37,10 +42,11 @@
           </div>
         {% endif %}
       </li>
+     {% endif %}
     {% endfor %}
     <a class="navbar-brand d-none d-xl-block" href="/"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
     {% for link in links %}
-      {% if forloop.index0 > 3 %}
+      {% if forloop.index > halfmenu %}
         <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}" >
           <a class="nav-link" href="{{ link.url | absolute_url }}" {% if link.dropdown %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}><span>{{ link.title }}</span>{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
           {% if link.dropdown %}
@@ -54,7 +60,7 @@
       {% endif %}
     {% endfor %}
     <li class="nav-item d-lg-block d-xl-none">
-      <a class="nav-link" href="/contact/">Contact</a>
+      <a class="nav-link" href="/contact/">{% t 'contact' %}</a>
     </li>
     <div class="top-nav d-flex justify-content-end">
       <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +69,13 @@
         <span> </span>
     	</button>
       <div class="form-select">
-        <select class="selectpicker" data-width="fit">
-          <option>English</option>
-          <option>中文</option>
+        <select class="selectpicker" data-width="fit" id="language" onchange="location = this.options[this.selectedIndex].value;">
+          <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+          <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
         </select>
       </div>
-      <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-      <a class="border-btn d-none d-xl-block" href="/contact">Contact</a>
+      <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+      <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
     </div>
     </ul>
   </div>
