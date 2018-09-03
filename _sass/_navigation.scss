@@ -88,7 +88,6 @@
 
   img {
     width: 100%;
-    margin: 0 15px;
   }
 }
 
@@ -124,6 +123,8 @@
 }
 
 .nav-item {
+  min-width: 82px;
+  text-align: center;
 
   .nav-link {
     padding: 0 !important;
@@ -131,8 +132,15 @@
     font-size: $type-size-9;
     font-weight: normal;
     color: $white;
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: .03rem;
+
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+    }
 
     &:after {
       display: block;

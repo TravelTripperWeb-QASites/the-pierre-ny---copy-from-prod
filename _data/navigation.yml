@@ -1,6 +1,6 @@
 main:
   en:
-    - title: About Hotel
+    - title: Hotel
       url: /history/
       dropdown:
         - title: History
