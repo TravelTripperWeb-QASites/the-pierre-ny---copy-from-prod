@@ -164,3 +164,8 @@ svg:not(:root) {
 .text-muted {
   color: #7f7e7e !important;
 }
+
+//For Anuglar ng-cloak
+[ng\:cloak], [ng-cloak] {
+  display: none !important;
+}

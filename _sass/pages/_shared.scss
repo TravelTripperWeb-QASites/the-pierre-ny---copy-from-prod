@@ -480,10 +480,10 @@
 }
 
 .sr-only-focusable {
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 0;
   right: auto;
   left: auto;
-  display: block;
+  z-index: 9;
   padding: 10px 20px;
 }
