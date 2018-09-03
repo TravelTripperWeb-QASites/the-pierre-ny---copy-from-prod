@@ -20,7 +20,11 @@
     <!-- Quicklinks block -->
     <div class="quick-links">
       <h5>{% t 'other_info'%}</h5>
-      {% assign quick_links = site.data.navigation.footer %}
+      {% if site.active_lang == "en" %}
+      {% assign quick_links = site.data.navigation.footer.en %}
+      {% else %}
+      {% assign quick_links = site.data.navigation.footer.zh %}
+      {% endif %}
       <ul>
         {% for link in quick_links %}
           <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
@@ -32,7 +36,7 @@
 
     <!-- Stay in touch -->
     <div class="intouch">
-      <h5>{% t 'stay_in_touch' %}</h5>
+      <h5>{% t 'keep_in_touch' %}</h5>
       <div class="wrap">
         <p>{% t 'newsltter_text' %}</p>
         {% include /forms/jotform/newsletter.html %}
