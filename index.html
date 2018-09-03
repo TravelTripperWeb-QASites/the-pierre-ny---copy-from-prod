@@ -18,10 +18,10 @@ meta_tags:
 <section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1>Central Park at your doorstep</h1>
+    <h1>{% regionblock banner_title, type:header %} Central Park at your doorstep {% endregionblock %}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>
-    <a class="primary-btn inverse" href="/location/">View Location</a>
+    <h6>{% regionblock banner_subtitle, type:header %}FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS {% endregionblock %}</h6>
+    {% regionblock banner_url, type:text %}<a class="primary-btn inverse" href="/location/">View Location</a>{% endregionblock %}
   </div>
 </section>
 
@@ -36,7 +36,7 @@ meta_tags:
     <div class="images">
       <div class="image-full mr-15" style="background-image:url('/assets/images/home/rooms.jpg');">
         <div class="heading">
-          <h6>Rooms & Suites</h6>
+          <h6>{% t 'rooms_suites' %}</h6>
           <a class="secondary-btn inverse" href="/rooms-suites/" title="view all rooms & suites">view all rooms & suites</a>
         </div>
       </div>
@@ -44,14 +44,14 @@ meta_tags:
     <div class="images">
       <div class="image-text" style="background-image:url('/assets/images/home/special.jpg');">
         <div class="heading">
-          <h6>Special Offers</h6>
+          <h6>{% t 'special_offers' %}</h6>
           <a class="secondary-btn inverse" href="/offers/" title="Special Offers">See all special offers</a>
         </div>
       </div>
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
         <div class="heading">
-          <h6>Dining</h6>
-          <a class="secondary-btn inverse" href="/dining/" title="Dining">discover more</a>
+          <h6>{% t 'dining' %}</h6>
+          <a class="secondary-btn inverse" href="/dining/" title="Dining">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ meta_tags:
         <div class="s-image mr-15" style="background-image:url('/assets/images/home/summer-of-rose.jpg');">
           <div class="heading">
             <h6>Summer of Rosé</h6>
-            <a class="secondary-btn inverse" href="/" title="View details">View details</a>
+            <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ meta_tags:
             <div class="s-image mr-15" style="background-image: url('/assets/images/home/icons-of-jazz.jpg');">
               <div class="heading">
                 <h6>Icons of Jazz</h6>
-                <a class="secondary-btn inverse" href="/" title="View details">View details</a>
+                <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ meta_tags:
             <div class="s-image" style="background-image: url('/assets/images/home/broadway.jpg');">
               <div class="heading">
                 <h6>Broadway At The Pierre</h6>
-                <a class="secondary-btn inverse" href="/" title="View details">View details</a>
+                <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
               </div>
             </div>
           </div>
@@ -107,13 +107,13 @@ meta_tags:
       <div class="image-text" style="background-image:url('/assets/images/home/meetings.jpg');">
         <div class="heading">
           <h6>Meetings</h6>
-          <a class="secondary-btn inverse" href="/meetings/" title="Discover more">Discover more</a>
+          <a class="secondary-btn inverse" href="/meetings/" title="Discover more">{% t 'learn_more' %}</a>
         </div>
       </div>
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/venues.jpg');">
         <div class="heading">
           <h6>Venues</h6>
-          <a class="secondary-btn inverse" href="/venues/" title="Dining">Discover more</a>
+          <a class="secondary-btn inverse" href="/venues/" title="Dining">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>

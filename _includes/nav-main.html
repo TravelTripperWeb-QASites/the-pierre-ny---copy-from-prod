@@ -14,8 +14,8 @@
       <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
     </select>
   </div>
-  <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-  <a class="border-btn d-none d-xl-block" href="/contact">Contact</a>
+    <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+  <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
 </div>
 
 <!-- Main nav -->
@@ -23,10 +23,7 @@
   {% assign links = site.data.navigation.main.en %}
 {% else %}
   {% assign links = site.data.navigation.main.zh %}
-{% endif %}
-
-{% assign link2 = site.data.navigation.secondary %}
-
+{% endif %} 
 <nav class="navbar navbar-expand-xl">
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav d-flex justify-content-between align-items-center">
@@ -63,7 +60,7 @@
       {% endif %}
     {% endfor %}
     <li class="nav-item d-lg-block d-xl-none">
-      <a class="nav-link" href="/contact/">Contact</a>
+      <a class="nav-link" href="/contact/">{% t 'contact' %}</a>
     </li>
     <div class="top-nav d-flex justify-content-end">
       <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,8 +74,8 @@
           <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
         </select>
       </div>
-      <a class="border-btn" href="javascript:void(0);" show-booking-widget>Book Now</a>
-      <a class="border-btn d-none d-xl-block" href="/contact">Contact</a>
+      <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+      <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
     </div>
     </ul>
   </div>
