@@ -9,9 +9,9 @@ layout: default
 <div class="page-banner" style="background-image:url('{{ page.venue_image.url_large }}');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1>{{ page.venue_name }}</h1>
+    <h1 tabindex="0">{{ page.venue_name }}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
-    <h6>Call Our Team<br><a href="tel:212-940-8111">+1 212 940 8111</a></h6>
+    <h6 tabindex="0">Call Our Team<br><a href="tel:212-940-8111">+1 212 940 8111</a></h6>
     <a class="primary-btn inverse" href="/request-for-proposal/">Request for Proposal</a>
   </div>
 </div>
@@ -31,26 +31,28 @@ layout: default
 <!-- Venue Intro & Share -->
 
 <div class="quote light">
-  {{ page.venue_intro }}
+  <div tabindex="0">
+    {{ page.venue_intro }}
+  </div>
   <div class="social-share">
     {% if site.data.social.facebook.username %}
       <a href="https://www.facebook.com/sharer.php?caption={{ page.title }}&description={{ page.venue_intro | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&u={{site.url}}{{ page.url }}&picture=https:{{ page.venue_image.url_large }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.twitter.username %}
-      <a href="javascript:void(0);" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="javascript:void(0);" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" title="Share on Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.pinterest.username %}
-      <a href="javascript:void(0);" onClick="pinterestShare('{{ page.venue_image.url_large }}', '{{site.url}}{{ page.url }}');"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+      <a href="javascript:void(0);" onClick="pinterestShare('{{ page.venue_image.url_large }}', '{{site.url}}{{ page.url }}');" title="Share on Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
     {% endif %}
-    <a href="mailto:thepierre.ny@tajhotels.com?Subject=Venue%20Proposal"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <a href="mailto:thepierre.ny@tajhotels.com?Subject=Venue%20Proposal" title="Share over mail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="javascript:window.print()" title="Print this venue page"><i class="fa fa-print" aria-hidden="true"></i></a>
   </div>
 </div>
 
 <!-- Facility Chart -->
 <div class="table-grid">
-  <h2>Facility Chart</h2>
-  <div class="wrapper table-responsive-md">
+  <h2 tabindex="0">Facility Chart</h2>
+  <div class="wrapper table-responsive-md" tabindex="0">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -80,8 +82,8 @@ layout: default
 
 <!-- Seating Style -->
 <div class="table-grid content-center no-bg">
-  <h2>Seating Style</h2>
-  <div class="wrapper table-responsive-md">
+  <h2 tabindex="0">Seating Style</h2>
+  <div class="wrapper table-responsive-md" tabindex="0">
     <table class="table table-striped">
       <thead>
         <tr>

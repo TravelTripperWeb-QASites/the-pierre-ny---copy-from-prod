@@ -19,13 +19,15 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/dining/two-ebar-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Two E Bar &<br>Lounge</h1>
+    <h1 class="variant" tabindex="0">{% regionblock twoeabar_lounge_title, type:header %}Two E Bar &<br>Lounge{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="reservations">
   <div class="reservations-container">
-    <h4>Reservations</h4>
+    {% regionblock twoeabar_lounge_reservations, type:header %}
+    <h4 tabindex="0">Reservations</h4>
+    {% endregionblock %}
     <div class="opentable-widget">
     <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=34024&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
     </div>
@@ -33,8 +35,10 @@ meta_tags:
 </section>
 
 <section class="intro-text">
-  <h2>Two E Bar & Lounge</h2>
-  <p>A Neo-Classical lounge serving traditional Afternoon Tea by day, Two E Bar transforms into a hidden Art Deco gem by night. Originally the Gentlemen’s Library at The Pierre, Two E was redesigned by Alexandra Champalimaud to reflect an effortlessly chic Upper East Side residence.</p>
+  {% regionblock twoeabar_lounge_intro_title, type:header %}
+  <h2 tabindex="0">Two E Bar & Lounge</h2>
+  {% endregionblock %}
+  <p tabindex="0">A Neo-Classical lounge serving traditional Afternoon Tea by day, Two E Bar transforms into a hidden Art Deco gem by night. Originally the Gentlemen’s Library at The Pierre, Two E was redesigned by Alexandra Champalimaud to reflect an effortlessly chic Upper East Side residence.</p>
 </section>
 
 <section class="twocol">
@@ -46,13 +50,19 @@ meta_tags:
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>Two E Bar & Lounge</h6>
-        <h4>New At Two E</h4>
-        <p>Celebrate one of TV's most beloved series with our Downton Abbey Exhibition and Tea package, including VIP anytime tickets.</p>
-        <p>Indulge in our new <strong>Tiffin & Tea service</strong> featuring a selection of small bites with Indian & Taj flair and homemade sweets.</p>
-        <p>Be entertained by shows featuring the brightest stars from the worlds of <strong>Broadway and Jazz</strong>. Learn more about our upcoming performances <strong>here</strong>.</p>
-        <p>Take in Two E's new art series, now featuring the vibrant works of <strong>Steven Alexander through September 30th, 2018</strong>.</p>
-        <p><strong>Explore Two E's elegant interior with a 360-degree virtual tour.</strong></p>
+        {% regionblock twoeabar_lounge_new_subtitle, type:header %}
+        <h6 tabindex="0">Two E Bar & Lounge</h6>
+        {% endregionblock %}
+        {% regionblock twoeabar_lounge_new_title, type:header %}
+        <h4 tabindex="0">New At Two E</h4>
+        {% endregionblock %}
+        {% regionblock twoeabar_lounge_new_content, type:text %}
+        <p tabindex="0">Celebrate one of TV's most beloved series with our Downton Abbey Exhibition and Tea package, including VIP anytime tickets.</p>
+        <p tabindex="0">Indulge in our new <strong>Tiffin & Tea service</strong> featuring a selection of small bites with Indian & Taj flair and homemade sweets.</p>
+        <p tabindex="0">Be entertained by shows featuring the brightest stars from the worlds of <strong>Broadway and Jazz</strong>. Learn more about our upcoming performances <strong>here</strong>.</p>
+        <p tabindex="0">Take in Two E's new art series, now featuring the vibrant works of <strong>Steven Alexander through September 30th, 2018</strong>.</p>
+        <p tabindex="0"><strong>Explore Two E's elegant interior with a 360-degree virtual tour.</strong></p>
+        {% endregionblock %}
       </div>
     </div>
 

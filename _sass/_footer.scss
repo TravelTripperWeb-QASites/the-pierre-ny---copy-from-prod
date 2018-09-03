@@ -54,8 +54,12 @@ footer {
 
           li {
             width: auto;
+            text-align: center;
             a {
               display: inline-block;
+            }
+            @include media-breakpoint-up(md) {
+              text-align: left;
             }
           }
         }
