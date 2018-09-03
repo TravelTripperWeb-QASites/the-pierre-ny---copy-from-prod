@@ -16,10 +16,12 @@ meta_tags:
         Corporate events at the Pierre
       {% endregionblock %}
     </h1>
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    {% regionblock corporate_events_tagline, type:header %}
-      <h6>A HISTORIC VENUE. A DEDICATED MEETING PLANNER. MAKE YOUR NEXT CORPORATE EVENT ONE TO REMEMBER.</h6>
-    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <h6 tabindex="0">
+      {% regionblock corporate_events_tagline, type:header %}
+        A HISTORIC VENUE. A DEDICATED MEETING PLANNER. MAKE YOUR NEXT CORPORATE EVENT ONE TO REMEMBER.
+      {% endregionblock %}
+    </h6>
   </div>
 </div>
 
@@ -30,19 +32,21 @@ meta_tags:
 
 <!-- Gallery carousel heading here -->
 <div class="intro-text pt-0 mt-5">
-  <h2>Legendary Spaces</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  {% regionblock corporate_events_spaces_heading, type:header %}
+    <h2>Legendary Spaces</h2>
+  {% endregionblock %}
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
 {% assign categories = site.data._galleries | sort: sort_order %}
 
 <!-- Gallery carousel here -->
-<div class="pierre-slider mb-5">
+<div class="pierre-slider mb-5" tabindex="-1">
   {% for category in categories %}
     {% assign catname = 'venues' %}
     {% for photo in site.data._galleries[catname].photos %}
     	<div>
-      	<div class="slide-pageno" tabindex="0">
+      	<div class="slide-pageno" tabindex="-1">
       		<div class="current-slide">{{ forloop.index }}</div>
       		<div class="slash"></div>
       		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
