@@ -19,16 +19,16 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/awards/awards-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">{% regionblock awards_title, type:header %}Accolades{% endregionblock %}</h1>
+    <h1 class="variant" tabindex="0">{% regionblock awards_title, type:header %}Accolades{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="intro-text">
   {% regionblock awards_intro_title, type:header %}
-  <h2>Accolades</h2>
+  <h2 tabindex="0">Accolades</h2>
   {% endregionblock %}
   {% regionblock awards_intro-description, type:text %}
-  <p>The Pierre continues to set the standard for unrivaled hospitality, offering artful and highly personalized service.We are proud to be recognized with the industry's top accolades.</p>
+  <p tabindex="0">The Pierre continues to set the standard for unrivaled hospitality, offering artful and highly personalized service.We are proud to be recognized with the industry's top accolades.</p>
   {% endregionblock %}
 </section>
 
@@ -48,13 +48,13 @@ meta_tags:
     <div class="twocol-content p-0">
       <div class="content-holder">
         {% regionblock award_one_subtitle, type:header %}
-        <h6>The Pierre</h6>
+        <h6 tabindex="-1">The Pierre</h6>
         {% endregionblock %}
         {% regionblock award_one_title, type:header %}
-        <h4>AAA Five Diamond</h4>
+        <h4 tabindex="0">AAA Five Diamond</h4>
         {% endregionblock %}
         {% regionblock award_one_content, type:text %}
-        <p>The Pierre, A Taj Hotel has received the sought after AAA Five Diamond Award every year since 2009. Candidates for the rating undergo multiple anonymous, in-person property evaluations and a final decision by a panel of experts. Requirements include providing meticulous personalized service, extensive amenities and impeccable standards of excellence. Five Diamond hotels represent just 0.3 percent of the nearly 59,000 AAA Approved establishments.</p>
+        <p tabindex="0">The Pierre, A Taj Hotel has received the sought after AAA Five Diamond Award every year since 2009. Candidates for the rating undergo multiple anonymous, in-person property evaluations and a final decision by a panel of experts. Requirements include providing meticulous personalized service, extensive amenities and impeccable standards of excellence. Five Diamond hotels represent just 0.3 percent of the nearly 59,000 AAA Approved establishments.</p>
         {% endregionblock %}
       </div>
     </div>
@@ -73,10 +73,16 @@ meta_tags:
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>The Pierre</h6>
-        <h4>Forbes Travel Guide<br>Five-Star Rating</h4>
-        <p>Since 2013, The Pierre has been recognized with the prestigious Forbes Travel Guide Five-Star Rating, which has been the gold standard in hospitality for nearly 60 years. The distinction is awarded annually to fewer than 60 properties throughout the United States. A team of expert inspectors anonymously evaluate properties against up to 800 rigorous and objective standards. These standards are the most stringent in the industry — Forbes inspectors travel incognito, staying two nights and three days to gather every detail of the visit.</p>
+        {% regionblock award_two_subtitle, type:header %}
+        <h6 tabindex="-1">The Pierre</h6>
+        {% endregionblock %}
+        {% regionblock award_two_title, type:header %}
+        <h4 tabindex="0">Forbes Travel Guide<br>Five-Star Rating</h4>
+        {% endregionblock %}
+        {% regionblock award_two_content, type:text %}
+        <p tabindex="0">Since 2013, The Pierre has been recognized with the prestigious Forbes Travel Guide Five-Star Rating, which has been the gold standard in hospitality for nearly 60 years. The distinction is awarded annually to fewer than 60 properties throughout the United States. A team of expert inspectors anonymously evaluate properties against up to 800 rigorous and objective standards. These standards are the most stringent in the industry — Forbes inspectors travel incognito, staying two nights and three days to gather every detail of the visit.</p>
         <p>The Pierre is the only Forbes Five-Star and AAA Five Diamond property on Manhattan's Upper East Side.</p>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -84,14 +90,22 @@ meta_tags:
 
   <div class="twocol-row">
     <div class="twocol-image p-0">
+      {% regionblock award_three_image, type:image %}
       <img src="/assets/images/awards/earthcheck-small.jpg" alt="EarthCheck Gold Certified">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0 bg-cover" style="background-image: url('/assets/images/awards/p-icon-larger.png');">
       <div class="content-holder">
-        <h6>The Pierre</h6>
-        <h4>EarthCheck Gold Certified</h4>
-        <p>The Pierre is proud to be an EarthCheck Gold Certified hotel. EarthCheck is the world's leading, most rigorous and scientifically accurate program for the tourism industry. Hotels achieve Gold Certification after five years of continuous benchmarking. Since 1987, EarthCheck has helped benchmark environmental, social, energy, legal and community performance, as well as the design aspects of hotel buildings and their operations against peers in their sector, region and climate zone. Specific global benchmarking standards include sustainable development policy, water and energy utilization, waste management, paper usage, chemical usage, and corporate social responsibility initiatives.</p>
+        {% regionblock award_three_subtitle, type:header %}
+        <h6 tabindex="-1">The Pierre</h6>
+        {% endregionblock %}
+        {% regionblock award_three_title, type:header %}
+        <h4 tabindex="0">EarthCheck Gold Certified</h4>
+        {% endregionblock %}
+        {% regionblock award_three_content, type:text %}
+        <p tabindex="0">The Pierre is proud to be an EarthCheck Gold Certified hotel. EarthCheck is the world's leading, most rigorous and scientifically accurate program for the tourism industry. Hotels achieve Gold Certification after five years of continuous benchmarking. Since 1987, EarthCheck has helped benchmark environmental, social, energy, legal and community performance, as well as the design aspects of hotel buildings and their operations against peers in their sector, region and climate zone. Specific global benchmarking standards include sustainable development policy, water and energy utilization, waste management, paper usage, chemical usage, and corporate social responsibility initiatives.</p>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -100,14 +114,22 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock award_four_image, type:image %}
       <img src="/assets/images/awards/tripadvisor-badge.jpg" alt="TripAdvisor">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>The Pierre</h6>
-        <h4>TripAdvisor Certificate<br>of Excellence</h4>
-        <p>The Pierre is rated #14 on TripAdvisor out of 466 New York City hotels. In addition, we have received the 2017 TripAdvisor Certificate of Excellence, which recognizes establishments that consistently earn great TripAdvisor reviews from travelers. It accounts for the quality, quantity and recency of reviews submitted by travelers over a 12-month period.</p>
+        {% regionblock award_four_subtitle, type:header %}
+        <h6 tabindex="-1">The Pierre</h6>
+        {% endregionblock %}
+        {% regionblock award_four_title, type:header %}
+        <h4 tabindex="0">TripAdvisor Certificate<br>of Excellence</h4>
+        {% endregionblock %}
+        {% regionblock award_four_content, type:text %}
+        <p tabindex="0">The Pierre is rated #14 on TripAdvisor out of 466 New York City hotels. In addition, we have received the 2017 TripAdvisor Certificate of Excellence, which recognizes establishments that consistently earn great TripAdvisor reviews from travelers. It accounts for the quality, quantity and recency of reviews submitted by travelers over a 12-month period.</p>
+        {% endregionblock %}
       </div>
     </div>
 
