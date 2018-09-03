@@ -1,7 +1,6 @@
 {
   "name": "VENUES",
-  "photos": [
-    {
+  "photos": [{
       "name": "corporate-gallery1",
       "file_name": "corporate-gallery1.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-084115/corporate-gallery1.jpg",
@@ -102,5 +101,6 @@
       "alt": "Corporate Events At The Pierre"
     }
   ],
-  "description": ""
+  "description": "",
+  "sort_order": "5"
 }
