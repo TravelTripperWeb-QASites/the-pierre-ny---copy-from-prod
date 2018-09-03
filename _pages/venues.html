@@ -20,13 +20,18 @@ meta_tags:
 <div class="page-banner inner" style="background-image:url('/assets/images/events/venues/venues-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    {% regionblock venues_title, type:header %}
-      <h1 class="variant">WORLD - CLASS VENUES</h1>
-    {% endregionblock %}
+    <h1 class="variant">
+      {% regionblock venues_title, type:header %}
+        WORLD - CLASS VENUES
+      {% endregionblock %}
+    </h1>
+
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
-    {% regionblock venues_subtitle, type:header %}
-      <h6>Stunning Event Venues in NYC</h6>
-    {% endregionblock %}
+      <h6 tabindex="0">
+        {% regionblock venues_subtitle, type:header %}
+          Stunning Event Venues in NYC
+        {% endregionblock %}
+      </h6>
   </div>
 </div>
 
@@ -34,13 +39,13 @@ meta_tags:
 
 <!-- Venues Listing here -->
 <div class="venues-listing">
-  <div class="wrapper">
+  <div class="wrapper" role="listbox">
     {% for venue in venues %}
       {% if venue.dont_show_inlist == undefined %}
-        <div class="item">
+        <div class="item" role="option">
           <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
           <div class="content">
-            <h5>{{ venue.venue_name }}</h5>
+            <h5 tabindex="0">{{ venue.venue_name }}</h5>
             <a class="secondary-btn" href="/events/venues/{{ venue.url_friendly_name }}/">View this venue</a>
           </div>
         </div>
@@ -51,9 +56,13 @@ meta_tags:
 
 <!-- Facility Chart -->
 <div class="table-grid">
-  <h2>Facility Chart</h2>
+  <h2 tabindex="0">
+    {% regionblock facility_chart_title, type:header %}
+      Facility Chart
+    {% endregionblock %}
+  </h2>
   <div class="wrapper table-responsive-md">
-    <table class="table table-striped">
+    <table class="table table-striped" tabindex="0">
       <thead>
         <tr>
           <th scope="col">Venues</th>
@@ -84,8 +93,12 @@ meta_tags:
 
 <!-- Seating Style -->
 <div class="table-grid content-center no-bg">
-  <h2>Seating Style</h2>
-  <div class="wrapper table-responsive-md">
+  <h2 tabindex="0">
+    {% regionblock seating_style_title, type:header %}
+      Seating Style
+    {% endregionblock %}
+  </h2>
+  <div class="wrapper table-responsive-md" tabindex="0">
     <table class="table table-striped">
       <thead>
         <tr>
