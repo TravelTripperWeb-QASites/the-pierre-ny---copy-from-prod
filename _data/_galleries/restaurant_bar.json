@@ -1,7 +1,6 @@
 {
   "name": "RESTAURANT & BAR",
-  "photos": [
-    {
+  "photos": [{
       "name": "restaurant-14",
       "file_name": "restaurant-14.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075638/restaurant-14.jpg",
@@ -262,5 +261,6 @@
       "alt": "restaurant-1"
     }
   ],
-  "description": ""
+  "description": "",
+  "sort_order": "3"
 }
