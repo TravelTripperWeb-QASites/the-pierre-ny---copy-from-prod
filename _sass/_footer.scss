@@ -79,7 +79,7 @@ footer {
             }
           }
 
-          input[type=email] {
+          input[type=email], input[type=text] {
             padding: 12px 20px 16px;
             font-size: $type-size-10;
             color: $white;
@@ -90,7 +90,7 @@ footer {
               font-size: $type-size-10;
               color: $white;
             }
-            &:focus,:active {
+            &:focus, :active {
               background-color: $tertiary-color;
               outline: 0;
               box-shadow: none;
