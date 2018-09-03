@@ -18,9 +18,9 @@ meta_tags:
 <section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1>{% regionblock banner_title, type:header %} Central Park at your doorstep {% endregionblock %}</h1>
+    {% regionblock banner_title, type:text %}<h1> Central Park at your doorstep</h1> {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>{% regionblock banner_subtitle, type:header %}FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS {% endregionblock %}</h6>
+    {% regionblock banner_subtitle, type:text %}<h6>FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>{% endregionblock %}
     {% regionblock banner_url, type:text %}<a class="primary-btn inverse" href="/location/">View Location</a>{% endregionblock %}
   </div>
 </section>
