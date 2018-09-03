@@ -15,12 +15,12 @@ main:
         - title: Amenities
           url: /luxury-manhattan-hotel-amenities/
         - title: Residences
-          url: /residences/
+          url: /rooms-suites/#residences
     - title: Dining
       url: /dining/
       dropdown:
         - title: Perrine
-          url: /dining/perrine/
+          url: http://www.perrinenyc.com/
         - title: The Rotunda
           url: /dining/the-rotunda/
         - title: Two E Bar & Lounge
@@ -43,7 +43,7 @@ main:
     - title: Entertainment
       url: /entertainment/
     - title: Special Offers
-      url: /offers/
+      url: /special-offers/
     - title: Awards
       url: /awards/
     - title: Gallery

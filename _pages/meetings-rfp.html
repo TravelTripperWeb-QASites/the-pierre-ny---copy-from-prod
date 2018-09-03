@@ -20,12 +20,14 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/meetings/meetings-banner2.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Meetings RFP</h1>
+    <h1 class="variant">{% regionblock meetings_rfp_title, type:header %}Meetings RFP{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="rfp-form">
+  {% regionblock meetings_rfp_content, type:header %}
   <h6>Please fill in below details for us to serve you better.</h6>
+  {% endregionblock %}
   <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.meetings-rfp }}/" method="post" enctype="multipart/form-data" name="form_{{ site.data.forms.jotform.meetings-rfp }}" id="{{ site.data.forms.jotform.meetings-rfp }}" accept-charset="utf-8">
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.meetings-rfp }}" />
     <div class="form-row">
@@ -47,7 +49,9 @@ meta_tags:
         <input type="text" class="form-control" name="q26_cell-phone" placeholder="Preferred Callback Number" aria-label="Type referred callback number" required>
       </div>
     </div>
+    {% regionblock meetings_rfp_subheading, type:header %}
     <h4>Event Information</h4>
+    {% endregionblock %}
     <div class="form-row">
       <div class="form-group col-md-6">
         <input type="text" class="form-control" name="q15_arrival" id="arrival_date" placeholder="Arrival Date" aria-label="Select arrival date">

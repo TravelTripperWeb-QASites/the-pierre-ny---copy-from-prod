@@ -19,14 +19,19 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/dining/afternoon-tea-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Tiffin Tea Menu</h1>
+    <h1 class="variant" tabindex="0">{% regionblock tiffin_tea_menu_title, type:header %}Tiffin Tea Menu{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="menus-container">
-  <div class="menus-content">
+  <div class="menus-content" tabindex="0">
+    {% regionblock tiffin_tea_menu_intro_title, type:header %}
     <h2>BEVERAGES</h2>
+    {% endregionblock %}
+    {% regionblock tiffin_tea_menu_intro_subtitle, type:header %}
     <h4>Tiffin & Tea at Two E</h4>
+    {% endregionblock %}
+    {% regionblock tiffin_tea_menu_content, type:text %}
     <p> In the British Raj, where the British custom of afternoon tea was supplanted by the local Indian practice of taking a light meal at that hour, it came to be called tiffin. It is derived from English colloquial or slang tiffing meaning to take a little drink, and had by 1867 become naturalized among Anglo-Indians in the north of British India to mean luncheon. </p>
     <p> We look forward to sharing this beloved tradition with our Afternoon Tea Program by offering a selection of small bites with Indian & Raj flair, and homemade sweets that compliment spiced Chai tea </p>
     <h4>The Menu</h4>
@@ -42,5 +47,6 @@ meta_tags:
     <p><span class="strong-italic">$50 minimum per table</span></p>
     <div class="seperator"></div>
     <p><span class="strong-italic">$60 per person / $95 per person including the tiffin</span></p>
+    {% endregionblock %}
   </div>
 </section>
