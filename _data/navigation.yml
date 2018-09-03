@@ -63,7 +63,7 @@ main:
       url: /zh/gallery/
 footer:
   - title: Contact us
-    url: /contact/
+    url: mailto:thepierre.ny@tajhotels.com
   - title: Discover Taj Hotels
     url: https://www.tajhotels.com/
     external: true

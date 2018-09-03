@@ -8,12 +8,20 @@ meta_tags:
 ---
 
 <!-- Events Banner here -->
-<div class="page-banner inner" style="background-image:url('/assets/images/entertainment/corporate-events-banner.jpg');">
+<div class="page-banner inner" style="background-image:url('/assets/images/entertainment/special-events-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Corporate events at the Pierre</h1>
+    <h1 class="variant">
+      {% regionblock special_events_heading, type:header %}
+        Special events at the Pierre
+      {% endregionblock %}
+    </h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>A HISTORIC VENUE. A DEDICATED MEETING PLANNER. MAKE YOUR NEXT CORPORATE EVENT ONE TO REMEMBER.</h6>
+    <h6>
+      {% regionblock special_events_tagline, type:header %}
+        AN HISTORIC VENUE. A DEDICATED EVENT PLANNER. TAKE YOUR GALA FROM SPECIAL TO UNFORGETTABLE.
+      {% endregionblock %}
+    </h6>
   </div>
 </div>
 
@@ -32,7 +40,7 @@ meta_tags:
 <!-- Gallery carousel here -->
 <div class="pierre-slider mb-5">
   {% for category in categories %}
-    {% assign catname = 'venues' %}
+    {% assign catname = 'special_events' %}
     {% for photo in site.data._galleries[catname].photos %}
     	<div>
       	<div class="slide-pageno" tabindex="0">

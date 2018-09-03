@@ -475,3 +475,12 @@
     background-color: $primary-color;
   }
 }
+
+.sr-only-focusable {
+  position: absolute;
+  top: 10px;
+  right: auto;
+  left: auto;
+  display: block;
+  padding: 10px 20px;
+}
