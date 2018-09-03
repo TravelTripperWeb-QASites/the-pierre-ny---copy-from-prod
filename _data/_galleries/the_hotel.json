@@ -1,7 +1,6 @@
 {
   "name": "THE HOTEL",
-  "photos": [
-    {
+  "photos": [{
       "name": "the-hotel-14",
       "file_name": "the-hotel-14.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074646/the-hotel-14.jpg",
@@ -222,5 +221,6 @@
       "alt": "58526_1_yankee_large"
     }
   ],
-  "description": ""
+  "description": "",
+  "sort_order": "1"
 }

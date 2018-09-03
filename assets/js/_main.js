@@ -269,6 +269,7 @@ $('.pierre-slider')
     centerMode: true,
     centerPadding: '16%',
     slidesToShow: 1,
+    accessibility: false,
     responsive: [
       {
         breakpoint: 768,

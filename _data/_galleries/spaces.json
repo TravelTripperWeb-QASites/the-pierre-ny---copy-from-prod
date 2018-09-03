@@ -1,7 +1,6 @@
 {
   "name": "SPACES",
-  "photos": [
-    {
+  "photos": [{
       "name": "special-gallery5",
       "file_name": "special-gallery5.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-085526/special-gallery5.jpg",
@@ -102,5 +101,6 @@
       "alt": "Special events at The Pierre"
     }
   ],
-  "description": ""
+  "description": "",
+  "sort_order": "7"
 }

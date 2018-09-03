@@ -1,18 +1,14 @@
 
 <!-- Explore More venues -->
 <section class="common-carousel">
-  {% regionblock explore_venues_heading, type:header %}
-    <h2 class="text-center mb-4">Explore Venues</h2>
-  {% endregionblock %}
-  {% regionblock explore_venues_intro, type:text %}
-    <p class="text-center">Browse our enviable collection of distinctive venues.</p>
-  {% endregionblock %}
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  <h2 class="text-center mb-4" tabindex="0">Explore Venues</h2>
+  <p class="text-center" tabindex="0">Browse our enviable collection of distinctive venues.</p>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
   <div class="common-carousel-inner">
     {% assign venues = site.data._models.venues %}
-    <div class="slick-controls" id="commonCarousel">
+    <div class="slick-controls" id="commonCarousel" role="listbox">
       {%for venue in venues%}
-        <div class="item">
+        <div class="item" role="option">
           <div class="img-block" style="background-image:url('{{ venue.venue_thumbnail.url_large }}');"></div>
           <div class="content">
             <h4>{{ venue.venue_name }}</h4>

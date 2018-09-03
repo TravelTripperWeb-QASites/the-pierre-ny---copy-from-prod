@@ -16,8 +16,8 @@ meta_tags:
         Special events at the Pierre
       {% endregionblock %}
     </h1>
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <h6 tabindex="0">
       {% regionblock special_events_tagline, type:header %}
         AN HISTORIC VENUE. A DEDICATED EVENT PLANNER. TAKE YOUR GALA FROM SPECIAL TO UNFORGETTABLE.
       {% endregionblock %}
@@ -31,8 +31,10 @@ meta_tags:
 
 <!-- Gallery carousel heading here -->
 <div class="intro-text pt-0 mt-5">
-  <h2>Legendary Spaces</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  {% regionblock special_events_spaces_heading, type:header %}
+    <h2>Legendary Spaces</h2>
+  {% endregionblock %}
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
 {% assign categories = site.data._galleries | sort: sort_order %}
@@ -40,7 +42,7 @@ meta_tags:
 <!-- Gallery carousel here -->
 <div class="pierre-slider mb-5">
   {% for category in categories %}
-    {% assign catname = 'venues' %}
+    {% assign catname = 'spaces' %}
     {% for photo in site.data._galleries[catname].photos %}
     	<div>
       	<div class="slide-pageno" tabindex="0">
