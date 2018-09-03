@@ -49,7 +49,7 @@ meta_tags:
 {% assign categories = site.data._galleries | sort: sort_order %}
 
 <!-- Gallery carousel here -->
-<div class="pierre-slider mb-5">
+<div class="pierre-slider mb-5" tabindex="-1">
   {% for category in categories %}
     {% assign catname = 'spaces' %}
     {% for photo in site.data._galleries[catname].photos %}

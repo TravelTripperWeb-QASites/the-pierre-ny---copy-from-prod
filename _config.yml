@@ -12,7 +12,7 @@ email: thepierre.ny@tajhotels.com
 
 # Language Settings
 default_lang: 'en'
-languages: ['en','zh']
+languages: ['en', 'zh']
 exclude_from_localizations: ["assets", "CNAME"]
 # Reading Files
 include:

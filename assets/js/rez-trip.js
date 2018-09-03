@@ -7,7 +7,7 @@
     .value('rt3api', new Rt3Api({
       portalId: 'thepierreny',
       hotelId: 'NYCTP',
-      defaultLocale: 'en',
+      defaultLocale: $("#siteLang").val() || 'en',
       defaultCurrency: 'USD'
     }))
 
