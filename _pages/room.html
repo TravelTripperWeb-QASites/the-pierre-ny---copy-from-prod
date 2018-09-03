@@ -15,7 +15,9 @@ published_localized:
 meta_tags:
   robots:
 ---
-
+{% if site.active_lang == "zh" %}
+  <input type="hidden" id="siteLang" value="zh-CN">
+{% endif %}
 <div ng-controller="roomDetail" rt3-room-details="details">
 <input type="hidden" id="roomCode" value="[[ details.code ]]">
 
