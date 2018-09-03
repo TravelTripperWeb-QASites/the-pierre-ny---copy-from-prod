@@ -60,6 +60,15 @@ main:
       url: /zh/special-offers/
     - title: 餐饮
       url: /zh/dining/
+      dropdown:
+        - title: Perrine
+          url: http://www.perrinenyc.com/
+        - title: 圆形大厅
+          url: /zh/dining/the-rotunda/
+        - title: 下午茶
+          url: /zh/dining/twoetea/
+        - title: 鸡尾酒和爵士乐
+          url: /zh/dining/twoebar/
     - title: 活动
       url: /zh/events/
       dropdown:
