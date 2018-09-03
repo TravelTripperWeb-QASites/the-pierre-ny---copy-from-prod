@@ -1,7 +1,26 @@
 {
   "name": "WEDDINGS",
   "photos": [
-
+    {
+      "name": "wedding-gallery5",
+      "file_name": "wedding-gallery5.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/wedding-gallery5.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-09-03-041158",
+      "file_type": "image/jpeg",
+      "width": 1246,
+      "height": 701,
+      "file_size": 168546,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/large_wedding-gallery5.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/medium_wedding-gallery5.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/small_wedding-gallery5.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/xsmall_wedding-gallery5.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/thumb_wedding-gallery5.jpg",
+      "git_file_name": "_assets/image_data/wedding-gallery5.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/wedding-gallery5.jpg",
+      "alt": "wedding-gallery5"
+    }
   ],
   "description": ""
 }
