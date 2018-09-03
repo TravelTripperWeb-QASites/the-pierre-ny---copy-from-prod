@@ -18,29 +18,43 @@ meta_tags:
 <section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    {% regionblock banner_title, type:text %}<h1> Central Park at your doorstep</h1> {% endregionblock %}
+    <h1 tabindex="0">
+      {% regionblock banner_title, type:text %}
+        Central Park at your doorstep
+      {% endregionblock %}
+    </h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1"/></div>
-    {% regionblock banner_subtitle, type:text %}<h6>FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>{% endregionblock %}
-    {% regionblock banner_url, type:text %}<a class="primary-btn inverse" href="/location/">View Location</a>{% endregionblock %}
+    <h6 tabindex="0">
+      {% regionblock banner_subtitle, type:text %}
+        FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS
+      {% endregionblock %}
+    </h6>
+    {% regionblock banner_url, type:text %}
+      <a class="primary-btn inverse" href="/location/">View Location</a>
+    {% endregionblock %}
   </div>
 </section>
 
 <!-- Intero section here -->
 <section class="intro">
   <div class="intro-text">
-    {% regionblock page_title, type:text %}
-      <h2>The Pierre New York</h2>
-    {% endregionblock %}
-    {% regionblock page_description, type:text %}
-      <p>The Pierre, A Taj Hotel, situated beside Central Park steps from the luxury boutiques of Fifth & Madison Avenues,is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati,The
-      Pierre is unquestionably a jewel in Manhattan’s crown.</p>
-    {% endregionblock %}
+    <h2>
+      {% regionblock page_title, type:text %}
+        The Pierre New York
+      {% endregionblock %}
+    </h2>
+    <div tabindex="0">
+      {% regionblock page_description, type:text %}
+        <p>The Pierre, A Taj Hotel, situated beside Central Park steps from the luxury boutiques of Fifth & Madison Avenues,is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati,The
+        Pierre is unquestionably a jewel in Manhattan’s crown.</p>
+      {% endregionblock %}
+    </div>
   </div>
   <div class="images-section m-0">
     <div class="images">
       <div class="image-full mr-15" style="background-image:url('/assets/images/home/rooms.jpg');">
         <div class="heading">
-          <h6>{% t 'rooms_suites' %}</h6>
+          <h6 tabindex="0">{% t 'rooms_suites' %}</h6>
           <a class="secondary-btn inverse" href="/rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
         </div>
       </div>
