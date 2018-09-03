@@ -2,6 +2,7 @@ en:
   language_name: English
   book_now: Book Now
   contact: Contact
+  contact_us: Contact Us
   rooms_suites: Rooms & suites
   dining: DINING
   learn_more: DISCOVER MORE
@@ -9,3 +10,9 @@ en:
   special_offers: Special Offers
   see_all_offer: See all special offers
   view_all_rooms: view all rooms & suites
+  keep_in_touch: Stay In Touch
+  tel: Tel
+  fax: Fax
+  other_info: Other Information
+  email_label: Enter you email
+  newsltter_text: Short explanation on why users need to sign up will go here and continue on two lines.
