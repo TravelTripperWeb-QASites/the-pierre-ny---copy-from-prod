@@ -19,13 +19,17 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/amenities/amenities-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Amenities</h1>
+    <h1 class="variant" tabindex="0">{% regionblock amenities_title, type:header %}Amenities{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="intro-text">
-  <h2>Luxury Manhattan Hotel Amenities</h2>
-  <p>The Pierre continues to set the standard for outstanding hospitality around the world, offering an unparalleled array of signature amenities.</p>
+  {% regionblock amenities_intro_title, type:header %}
+  <h2 tabindex="0">Luxury Manhattan Hotel Amenities</h2>
+  {% endregionblock %}
+  {% regionblock amenities_intro_description, type:text %}
+  <p tabindex="0">The Pierre continues to set the standard for outstanding hospitality around the world, offering an unparalleled array of signature amenities.</p>
+  {% endregionblock %}
 </section>
 
 
@@ -34,14 +38,21 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock guest_services_image, type:image %}
       <img src="/assets/images/amenities/guest-services.jpg" alt="Guest Services">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>Luxury Manhattan Hotel Amenities</h6>
-        <h4>Guest Services</h4>
-        <ul class="twocol-list">
+        {% regionblock guest_services_subtitle, type:header %}
+        <h6 tabindex="0">Luxury Manhattan Hotel Amenities</h6>
+        {% endregionblock %}
+        {% regionblock guest_services_title, type:header %}
+        <h4 tabindex="0">Guest Services</h4>
+        {% endregionblock %}
+        {% regionblock guest_services_list, type:text %}
+        <ul class="twocol-list" tabindex="0">
           <li>24-hour white gloved elevator attendants</li>
           <li>Complimentary hotel Jaguar service on a first come first serve basis</li>
           <li>Award-winning Les Clefs d'Or Concierge team</li>
@@ -53,6 +64,7 @@ meta_tags:
           <li>Secretarial services</li>
           <li>Notary public</li>
         </ul>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -61,14 +73,21 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock inroom_comforts_image, type:image %}
       <img src="/assets/images/amenities/in-room-comforts.jpg" alt="In-Room Comforts">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>Luxury Manhattan Hotel Amenities</h6>
-        <h4>In-Room Comforts</h4>
-        <ul class="twocol-list">
+        {% regionblock inroom_comforts_subtitle, type:header %}
+        <h6 tabindex="0">Luxury Manhattan Hotel Amenities</h6>
+        {% endregionblock %}
+        {% regionblock inroom_comforts_title, type:header %}
+        <h4 tabindex="0">In-Room Comforts</h4>
+        {% endregionblock %}
+        {% regionblock inroom_comforts_list, type:text %}
+        <ul class="twocol-list" tabindex="0">
           <li>Twice-daily housekeeping service</li>
           <li>24-hour in-room dining</li>
           <li>Complimentary High Speed WiFi</li>
@@ -82,6 +101,7 @@ meta_tags:
           <li>Complimentary dog amenities (up to 15 pounds)</li>
           <li>Complimentary online newspapers and magazines on check in</li>
         </ul>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -90,19 +110,27 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock beauty_wellness_image, type:image %}
       <img src="/assets/images/amenities/beauty-wellness.jpg" alt="Beauty Wellness">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>Luxury Manhattan Hotel Amenities</h6>
-        <h4>Beauty & Wellness</h4>
-        <ul class="twocol-list">
+        {% regionblock beauty_wellness_subtitle, type:header %}
+        <h6 tabindex="0">Luxury Manhattan Hotel Amenities</h6>
+        {% endregionblock %}
+        {% regionblock beauty_wellness_title, type:header %}
+        <h4 tabindex="0">Beauty & Wellness</h4>
+        {% endregionblock %}
+        {% regionblock beauty_wellness_list, type:text %}
+        <ul class="twocol-list" tabindex="0">
           <li>On-site spa therapist upon request for treatments either in room or in our Serenity Suite</li>
           <li>Complimentary 1,600-square-foot 24-hour Fitness Center</li>
           <li>Personal Training available upon request</li>
           <li>Dominique Salon</li>
         </ul>
+        {% endregionblock %}
       </div>
     </div>
 

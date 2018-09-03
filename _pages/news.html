@@ -23,7 +23,7 @@ meta_tags:
     {% regionblock news_title, type:header %}
       <h1 class="variant">IN THE NEWS</h1>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock news_subtitle, type:header %}
       <h6>A NEW YORK ICON, THE PIERRE IS CONTINUALLY RECOGNIZED IN THE MEDIA FOR ITS AWARD-WINNING FIVE-STAR SERVICE, ELEGANT ACCOMMODATIONS AND FINE DINING.</h6>
     {% endregionblock %}
@@ -42,7 +42,7 @@ meta_tags:
 
 <div class="intro-text">
   <h2>Print Media Coverage</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
 {% assign print = site.data._models.news | where: "category", "Print Media Coverage" %}
@@ -67,7 +67,7 @@ meta_tags:
 
 <div class="intro-text">
   <h2>Online Media Coverage</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" /></div>
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
 {% assign online = site.data._models.news | where: "category", "Online Media Coverage" | sort: 'posted_date' %}

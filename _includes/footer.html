@@ -4,7 +4,7 @@
   <div class="row">
 
     <!-- Address block -->
-    <div class="address">
+    <div class="address" tabindex="0">
       <h5>The Pierre</h5>
       <p>
         2 East 61st Street at Fifth Avenue,<br>
@@ -18,7 +18,7 @@
     </div>
 
     <!-- Quicklinks block -->
-    <div class="quick-links">
+    <div class="quick-links" tabindex="0">
       <h5>{% t 'other_info'%}</h5>
       {% if site.active_lang == "en" %}
       {% assign quick_links = site.data.navigation.footer.en %}
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Stay in touch -->
-    <div class="intouch">
+    <div class="intouch" tabindex="0">
       <h5>{% t 'keep_in_touch' %}</h5>
       <div class="wrap">
         <p>{% t 'newsltter_text' %}</p>
@@ -49,18 +49,18 @@
 <!-- Copyrights & Social Share -->
 <div class="copyrights d-flex justify-content-between">
   <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
-  <div class="social-icons">
+  <div class="social-icons" tabindex="0">
     {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank" title="The Pierre NY Facebook page"><i class="fab fa-facebook" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.instagram.username %}
-      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" target="_blank"><i class="fab fa-instagram" aria-hidden="true" title="The Pierre NY Instagram page"></i></a>
     {% endif %}
     {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank" title="The Pierre NY Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     {% endif %}
     {% if site.data.social.pinterest.username %}
-      <a href="https://www.pinterest.com/{{ site.data.social.pinterest.username }}" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/{{ site.data.social.pinterest.username }}" title="The Pierre NY Pinterest Wall" target="_blank" ><i class="fab fa-pinterest" aria-hidden="true"></i></a>
     {% endif %}
 
   </div>
