@@ -10,13 +10,15 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/dining/twoe-bar.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">COCKTAILS &<br>MUSIC</h1>
+    <h1 class="variant">{% regionblock cocktails_music_title, type:header %}Cocktails &<br>Music{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="reservations">
   <div class="reservations-container">
+    {% regionblock cocktails_music_reservations_title, type:header %}
     <h4>Reservations</h4>
+    {% endregionblock %}
     <div class="opentable-widget">
     <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=34024&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
     </div>
@@ -24,8 +26,12 @@ meta_tags:
 </section>
 
 <section class="intro-text">
+  {% regionblock cocktails_music_intro_title, type:header %}
   <h2>Upper East Side Bar & Music Lounge</h2>
+  {% endregionblock %}
+  {% regionblock cocktails_music_intro_description, type:text %}
   <p>Two E serves expertly crafted cocktails in the evening alongside light bites and features live entertainment from Broadway and jazz performers. The bar is available for private events, regularly hosting intimate parties for high-profile individuals and companies.</p>
+  {% endregionblock %}
 </section>
 
 
@@ -34,13 +40,20 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock cocktails_music_twoebar_image, type:image %}
       <img src="/assets/images/dining/the-company-of-wicked.jpg" alt="Two E Bar & Lounge">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
+        {% regionblock cocktails_music_twoebar_subtitle, type:header %}
         <h6>Art Deco Glamour</h6>
+        {% endregionblock %}
+        {% regionblock cocktails_music_twoebar_title, type:header %}
         <h4>Two E Bar & Lounge</h4>
+        {% endregionblock %}
+        {% regionblock cocktails_music_twoebar_content, type:header %}
         <p>Two E is proud to feature premier entertainment alongside its renowned food & beverage offerings.</p>
         <p><span class="strong-italic">Broadway At The Pierre cabaret series:</span></p>
         <p>Monday August 20th - Join us for a very special performance by <strong>WICKED</strong> alums <strong>Jennifer DiNoia (Elphaba) and Michael Campayno (Fiyero)!</strong>. This intimate evening of songs and stories is part of Broadway At The Pierre's new <strong>WICKED Ozdust Series</strong>, celebrating the acclaimed musical's 15th anniversary coming up this fall. The final performance in the series will take place in October (cast members to be announced).</p>
@@ -50,6 +63,7 @@ meta_tags:
         <div class="btn-holder">
           <a class="border-btn light" href="https://www.opentable.com/two-e-bar-and-lounge-reservations-new-york?covers=2&datetime=2018-04-12T19%3A00&restref=34024&searchdatetime=2018-04-12T19%3A00&partysize=2&lang=en-US" target="_blank">Make a Reservation</a>
         </div>
+        {% endregionblock %}
       </div>
     </div>
 
@@ -58,13 +72,20 @@ meta_tags:
   <div class="twocol-row">
 
     <div class="twocol-image p-0">
+      {% regionblock cocktails_music_jazz_image, type:image %}
       <img src="/assets/images/dining/live-jazz.jpg" alt="Jazz and Two E Hours">
+      {% endregionblock %}
     </div>
 
     <div class="twocol-content p-0">
       <div class="content-holder">
+        {% regionblock cocktails_music_jazz_subtitle, type:header %}
         <h6>Luxury Manhattan Hotel Amenities</h6>
+        {% endregionblock %}
+        {% regionblock cocktails_music_jazz_title, type:header %}
         <h4>Jazz and Two E Hours</h4>
+        {% endregionblock %}
+        {% regionblock cocktails_music_jazz_content, type:text %}
         <p>Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician <a href="http://motema.com/artists/antonio-ciacca/" target="_blank">Antonio Ciacca</a> and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required</p>
         <p><strong><a href="http://theaterpizzazz.com/duke-ellingtons-birthday-tribute-to-the-king-ofjazz/">Theater Pizzazz review</a> of Icons of Jazz</strong></p>
         <p>Two E Bar/Lounge is open everyday from 2pm to 10pm</p>
@@ -75,6 +96,7 @@ meta_tags:
           <a class="border-btn light" href="/dining/twoetea/spring-menu/">View Menus</a><br>
           <a class="border-btn light mt-4" href="http://www.opentable.com/two-e-bar-and-lounge" target="_blank">Make a Reservation</a>
         </div>
+        {% endregionblock %}
       </div>
     </div>
 

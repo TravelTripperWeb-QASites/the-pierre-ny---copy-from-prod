@@ -11,7 +11,7 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/rotunda/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">{% regionblock the_rotunda_title, type:header %}The Rotunda{% endregionblock %}</h1>
+    <h1 class="variant" tabindex="0">{% regionblock the_rotunda_title, type:header %}The Rotunda{% endregionblock %}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     <h6></h6>
   </div>
@@ -20,9 +20,13 @@ meta_tags:
 <!-- Intro section here -->
 <section class="intro mb-0">
   <div class="intro-text">
-    <h2>Tableside Cocktails & Supper</h2>
-    <p>The Rotunda, an iconic room within The Pierre, was
+    {% regionblock the_rotunda_intro_title, type:header %}
+    <h2 tabindex="0">Tableside Cocktails & Supper</h2>
+    {% endregionblock %}
+    {% regionblock the_rotunda_intro_description, type:header %}
+    <p tabindex="0">The Rotunda, an iconic room within The Pierre, was
     re-imagined in 2016 by renowned architect and designer Daniel Romualdez. Having served as an event space in the hotel for the past decade, The Rotunda returns to the ranks of The Pierre’s storied public spaces with tableside cocktails and all-day dining.</p>
+    {% endregionblock %}
   </div>
 </section>
 
@@ -30,14 +34,22 @@ meta_tags:
 <section class="twocol mb-5">
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock the_rotunda_signature_room_image, type:image %}
       <img src="/assets/images/rotunda/rotunda-action.jpg" alt="Culinary Excellence">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>THE SIGNATURE ROOM OF THE PIERRE</h6>
-        <h4>THE ROTUNDA</h4>
-        <p>The Rotunda menus pull inspiration from The Pierre's black tie crowd, with afternoon and supper menus offering dishes from Maine Lobster Tartine to Welsh Rarebit to Spaghetti Bolognese. The room's center table is covered by chilled champagne, overflowing jars of madeleines and macarons, and tiers of chocolate cakes and seasonal bundts.</p>
-        <p>The room's cocktail carts bring bespoke drinks tableside, with one cart offering a selection of classic cocktails inspired by famous mixologists from The Pierre and elsewhere. A specialty cart serves rare spirits  that change with the seasons.</p>
+        {% regionblock the_rotunda_signature_room_subtitle, type:header %}
+        <h6 tabindex="0">The Signature Room of the Pierre</h6>
+        {% endregionblock %}
+        {% regionblock the_rotunda_signature_room_title, type:header %}
+        <h4 tabindex="0">The Rotunda</h4>
+        {% endregionblock %}
+        {% regionblock the_rotunda_signature_room_content, type:text %}
+        <p tabindex="0">The Rotunda menus pull inspiration from The Pierre's black tie crowd, with afternoon and supper menus offering dishes from Maine Lobster Tartine to Welsh Rarebit to Spaghetti Bolognese. The room's center table is covered by chilled champagne, overflowing jars of madeleines and macarons, and tiers of chocolate cakes and seasonal bundts.</p>
+        <p tabindex="0">The room's cocktail carts bring bespoke drinks tableside, with one cart offering a selection of classic cocktails inspired by famous mixologists from The Pierre and elsewhere. A specialty cart serves rare spirits  that change with the seasons.</p>
+        {% endregionblock %}
       </div>
     </div>
   </div>
@@ -47,11 +59,15 @@ meta_tags:
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h4>OPENING HOURS</h4>
-        <p>The Rotunda is open Monday through Friday from 3pm – 10:00pm. For further details or to inquire after private event bookings, please contact Jay Poblador, Director of Restaurants, at 212 940 8195. </p>
+        {% regionblock the_rotunda_opening_hours_title, type:header %}
+        <h4 tabindex="0">Opening Hours</h4>
+        {% endregionblock %}
+        {% regionblock the_rotunda_opening_hours_content, type:text %}
+        <p tabindex="0">The Rotunda is open Monday through Friday from 3pm – 10:00pm. For further details or to inquire after private event bookings, please contact Jay Poblador, Director of Restaurants, at 212 940 8195. </p>
         <div class="btn-holder">
           <a class="border-btn light" href="/dining/the-rotunda/rotunda-menu/">View Menus</a>
         </div>
+        {% endregionblock %}
       </div>
     </div>
   </div>
