@@ -11,87 +11,127 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/dining/dining-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">RESTAURANTS & BARS</h1>
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" /></div>
-    <h6>Dining</h6>
+    <h1 class="variant">{% regionblock dining_title, type:header %}Restaurants & Bars</h1>{% endregionblock %}
   </div>
 </section>
 
 <!-- Intro section here -->
-<section class="intro mb-0">
-  <div class="intro-text">
-    <h2>DINE ON CENTRAL PARK</h2>
-    <p>Embracing a rich history of celebrated cuisine, The Pierre continues its culinary traditions with inspired, elegant fare. From traditional Afternoon Tea to supper in an NYC icon, from seasonal French-American dishes to vintage Pierre classics, The Pierre offers three unique dining spaces, in addition to 24-hour room service.</p>
-  </div>
+<section class="intro-text">
+  {% regionblock dining_intro_title, type:header %}
+  <h2>Dine on Central Park</h2>
+  {% endregionblock %}
+  {% regionblock dining_intro_description, type:text %}
+  <p>Embracing a rich history of celebrated cuisine, The Pierre continues its culinary traditions with inspired, elegant fare. From traditional Afternoon Tea to supper in an NYC icon, from seasonal French-American dishes to vintage Pierre classics, The Pierre offers three unique dining spaces, in addition to 24-hour room service.</p>
+  {% endregionblock %}
 </section>
 
 <!-- Categories here -->
 <section class="twocol">
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock twoe_celebrations_image, type:image %}
       <img src="/assets/images/dining/celebrates-downtown.jpg" alt="Dining">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>DINING</h6>
-        <h4>TWO E CELEBRATES DOWNTON ABBEY & TIFFIN</h4>
+        {% regionblock twoe_celebrations_subtitle, type:header %}
+        <h6>Dining</h6>
+        {% endregionblock %}
+        {% regionblock twoe_celebrations_title, type:header %}
+        <h4>Two E Celebrates Downton Abbey & Tiffin</h4>
+        {% endregionblock %}
+        {% regionblock twoe_celebrations_content, type:text %}
         <p>Indulge in our new afternoon tea offerings--Indian-inspired Tiffin service and a Downton Abbey-inspired tea celebrating the popular Downton Abbey exhibition!</p>
         <p>Learn more here.</p>
-        <p>To reserve your seat, please call 212-940-8113 or email TwoE@tajhotels.com. </p>
+        <p>To reserve your seat, please call <a href="tel:212-940-8113">212-940-8113</a> or email <a href="mailto:TwoE@tajhotels.com">TwoE@tajhotels.com</a>. </p>
+        {% endregionblock %}
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock perrine_image, type:image %}
       <img src="/assets/images/dining/perrine.jpg" alt="Perrine">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>DINING</h6>
+        {% regionblock perrine_subtitle, type:header %}
+        <h6>Dining</h6>
+        {% endregionblock %}
+        {% regionblock perrine_title, type:header %}
         <h4>PERRINE</h4>
+        {% endregionblock %}
+        {% regionblock perrine_content, type:text %}
         <p>A French-American restaurant inspired by fresh local fare and classic cuisine with an outdoor terrace overlooking Central Park.</p>
         <a class="primary-btn" href="http://www.perrinenyc.com/" target="_blank">Discover More</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
-      <img src="/assets/images/dining/routanda.jpg" alt="THE ROTUNDA">
+      {% regionblock rotunda_image, type:image %}
+      <img src="/assets/images/dining/routanda.jpg" alt="The Rotunda">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>DINING</h6>
-        <h4>THE ROTUNDA</h4>
+        {% regionblock rotunda_subtitle, type:header %}
+        <h6>Dining</h6>
+        {% endregionblock %}
+        {% regionblock rotunda_title, type:header %}
+        <h4>The Rotunda</h4>
+        {% endregionblock %}
+        {% regionblock rotunda_content, type:text %}
         <p>The iconic room features a redesign by Daniel Romualdez & a decadent all day dining menu with champagne & cocktails prepared tableside.</p>
         <a class="primary-btn" href="/dining/the-rotunda/">Discover More</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
-      <img src="/assets/images/dining/afternoon-tea.jpg" alt="AFTERNOON TEA">
+      {% regionblock afternoon_tea_image, type:image %}
+      <img src="/assets/images/dining/afternoon-tea.jpg" alt="Afternoon Tea">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>DINING</h6>
-        <h4>AFTERNOON TEA</h4>
+        {% regionblock afternoon_tea_subtitle, type:header %}
+        <h6>Dining</h6>
+        {% endregionblock %}
+        {% regionblock afternoon_tea_title, type:header %}
+        <h4>Afternoon Tea</h4>
+        {% endregionblock %}
+        {% regionblock afternoon_tea_content, type:text %}
         <p>A favorite among locals & tourists alike, Two E serves decadent Afternoon Tea in the traditional style. Royal Tea with champagne pairings are perfect for an elegant celebration.</p>
         <p>Discover our new Tiffin & Tea service!</p>
         <p>Experience what Town & Country Magazine has recognized as the Best Afternoon Tea in New York City!</p>
         <a class="primary-btn" href="/dining/twoetea/">Discover More</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
-      <img src="/assets/images/dining/cocktail.jpg" alt="COCKTAILS & MUSIC">
+      {% regionblock cocktails_music_image, type:image %}
+      <img src="/assets/images/dining/cocktail.jpg" alt="Cocktails & Music">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>DINING</h6>
-        <h4>COCKTAILS & MUSIC</h4>
+        {% regionblock cocktails_music_subtitle, type:header %}
+        <h6>Dining</h6>
+        {% endregionblock %}
+        {% regionblock cocktails_music_title, type:header %}
+        <h4>Cocktails & Music</h4>
+        {% endregionblock %}
+        {% regionblock cocktails_music_content, type:text %}
         <p>Two E transforms into a chic Art Deco lounge by night, with craft cocktails & bites. No-cover jazz performances every Thursday - Saturday evenings are one of the neighborhood’s hidden gems. Two E is also available for private events.</p>
         <a class="primary-btn" href="/dining/twoebar/">Discover More</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
