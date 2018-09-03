@@ -380,3 +380,19 @@ $('[data-offergallery]')
     download: false,
     fullScreen: false
   });
+
+// For Tab Ordering / Accessibility in Navigation
+
+$(document)
+  .on("focus", '.navbar-nav .nav-item > a', function () {
+    $('.dropdown-menu')
+      .hide();
+    var parentListItem = $(this)
+      .closest("li");
+    if (parentListItem.hasClass("dropdown")) {
+      $(this)
+        .closest(".dropdown")
+        .find('.dropdown-menu')
+        .show();
+    }
+  });
