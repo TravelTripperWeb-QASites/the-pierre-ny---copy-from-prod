@@ -5,14 +5,19 @@
   position: relative;
   @include fluid-layout;
   height: 690px;
+  padding-right: 0;
+  padding-left: 0;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   .banner-content {
     @include vertical-center;
+    z-index: 10;
     max-width: 840px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
     color: $white;
     text-align: center;
     transform: translateY(-43%);
@@ -26,6 +31,9 @@
 
       @include media-breakpoint-up(md) {
         padding: 20px 0 50px;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
 
@@ -45,6 +53,17 @@
         transform: translateY(-15%);
       }
     }
+    .carousel {
+      .banner-content {
+        position: absolute;
+        right: 0;
+        left: 0;
+      }
+    }
+    .carousel-item {
+      height: 550px;
+      @extend .bg-cover;
+    }
   }
 }
 
@@ -62,6 +81,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
   background-image: url('/assets/images/overlay-bg.png');
   background-repeat: repeat-x;
 
@@ -360,4 +380,98 @@
 .seperator {
   margin-bottom: 20px;
   border-top: solid 1px $border-color;
+}
+
+//Preloader Styling here
+
+#preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: $white;
+  // change if the mask should have another color then white
+  // makes sure it stays on top
+}
+
+#status {
+  @include vertical-center;
+  margin: 0 auto;
+}
+
+.spinner-sm {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url('/assets/images/logo-symbol.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.spinner-sm:after,
+.spinner-sm:before {
+  display: block;
+  width: 90px;
+  height: 90px;
+  content: '';
+  border-radius: 50%;
+}
+
+.spinner-sm-1:after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top-color: $primary-color-light;
+  border-bottom-color: $primary-color-light;
+  opacity: .5;
+  animation: spinny .8s linear infinite;
+}
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+//LightGallery fixes
+.lg-sub-html {
+  .border-btn {
+    margin: 20px auto;
+  }
+}
+
+
+// Booking widget overriding stylesheet
+.ttweb-booking-widget__header {
+  background: $text-color;
+}
+.ttweb-booking-widget__body__date-selection__calendar .calendar-month table.calendar-month__grid .calendar-month__grid__date--in-selection {
+  background: $primary-color;
+}
+.ttweb-booking-widget button.ttweb-booking-widget__submit {
+  background-color: $primary-color;
+  &:active {
+    background-color: $primary-color;
+  }
 }

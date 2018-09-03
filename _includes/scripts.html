@@ -5,10 +5,20 @@
   <script src="{{ '/assets/js/leaflet-plugin.js' | absolute_url }}"></script>
 {% endif %}
 
+<script>
+  function getIp(data) {
+    sessionStorage.ip_add = data.ip;
+  }
+</script>
+
 <!--[if gte IE 9]><!-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
 <!--<![endif]-->
 <!--[if IE 9]>
   <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie9.js"></script>
@@ -24,3 +34,53 @@
 
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<!--New booking widget-->
+
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+
+<script>
+  TTWeb.Config.configure({
+    hotelId: '{{site.data.tt_widgets.hotelId}}', //'orwhatever your values are',
+    portalId: '{{site.data.tt_widgets.portalId}}',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+  });
+  $("[show-booking-widget]").bookingWidget({
+    // showRateCalendar: true,
+    showOfferCode: true
+  });
+</script>
+
+{% if page.url contains 'gallery' %}
+
+  <script type="text/javascript">
+   $(document).ready(function(){
+      $('body').TTwidgets({
+         {% if site.data.tt_widgets.hotelId and  site.data.tt_widgets.hotelId !="" %}
+         hotel_id: '{{site.data.tt_widgets.hotelId}}',
+         {% endif %}
+         {% if site.data.tt_widgets.portalId and site.data.tt_widgets.portalId !="" %}
+         portal_id: '{{site.data.tt_widgets.portalId}}',
+         {% endif %}
+         offer_popup_widget: {
+            {% if site.data.tt_widgets.versatile_popup == 'true'%}
+            show: true
+            {% endif %}
+          },
+          offer_gallery:{
+            galleryselector: '.item',
+            buttonClass: 'border-btn'
+            {% if site.data.tt_widgets.offers_gallery == 'true'%}
+            ,
+            show: true
+            {% endif %}
+          }
+      });
+
+    });
+  </script>
+
+{% endif %}

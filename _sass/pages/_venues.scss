@@ -6,10 +6,12 @@
 
   .wrapper {
     @include make-row;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
 
     .item {
       @include make-col-ready;
-      margin: 20px auto 10px;
+      margin: 20px 0 10px;
 
       @include media-breakpoint-up(sm) {
         @include make-col(6);
@@ -97,26 +99,22 @@
 
 //Venues Sub nav
 
-.venues-nav {
+.sub-nav {
   width: 100%;
   background: $secondary-color;
 
   ul {
     @include fixed-width-content;
-    padding: 0;
-
+    max-width: 90%;
+    padding: 30px 0 22px;
 
     li {
       a {
         display: block;
-        padding: 30px 15px 22px;
+        padding: 0 15px;
         font-family: $secondary-header-font;
         font-size: $type-size-10;
         line-height: normal;
-
-        @include media-breakpoint-up(md) {
-          padding: 30px 5px 22px;
-        }
       }
     }
   }

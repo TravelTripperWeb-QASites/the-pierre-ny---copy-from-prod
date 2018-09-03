@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Offers
-meta_description:
-permalink: /offers/
+language: en
+title: New York Luxury Hotel Deals | Special Offers at The Pierre
+meta_description: Book on the Official Website of the Pierre Hotel in NYC and take advantage of these Exclusive Special Offers. Great value New York City Luxury Hotel Deals.
+permalink: /special-offers/
 meta_tags:
   robots:
 ---
@@ -18,21 +19,9 @@ meta_tags:
 </section>
 
 {% assign offers = site.data._models.special_offers | sort: "order" %}
-<!-- Offers Menu -->
-<section class="offers-menu">
-  <div class="offers-menu-inner">
-    <ul>
-      {% for offer in offers %}
-        {% unless offer.unpublish == true %}
-          <li><a href="/offers/{{ offer.url_friendly_name }}/" tabindex="-1">{{ offer.title }}</a></li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 
 <!-- Offers Listing -->
-<section class="offers-listing">
+<section class="offers-listing mt-5">
   <div class="offers-listing-inner">
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
@@ -41,18 +30,18 @@ meta_tags:
             <figure>
               {% if offer.listing_image and offer.listing_image.url_medium !="" %}
               <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
-                <h4>{{ offer.title }}</h4>
+                <h3>{{ offer.title }}</h3>
               </div>
               {% else %}
               <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
-                <h4>{{ offer.title }}</h4>
+                <h3>{{ offer.title }}</h3>
               </div>
               {% endif %}
             </figure>
           </a>
           <div class="offer-content">
             <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
-            <a class="secondary-btn" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
+            <a class="border-btn light" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
           </div>
         </div>
       {% endunless %}

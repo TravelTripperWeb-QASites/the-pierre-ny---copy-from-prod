@@ -1,0 +1,51 @@
+{
+	"title":{
+		"required":true
+	},
+	"room-id":{
+       "required": true,
+       "label": "Room Code"
+	},
+	"language":{
+		"type": "select",
+		"options": ["en", "cn"],
+		"required": true
+	},
+	"short_info":{
+		"label": "Short Description",
+		"required": true
+	},
+	"room_features":{
+		"label": "Room Details",
+		"required": true,
+		"type": "richtext"
+	},
+	"replace-reztrip-details":{
+		"label": "Replace reztrip content",
+		"type": "bool"
+	},
+	"service_amenities":{
+		"label": "service & amenities",
+		"required": true,
+		"type": "richtext"
+	},
+	"replace-reztrip-amenities":{
+		"label": "Replace reztrip amenities",
+		"type": "bool"
+	},
+	"additional-info":{
+		"label": "Additional Information on Floor Plan Tab",
+		"required": true,
+		"type": "richtext"
+	},
+	"gallery": {
+		"type": "image",
+		"multiple": true
+	},
+	"floor_plan_pdf": {
+    "label": "Floor Plan PDF",
+    "type": "image",
+		"multiple": true
+  }
+
+}

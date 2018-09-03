@@ -5,8 +5,8 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: 'angadartshotel',
-      hotelId: 'STLAAH',
+      portalId: 'thepierreny',
+      hotelId: 'NYCTP',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
@@ -35,45 +35,61 @@
         }
       };
     })
-    .controller('roomList', ['$scope', 'rt3Search', 'rt3Browser','$q','$filter','$http', function($scope, rt3Search, rt3Browser,$q,$filter,$http) {
-        $(".roomType").hide();
-        $scope.selectedCat = '';
-        $scope.updateCategory = function(cat){
-            $scope.selectedCat = cat;
-        }
-        setTimeout(function(){
-            $(".roomType").show();
-        },1600);
-    }])
     .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter','$http', function($scope, rt3Search, rt3Browser,$timeout,$filter,$http) {
+      window.onhashchange = function() {
+        window.location.reload();
+      }
+      $scope.reloadPage = function(){window.location.reload();}
+      $timeout(function() {
+           var roomsList = JSON.parse($("#roomList").val());
+           var roomId = window.location.hash.substr(1).replace("%2F",""); //$("#roomId").val();
+           var roomSizeSqm;
+           var roomSizeSqft;
+           var address, coord,lat, long, shortDesc;
+           for(var j= 0 ; j < roomsList.length ; j++){
+             rName = $filter('formatNameForLink')(roomId);
+             tmpName = $filter('formatNameForLink')(roomsList[j].name);
+               if(rName == tmpName ){
+                  // find room size for diff size units
 
-        setTimeout(function(){
-          $(".loading").fadeOut('slow');
-          $("#adults").val(1);
-          $("#children").val(0);
-        },2000);
+                  if(roomsList[j].room_size_units == 'sqft'){
+                      roomSizeSqm = roomsList[j].room_size / 10.764 ;
+                      roomsList[j]['room_size_sqm'] = Math.round(roomSizeSqm) + " sq m";
+                      roomsList[j]['room_size_sqft'] = roomsList[j].room_size + " " + " sq ft";
+                  }else if(roomsList[j].room_size_units == 'sqm'){
+                      roomSizeSqft = roomsList[j].room_size * 10.764 ;
+                      roomsList[j]['room_size_sqft'] = Math.round(roomSizeSqft) + " sq ft";
+                      roomsList[j]['room_size_sqm'] = roomsList[j].room_size + " sq m" ;
+                  }
 
+                  $scope.selectedRoom = roomsList[j];
+
+                  // find previous and next rooms name
+                  if(j > 0){
+                     $scope.prevRoomName = roomsList[j-1].name;
+                  }
+
+                  if(j < roomsList.length -1){
+                     $scope.nextRoomName = roomsList[j+1].name;
+                  }
+                  break;
+               }
+
+           }
+        //    if(!$scope.selectedRoom){ // if no room found then redirect to home page
+        //       window.location = "/";
+        //    }
+        $(".loading").css("display","none");
+    }, 2800);
 
     }])
-    .controller('loader', ['$scope', function($scope) {
-      //$(".loading").css("display","block");
-      $scope.filters = {};
-      setTimeout(function(){
-
-        $(".loading").fadeOut('slow');
-      },1200);
-
-
-   }])
-    .controller('offerDetail', ['$scope', 'rt3SpecialRates', 'rt3Browser','$timeout','$filter','$q', function($scope, rt3SpecialRates, rt3Browser,$timeout,$filter,$q) {
+    .controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
       window.onhashchange = function() {
-        $(window).scrollTop(200);
         window.location.reload();
       }
         $scope.reloadPage = function(){$window.location.reload();}
-         //$(".loading").css("display","block");
-         $q.when(rt3SpecialRates.ready).then(function(response){
-           var oList = rt3SpecialRates.special_rates;;
+        $timeout(function() {
+           var oList = JSON.parse($("#offerList").val());
            var oName = window.location.hash.substr(1); //$("#offerId").val();
            var tmpName;
            for(var j= 0 ; j < oList.length ; j++){
@@ -91,21 +107,10 @@
                   break;
                }
            }
-           $(".loading").fadeOut('slow');
 
-        });
-
+        }, 2800);
 
 
-    }])
-    .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout', '$filter' ,function($scope, rt3Search, rt3Browser,$timeout,$filter) {
-        window.onhashchange = function() {
-          window.location.reload();
-        }
-        setTimeout(function(){
-          $(".loading").fadeOut('slow');
-
-        },1800);
 
     }])
     .controller('bookingWidget', ['$scope', 'rt3Search', 'rt3Browser', function($scope, rt3Search, rt3Browser) {

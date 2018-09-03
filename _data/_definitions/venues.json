@@ -3,6 +3,14 @@
     "label": "Venue Name",
     "required": true
   },
+  "title": {
+    "label": "SEO Title",
+    "required": true
+  },
+  "meta_description": {
+    "label": "SEO Description",
+    "required": true
+  },
   "url_friendly_name": {
     "type": "url_slug",
     "label": "SEO Friendly Name",
