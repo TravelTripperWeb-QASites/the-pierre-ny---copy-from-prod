@@ -161,14 +161,14 @@ meta_tags:
 <section class="event-tiles">
   {% assign events = site.data._models.event_tiles | sort: "posted_date" %}
   <div class="wrapper">
-    {% for event in events | limit:4 %}
+    {% for event in events reversed limit:4 %}
       <div class="event-tile-item">
         <div class="holder">
           <div class="image" style="background-image:url('{{ event.image.url_large }}')"></div>
           <div class="content">
             <i>{{ event.posted_date | date: "%B %Y" }}</i>
             <h4>{{ event.title }}</h4>
-            <a href="{{ event.reference_url }}" target="_blank">Read More</a>
+            <a href="{{ event.reference_url }}" target="_blank">{% t 'read_more' %}</a>
           </div>
         </div>
       </div>
