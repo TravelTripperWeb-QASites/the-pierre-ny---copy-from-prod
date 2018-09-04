@@ -1,6 +1,4 @@
-[
-  {
-    "content": "<h6>场馆</h6>",
-    "_template": "html"
-  }
-]
+[{
+  "content": "<h6 tabindex=\"0\">场馆</h6>",
+  "_template": "html"
+}]

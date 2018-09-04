@@ -1,6 +1,4 @@
-[
-  {
-    "content": "<h1>中央公園就在您的家門口</h1>",
-    "_template": "html"
-  }
-]
+[{
+  "content": "<h1 tabindex=\"0\">中央公園就在您的家門口</h1>",
+  "_template": "html"
+}]

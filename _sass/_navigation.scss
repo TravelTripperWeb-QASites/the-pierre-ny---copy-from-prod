@@ -124,7 +124,7 @@
 }
 
 .nav-item {
-  min-width: 82px;
+  min-width: 100px;
   text-align: center;
 
   .nav-link {
@@ -303,7 +303,7 @@
   &:before {
     position: absolute;
     top: -5px;
-    left: 10px;
+    left: 30px;
     display: block;
     content: '';
     border-right: 6px solid transparent;
@@ -403,6 +403,8 @@
   }
 
   .nav-item {
+    min-width: auto;
+
     &.dropdown {
       .nav-link {
         &:before {
