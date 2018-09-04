@@ -34,7 +34,7 @@ meta_tags:
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
         <div class="offer-block">
-          <a href="/offers/{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
+          <a href="/special-offers/{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
             <figure>
               {% if offer.listing_image and offer.listing_image.url_medium !="" %}
               <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
@@ -49,7 +49,7 @@ meta_tags:
           </a>
           <div class="offer-content">
             <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
-            <a class="border-btn light" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
+            <a class="border-btn light" href="/special-offers/{{ offer.url_friendly_name }}/">View Details</a>
           </div>
         </div>
       {% endunless %}

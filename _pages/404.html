@@ -40,24 +40,24 @@ meta_tags:
         <ul>
             <li><a href="#" class="parent">Classic</a>
                 <ul>
-                    <li ng-repeat="roomd in browser.roomsv | filter: { category : ('classic' | lowercase) }"><a href="/room/[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
+                    <li ng-repeat="roomd in browser.roomsv | filter: { category : ('classic' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
                   </ul>
               </li>
               <li><a href="#" class="parent">City View</a>
                 <ul>
-                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('city view' | lowercase) }"><a href="/room/[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('city view' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
                   </ul>
               </li>
               <li><a href="#" class="parent">Park View</a>
                 <ul>
-                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('park view' | lowercase) }"><a href="/room/[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('park view' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
                   </ul>
               </li>
               <li><a href="/special-offers/" class="parent">Grand Suites</a>
                 <ul>
-                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('grand suites' | lowercase) }"><a href="/room/[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('grand suites' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
                   </ul>
               </li>

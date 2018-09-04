@@ -26,7 +26,7 @@ meta_tags:
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
         <li>
-          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="/offers/{{ offer.url_friendly_name }}/"{% endif %}>{{ offer.title }}</a>
+          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="/special-offers/{{ offer.url_friendly_name }}/"{% endif %}>{{ offer.title }}</a>
         </li>
       {% endunless %}
     {% endfor %}
