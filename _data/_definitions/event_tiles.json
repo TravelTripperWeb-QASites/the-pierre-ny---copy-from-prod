@@ -1,7 +1,8 @@
 {
   "title": {
     "label": "Event Title",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "image": {
     "type": "image",
