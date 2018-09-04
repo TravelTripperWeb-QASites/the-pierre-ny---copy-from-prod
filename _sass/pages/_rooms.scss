@@ -64,6 +64,15 @@
       }
     }
   }
+
+}
+.sps--blw {
+  position: sticky;
+  top: 60px;
+  z-index: 20;
+  @include media-breakpoint-up(xl) {
+    top: 90px;
+  }
 }
 
 .rooms {

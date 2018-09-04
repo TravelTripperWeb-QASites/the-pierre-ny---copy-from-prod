@@ -395,6 +395,8 @@ $(document)
     }
   });
 
+
+
 //Get rid of Iframes without title - Accessibility fix
 
 var iframeFound = setInterval(function () {
