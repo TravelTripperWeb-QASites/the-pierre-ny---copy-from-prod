@@ -26,7 +26,7 @@ meta_tags:
       <h6 tabindex="0">FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>
     {% endregionblock %}
     {% regionblock banner_url, type:text %}
-      <a class="primary-btn inverse" href="/location/">View Location</a>
+      <a class="primary-btn inverse" href="../location/">View Location</a>
     {% endregionblock %}
   </div>
 </section>
@@ -49,7 +49,7 @@ meta_tags:
       <div class="image-full mr-15" style="background-image:url('/assets/images/home/rooms.jpg');">
         <div class="heading">
           <h6 tabindex="0">{% t 'rooms_suites' %}</h6>
-          <a class="secondary-btn inverse" href="/rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
+          <a class="secondary-btn inverse" href="../rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
         </div>
       </div>
     </div>
@@ -57,13 +57,13 @@ meta_tags:
       <div class="image-text" style="background-image:url('/assets/images/home/special.jpg');">
         <div class="heading">
           <h6 tabindex="0">{% t 'special_offers' %}</h6>
-          <a class="secondary-btn inverse" href="/offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
+          <a class="secondary-btn inverse" href="../special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
         </div>
       </div>
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
         <div class="heading">
           <h6 tabindex="0">{% t 'dining' %}</h6>
-          <a class="secondary-btn inverse" href="/dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
+          <a class="secondary-btn inverse" href="../dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>
@@ -84,43 +84,17 @@ meta_tags:
   </div>
   <div class="shows">
     <div class="shows-row m-0">
-      <div class="shows-image">
-        <div class="s-image mr-15" style="background-image:url('/assets/images/home/summer-of-rose.jpg');">
-          <div class="heading">
-            {% regionblock summer_rose_title, type:text %}
-              <h6 tabindex="0">Summer of Rosé</h6>
-            {% endregionblock %}
-            {% regionblock summer_rose_url, type:text %}
-              <a class="secondary-btn inverse" href="/" title="{% t 'view_details' %}">{% t 'view_details' %}</a>
-            {% endregionblock %}
+      {% assign event_categories = site.data._models.events | sort: "sort_order" %}
+      {% for item in event_categories | limit:3 %}
+        <div class="shows-image">
+          <div class="s-image mr-15" style="background-image:url('{{ item.category_image.url }}');">
+            <div class="heading">
+              <h6 tabindex="0">{{ item.category_title }}</h6>
+              <a class="secondary-btn inverse" href="/entertainment/#{{ item.category_id }}" title="{{ item.category_title }}">{% t 'view_details' %}</a>
+            </div>
           </div>
         </div>
-      </div>
-
-          <div class="shows-image-small">
-            <div class="s-image mr-15" style="background-image: url('/assets/images/home/icons-of-jazz.jpg');">
-              <div class="heading">
-                {% regionblock icon_jazz_title, type:text %}
-                  <h6 tabindex="0">Icons of Jazz</h6>
-                {% endregionblock %}
-                {% regionblock icon_jazz_url, type:text %}
-                  <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
-                {% endregionblock %}
-              </div>
-            </div>
-          </div>
-          <div class="shows-image-small">
-            <div class="s-image" style="background-image: url('/assets/images/home/broadway.jpg');">
-              <div class="heading">
-                {% regionblock broadway_title, type:text %}
-                  <h6 tabindex="0">Broadway At The Pierre</h6>
-                {% endregionblock %}
-                {% regionblock broadway_url, type:text %}
-                  <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
-                {% endregionblock %}
-              </div>
-            </div>
-          </div>
+      {% endfor %}
     </div>
   </div>
 </section>

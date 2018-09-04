@@ -33,7 +33,7 @@ meta_tags:
     </div>
     <div class="banner-content">
       <h1 class="variant">[[details.name]]</h1>
-      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != 'CHECK AVAILABILITY' ? '{% t 'book_now'%}' : 'Check Availability']]</a>
+      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != '{% t 'check_avail' %}' ? '{% t 'book_now'%}' : '{% t 'check_avail' %}']]</a>
     </div>
   </div>
 </section>

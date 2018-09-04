@@ -6,7 +6,7 @@
   @include media-breakpoint-up(md) {
     margin: 0 auto 99px;
   }
-  
+
   .images-section {
     @include make-row;
 
@@ -97,15 +97,14 @@
     .shows-image {
       @include make-col-ready();
       padding: 0;
-      @include media-breakpoint-up(md) {
-        @include make-col(6);
-        padding: 0;
-      }
-    }
 
-    .shows-image-small {
-      @include make-col-ready();
-      padding: 0;
+      &:first-child {
+        @include media-breakpoint-up(md) {
+          @include make-col(6);
+          padding: 0;
+        }
+      }
+
       @include media-breakpoint-up(md) {
         @include make-col(3);
         padding: 0;
