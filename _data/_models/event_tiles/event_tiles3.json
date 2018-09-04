@@ -1,6 +1,9 @@
 {
   "reference_url": "http://caratsandcake.com/jaclynandalex",
-  "title": "An NYC Bride",
+  "title_localized": {
+    "en": "An NYC Bride",
+    "zh": "An NYC Bride 1 "
+  },
   "image": {
     "name": "nyc-bride",
     "file_name": "nyc-bride.jpg",
