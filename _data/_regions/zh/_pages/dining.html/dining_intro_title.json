@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h1 class=\"con-heading\">在中央公园进餐</h1>",
+    "content": "<h2 tabindex=\"0\">在中央公园进餐</h2>",
     "_template": "html"
   }
 ]
