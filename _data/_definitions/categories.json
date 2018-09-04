@@ -1,7 +1,8 @@
 {
   "title": {
     "label": "Category Name",
-    "required": true
+    "required": true,
+    "localized": true
   },
   "url_friendly_name": {
     "type": "url_slug",
