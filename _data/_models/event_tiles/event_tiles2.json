@@ -1,6 +1,9 @@
 {
   "reference_url": "https://www.vogue.com/article/save-venice-masked-ball-lauren-santo-domingo",
-  "title": "Save Venice Ball",
+  "title_localized": {
+    "en": "Save Venice Ball",
+    "zh": "Save Venice Ball 1"
+  },
   "image": {
     "name": "eve-1",
     "file_name": "eve-1.jpg",
