@@ -1,5 +1,9 @@
 {
-  "name": "THE HOTEL",
+  "name_localized":
+  {
+    "en": "THE HOTEL",
+    "zh": "酒店"
+  },
   "photos": [{
       "name": "the-hotel-14",
       "file_name": "the-hotel-14.jpg",

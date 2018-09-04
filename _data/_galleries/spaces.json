@@ -1,5 +1,9 @@
 {
-  "name": "SPACES",
+  "name_localized":
+  {
+    "en": "SPACES",
+    "zh": "空间"
+  },
   "photos": [{
       "name": "special-gallery5",
       "file_name": "special-gallery5.jpg",

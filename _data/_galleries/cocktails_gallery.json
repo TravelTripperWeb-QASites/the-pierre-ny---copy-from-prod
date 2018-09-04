@@ -1,5 +1,9 @@
 {
-  "name": "Cocktails Gallery",
+  "name_localized":
+  {
+    "en": "Cocktails Gallery",
+    "zh": "鸡尾酒画廊"
+  },
   "photos": [
     {
       "name": "03",

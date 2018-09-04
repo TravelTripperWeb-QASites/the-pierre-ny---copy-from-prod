@@ -1,5 +1,9 @@
 {
-  "name": "VENUES",
+  "name_localized":
+  {
+    "en": "VENUES",
+    "zh": "场馆"
+  },
   "photos": [{
       "name": "corporate-gallery1",
       "file_name": "corporate-gallery1.jpg",

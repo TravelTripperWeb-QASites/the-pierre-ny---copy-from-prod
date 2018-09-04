@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 title_localized:
   en: Photos of the Luxurious Pierre NY City Hotel | A Taj Hotel
   zh: 中央公园内的高级餐厅 | 纽约皮埃尔酒店
@@ -21,7 +21,7 @@ meta_tags:
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock gallery_title, type:header %}
-      <h1 class="variant">Gallery</h1>
+      <h1 class="variant">{% t 'gallery' %}</h1>
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock gallery_subtitle, type:header %}
@@ -37,11 +37,11 @@ meta_tags:
   <div class="sub-nav table-responsive-xl">
     {% assign categories = site.data._galleries | sort: sort_order %}
     <ul class="d-flex justify-content-center">
-      <li> <a href="javascript:void(0);" class="active" data-filter="all">All</a></li>
+      <li> <a href="javascript:void(0);" class="active" data-filter="all">{% t 'all' %}</a></li>
       {% for category in categories %}
         {% assign catname = category[0] %}
         <li>
-          <a href="javascript:void(0);" data-filter="{{ catname }}">{{ site.data._galleries[catname].name }}</a>
+          <a href="javascript:void(0);" data-filter="{{ catname }}">{{ site.data._galleries[catname].name  }}</a>
         </li>
       {% endfor %}
     </ul>

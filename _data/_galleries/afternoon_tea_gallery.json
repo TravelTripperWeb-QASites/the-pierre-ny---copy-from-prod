@@ -1,5 +1,9 @@
 {
-  "name": "Afternoon Tea Gallery",
+  "name_localized":
+  {
+    "en": "Afternoon Tea Gallery",
+    "zh": "下午茶馆"
+  },
   "photos": [
     {
       "name": "Two-E-Lounge-Room",

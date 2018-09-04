@@ -1,5 +1,9 @@
 {
-  "name": "WEDDINGS",
+  "name_localized":
+  {
+    "en": "WEDDINGS",
+    "zh": "婚礼"
+  }, 
   "photos": [{
       "name": "wedding-gallery5",
       "file_name": "wedding-gallery5.jpg",

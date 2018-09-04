@@ -1,5 +1,9 @@
 {
-  "name": "ROOMS & SUITES",
+  "name_localized":
+  {
+    "en": "ROOMS & SUITES",
+    "zh": "客房和套房"
+  }, 
   "photos": [{
       "name": "rooms-9",
       "file_name": "rooms-9.jpg",
