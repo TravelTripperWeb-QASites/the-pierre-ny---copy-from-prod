@@ -1,5 +1,11 @@
 <!-- Hotel logo mobile only visibility -->
-<a class="logo-mobile" href="/"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
+{% if site.active_lang == 'en' %}
+  {% assign homeurl = '/' %}
+{% else %}
+  {% assign homeurl = '/zh/' %}
+{% endif %}
+
+<a class="logo-mobile" href="{{ homeurl }}"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
 
 <!-- Top right nav -->
 <div class="top-nav d-flex justify-content-end">
@@ -15,7 +21,7 @@
     </select>
   </div>
     <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
-  <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
+  <a class="border-btn d-none d-xl-block" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
 </div>
 
 <!-- Main nav -->
@@ -37,15 +43,15 @@
         {% if link.dropdown %}
           <div class="dropdown-menu" aria-labelledby="dropdown01">
             {% for sublink in link.dropdown %}
-              <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
+              <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}" {% if sublink.external %}target="_blank"{% endif %}>{{ sublink.title }} </a>
             {% endfor %}
           </div>
         {% endif %}
       </li>
      {% endif %}
     {% endfor %}
-    
-    <a class="navbar-brand d-none d-xl-block" href="/"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
+
+    <a class="navbar-brand d-none d-xl-block" href="{{ homeurl }}"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
     {% for link in links %}
       {% if forloop.index > halfmenu %}
         <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}" >
@@ -61,7 +67,7 @@
       {% endif %}
     {% endfor %}
     <li class="nav-item d-lg-block d-xl-none">
-      <a class="nav-link" href="/contact/">{% t 'contact' %}</a>
+      <a class="nav-link" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
     </li>
     <div class="top-nav d-flex justify-content-end">
       <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +82,7 @@
         </select>
       </div>
       <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
-      <a class="border-btn d-none d-xl-block" href="/contact/">{% t 'contact' %}</a>
+      <a class="border-btn d-none d-xl-block" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
     </div>
     </ul>
   </div>

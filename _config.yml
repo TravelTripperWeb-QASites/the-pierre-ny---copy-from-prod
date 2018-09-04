@@ -107,7 +107,7 @@ page_gen: #
   #   dir: 'specials'
     - data: 'special_offers'
       template: 'offer-single'
-      dir: 'offers'
+      dir: 'special-offers'
     - data: 'venues'
       template: 'venue-single'
       dir: 'events/venues'

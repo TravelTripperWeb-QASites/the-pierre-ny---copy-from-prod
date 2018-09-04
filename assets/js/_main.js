@@ -4,8 +4,6 @@
 
 //For Preloader
 
-$("body")
-  .prepend('<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
 $(window)
   .on('load', function () { // makes sure the whole site is loaded
     $('#status')

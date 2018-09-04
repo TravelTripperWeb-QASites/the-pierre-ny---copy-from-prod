@@ -21,6 +21,7 @@ main:
       dropdown:
         - title: Perrine
           url: http://www.perrinenyc.com/
+          external: true
         - title: The Rotunda
           url: /dining/the-rotunda/
         - title: Two E Bar & Lounge
