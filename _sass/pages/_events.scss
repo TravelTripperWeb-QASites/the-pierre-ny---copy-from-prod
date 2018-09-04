@@ -327,3 +327,7 @@
   }
 
 }
+
+.events-video {
+  @include fixed-width-content;
+}
