@@ -33,7 +33,7 @@ meta_tags:
   <div class="events-listing">
 
       <!-- Category section -->
-      <div class="event-category-intro" style="background-image:url('{{ item.category_image.url }}');">
+      <div class="event-category-intro" id="{{ item.category_id }}" style="background-image:url('{{ item.category_image.url }}');">
         <div class="overlay-bg reverse"></div>
         <div class="intro-text">
           <h2>{{ item.category_title }}</h2>
@@ -42,7 +42,7 @@ meta_tags:
       </div>
 
       <!-- Event Details Accordion -->
-      <div class="event-details accordion" id="{{ item.category_id }}">
+      <div class="event-details accordion">
 
         {% for event in item.event_listing %}
           <!-- Event -->
@@ -72,7 +72,7 @@ meta_tags:
                   <div class="opentable-widget">
                     <h6>Make a Reservation</h6>
                     <div class="d-xl-flex justify-content-center">
-                      <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+                      <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
                       <a class="secondary-btn" href="{{ event.view_menu_url }}">View menus</a>
                     </div>
                     {{ event.event_contact }}
