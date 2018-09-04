@@ -7,6 +7,9 @@
 </head>
 
 <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-portal-info="portalInfo" rt3-rooms-browser="browser" ng-cloak>
+
+  <div id="preloader" tabindex="-1"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>
+
   {% if site.active_lang == "zh" %}
     <input type="hidden" id="siteLang" value="zh-CN">
   {% endif %}

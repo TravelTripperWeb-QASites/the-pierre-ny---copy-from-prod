@@ -33,7 +33,7 @@ meta_tags:
     </div>
     <div class="banner-content">
       <h1 class="variant">[[details.name]]</h1>
-      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != 'CHECK AVAILABILITY' ? 'Book Now' : 'Check Availability']]</a>
+      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != 'CHECK AVAILABILITY' ? '{% t 'book_now'%}' : 'Check Availability']]</a>
     </div>
   </div>
 </section>
@@ -41,43 +41,43 @@ meta_tags:
 <section class="categories">
   <div class="categories__container">
     <ul class="categories__list" tabindex="0">
-      <li><a href="/rooms-suites/#all" class="active">All</a></li>
-      <li><a href="/rooms-suites/#classic">Classic</a>
+      <li><a href="/rooms-suites/#all" class="active">{% t 'all' %}</a></li>
+      <li><a href="/rooms-suites/#classic">{% t 'classic' %}</a>
         <ul class="list-dropdown">
           <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
             <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
           </li>
         </ul>
       </li>
-      <li><a href="/rooms-suites/#cityview">City View</a>
+      <li><a href="/rooms-suites/#cityview">{% t 'cityview' %}</a>
         <ul class="list-dropdown">
           <li ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
             <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
           </li>
         </ul>
       </li>
-      <li><a href="/rooms-suites/#parkview">Park View</a>
+      <li><a href="/rooms-suites/#parkview">{% t 'parkview' %}</a>
         <ul class="list-dropdown">
           <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
             <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
           </li>
         </ul>
       </li>
-      <li><a href="/rooms-suites/#grandsuites">Grand Suites</a>
+      <li><a href="/rooms-suites/#grandsuites">{% t 'grandsuites' %}</a>
         <ul class="list-dropdown">
           <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
             <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
           </li>
         </ul>
       </li>
-      <li><a href="/rooms-suites/#residences">Residences</a></li>
+      <li><a href="/rooms-suites/#residences">{% t 'residences' %}</a></li>
     </ul>
   </div>
 </section>
 
 <section class="room-single">
   <div class="room-single__intro">
-    <h2 tabindex="0">In-Room Services & Amenities</h2>
+    <h2 tabindex="0">{% t 'inroom_service' %}</h2>
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
   </div>
   <div class="room-single__content">
@@ -85,10 +85,10 @@ meta_tags:
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#room_features">Features</a>
+      <a class="nav-link active" data-toggle="tab" href="#room_features">{% t 'features'%}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">Floor Plan</a>
+      <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">{% t 'floorplan'%}</a>
     </li>
   </ul>
 
@@ -97,28 +97,28 @@ meta_tags:
 
       <div id="room_features" class="container tab-pane active">
 
-        <article room-detail tabindex="0">
-          <h3>Room Features</h3>
+        <article {% if site.active_lang == "en" %}room-detail{% endif %} tabindex="0">
+          <h3>{% t 'room_features' %}</h3>
           [[ details.description ]]
         </article>
 
-        <h3 tabindex="0">Services & Amenities</h3>
+        <h3 tabindex="0">{% t 'amenities' %}</h3>
 
-        <article room-amenities tabindex="0">
+        <article {% if site.active_lang == "en" %}room-amenities{% endif %} tabindex="0">
            <ul>
               <li ng-repeat="amenity in details.amenities">[[ amenity ]]</li>
             </ul>
         </article>
 
         <div class="btn-holder">
-          <a class="primary-btn" href="{{ site.reztripUrl }}search?selected_room_category=[[ details.category ]]&selected_room=[[ details.code ]]" target="_blank">Book Now</a>
+          <a class="primary-btn" href="{{ site.reztripUrl }}search?selected_room_category=[[ details.category ]]&selected_room=[[ details.code ]]" target="_blank">{% t 'book_now' %}</a>
         </div>
 
       </div>
 
       <div id="room_floor_plan" class="container tab-pane fade">
 
-        <article addition-detail></article>
+        <article {% if site.active_lang == "en" %}addition-detail{% endif %}></article>
 
         <div id="floorplans-pdf" class="carousel slide" data-ride="carousel">
             <!-- The slideshow -->

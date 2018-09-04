@@ -1,7 +1,9 @@
 {
   "title": "Winter Wonderland Package",
+  "title_zh": "Winter Wonderland Package",
   "url_friendly_name": "winter-wonderland",
-  "short_description": "Discover the seasonal magic of New York City. Skate in iconic Wollman Rink, a beloved winter tradition in Central Park for more than 60 years. Enjoy skyline views at the rink by day or twinkling lights by night.",
+  "short_description_en": "Discover the seasonal magic of New York City. Skate in iconic Wollman Rink, a beloved winter tradition in Central Park for more than 60 years. Enjoy skyline views at the rink by day or twinkling lights by night.",
+  "short_description_zh": "Discover the seasonal magic of New York City. Skate in iconic Wollman Rink, a beloved winter tradition in Central Park for more than 60 years. Enjoy skyline views at the rink by day or twinkling lights by night.",
   "date": "Valid until January 6, 2018",
   "banner_image": {
     "name": "winter-wonderland-package",
@@ -24,9 +26,12 @@
     "alt": "Winter Wonderland",
     "caption": ""
   },
-  "offer_includes": "<ul>\n<li>Holiday-themed welcome amenity upon arrival</li>\n<li>Wollman Rink tickets and skate rentals for two</li>\n<li>Hot cocoa for 2 in Two E after skating</li>\n<li>Surprise gift from The Pierre</li>\n</ul>",
-  "terms": "<ul>\n<li>Price based upon two adults.<span style=\"text-indent: -0.25in;\">&nbsp;</span><span style=\"text-indent: -0.25in;\">Additional charge for extra persons is $100.00/per person</span></li>\n<li>7 day advance reservation required</li>\n<li>72-hour cancellation policy, requiring a minimum of 72 hours prior to arrival to avoid a one night room and tax late cancellation charge</li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span></li>\n</ul>",
-  "booking_link": "#",
+  "offer_includes_en": "<ul>\n<li>Holiday-themed welcome amenity upon arrival</li>\n<li>Wollman Rink tickets and skate rentals for two</li>\n<li>Hot cocoa for 2 in Two E after skating</li>\n<li>Surprise gift from The Pierre</li>\n</ul>",
+  "offer_includes_zh": "<ul>\n<li>Holiday-themed welcome amenity upon arrival</li>\n<li>Wollman Rink tickets and skate rentals for two</li>\n<li>Hot cocoa for 2 in Two E after skating</li>\n<li>Surprise gift from The Pierre</li>\n</ul>",
+  "terms_en": "<ul>\n<li>Price based upon two adults.<span style=\"text-indent: -0.25in;\">&nbsp;</span><span style=\"text-indent: -0.25in;\">Additional charge for extra persons is $100.00/per person</span></li>\n<li>7 day advance reservation required</li>\n<li>72-hour cancellation policy, requiring a minimum of 72 hours prior to arrival to avoid a one night room and tax late cancellation charge</li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span></li>\n</ul>",
+  "terms_zh": "<ul>\n<li>Price based upon two adults.<span style=\"text-indent: -0.25in;\">&nbsp;</span><span style=\"text-indent: -0.25in;\">Additional charge for extra persons is $100.00/per person</span></li>\n<li>7 day advance reservation required</li>\n<li>72-hour cancellation policy, requiring a minimum of 72 hours prior to arrival to avoid a one night room and tax late cancellation charge</li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span></li>\n</ul>",
+  "booking_link_en": "#",
+  "booking_link_zh": "#",
   "order": 2,
   "slider_images": [
     {

@@ -1,5 +1,6 @@
 {
   "title": "Downton Abbey Exhibition & Tea Offer",
+  "title_zh": "Downton Abbey Exhibition & Tea Offer",
   "url_friendly_name": "downton-abbey",
   "banner_image": {
     "name": "Downton-Abbey-s4-series-4-cast-promo",
@@ -23,7 +24,8 @@
     "caption": ""
   },
   "date": "Valid until September 3, 2018",
-  "short_description": "Celebrate one of television's most beloved shows with our Downton Abbey Exhibition & Tea package! \n",
+  "short_description_en": "Celebrate one of television's most beloved shows with our Downton Abbey Exhibition & Tea package! \n",
+  "short_description_zh": "Celebrate one of television's most beloved shows with our Downton Abbey Exhibition & Tea package! \n",
   "slider_images": [
     {
       "name": "tea-bar",
@@ -88,9 +90,12 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Downton Abbey-themed Tea for two in The Pierre's Two E Lounge, featuring quintessentially British sweets and savories in an intimate, neo-Classical setting.</li>\n<li>Discounted VIP tickets for two to Downton Abbey: The Exhibition, conveniently located just a short walk from the hotel.</li>\n</ul>",
-  "terms": "<ul>\n<li>Offer is available from now through&nbsp;September&nbsp;3, 2018</li>\n<li>To reserve, select a room category by clicking on<strong> \"Book This Offer\"</strong> below</li>\n<li>Select the Downton Abbey themed offer in the \"Other Services &amp; Options\" as an additional charge to any rate or Special Offer at the time of booking.</li>\n<li>VIP ticket with anytime access will be provided at check-in.&nbsp; Guest is solely responsible for contacting Exhibition to confirm hours of operation</li>\n</ul>",
+  "offer_includes_en": "<ul>\n<li>Downton Abbey-themed Tea for two in The Pierre's Two E Lounge, featuring quintessentially British sweets and savories in an intimate, neo-Classical setting.</li>\n<li>Discounted VIP tickets for two to Downton Abbey: The Exhibition, conveniently located just a short walk from the hotel.</li>\n</ul>",
+  "offer_includes_zh": "<ul>\n<li>Downton Abbey-themed Tea for two in The Pierre's Two E Lounge, featuring quintessentially British sweets and savories in an intimate, neo-Classical setting.</li>\n<li>Discounted VIP tickets for two to Downton Abbey: The Exhibition, conveniently located just a short walk from the hotel.</li>\n</ul>",
+  "terms_en": "<ul>\n<li>Offer is available from now through&nbsp;September&nbsp;3, 2018</li>\n<li>To reserve, select a room category by clicking on<strong> \"Book This Offer\"</strong> below</li>\n<li>Select the Downton Abbey themed offer in the \"Other Services &amp; Options\" as an additional charge to any rate or Special Offer at the time of booking.</li>\n<li>VIP ticket with anytime access will be provided at check-in.&nbsp; Guest is solely responsible for contacting Exhibition to confirm hours of operation</li>\n</ul>",
+  "terms_zh": "<ul>\n<li>Offer is available from now through&nbsp;September&nbsp;3, 2018</li>\n<li>To reserve, select a room category by clicking on<strong> \"Book This Offer\"</strong> below</li>\n<li>Select the Downton Abbey themed offer in the \"Other Services &amp; Options\" as an additional charge to any rate or Special Offer at the time of booking.</li>\n<li>VIP ticket with anytime access will be provided at check-in.&nbsp; Guest is solely responsible for contacting Exhibition to confirm hours of operation</li>\n</ul>",
   "order": 7,
-  "booking_link": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
+  "booking_link_en": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
+  "booking_link_zh": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
   "unpublish": ""
 }

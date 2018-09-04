@@ -1,5 +1,6 @@
 {
   "title": "Stay Three, Pay Two",
+  "title_zh": "续房",
   "url_friendly_name": "stay-three",
   "banner_image": {
     "name": "City View Suite Living Room smaller",
@@ -23,7 +24,8 @@
     "caption": ""
   },
   "date": "",
-  "short_description": "Stay 3 nights, pay the price of 2. When you stay 3 nights, you receive a 33% discount on your nightly rate. Minimum stay 3 nights, valid up to 21 nights",
+  "short_description_en": "Stay 3 nights, pay the price of 2. When you stay 3 nights, you receive a 33% discount on your nightly rate. Minimum stay 3 nights, valid up to 21 nights",
+  "short_description_zh": "住满三晚可享九折优惠，另加免费早餐",
   "slider_images": [
     {
       "name": "Fourth night free 585 x 550 px",
@@ -68,8 +70,11 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Rate&nbsp;is already adjusted to reflect 33% discount</li>\n<li>Must stay a minimum of 3 nights or the full rate is charged</li>\n<li>Complimentary Basic Wi-Fi</li>\n<li>Access to Fitness Center</li>\n<li>Daily Newspaper</li>\n<li>Access to Courtesy Car (subject to availability)</li>\n</ul>",
-  "terms": "<ul>\n<li>This offer is subject to availability and excludes taxes and fees</li>\n<li>Please cancel within 24 hours of arrival to avoid a late cancellation charge of one night's room and tax</li>\n</ul>",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139024&vr=3",
+  "offer_includes_en": "<ul>\n<li>Rate&nbsp;is already adjusted to reflect 33% discount</li>\n<li>Must stay a minimum of 3 nights or the full rate is charged</li>\n<li>Complimentary Basic Wi-Fi</li>\n<li>Access to Fitness Center</li>\n<li>Daily Newspaper</li>\n<li>Access to Courtesy Car (subject to availability)</li>\n</ul>",
+  "offer_includes_zh": "<ul>\n<li> 房价包含免费早餐</li>\n<li>免费的基础 Wi-Fi 服务</li>\n<li> 健身中心</li>\n<li>免费接送车, 视供应情况而定</li>\n<li>房价不含各种税费</li>\n<li>预订一晚不可退款</li>\n</ul>",
+  "terms_en": "<ul>\n<li>This offer is subject to availability and excludes taxes and fees</li>\n<li>Please cancel within 24 hours of arrival to avoid a late cancellation charge of one night's room and tax</li>\n</ul>",
+  "terms_zh": "<ul>\n<li>预订后 100% 不可退款，不可取消。不可以任何方式转让或修改预订。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139024&vr=3",
+  "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=T08T",
   "order": 1
 }
