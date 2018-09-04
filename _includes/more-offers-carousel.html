@@ -1,4 +1,9 @@
 {% assign offers = site.data._models.special_offers | sort: "order" %}
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/offers/' %}
+{% endif %}
 <section class="common-carousel">
   <h2 class="text-center">Other Offers</h2>
   <div class="crest-holder">
@@ -6,20 +11,20 @@
 	</div>
   <div class="common-carousel-inner">
     <div class="slick-controls" id="commonCarousel">
-      {% for offer in offers %} {% assign offer_url = offer.url_friendly_name | prepend: '/offers/' | append: '/' %} {% unless page.url == offer_url %} {% unless offer.unpublish == true %}
+      {% for offer in offers %} {% assign offer_url = offer.url_friendly_name | prepend: offerspage | append: '/' %} {% unless page.url == offer_url %} {% unless offer.unpublish == true %}
       <div class="item">
-        <a href="/offers/{{ offer.url_friendly_name }}" title="{{ offer.title }}">
+        <a href="{{ offerspage }}{{ offer.url_friendly_name }}" title="{{ offer.title }}">
           <div class="img-block" style="background-image:url('{{ offer.banner_image.url_small }}');"></div>
         </a>
         <div class="content">
-          <h4>{{ offer.title }}</h4>
-          <a href="/offers/{{ offer.url_friendly_name }}" class="secondary-btn">View this Special</a>
+          <h4>{% if site.active_lang == "en"%}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif%}</h4>
+          <a href="{{ offerspage }}{{ offer.url_friendly_name }}" class="secondary-btn">{% t 'view_special' %}</a>
         </div>
       </div>
       {% endunless %} {% endunless %} {% endfor %}
     </div>
   </div>
   <div class="text-center">
-    <a class="primary-btn" href="/offers/">View More Offers</a>
+    <a class="primary-btn" href="{{ offerspage }}">{% t 'view_more_offers' %}</a>
   </div>
 </section>

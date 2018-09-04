@@ -28,28 +28,37 @@ meta_tags:
 
 {% assign offers = site.data._models.special_offers | sort: "order" %}
 
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/offers/' %}
+{% endif %}
 <!-- Offers Listing -->
 <section class="offers-listing mt-5">
   <div class="offers-listing-inner">
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
         <div class="offer-block">
-          <a href="/offers/{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
+          <a href="{{ offerspage }}{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
             <figure>
               {% if offer.listing_image and offer.listing_image.url_medium !="" %}
               <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
-                <h3>{{ offer.title }}</h3>
+                <h3>{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
               </div>
               {% else %}
               <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
-                <h3>{{ offer.title }}</h3>
+                <h3>{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
               </div>
               {% endif %}
             </figure>
           </a>
           <div class="offer-content">
-            <p>{{ offer.short_description | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
-            <a class="border-btn light" href="/offers/{{ offer.url_friendly_name }}/">View Details</a>
+            {% if site.active_lang == "en" %}
+            <p>{{ offer.short_description_en | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            {% else %}
+            <p>{{ offer.short_description_zh | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            {% endif %}
+            <a class="border-btn light" href="{{ offerspage }}{{ offer.url_friendly_name }}/">{% t 'view_details' %}</a>
           </div>
         </div>
       {% endunless %}

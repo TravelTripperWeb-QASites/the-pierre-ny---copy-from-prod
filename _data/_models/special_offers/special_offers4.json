@@ -1,7 +1,9 @@
 {
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139039&vr=3",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139039&vr=3",
+  "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=S6T",
   "order": 9,
   "title": "Soiree and Valet",
+  "title_zh": "晚会和泊车员",
   "url_friendly_name": "soiree-and-valet",
   "banner_image": {
     "name": "soiree-valet",
@@ -25,9 +27,12 @@
     "caption": ""
   },
   "date": "Valid Until December 31, 2018",
-  "short_description": "Indulge in deluxe accommodations and enjoy special amenities including complimentary parking.",
-  "offer_includes": "<ul>\n<li>Deluxe Accommodation or higher</li>\n<li><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span>Complimentary parking for one vehicle (no in and out)</li>\n<li>Complimentary&nbsp; bottle of sparkling wine in room&nbsp;</li>\n</ul>\n<p>&nbsp;</p>",
-  "terms": "<ul>\n<li>Taxes not included</li>\n<li>Please cancel within 24 hours of arrival to avoid a late cancellation charge of one night's room and tax</li>\n<li>Guarantee/ Deposit and Change Cancellation Fees will depend on selected dates and room/ rate combination</li>\n</ul>\n<p>&nbsp;</p>",
+  "short_description_en": "Indulge in deluxe accommodations and enjoy special amenities including complimentary parking.",
+  "short_description_zh": "一瓶迎宾气泡酒，免费停车，为您开启这个城市的美好夜晚。",
+  "offer_includes_en": "<ul>\n<li>Deluxe Accommodation or higher</li>\n<li><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span>Complimentary parking for one vehicle (no in and out)</li>\n<li>Complimentary&nbsp; bottle of sparkling wine in room&nbsp;</li>\n</ul>\n<p>&nbsp;</p>",
+  "offer_includes_zh": "<ul>\n<li>Deluxe Accommodation or higher</li>\n<li><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span>Complimentary parking for one vehicle (no in and out)</li>\n<li>Complimentary&nbsp; bottle of sparkling wine in room&nbsp;</li>\n</ul>\n<p>&nbsp;</p>",
+  "terms_en": "<ul>\n<li>Taxes not included</li>\n<li>Please cancel within 24 hours of arrival to avoid a late cancellation charge of one night's room and tax</li>\n<li>Guarantee/ Deposit and Change Cancellation Fees will depend on selected dates and room/ rate combination</li>\n</ul>\n<p>&nbsp;</p>",
+  "terms_zh": "<ul>\n<li>请在抵达之前 24 小时内取消，以免产生一晚房费和税费的延迟取消费。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>\n<p>&nbsp;</p>",
   "slider_images": [
     {
       "name": "Soiree and wallet two e image resizeimage",

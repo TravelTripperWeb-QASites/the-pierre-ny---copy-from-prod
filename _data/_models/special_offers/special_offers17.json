@@ -1,5 +1,6 @@
 {
   "title": "Armani Privé Experience",
+  "title_zh": "套房庆祝活动",
   "url_friendly_name": "armani-prive",
   "banner_image": {
     "name": "armani",
@@ -21,7 +22,8 @@
     "alt": "Armani",
     "caption": ""
   },
-  "short_description": "Celebrate that special occasion with us!. During the months of July and August, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman. Additionally, receive 50% off on your second night and continental breakfast daily for two. ",
+  "short_description_en": "Celebrate that special occasion with us!. During the months of July and August, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman. Additionally, receive 50% off on your second night and continental breakfast daily for two. ",
+  "short_description_zh": "和我们一起庆祝特别时刻。第二晚享五折优惠，每天还送两份欧式早餐。",
   "slider_images": [
     {
       "name": "2nd Image - Suite Celeb Charles Pierre Suite",
@@ -65,10 +67,13 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Limited edition&nbsp;<span style=\"text-indent: -0.25in;\">100 ML bottle of Armani Priv&eacute; New York to be provided in suite upon arrival</span></li>\n<li>Complimentary makeover application at Bergdorf Goodman</li>\n<li>Second night is discounted 50% from BAR at time of check out</li>\n<li>Complimentary continental breakfast for two at Perrine</li>\n<li>Complimentary High Speed Wifi</li>\n<li>Two-Piece Garment Pressing</li>\n<li>Two Welcome Drinks at Two E Bar&nbsp;&amp; Lounge</li>\n</ul>\n<p>&nbsp;</p>",
-  "terms": "<ul>\n<li>Rates excludes taxes</li>\n<li>Stay must be for two nights</li>\n<li>Guest must contact Bergdorf Goodman to schedule appointment for complimentary bottle engraving and makeover&nbsp;</li>\n<li>Maximum of one Armani Priv&eacute;&nbsp;experience per room</li>\n</ul>",
+  "offer_includes_en": "<ul>\n<li>Limited edition&nbsp;<span style=\"text-indent: -0.25in;\">100 ML bottle of Armani Priv&eacute; New York to be provided in suite upon arrival</span></li>\n<li>Complimentary makeover application at Bergdorf Goodman</li>\n<li>Second night is discounted 50% from BAR at time of check out</li>\n<li>Complimentary continental breakfast for two at Perrine</li>\n<li>Complimentary High Speed Wifi</li>\n<li>Two-Piece Garment Pressing</li>\n<li>Two Welcome Drinks at Two E Bar&nbsp;&amp; Lounge</li>\n</ul>\n<p>&nbsp;</p>",
+  "offer_includes_zh": "<ul>\n<li>Limited edition&nbsp;<span style=\"text-indent: -0.25in;\">100 ML bottle of Armani Priv&eacute; New York to be provided in suite upon arrival</span></li>\n<li>Complimentary makeover application at Bergdorf Goodman</li>\n<li>Second night is discounted 50% from BAR at time of check out</li>\n<li>Complimentary continental breakfast for two at Perrine</li>\n<li>Complimentary High Speed Wifi</li>\n<li>Two-Piece Garment Pressing</li>\n<li>Two Welcome Drinks at Two E Bar&nbsp;&amp; Lounge</li>\n</ul>\n<p>&nbsp;</p>",
+  "terms_en": "<ul>\n<li>Rates excludes taxes</li>\n<li>Stay must be for two nights</li>\n<li>Guest must contact Bergdorf Goodman to schedule appointment for complimentary bottle engraving and makeover&nbsp;</li>\n<li>Maximum of one Armani Priv&eacute;&nbsp;experience per room</li>\n</ul>",
+  "terms_zh": "<ul>\n<li>预订后 100% 不可退款，不可取消。不可以任何方式转让或修改预订。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>",
   "date": "Discover the Haute Couture fragrance this summer",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139025&vr=3",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139025&vr=3",
+  "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=T03T",
   "order": 4,
   "listing_image": {
     "name": "Armani",

@@ -1,5 +1,6 @@
 {
   "title": "You and Your Dog - A Photographic Experience",
+  "title_zh": "You and Your Dog - A Photographic Experience",
   "url_friendly_name": "you-and-your-dog",
   "banner_image": {
     "name": "Dog Promo",
@@ -23,7 +24,8 @@
     "caption": ""
   },
   "date": "From June 1, 2018 ",
-  "short_description": "Celebrate the Year of the Dog & your best friend with a bespoke experience by renowned photographer Diana Haskell. Relax and enjoy your animal companion while Diana creates beautiful fine art images you are sure to treasure for a lifetime.",
+  "short_description_en": "Celebrate the Year of the Dog & your best friend with a bespoke experience by renowned photographer Diana Haskell. Relax and enjoy your animal companion while Diana creates beautiful fine art images you are sure to treasure for a lifetime.",
+  "short_description_zh": "Celebrate the Year of the Dog & your best friend with a bespoke experience by renowned photographer Diana Haskell. Relax and enjoy your animal companion while Diana creates beautiful fine art images you are sure to treasure for a lifetime.",
   "slider_images": [
     {
       "name": "car1",
@@ -87,8 +89,11 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Bespoke 1.5 hour photo session for you and your dog in and around The Pierre. Location options include guestroom, hotel entrance or Central Park</li>\n<li>One Set of 4x finished prints (5&rdquo; x 7&rdquo; and 8&rdquo; x 10&rdquo;)</li>\n<li>Private&nbsp;web photo gallery (minimum 12x images)&nbsp;</li>\n</ul>\n<p>&nbsp; &nbsp; &nbsp; Learn more about&nbsp;Diana Haskell's work&nbsp;<strong><a href=\"https://www.dianahaskellphotography.com/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a></strong></p>",
-  "terms": "<ul>\n<li>Only dogs up to 15 pounds</li>\n<li>For 2 guests maximum, plus dog</li>\n<li>Image gallery will be available to guests within 21 days</li>\n<li>Available as an add-on for guests who book any suite category&nbsp;<br />\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>\n<p>&nbsp;</p>",
-  "booking_link": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
+  "offer_includes_en": "<ul>\n<li>Bespoke 1.5 hour photo session for you and your dog in and around The Pierre. Location options include guestroom, hotel entrance or Central Park</li>\n<li>One Set of 4x finished prints (5&rdquo; x 7&rdquo; and 8&rdquo; x 10&rdquo;)</li>\n<li>Private&nbsp;web photo gallery (minimum 12x images)&nbsp;</li>\n</ul>\n<p>&nbsp; &nbsp; &nbsp; Learn more about&nbsp;Diana Haskell's work&nbsp;<strong><a href=\"https://www.dianahaskellphotography.com/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a></strong></p>",
+  "offer_includes_zh": "<ul>\n<li>Bespoke 1.5 hour photo session for you and your dog in and around The Pierre. Location options include guestroom, hotel entrance or Central Park</li>\n<li>One Set of 4x finished prints (5&rdquo; x 7&rdquo; and 8&rdquo; x 10&rdquo;)</li>\n<li>Private&nbsp;web photo gallery (minimum 12x images)&nbsp;</li>\n</ul>\n<p>&nbsp; &nbsp; &nbsp; Learn more about&nbsp;Diana Haskell's work&nbsp;<strong><a href=\"https://www.dianahaskellphotography.com/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a></strong></p>",
+  "terms_en": "<ul>\n<li>Only dogs up to 15 pounds</li>\n<li>For 2 guests maximum, plus dog</li>\n<li>Image gallery will be available to guests within 21 days</li>\n<li>Available as an add-on for guests who book any suite category&nbsp;<br />\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>\n<p>&nbsp;</p>",
+  "terms_zh": "<ul>\n<li>Only dogs up to 15 pounds</li>\n<li>For 2 guests maximum, plus dog</li>\n<li>Image gallery will be available to guests within 21 days</li>\n<li>Available as an add-on for guests who book any suite category&nbsp;<br />\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>\n<p>&nbsp;</p>",
+  "booking_link_en": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
+  "booking_link_zh": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
   "order": 3
 }

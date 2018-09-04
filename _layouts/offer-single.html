@@ -11,22 +11,30 @@ meta_tags:
 <section class="page-banner" style="background-image: url('{{ page.banner_image.url }}');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">{{ page.title }}</h1>
+    <h1 class="variant">{% if site.active_lang == "en"%}{{ page.title }}{% else %}{{ page.title_zh }}{% endif%}</h1>
     {% if page.date %}
       <p class="theme-line-3">{{ page.date }}</p>
     {% endif %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
-    <a class="primary-btn inverse mt-4" href="{{ page.booking_link }}" target="_blank">Book this offer</a>
+    {% if site.active_lang == "en"%}
+    <a class="primary-btn inverse mt-4" href="{{ page.booking_link_en }}" target="_blank">Book this offer</a>
+    {% else %}
+    <a class="primary-btn inverse mt-4" href="{{ page.booking_link_zh }}" target="_blank">预订此优惠</a>
+    {% endif %}
   </div>
 </section>
-
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/offers/' %}
+{% endif %}
 <!-- Offers Menu -->
 <div class="sub-nav">
   <ul class="d-flex justify-content-center flex-wrap full-width">
     {% for offer in offers %}
       {% unless offer.unpublish == true %}
         <li>
-          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="/offers/{{ offer.url_friendly_name }}/"{% endif %}>{{ offer.title }}</a>
+          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="{{ offerspage }}{{ offer.url_friendly_name }}/"{% endif %}>{% if site.active_lang == "en"%}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif%}</a>
         </li>
       {% endunless %}
     {% endfor %}
@@ -35,11 +43,15 @@ meta_tags:
 
 <section class="offer-details mt-5">
   <div class="offers-desc">
-    <h2>{{ page.title }}</h2>
+    <h2>{% if site.active_lang == "en"%}{{ page.title }}{% else %}{{ page.title_zh }}{% endif%}</h2>
     <div class="divider">
       <img class="w-100" src="/assets/images/linebig.png" alt="Divider between sections" tabindex="-1" />
     </div>
-    <p>{{ page.short_description }}</p>
+    {% if site.active_lang == "en" %}
+    <p>{{ page.short_description_en }}</p>
+    {% else %}
+    <p>{{ page.short_description_zh }}</p>
+    {% endif%}
   </div>
   <div class="offer-details-inner m-0 align-items-center">
     <div id="offerDetailImages" class="carousel slide img-carousel p-0" data-ride="carousel">
@@ -56,11 +68,20 @@ meta_tags:
     </div>
     <div class="content">
       <div class="content-inner">
-        <h6>OFFER INCLUDES</h6>
-        {{ page.offer_includes }}
-        <h6>TERMS & CONDITIONS</h6>
-        {{ page.terms }}
-        <a class="primary-btn" href="{{ page.booking_link }}">Book this Offer</a>
+        {% if site.active_lang == "en" %}
+          <h6>OFFER INCLUDES</h6>
+          {{ page.offer_includes_en }}
+          <h6>TERMS & CONDITIONS</h6>
+          {{ page.terms_en }}
+          <a class="primary-btn" href="{{ page.booking_link_en }}">Book this Offer</a>
+        {% else %}
+          <h6>优惠包括</h6>
+          {{ page.offer_includes_zh }}
+          <h6>条款和条件</h6>
+          {{ page.terms_zh }}
+          <a class="primary-btn" href="{{ page.booking_link_zh }}">预订此优惠</a>
+        {% endif %}
+
       </div>
     </div>
   </div>
