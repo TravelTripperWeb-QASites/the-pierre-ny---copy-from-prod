@@ -27,7 +27,7 @@
       {% endif %}
       <ul>
         {% for link in quick_links %}
-          <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
+          <li class="nav-item {% if page.url == link.url %}active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
             <a class="nav-link" href="{{ link.url | absolute_url }}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
           </li>
         {% endfor %}
