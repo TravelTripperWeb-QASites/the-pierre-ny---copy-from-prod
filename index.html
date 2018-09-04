@@ -18,17 +18,13 @@ meta_tags:
 <section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 tabindex="0">
-      {% regionblock banner_title, type:text %}
-        Central Park at your doorstep
-      {% endregionblock %}
-    </h1>
+    {% regionblock banner_title, type:text %}
+      <h1 tabindex="0">Central Park at your doorstep</h1>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1"/></div>
-    <h6 tabindex="0">
-      {% regionblock banner_subtitle, type:text %}
-        FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS
-      {% endregionblock %}
-    </h6>
+    {% regionblock banner_subtitle, type:text %}
+      <h6 tabindex="0">FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>
+    {% endregionblock %}
     {% regionblock banner_url, type:text %}
       <a class="primary-btn inverse" href="/location/">View Location</a>
     {% endregionblock %}
@@ -38,11 +34,9 @@ meta_tags:
 <!-- Intero section here -->
 <section class="intro">
   <div class="intro-text">
-    <h2>
-      {% regionblock page_title, type:text %}
-        The Pierre New York
-      {% endregionblock %}
-    </h2>
+    {% regionblock page_title, type:text %}
+      <h2>The Pierre New York</h2>
+    {% endregionblock %}
     <div tabindex="0">
       {% regionblock page_description, type:text %}
         <p>The Pierre, A Taj Hotel, situated beside Central Park steps from the luxury boutiques of Fifth & Madison Avenues,is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati,The
@@ -62,13 +56,13 @@ meta_tags:
     <div class="images">
       <div class="image-text" style="background-image:url('/assets/images/home/special.jpg');">
         <div class="heading">
-          <h6>{% t 'special_offers' %}</h6>
+          <h6 tabindex="0">{% t 'special_offers' %}</h6>
           <a class="secondary-btn inverse" href="/offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
         </div>
       </div>
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
         <div class="heading">
-          <h6>{% t 'dining' %}</h6>
+          <h6 tabindex="0">{% t 'dining' %}</h6>
           <a class="secondary-btn inverse" href="/dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
         </div>
       </div>
@@ -79,12 +73,14 @@ meta_tags:
 <!-- Entertainment section here -->
 <section class="entertainment" style="background-image: url('/assets/images/home/entertainment-bg.jpg');">
   <div class="intro-text">
-  {% regionblock entertainment_title, type:text %}
-   <h2>Entertainment at The Pierre</h2>
-  {% endregionblock %}
-  {% regionblock entertainment_detail, type:text %}
-    <p>Enjoy great performances in May, from an exclusive Mother's Day show with principal cast members of THE PHANTOM OF THE OPERA to a Latin Jazz celebration of the tango!</p>
-  {% endregionblock %}
+    {% regionblock entertainment_title, type:text %}
+      <h2>Entertainment at The Pierre</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock entertainment_detail, type:text %}
+        <p>Enjoy great performances in May, from an exclusive Mother's Day show with principal cast members of THE PHANTOM OF THE OPERA to a Latin Jazz celebration of the tango!</p>
+      {% endregionblock %}
+    </div>
   </div>
   <div class="shows">
     <div class="shows-row m-0">
@@ -92,10 +88,10 @@ meta_tags:
         <div class="s-image mr-15" style="background-image:url('/assets/images/home/summer-of-rose.jpg');">
           <div class="heading">
             {% regionblock summer_rose_title, type:text %}
-             <h6>Summer of Rosé</h6>
+              <h6 tabindex="0">Summer of Rosé</h6>
             {% endregionblock %}
             {% regionblock summer_rose_url, type:text %}
-            <a class="secondary-btn inverse" href="/" title="{% t 'view_details' %}">{% t 'view_details' %}</a>
+              <a class="secondary-btn inverse" href="/" title="{% t 'view_details' %}">{% t 'view_details' %}</a>
             {% endregionblock %}
           </div>
         </div>
@@ -105,10 +101,10 @@ meta_tags:
             <div class="s-image mr-15" style="background-image: url('/assets/images/home/icons-of-jazz.jpg');">
               <div class="heading">
                 {% regionblock icon_jazz_title, type:text %}
-                 <h6>Icons of Jazz</h6>
+                  <h6 tabindex="0">Icons of Jazz</h6>
                 {% endregionblock %}
                 {% regionblock icon_jazz_url, type:text %}
-                 <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
+                  <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
                 {% endregionblock %}
               </div>
             </div>
@@ -117,10 +113,10 @@ meta_tags:
             <div class="s-image" style="background-image: url('/assets/images/home/broadway.jpg');">
               <div class="heading">
                 {% regionblock broadway_title, type:text %}
-                 <h6>Broadway At The Pierre</h6>
+                  <h6 tabindex="0">Broadway At The Pierre</h6>
                 {% endregionblock %}
                 {% regionblock broadway_url, type:text %}
-                 <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
+                  <a class="secondary-btn inverse" href="/" title="View details">{% t 'view_details' %}</a>
                 {% endregionblock %}
               </div>
             </div>
@@ -133,19 +129,21 @@ meta_tags:
 <section class="home-events">
   <div class="intro-text">
     {% regionblock events_title, type:text %}
-     <h2>Events</h2>
+      <h2 tabindex="0">Events</h2>
     {% endregionblock %}
-    {% regionblock events_detail, type:text %}
-     <p>A New York landmark located on Central Park in the heart of Manhattan’s most prestigious business, residential and shopping district, the hotel features neo-Georgian architecture and opulent décor that will add sophistication and elegance to your
-      social or business function.</p>
-    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock events_detail, type:text %}
+       <p>A New York landmark located on Central Park in the heart of Manhattan’s most prestigious business, residential and shopping district, the hotel features neo-Georgian architecture and opulent décor that will add sophistication and elegance to your
+        social or business function.</p>
+      {% endregionblock %}
+    </div>
   </div>
   <div class="images-section m-0">
     <div class="images">
       <div class="image-text" style="background-image:url('/assets/images/home/meetings.jpg');">
         <div class="heading">
           {% regionblock meetings_title, type:text %}
-           <h6>Meetings</h6>
+           <h6 tabindex="0">Meetings</h6>
           {% endregionblock %}
           {% regionblock meetings_url, type:text %}
            <a class="secondary-btn inverse" href="/meetings/" title="Discover more">{% t 'learn_more' %}</a>
@@ -155,7 +153,7 @@ meta_tags:
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/venues.jpg');">
         <div class="heading">
           {% regionblock venues_title, type:text %}
-           <h6>Venues</h6>
+           <h6 tabindex="0">Venues</h6>
           {% endregionblock %}
           {% regionblock venues_url, type:text %}
            <a class="secondary-btn inverse" href="/venues/" title="Dining">{% t 'learn_more' %}</a>
@@ -167,7 +165,7 @@ meta_tags:
       <div class="image-full ml-15 mt--15" style="background-image:url('/assets/images/home/weddings.jpg');">
         <div class="heading">
           {% regionblock weddings_title, type:text %}
-           <h6>Weddings & Social Events</h6>
+           <h6 tabindex="0">Weddings & Social Events</h6>
           {% endregionblock %}
           {% regionblock weddings_url, type:text %}
            <a class="secondary-btn inverse" href="/rfp/" title="REQUEST FOR PROPOSAL">REQUEST FOR PROPOSAL</a>
