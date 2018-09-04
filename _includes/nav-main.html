@@ -37,7 +37,7 @@
         {% if link.dropdown %}
           <div class="dropdown-menu" aria-labelledby="dropdown01">
             {% for sublink in link.dropdown %}
-              <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
+              <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}" {% if sublink.external %}target="_blank"{% endif %}>{{ sublink.title }} </a>
             {% endfor %}
           </div>
         {% endif %}

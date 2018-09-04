@@ -10,23 +10,20 @@ angular.module('rezTrip')
     }
   }
 )
-.filter('ampersand', function(){
-    return function(input){
-        return input ? input.replace(/&amp;/, '&') : '';
-    }
-})
-.filter('renderHTMLCorrectly', function($sce){
-	return function(stringToParse)
-	{
-		return $sce.trustAsHtml(stringToParse);
-	}
-})
-.filter('replaceNewline', function () {
+.filter('spacetohyphen', function () {
     return function (value) {
-        return (!value) ? '' : String(value).replace(/\n+/g, '<br>');
+        return (!value) ? '' : value.replace(/ /g, '-');
     };
-})
-.filter('formatNameForLink', function () {
+}).filter('nospace', function () {
+    return function (value) {
+        return (!value) ? '' : value.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+
+    };
+}).filter('replacePercent', function () {
+    return function (value) {
+        return (!value) ? '' : String(value).replace('%', 'percent');
+    };
+}).filter('formatNameForLink', function () {
     return function (value) {
         var retString = String(value).toLowerCase();
         retString = retString.replace(/^\s\s*/, '').replace(/\s\s*$/, ''); // replace leading and trailing spaces
@@ -35,24 +32,4 @@ angular.module('rezTrip')
         retString = retString.replace(/^--s*/, '').replace(/--*$/, ''); // replace leading and trailing hyphen
         return (!value) ? '' : retString;
     };
-}).filter('range', function () {
-  return function (input, total) {
-    total = parseInt(total);
-    for (var i = 0; i < total; i++) {
-        input.push(i);
-    }
-    return input;
-  };
-})
-.filter('roomOrSuite', function () {
-    return function (value) {
-        var str = String(value).toLowerCase();
-        var retStr;
-        if(str.indexOf('suite') != -1){
-            retStr = 'Suite';
-        }else{
-            retStr = 'Room';
-        }
-        return (!value) ? '' : retStr;
-    };
-});;
+});

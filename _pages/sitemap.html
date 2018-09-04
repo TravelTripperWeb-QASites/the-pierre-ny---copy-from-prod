@@ -7,26 +7,12 @@ meta_tags:
   robots: noindex, follow
 ---
 
-{% comment %}
-
-  Name:
-
-    Sitemap Page
-
-  Description:
-
-    Dynamically generated content from navigation.yml file.
-
-  Usage:
-
-    {% assign links = site.data.navigation.main %}
-
-    <ul>
-      {% for link in links %}
-        <li>
-          <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-{% endcomment %}
+<div class="page-banner" style="background-image:url('/assets/images/sitemap-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 tabindex="0">404<br>Page Not Found</h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <h6 tabindex="0">We're sorry but it looks like that page you are looking for doesn't exist anymore. Please view the Sitemap below or go back to the homepage.</h6>
+    <a class="primary-btn inverse" href="/request-for-proposal/">Back to Homa Page</a>
+  </div>
+</div>
