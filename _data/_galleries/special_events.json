@@ -1,5 +1,10 @@
 {
-  "name": "SPECIAL EVENTS",
+  "name": "SPECIAL EVENTS" ,
+  "name_localized":
+  {
+    "en": "SPECIAL EVENTS",
+    "zh": "特别活动"
+  },
   "photos": [{
       "name": "events-12",
       "file_name": "events-12.jpg",

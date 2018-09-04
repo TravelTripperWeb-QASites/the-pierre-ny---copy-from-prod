@@ -1,5 +1,10 @@
 {
-  "name": "RESTAURANT & BAR",
+  "name": "RESTAURANT & BAR" ,
+  "name_localized":
+  {
+    "en": "RESTAURANT & BAR",
+    "zh": "餐厅和酒吧"
+  },
   "photos": [{
       "name": "restaurant-14",
       "file_name": "restaurant-14.jpg",
