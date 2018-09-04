@@ -15,10 +15,12 @@ published_localized:
 meta_tags:
   robots:
 ---
-{% if site.active_lang == "zh" %} 
+{% if site.active_lang == "zh" %}
   {% assign detaillink = '<a class="border-btn light" ng-href="/zh/room/#[[room.code ]] ">了解更多</a>'%}
+  {% assign roomlink = '/zh/room/#[[room.code ]]'%}
 {% else %}
   {% assign detaillink = '<a class="border-btn light" ng-href="/room/#[[room.name | formatNameForLink]]">View Details </a>' %}
+  {% assign roomlink = '/room/#[[room.name | formatNameForLink]]'%}
 {% endif %}
 <input type="hidden" id="listing" name="listing" value="[[browser.roomsv  ? true : false]]">
 
@@ -36,12 +38,12 @@ meta_tags:
 <section class="categories">
   <div class="categories__container">
     <ul class="categories__list" tabindex="0">
-      <li><a data-rel="all" href="javascript:;" class="filter active">All</a></li>
-      <li><a data-rel="classic" href="javascript:;" class="filter">Classic</a></li>
-      <li><a data-rel="city" href="javascript:;" class="filter">City View</a></li>
-      <li><a data-rel="park" href="javascript:;" class="filter">Park View</a></li>
-      <li><a data-rel="grand" href="javascript:;" class="filter last">Grand Suites</a></li>
-      <li><a data-rel="residences" href="javascript:;" class="filter last">Residences</a></li>
+      <li><a data-rel="all" href="javascript:;" class="filter active">{% t 'all'%}</a></li>
+      <li><a data-rel="classic" href="javascript:;" class="filter">{% t 'classic'%}</a></li>
+      <li><a data-rel="city" href="javascript:;" class="filter">{% t 'cityview'%}</a></li>
+      <li><a data-rel="park" href="javascript:;" class="filter">{% t 'parkview'%}</a></li>
+      <li><a data-rel="grand" href="javascript:;" class="filter last">{% t 'grandsuites'%}</a></li>
+      <li><a data-rel="residences" href="javascript:;" class="filter last">{% t 'residences'%}</a></li>
     </ul>
   </div>
 </section>
@@ -60,7 +62,7 @@ meta_tags:
 
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif%}>
-        <a ng-href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
+        <a ng-href="{{roomlink}}" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -92,7 +94,7 @@ meta_tags:
 
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
-        <a ng-href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
+        <a ng-href="{{roomlink}}" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -124,7 +126,7 @@ meta_tags:
 
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
-        <a ng-href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
+        <a ng-href="{{roomlink}}" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>
@@ -157,7 +159,7 @@ meta_tags:
 
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
-        <a ng-href="/room/#[[room.name | formatNameForLink]]" class="rooms__head">
+        <a ng-href="{{roomlink}}" class="rooms__head">
           <div class="rooms__image bg-cover" style="background-image:url('[[room.photos[0].large]]');">
             <h3>[[room.name]]</h3>
           </div>

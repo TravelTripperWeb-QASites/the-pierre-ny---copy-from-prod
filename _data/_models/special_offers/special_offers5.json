@@ -1,5 +1,6 @@
 {
   "title": "Grand Suite - Third Night Complimentary",
+  "title_zh": "第三晚免费",
   "url_friendly_name": "grand-suite-third-night-complimentary",
   "banner_image": {
     "name": "grand-suite-third-night-complimentary",
@@ -23,7 +24,8 @@
     "caption": ""
   },
   "date": "Valid Until September 3, 2018",
-  "short_description": "Book one of our Grand Suites and enjoy exclusive amenities, with every third night complimentary.",
+  "short_description_en": "Book one of our Grand Suites and enjoy exclusive amenities, with every third night complimentary.",
+  "short_description_zh": "第三晚均免费。入住登记时调整价格。须住三 晚。",
   "slider_images": [
     {
       "name": "Grand Suite-Third night comp Tata Suite 585x550",
@@ -68,9 +70,12 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Complimentary daily parking for one vehicle</li>\n<li>Full American Breakfast at Perrine or through Room Service (for up to maximum occupants of the suite)</li>\n<li>Premium WiFi (unlimited devices)</li>\n<li>Complimentary pressing of five garments per stay</li>\n<li>Complimentary mini-bar excluding alcohol (replenished once daily)</li>\n<li>Dedicated number to Chief Concierge, reserved for Grand Suite guests</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n</ul>",
-  "terms": "<ul>\n<li class=\"MsoNormal\">One&nbsp;Night Non-refundable, non-transferable, non-cancelable</li>\n<li class=\"MsoNormal\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</li>\n</ul>\n<p>&nbsp;</p>",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=205932&vr=3 ",
+  "offer_includes_en": "<ul>\n<li>Complimentary daily parking for one vehicle</li>\n<li>Full American Breakfast at Perrine or through Room Service (for up to maximum occupants of the suite)</li>\n<li>Premium WiFi (unlimited devices)</li>\n<li>Complimentary pressing of five garments per stay</li>\n<li>Complimentary mini-bar excluding alcohol (replenished once daily)</li>\n<li>Dedicated number to Chief Concierge, reserved for Grand Suite guests</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n</ul>",
+  "offer_includes_zh": "<ul>\n<li>免费的基础 Wi-Fi 服务</li>\n<li> 健身中心</li>\n<li> 免费接送车 (视供应情况而定)</li>\n<li>房价不含各种税费</li>\n<li>预订一晚不可退款</li>\n</ul>",
+  "terms_en": "<ul>\n<li class=\"MsoNormal\">One&nbsp;Night Non-refundable, non-transferable, non-cancelable</li>\n<li class=\"MsoNormal\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</li>\n</ul>\n<p>&nbsp;</p>",
+  "terms_zh": "<ul>\n<li class=\"MsoNormal\">预订后 100% 不可退款，不可取消。不可以任何方式转让或修改预订。</li>\n<li class=\"MsoNormal\">uarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>\n<p>&nbsp;</p>",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=205932&vr=3 ",
+  "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=T02T",
   "order": 6,
   "unpublish": ""
 }

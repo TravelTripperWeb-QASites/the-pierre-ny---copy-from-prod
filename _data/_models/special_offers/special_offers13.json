@@ -23,7 +23,7 @@
     "caption": ""
   },
   "date": "Valid Until February 28, 2018",
-  "short_description": " Make A Toast To Romance with our special package and treat your loved one to a perfectly Pierre getaway. ",
+  "short_description_en": " Make A Toast To Romance with our special package and treat your loved one to a perfectly Pierre getaway. ",
   "slider_images": [
     {
       "name": "II Fall Family Offer 585x550",
@@ -67,9 +67,9 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li style=\"text-align: justify;\">Chilled bottle of Taittinger Champagne upon arrival presented with a pair of Tiffany &amp; Co. crystal flutes for you to take home.</li>\n<li style=\"text-align: justify;\">Decadent customized&nbsp; in-room amenity by our award-winning Executive Pastry Chef Michael Mignano.</li>\n<li style=\"text-align: justify;\">In-room breakfast.</li>\n<li style=\"text-align: justify;\">Stay over Valentine's Day and receive a complimentary portrait sketch in our iconic Rotunda (based on availability).</li>\n</ul>",
-  "terms": "<ul>\n<li>Offer is available from February 1st &ndash; February 28th and rates are based on suite type.&nbsp;</li>\n</ul>",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=204601&vr=3",
+  "offer_includes_en": "<ul>\n<li style=\"text-align: justify;\">Chilled bottle of Taittinger Champagne upon arrival presented with a pair of Tiffany &amp; Co. crystal flutes for you to take home.</li>\n<li style=\"text-align: justify;\">Decadent customized&nbsp; in-room amenity by our award-winning Executive Pastry Chef Michael Mignano.</li>\n<li style=\"text-align: justify;\">In-room breakfast.</li>\n<li style=\"text-align: justify;\">Stay over Valentine's Day and receive a complimentary portrait sketch in our iconic Rotunda (based on availability).</li>\n</ul>",
+  "terms_en": "<ul>\n<li>Offer is available from February 1st &ndash; February 28th and rates are based on suite type.&nbsp;</li>\n</ul>",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=204601&vr=3",
   "order": 2,
   "unpublish": true
 }

@@ -21,7 +21,7 @@
     "alt": "City View Suite Living Room smaller",
     "caption": ""
   },
-  "short_description": "Celebrate that special occasion with us!. Receive 50% off on your second night and continental breakfast daily for two. ",
+  "short_description_en": "Celebrate that special occasion with us!. Receive 50% off on your second night and continental breakfast daily for two. ",
   "slider_images": [
     {
       "name": "2nd Image Winter Wonderland Bathroom with View",
@@ -64,10 +64,10 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Second night is discounted 50% from BAR at time of check out</li>\n<li>Rate includes complimentary continental breakfast for two at Perrine</li>\n<li>Complimentary high speed Wifi</li>\n<li>Two-Piece Garment Pressing</li>\n<li>Two Welcome Drinks at Two E Bar&nbsp;&amp; Lounge</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-  "terms": "<ul>\n<li>Rates excludes taxes</li>\n<li>Stay must be for two nights</li>\n</ul>",
+  "offer_includes_en": "<ul>\n<li>Second night is discounted 50% from BAR at time of check out</li>\n<li>Rate includes complimentary continental breakfast for two at Perrine</li>\n<li>Complimentary high speed Wifi</li>\n<li>Two-Piece Garment Pressing</li>\n<li>Two Welcome Drinks at Two E Bar&nbsp;&amp; Lounge</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+  "terms_en": "<ul>\n<li>Rates excludes taxes</li>\n<li>Stay must be for two nights</li>\n</ul>",
   "date": "Valid Until September 2018",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139025&vr=3",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139025&vr=3",
   "order": 8,
   "unpublish": true
 }

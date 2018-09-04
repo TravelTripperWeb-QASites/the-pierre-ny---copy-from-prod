@@ -23,7 +23,7 @@
     "caption": ""
   },
   "date": "Valid Until September 3, 2018",
-  "short_description": "Book one of our Grand Suites and enjoy exclusive amenities, with every third night complimentary.",
+  "short_description_en": "Book one of our Grand Suites and enjoy exclusive amenities, with every third night complimentary.",
   "slider_images": [
     {
       "name": "Grand Suite-Third night comp Tata Suite 585x550",
@@ -68,9 +68,9 @@
       "caption": ""
     }
   ],
-  "offer_includes": "<ul>\n<li>Complimentary daily parking for one vehicle</li>\n<li>Full American Breakfast at Perrine or through Room Service (for up to maximum occupants of the suite)</li>\n<li>Premium WiFi (unlimited devices)</li>\n<li>Complimentary pressing of five garments per stay</li>\n<li>Complimentary mini-bar excluding alcohol (replenished once daily)</li>\n<li>Dedicated number to Chief Concierge, reserved for Grand Suite guests</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n</ul>",
-  "terms": "<ul>\n<li class=\"MsoNormal\">One&nbsp;Night Non-refundable, non-transferable, non-cancelable</li>\n<li class=\"MsoNormal\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</li>\n</ul>\n<p>&nbsp;</p>",
-  "booking_link": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=205932&vr=3 ",
+  "offer_includes_en": "<ul>\n<li>Complimentary daily parking for one vehicle</li>\n<li>Full American Breakfast at Perrine or through Room Service (for up to maximum occupants of the suite)</li>\n<li>Premium WiFi (unlimited devices)</li>\n<li>Complimentary pressing of five garments per stay</li>\n<li>Complimentary mini-bar excluding alcohol (replenished once daily)</li>\n<li>Dedicated number to Chief Concierge, reserved for Grand Suite guests</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n</ul>",
+  "terms_en": "<ul>\n<li class=\"MsoNormal\">One&nbsp;Night Non-refundable, non-transferable, non-cancelable</li>\n<li class=\"MsoNormal\">Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</li>\n</ul>\n<p>&nbsp;</p>",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=205932&vr=3 ",
   "order": 6,
   "unpublish": true
 }
