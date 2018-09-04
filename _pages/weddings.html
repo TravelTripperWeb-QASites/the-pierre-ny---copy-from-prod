@@ -20,7 +20,9 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/weddings/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">WEDDINGS</h1>
+    {% regionblock weddings_banner_title, type:header %}
+    <h1 class="variant" tabindex="0">WEDDINGS</h1>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
   </div>
 </section>
@@ -28,19 +30,32 @@ meta_tags:
 <!-- RFP -->
 <section class="rfp-wrap">
   <div class="rfp-inner">
+    {% regionblock weddings_request_for_proposal_url, type:text %}
     <a class="primary-btn inverse" href="/request-for-proposal/">Request For Proposal</a>
-    <p>Call our team on <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
-    </p>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock weddings_request_for_proposal_contact, type:text %}
+      <p>Call our team on <a href="tel:+1 212 940 8111">+1 212 940 8111</a></p>
+      {% endregionblock %}
+    </div>
   </div>
 </section>
 
 <!-- Intro section here -->
 <section class="intro mb-0">
   <div class="intro-text">
-    <h2>BRINGING DREAMS TO LIFE</h2>
-    <p>Legendary elegance provides the perfect backdrop for wedding celebrations that can only come to life at The Pierre, A Taj Hotel. For over 80 years, the hotel has hosted the city’s most elegant and prestigious weddings.</p>
+    {% regionblock weddings_title1, type:header %}
+    <h2 tabindex="0">BRINGING DREAMS TO LIFE</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock weddings_text1, type:text %}
+      <p>Legendary elegance provides the perfect backdrop for wedding celebrations that can only come to life at The Pierre, A Taj Hotel. For over 80 years, the hotel has hosted the city’s most elegant and prestigious weddings.</p>
+      {% endregionblock %}
+    </div>
     <img src="/assets/images/p-icon.png" alt="The Pierre Icon">
+    {% regionblock weddings_url1, type:text %}
     <a class="primary-btn" href="mailto:thepierreevents.ny@tajhotels.com">Contact Us</a>
+    {% endregionblock %}
   </div>
 </section>
 
@@ -52,55 +67,79 @@ meta_tags:
 <section class="twocol pb-5">
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock weddings_image1, type:image %}
       <img src="/assets/images/weddings/ceremony.jpg" alt="CEREMONY">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>EXQUISITE PERFECTION</h6>
-        <h4>CEREMONY</h4>
-        <p>With spectacular floor-to-ceiling windows looking onto Central Park and Fifth Avenue, the Cotillion Room is a dramatic backdrop to your wedding ceremony. Separate rooms allow guests to flow from the ceremony to cocktails in the Garden Foyer and dinner in our Grand Ballroom.</p>
+        {% regionblock weddings_title2, type:header %}
+        <h6 tabindex="0">EXQUISITE PERFECTION</h6>
+        {% endregionblock %}
+        {% regionblock weddings_sub_title2, type:header %}
+        <h4 tabindex="0">CEREMONY</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock weddings_text2, type:text %}
+          <p>With spectacular floor-to-ceiling windows looking onto Central Park and Fifth Avenue, the Cotillion Room is a dramatic backdrop to your wedding ceremony. Separate rooms allow guests to flow from the ceremony to cocktails in the Garden Foyer and dinner in our Grand Ballroom.</p>
+          {% endregionblock %}
+        </div>
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock weddings_image2, type:image %}
       <img src="/assets/images/weddings/celebration.jpg" alt="CELEBRATION">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        <h6>TIMELESS OPULENCE</h6>
-        <h4>CELEBRATION</h4>
-        <p>A legendary New York venue for the city’s most celebrated events, our Grand Ballroom features a soaring silver and gold ceiling that makes a stunning setting for dinner and dancing. World-renowned cuisine and exceptional service create an unparalleled experience for you and your guests.</p>
+        {% regionblock weddings_title3, type:header %}
+        <h6 tabindex="0">TIMELESS OPULENCE</h6>
+        {% endregionblock %}
+        {% regionblock weddings_sub_title3, type:header %}
+        <h4 tabindex="0">CELEBRATION</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock weddings_text3, type:text %}
+          <p>A legendary New York venue for the city’s most celebrated events, our Grand Ballroom features a soaring silver and gold ceiling that makes a stunning setting for dinner and dancing. World-renowned cuisine and exceptional service create an unparalleled experience for you and your guests.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock weddings_url3, type:text %}
         <a class="primary-btn" href="https://cdn.traveltripper.io/site-assets/413_380_5708/media/2017-07-31-085118/WeddingsFactSheet.pdf" target="_blank">Learn More</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
   <div class="twocol-row">
     <div class="twocol-image p-0 bg-cover">
+      {% regionblock weddings_image3, type:image %}
       <img src="/assets/images/weddings/amirian-tarnofsky.jpg" alt="UNFORGETTABLE EXPERIENCES">
+      {% endregionblock %}
     </div>
     <div class="twocol-content p-0" style="background-image: url('/assets/images/awards/p-icon-larger.png');">
       <div class="content-holder">
-        <h6>UNPARALLELED ELEGANCE</h6>
-        <h4>UNFORGETTABLE EXPERIENCES</h4>
-        <p>In addition to timeless opulence and world renowned cuisine, we provide an experienced, dedicated in-house team to assist with every step of planning an unforgettable celebration, as well as access to New York's finest vendors. A Pierre wedding offers a couture cake designed by celebrity chef Ron Ben-Israel of RBI Cakes and customized floral displays from renowned event designer Ovando.</p>
-        <p>Brides enjoy a private VIP experience including preferred pricing at venerable upscale bridal boutique Kleinfeld's.</p>
-        <p>A marriage made in heaven begins with a wedding at The Pierre.</p>
+        {% regionblock weddings_title4, type:header %}
+        <h6 tabindex="0">UNPARALLELED ELEGANCE</h6>
+        {% endregionblock %}
+        {% regionblock weddings_sub_title4, type:header %}
+        <h4 tabindex="0">UNFORGETTABLE EXPERIENCES</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock weddings_text4, type:text %}
+          <p>In addition to timeless opulence and world renowned cuisine, we provide an experienced, dedicated in-house team to assist with every step of planning an unforgettable celebration, as well as access to New York's finest vendors. A Pierre wedding offers a couture cake designed by celebrity chef Ron Ben-Israel of RBI Cakes and customized floral displays from renowned event designer Ovando.</p>
+          <p>Brides enjoy a private VIP experience including preferred pricing at venerable upscale bridal boutique Kleinfeld's.</p>
+          <p>A marriage made in heaven begins with a wedding at The Pierre.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock weddings_url4, type:text %}
         <a class="primary-btn" href="/meet-the-team/">Meet The Team</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
 </section>
 
 {% include explore-venues-carousel.html %}
-
-<!-- RFP -->
-<section class="rfp-wrap">
-  <div class="rfp-inner">
-    <h6>- LET US HELP PLAN YOUR SPECIAL DAY -</h6>
-    <h4>REQUEST FOR PROPOSAL</h4>
-    <a class="primary-btn inverse" href="/request-for-proposal/">Request For Proposal</a>
-    <p>Call our team on <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
-    </p>
-  </div>
-</section>
+{% include rfp_crosscell.html %}
