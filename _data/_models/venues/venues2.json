@@ -44,12 +44,27 @@
     "alt": "Garden Foyer",
     "caption": ""
   },
-  "venue_intro": "<p>A private <span class=\"ve\">pre-function</span> space featuring antique chandeliers and exquisite hand-painted murals inspired by Versailles,The Garden Foyer adjoins The Grand Ballroom and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+  "venue_intro_localized": {
+    "en": "<p>A private <span class=\"ve\">pre-function</span> space featuring antique chandeliers and exquisite hand-painted murals inspired by Versailles,The Garden Foyer adjoins The Grand Ballroom and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+    "zh": "<p>私密的<span class=\"ve\">前厅</span>空间，Garden Foyer 与 Grand Ballroom 相邻，是主要活动开幕前举行<span class=\"ve\">鸡尾酒会</span>的理想地点。</p>"
+  },
   "facility_chart": {
-    "dimensions": "56'-2\" x 68'-11\"",
-    "area": "2,913 sq. ft. / 270.63 m2",
-    "height": "11'-4\" | 3.47 m",
-    "location": "2nd Floor"
+    "dimensions_localized": {
+      "en": "56'-2\" x 68'-11\"",
+      "zh": "52X53 英尺 | 15.85X16.15 米"
+    },
+    "area_localized": {
+      "en": "2,913 sq. ft. / 270.63 m2",
+      "zh": "2756.0 平方英尺 | 256.04 平方米"
+    },
+    "height_localized": {
+      "en": "11'-4\" | 3.47 m",
+      "zh": "12 英尺 | 3.66 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
   },
   "floor_plan": {
     "theater": "75",

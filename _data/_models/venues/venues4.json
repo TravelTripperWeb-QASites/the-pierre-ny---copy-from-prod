@@ -44,12 +44,27 @@
     "alt": "Cotillion room Large",
     "caption": ""
   },
-  "venue_intro": "<p>Once the supper club of The Pierre and later the setting of the famous tango scene from Scent of a Woman, <span class=\"ve\">The Cotillion Room</span> is perfect for an <span class=\"ve\">intimate wedding ceremony</span> or <span class=\"ve\">private dinner</span> facing Central Park.</p>",
+  "venue_intro_localized": {
+    "en": "<p>Once the supper club of The Pierre and later the setting of the famous tango scene from Scent of a Woman, <span class=\"ve\">The Cotillion Room</span> is perfect for an <span class=\"ve\">intimate wedding ceremony</span> or <span class=\"ve\">private dinner</span> facing Central Park.</p>",
+    "zh": "<p>皮埃尔曾经的夜总会，后来成为《闻香识女人》的著名探戈场景取景地，<span class=\"ve\">Cotillion Room</span> 非常适合举办一场<span class=\"ve\">亲密的婚礼庆典</span>或<span class=\"ve\">私人晚宴</span>，它面朝中央公园。</p>"
+  },
   "facility_chart": {
-    "dimensions": "44'-11\" x 91'-3\"",
-    "area": "4,082 sq. ft. / 379.23 m2",
-    "height": "19'-0\" | 5.79 m",
-    "location": "2nd Floor"
+    "dimensions_localized": {
+      "en": "44'-11\" x 91'-3\"",
+      "zh": "90X45 英尺 | 27.43X13.72 米"
+    },
+    "area_localized": {
+      "en": "4,082 sq. ft. / 379.23 m2",
+      "zh": "4050.0 平方英尺 | 376.26 平方米"
+    },
+    "height_localized": {
+      "en": "19'-0\" | 5.79 m",
+      "zh": "14 英尺 | 4.27 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
   },
   "floor_plan": {
     "theater": "400",

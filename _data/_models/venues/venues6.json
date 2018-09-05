@@ -44,12 +44,27 @@
     "alt": "Salon-large",
     "caption": ""
   },
-  "venue_intro": "<p>A private <span class=\"ve\">pre-function</span> space, The Salon adjoins The Wedgewood Room and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+  "venue_intro_localized": {
+    "en": "<p>A private <span class=\"ve\">pre-function</span> space, The Salon adjoins The Wedgewood Room and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+    "zh": "<p>私密的<span class=\"ve\">前厅</span>空间，Salon 与 Wedgewood Room 相邻，是主要活动开幕前举行<span class=\"ve\">鸡尾酒会</span>的理想地点。</p>"
+  },
   "facility_chart": {
-    "dimensions": "27'-6\" x 41'-4\"",
-    "area": "1,138 sq. ft. / 107.72 m2",
-    "height": "9'-11\" | 2.78 m",
-    "location": "Lower Level"
+    "dimensions_localized": {
+      "en": "27'-6\" x 41'-4\"",
+      "zh": "20X28 英尺 | 6.1X8.53 米"
+    },
+    "area_localized": {
+      "en": "1,138 sq. ft. / 107.72 m2",
+      "zh": "560.0 平方英尺 | 52.03 平方米"
+    },
+    "height_localized": {
+      "en": "9'-11\" | 2.78 m",
+      "zh": "10 英尺 | 3.05 米"
+    },
+    "location_localized": {
+      "en": "Lower Level",
+      "zh": "向下一层"
+    }
   },
   "floor_plan": {
     "theater": "40",
