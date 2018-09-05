@@ -56,7 +56,7 @@ main:
         - title: 便利设施
           url: /zh/luxury-manhattan-hotel-amenities/
         - title: 居住条件
-          url: /zh/rooms-suites/#live
+          url: /zh/rooms-suites/#residences
     - title: 特别优惠
       url: /zh/special-offers/
     - title: 餐饮
@@ -64,6 +64,7 @@ main:
       dropdown:
         - title: Perrine
           url: http://www.perrinenyc.com/
+          external: true
         - title: 圆形大厅
           url: /zh/dining/the-rotunda/
         - title: 下午茶
