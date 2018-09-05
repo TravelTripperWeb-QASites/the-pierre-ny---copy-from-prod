@@ -16,6 +16,12 @@ meta_tags:
   robots:
 ---
 
+{% if site.active_lang == "en" %}
+{% assign neweventlink = '/events/' %}
+{% else %}
+{% assign  neweventlink = '/zh/events/' %}
+{% endif %}
+
 <!-- Meetings Banner here -->
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/meetings/meetings-banner2.jpg');">
   <div class="overlay-bg"></div>
@@ -29,8 +35,12 @@ meta_tags:
 <!-- RFP -->
 <section class="rfp-wrap">
   <div class="rfp-inner">
-    <a class="primary-btn inverse" href="/meetings-rfp/">Request For Proposal</a>
-      <p>Call our team on <a href="tel:+1 212 940 8111">+1 212 940 8111</a></p>
+    {% if site.active_lang =="en" %}
+    <a class="primary-btn inverse" href="/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+    {% else %}
+    <a class="primary-btn inverse" href="/zh/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+    {% endif %}
+      <p>{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a></p>
   </div>
 </section>
 
@@ -117,7 +127,7 @@ meta_tags:
           <p>The Pierre offers 20,000 square feet of multi-purpose meeting space that can accommodate a variety of corporate events, ranging from small board meetings to large multi track conferences.</p>
           {% endregionblock %}
         </div>
-        <a class="primary-btn" href="/events/venues/">Discover More</a>
+        <a class="primary-btn" href="{{ neweventlink }}venues/">{% t 'learn_more' %}</a>
       </div>
     </div>
   </div>
