@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 title_localized:
   en: Fine Dining in New York | The Rotunda at The Pierre NY
   zh: 纽约的高级餐厅 | 纽约皮埃尔的圆形大厅
@@ -20,7 +20,7 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/rotunda/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant" tabindex="0">{% regionblock the_rotunda_title, type:header %}The Rotunda{% endregionblock %}</h1>
+    <h1 class="variant" tabindex="0">{% regionblock the_rotunda_title, type:text %}The Rotunda{% endregionblock %}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     <h6></h6>
   </div>
@@ -29,10 +29,10 @@ meta_tags:
 <!-- Intro section here -->
 <section class="intro mb-0">
   <div class="intro-text">
-    {% regionblock the_rotunda_intro_title, type:header %}
+    {% regionblock the_rotunda_intro_title, type:text %}
     <h2 tabindex="0">Tableside Cocktails & Supper</h2>
     {% endregionblock %}
-    {% regionblock the_rotunda_intro_description, type:header %}
+    {% regionblock the_rotunda_intro_description, type:text %}
     <p tabindex="0">The Rotunda, an iconic room within The Pierre, was
     re-imagined in 2016 by renowned architect and designer Daniel Romualdez. Having served as an event space in the hotel for the past decade, The Rotunda returns to the ranks of The Pierre’s storied public spaces with tableside cocktails and all-day dining.</p>
     {% endregionblock %}
@@ -49,10 +49,10 @@ meta_tags:
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        {% regionblock the_rotunda_signature_room_subtitle, type:header %}
+        {% regionblock the_rotunda_signature_room_subtitle, type:text %}
         <h6 tabindex="0">The Signature Room of the Pierre</h6>
         {% endregionblock %}
-        {% regionblock the_rotunda_signature_room_title, type:header %}
+        {% regionblock the_rotunda_signature_room_title, type:text %}
         <h4 tabindex="0">The Rotunda</h4>
         {% endregionblock %}
         {% regionblock the_rotunda_signature_room_content, type:text %}
@@ -68,7 +68,7 @@ meta_tags:
     </div>
     <div class="twocol-content p-0">
       <div class="content-holder">
-        {% regionblock the_rotunda_opening_hours_title, type:header %}
+        {% regionblock the_rotunda_opening_hours_title, type:text %}
         <h4 tabindex="0">Opening Hours</h4>
         {% endregionblock %}
         {% regionblock the_rotunda_opening_hours_content, type:text %}

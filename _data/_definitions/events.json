@@ -2,7 +2,8 @@
   "category_title": {
     "label": "Category Name",
     "required": true,
-    "hint": "Enter event categroy name"
+    "hint": "Enter event categroy name",
+    "localizable": true
   },
   "category_id": {
     "label": "Category Id",
@@ -12,7 +13,8 @@
   "category_intro": {
     "label": "Category Intro",
     "required": true,
-    "hint": "Short description of event category here"
+    "hint": "Short description of event category here",
+    "localizable": true
   },
   "category_image": {
     "label": "Category Image",
@@ -30,7 +32,8 @@
     "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
     "fields": {
       "event_name": {
-        "required": true
+        "required": true,
+        "localizable": true
       },
       "event_heading_id": {
         "required": true,
@@ -41,7 +44,8 @@
         "hint": "Should be in lowercase without spaces"
       },
       "event_detail": {
-        "required": true
+        "required": true,
+        "localizable": true
       },
       "start_day": {
         "required": true,
@@ -67,7 +71,8 @@
       "event_contact": {
         "required": true,
         "type": "richtext",
-        "hint": "Please add text with urls if any. To do so, get into code mode."
+        "hint": "Please add text with urls if any. To do so, get into code mode.",
+        "localizable": true
       },
       "event_booking_id": {
         "required": true,

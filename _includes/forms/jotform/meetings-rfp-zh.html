@@ -1,0 +1,85 @@
+<section class="rfp-form">
+  <h6>请于下方填写详细信息，以便我们更好地为您服务。</h6>
+  <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.meetings-rfp }}/" method="post" enctype="multipart/form-data" name="form_{{ site.data.forms.jotform.meetings-rfp }}" id="{{ site.data.forms.jotform.meetings-rfp }}" accept-charset="utf-8">
+    <input type="hidden" name="formID" value="{{ site.data.forms.jotform.meetings-rfp }}" />
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q3_first-name" placeholder="First Name" aria-label="Type your first name" required>
+      </div>
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q9_last-name" placeholder="Last Name" aria-label="Type your last name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="q25_company" placeholder="Company Name" aria-label="Type your company name">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="email" class="form-control" name="q4_email" placeholder="Email" aria-label="Type your email" required>
+      </div>
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q26_cell-phone" placeholder="Preferred Callback Number" aria-label="Type referred callback number" required>
+      </div>
+    </div>
+    <h4>活动信息</h4>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q15_arrival" id="arrival_date" placeholder="Arrival Date" aria-label="Select arrival date">
+      </div>
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q16_departure" id="departure_date" placeholder="Departure Date" aria-label="Select departure date">
+      </div>
+    </div>
+    <div class="form-group">
+      这些日期是灵活的吗？
+      <div class="form-check form-check-inline ml-3">
+        <input class="form-check-input" value="Yes" type="radio" name="q28_flexible[]" id="yes" name="flexibe" aria-label="Yes">
+        <label class="form-check-label" for="yes">
+          是
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" value="No" type="radio" name="q28_flexible[]" id="no" name="flexibe" aria-label="No">
+        <label class="form-check-label" for="no">
+          否
+        </label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q19_guests" placeholder="Number of Guests" aria-label="Type number of guests">
+      </div>
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="q20_sleeping-rooms" placeholder="Number of Sleeping Rooms" aria-label="Type number of sleeping rooms">
+      </div>
+    </div>
+    <div class="form-group">
+      首选联系人
+      <div class="form-check form-check-inline ml-3">
+        <input class="form-check-input" value="Cell Phone" type="checkbox" name="q22_preferred-contact[]" id="cell_phone" aria-label="Cell phone">
+        <label class="form-check-label" for="cell_phone">
+          手机
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" value="Email" type="checkbox" name="q22_preferred-contact[]" id="email" aria-label="Email">
+        <label class="form-check-label" for="email">
+          电子邮件
+        </label>
+      </div>
+    </div>
+    <h4>Additional Details</h4>
+    <div class="form-group">
+      <textarea class="form-control" name="q35_others" placeholder="Comments" aria-label="Type additional details"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" value="Yes" type="checkbox" name="q8_newsletter[]" id="future_emails" aria-label="Select checkbox to include in future Emails">
+        <label class="form-check-label" for="future_emails">
+          请将来向我发送电子邮件
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="primary-btn" aria-label="Send form">发送消息</button>
+  </form>
+</section>
