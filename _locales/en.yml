@@ -8,6 +8,7 @@ en:
   learn_more: DISCOVER MORE
   read_more: Read More
   view_details: VIEW DETAILS
+  view_this_venue: View This Venue
   special_offers: Special Offers
   see_all_offer: See all special offers
   view_all_rooms: view all rooms & suites
@@ -33,3 +34,27 @@ en:
   check_avail: Check Availability
   offers_text: Indulge in the very best New York has to offer.
   gallery: Gallery
+  venues: Venues
+  dimension: Dimension
+  area: Area
+  height: Height
+  location: Location
+  download_facility_chart: Download Facility Chart
+  download_floor_plan: Download Floor Plan
+  venue: Venue
+  theater: Theater
+  circular: Circular
+  ushaped: U-Shaped
+  boardroom: Boardroom
+  classroom: Classroom
+  reception: Reception
+  call_our_team: Call Our Team
+  request_for_proposal: Request For Proposal
+  view_individual_floorplan: View Individual Floor Plan
+  view_event_space: View Event Space
+  seating_style: Seating Style
+  view_more_venues: View More Venues
+  explore_venues: Explore Venues
+  explore_venues_intro: Browse our enviable collection of distinctive venues.
+  facility_chart: Facility Chart
+  print_facility_chart: Print Facility Chart

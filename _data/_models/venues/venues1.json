@@ -46,12 +46,27 @@
     "alt": "Grand-Ballroom",
     "caption": ""
   },
-  "venue_intro": "<p>The Grand Ballroom, one of the most <span class=\"ve\">sought-after</span> venues in <span class=\"ve\">Manhattan</span>, plays host to such events as high society weddings, illustrious galas, haute couture fashion shows, and prestigious corporate conferences.</p>",
+  "venue_intro_localized": {
+    "en": "<p>The Grand Ballroom, one of the most <span class=\"ve\">sought-after</span> venues in <span class=\"ve\">Manhattan</span>, plays host to such events as high society weddings, illustrious galas, haute couture fashion shows, and prestigious corporate conferences.</p>",
+    "zh": "<p>Grand Ballroom 是<span class=\"ve\">曼哈顿最</span><span class=\"ve\">受欢迎的</span>场馆之一，承办上流社会婚礼、著名的庆祝活动、高级时装秀和久负盛名的公司会议等类似活动。</p>"
+  },
   "facility_chart": {
-    "dimensions": "86'-5\" x 86'-8\"",
-    "area": "7,430 sq. ft. / 690.27 m2",
-    "height": "20'-8 | 6.34 m",
-    "location": "2nd Floor"
+    "dimensions_localized": {
+      "en": "86'-5\" x 86'-8\"",
+      "zh": "98X87 英尺 | 29.87X26.52 米"
+    },
+    "area_localized": {
+      "en": "7,430 sq. ft. / 690.27 m2",
+      "zh": "8526.0 平方英尺 | 792.09 平方米"
+    },
+    "height_localized": {
+      "en": "20'-8 | 6.34 m",
+      "zh": "18 英尺 | 5.49 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
   },
   "floor_plan": {
     "theater": "750",

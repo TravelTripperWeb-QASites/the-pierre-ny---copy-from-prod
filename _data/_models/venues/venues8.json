@@ -44,12 +44,27 @@
     "alt": "Park Lex Full Angle",
     "caption": ""
   },
-  "venue_intro": "<p>The Park Room can be used alone or combined with The Lexington Room, and can host private meetings and conferences for up to <span class=\"ve\">forty guests</span>.</p>",
+  "venue_intro_localized": {
+    "en": "<p>The Park Room can be used alone or combined with The Lexington Room, and can host private meetings and conferences for up to <span class=\"ve\">forty guests</span>.</p>",
+    "zh": "<p>Park Room 可以单独使用，也可以与 Lexington 组合使用，能够承办私人会面和会议，最多可容纳<span class=\"ve\">四十位客人</span>。</p>"
+  },
   "facility_chart": {
-    "dimensions": "23'-3\" x 14'-8\"",
-    "area": "466 sq. ft. / 43.29 m2",
-    "height": "9'-0\" | 2.74 m",
-    "location": "4th Floor"
+    "dimensions_localized": {
+      "en": "23'-3\" x 14'-8\"",
+      "zh": "15X25 英尺 | 4.57X7.62 米"
+    },
+    "area_localized": {
+      "en": "466 sq. ft. / 43.29 m2",
+      "zh": "375.0 平方英尺 | 34.84 平方米"
+    },
+    "height_localized": {
+      "en": "9'-0\" | 2.74 m",
+      "zh": "9 英尺 | 2.74 米"
+    },
+    "location_localized": {
+      "en": "4th Floor",
+      "zh": "四层"
+    }
   },
   "floor_plan": {
     "theater": "50",

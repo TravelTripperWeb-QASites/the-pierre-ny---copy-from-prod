@@ -44,12 +44,27 @@
     "alt": "Madison Boardroom",
     "caption": ""
   },
-  "venue_intro": "<p>Built-in <span class=\"ve\">top of the line audio visual equipment</span> and sophisticated video conference technology combine to make The Madison Boardroom a top choice for C-level executive meetings.</p>",
+  "venue_intro_localized": {
+    "en": "<p>Built-in <span class=\"ve\">top of the line audio visual equipment</span> and sophisticated video conference technology combine to make The Madison Boardroom a top choice for C-level executive meetings.</p>",
+    "zh": "<p>内置的<span class=\"ve\">极品视听设备</span>与先进的视频会议技术相结合，让 Madison 会议室成为 C 级行政会议的首选。</p>"
+  },
   "facility_chart": {
-    "dimensions": "25'-1\" x 14'-0\"",
-    "area": "507 sq. ft. / 47.10 m2",
-    "height": "9'-0\" | 2.74 m",
-    "location": "4th Floor"
+    "dimensions_localized": {
+      "en": "25'-1\" x 14'-0\"",
+      "zh": "15X27 英尺 | 4.57X8.23 米"
+    },
+    "area_localized": {
+      "en": "507 sq. ft. / 47.10 m2",
+      "zh": "405.0 平方英尺 | 37.63 平方米"
+    },
+    "height_localized": {
+      "en": "9'-0\" | 2.74 m",
+      "zh": "9 英尺 | 2.74 米"
+    },
+    "location_localized": {
+      "en": "4th Floor",
+      "zh": "四层"
+    }
   },
   "floor_plan": {
     "theater": "-",
