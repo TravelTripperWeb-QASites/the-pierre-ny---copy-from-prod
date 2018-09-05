@@ -45,12 +45,27 @@
     "alt": "Regency",
     "caption": ""
   },
-  "venue_intro": "<p>A private <span class=\"ve\">pre-function</span> space, The Regency Room adjoins The Cotillion Room and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+  "venue_intro_localized": {
+    "en": "<p>A private <span class=\"ve\">pre-function</span> space, The Regency Room adjoins The Cotillion Room and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+    "zh": "<p>私密的<span class=\"ve\">前厅</span>空间，Regency Room 与 Cotillion Room 相邻，是主要活动开幕前举行<span class=\"ve\">鸡尾酒会</span>的理想地点。</p>"
+  },
   "facility_chart": {
-    "dimensions": "73'-4\" x 36'-10\"",
-    "area": "1,742 sq. ft. / 161.84 m2",
-    "height": "11'-4\" | 3.47 m",
-    "location": "2nd Floor"
+    "dimensions_localized": {
+      "en": "73'-4\" x 36'-10\"",
+      "zh": "60X16 英尺 | 18.29X4.88 米"
+    },
+    "area_localized": {
+      "en": "1,742 sq. ft. / 161.84 m2",
+      "zh": "960.0 平方英尺 | 89.19 平方米"
+    },
+    "height_localized": {
+      "en": "11'-4\" | 3.47 m",
+      "zh": "11 英尺 | 3.35 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
   },
   "floor_plan": {
     "theater": "150",

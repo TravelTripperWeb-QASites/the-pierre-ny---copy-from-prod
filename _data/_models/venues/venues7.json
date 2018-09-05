@@ -44,12 +44,27 @@
     "alt": "Lexington-hero",
     "caption": ""
   },
-  "venue_intro": "<p>The Lexington Room can be used alone or combined with <span class=\"ve\">The Park Room</span>, and can host <span class=\"ve\">private meetings and conferences</span> for up to <span class=\"ve\">forty</span> guests.</p>",
+  "venue_intro_localized": {
+    "en": "<p>The Lexington Room can be used alone or combined with <span class=\"ve\">The Park Room</span>, and can host <span class=\"ve\">private meetings and conferences</span> for up to <span class=\"ve\">forty</span> guests.</p>",
+    "zh": "<p>Lexington Room 可以单独使用，也可以与 <span class=\"ve\">Park Room</span> 组合使用，能够承办<span class=\"ve\">私人会面和会议</span>，最多可容纳<span class=\"ve\">四十位</span>客人。</p>"
+  },
   "facility_chart": {
-    "dimensions": "28'-0\" x 14'.8\"",
-    "area": "601 sq. ft. / 55.83 m2",
-    "height": "9'-0\" | 2.74 m",
-    "location": "4th Floor"
+    "dimensions_localized": {
+      "en": "28'-0\" x 14'.8\"",
+      "zh": "15X24 英尺 | 4.57X7.32 米"
+    },
+    "area_localized": {
+      "en": "601 sq. ft. / 55.83 m2",
+      "zh": "360.0 平方英尺 | 33.45 平方米"
+    },
+    "height_localized": {
+      "en": "9'-0\" | 2.74 m",
+      "zh": "9 英尺 | 2.74 米"
+    },
+    "location_localized": {
+      "en": "4th Floor",
+      "zh": "四层"
+    }
   },
   "floor_plan": {
     "theater": "50",
