@@ -1,6 +1,6 @@
 [
   {
-    "content": "<p tabindex=\"0\">圆形大厅的营业时间为周一到周五</p>\n<p tabindex=\"0\">下午 3 点 &ndash; 晚上 10:30。若要了解更多详细信息或在预订私人活动后进行咨询，请联系餐厅主管 Jay Poblador，电话 212 940 8195。</p>\n<div class=\"btn-holder\"><a class=\"border-btn light\" href=\"../../../dining/the-rotunda/rotunda-menu/\">查看菜单</a></div>",
+    "content": "<p tabindex=\"0\">圆形大厅的营业时间为周一到周五</p>\n<p tabindex=\"0\">下午 3 点 &ndash; 晚上 10:30。若要了解更多详细信息或在预订私人活动后进行咨询，请联系餐厅主管 Jay Poblador，电话 212 940 8195。</p>\n<div class=\"btn-holder\"></div>",
     "_template": "html"
   }
 ]
