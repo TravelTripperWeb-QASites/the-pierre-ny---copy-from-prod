@@ -167,7 +167,7 @@ meta_tags:
           <div class="image" style="background-image:url('{{ event.image.url_large }}')"></div>
           <div class="content">
             <i>{{ event.posted_date | date: "%B %Y" }}</i>
-            <h4>{{ event.title_localized }}</h4>
+            <h4>{{ event.title }}</h4>
             <a href="{{ event.reference_url }}" target="_blank">{% t 'read_more' %}</a>
           </div>
         </div>
