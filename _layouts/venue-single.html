@@ -5,6 +5,12 @@ layout: default
 {% assign venues = page %}
 {% assign model = page %}
 
+{% if site.active_lang =="en" %}
+{% assign pageurl ="/events/" %}
+{% else %}
+{% assign pageurl ="/zh/events/" %}
+{% endif %}
+
 <!-- Venue details banner here -->
 <div class="page-banner" style="background-image:url('{{ page.venue_image.url_large }}');">
   <div class="overlay-bg"></div>
@@ -22,7 +28,7 @@ layout: default
   <ul class="d-flex justify-content-center">
     {% for venue in venues %}
       <li>
-        <a {% if page.url_friendly_name != venue.url_friendly_name %}href="/events/venues/{{ venue.url_friendly_name }}/"{% endif%}>{{ venue.venue_name }}</a>
+        <a {% if page.url_friendly_name != venue.url_friendly_name %}href="{{ pageurl }}venues/{{ venue.url_friendly_name }}/"{% endif%}>{{ venue.venue_name }}</a>
       </li>
     {% endfor %}
   </ul>
