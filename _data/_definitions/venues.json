@@ -31,7 +31,8 @@
   "venue_intro": {
     "type": "richtext",
     "label": "Venue Intro",
-    "required": true
+    "required": true,
+    "localizable": true
   },
   "facility_chart": {
     "type": "nested",
@@ -39,23 +40,27 @@
     "fields": {
       "dimensions": {
         "required": true,
-        "label": "Dimensions"
+        "label": "Dimensions",
+        "localizable": true
       },
       "area": {
         "required": true,
         "label": "Area",
-        "hint": "Area in both Sq.ft & m^2"
+        "hint": "Area in both Sq.ft & m^2",
+        "localizable": true
       },
       "height": {
         "required": true,
         "label": "Height",
-        "hint": "Height in both Feet & m"
+        "hint": "Height in both Feet & m",
+        "localizable": true
       },
       "location": {
         "required": true,
         "label": "Location",
         "type": "select",
-        "options": ["Lower Level", "Main Floor", "2nd Floor", "3rd Floor", "4th Floor"]
+        "options": ["Lower Level", "Main Floor", "2nd Floor", "3rd Floor", "4th Floor"],
+        "localizable": true
       }
     }
   },

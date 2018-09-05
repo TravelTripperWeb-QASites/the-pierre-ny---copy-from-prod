@@ -46,7 +46,7 @@ meta_tags:
           <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
           <div class="content">
             <h5 tabindex="0">{{ venue.venue_name }}</h5>
-            <a class="secondary-btn" href="/events/venues/{{ venue.url_friendly_name }}/">View this venue</a>
+            <a class="secondary-btn" href="/events/venues/{{ venue.url_friendly_name }}/">{% t 'view_this_venue' %}</a>
           </div>
         </div>
       {% endif %}
@@ -65,11 +65,11 @@ meta_tags:
     <table class="table table-striped" tabindex="0">
       <thead>
         <tr>
-          <th scope="col">Venues</th>
-          <th scope="col">Dimension</th>
-          <th scope="col">Area</th>
-          <th scope="col">Height</th>
-          <th scope="col">Location</th>
+          <th scope="col">{% t 'venues' %}</th>
+          <th scope="col">{% t 'dimension' %}</th>
+          <th scope="col">{% t 'area' %}</th>
+          <th scope="col">{% t 'height' %}</th>
+          <th scope="col">{% t 'location' %}</th>
         </tr>
       </thead>
       <tbody>
@@ -86,8 +86,8 @@ meta_tags:
     </table>
   </div>
   <div class="d-sm-flex justify-content-center">
-    <a class="border-btn dark wp-more" href="/events/venues/facility-chart/">Download Facility Chart</a>
-    <a class="border-btn dark wp-more" href="/assets/pdf/floor-plans.pdf" target="_blank">Download Floor Plan</a>
+    <a class="border-btn dark wp-more" href="/events/venues/facility-chart/">{% t 'download_facility_chart' %}</a>
+    <a class="border-btn dark wp-more" href="/assets/pdf/floor-plans.pdf" target="_blank">{% t 'download_floor_plan' %}</a>
   </div>
 </div>
 
@@ -103,25 +103,25 @@ meta_tags:
       <thead>
         <tr>
           <th scope="col">
-            Venue
+            {% t 'venue' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="Theater"><br>Theater
+            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="{% t 'theater' %}"><br>{% t 'theater' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="Theater"><br>Circular
+            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="{% t 'circular' %}"><br>{% t 'circular' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="U-Shaped"><br>U-Shaped
+            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="{% t 'ushaped' %}"><br>{% t 'ushaped' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="Boardroom"><br>Boardroom
+            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="{% t 'boardroom' %}"><br>{% t 'boardroom' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="Classroom"><br>Classroom
+            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="{% t 'classroom' %}"><br>{% t 'classroom' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="Reception"><br>Reception
+            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="{% t 'reception' %}"><br>{% t 'reception' %}
           </th>
         </tr>
       </thead>
