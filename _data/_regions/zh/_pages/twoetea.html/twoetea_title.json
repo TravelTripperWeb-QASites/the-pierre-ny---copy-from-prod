@@ -1,6 +1,6 @@
 [
   {
-    "content": "<div>传统</div>\n<div>下午茶</div>",
-    "_template": "header"
+    "content": "传统\n下午茶",
+    "_template": "html"
   }
 ]
