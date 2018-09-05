@@ -10,7 +10,9 @@ meta_tags:
 <section class="page-banner inner bg-cover" style="background-image:url('/assets/images/404-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant" tabindex="0">{% regionblock pagnotfound_title, type:header %}404<br>Page Not Found{% endregionblock %}</h1>
+    <h1 class="variant" tabindex="0">
+      {% regionblock pagnotfound_title, type:header %}404<br>Page Not Found{% endregionblock %}
+    </h1>
   </div>
 </section>
 
@@ -22,7 +24,6 @@ meta_tags:
     {% assign links = site.data.navigation.main.en %}
 
     {% assign offers = site.data._models.special_offers | sort: "order" %}
-
     {% assign quick_links = site.data.navigation.footer.en %}
 
     <ul class="sitemap-links" rt3-rooms-browser="browser" rt3-special-rates= "offers">
