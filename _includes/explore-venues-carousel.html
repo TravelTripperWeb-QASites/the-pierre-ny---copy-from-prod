@@ -1,4 +1,10 @@
 
+{% if site.active_lang =="en" %}
+{% assign eventurl ="/events/" %}
+{% else %}
+{% assign eventurl ="/zh/events/" %}
+{% endif %}
+
 <!-- Explore More venues -->
 <section class="common-carousel">
   <h2 class="text-center mb-4" tabindex="0">{% t 'explore_venues' %}</h2>
@@ -12,13 +18,13 @@
           <div class="img-block" style="background-image:url('{{ venue.venue_thumbnail.url_large }}');"></div>
           <div class="content">
             <h4>{{ venue.venue_name }}</h4>
-            <a href="/events/venues/{{ venue.url_friendly_name }}/" class="secondary-btn">View this Venue</a>
+            <a href="{{ eventurl }}venues/{{ venue.url_friendly_name }}/" class="secondary-btn">{% t 'view_this_venue' %}</a>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
   <div class="text-center">
-    <a class="primary-btn" href="/events/venues/">{% t 'view_more_venues' %}</a>
+    <a class="primary-btn" href="{{ eventurl }}venues/">{% t 'view_more_venues' %}</a>
   </div>
 </section>

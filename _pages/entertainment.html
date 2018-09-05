@@ -11,7 +11,7 @@ permalink_localized:
   zh: /entertainment/
 published_localized:
   en: true
-  zh: true
+  zh: false
 meta_tags:
   robots:
 ---
@@ -20,9 +20,13 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/events/events-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Entertainment at the pierre</h1>
+    {% regionblock entertainment_heading, type:header %}
+      <h1 class="variant">Entertainment at the pierre</h1>
+    {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
-    <h6>AT THE TWO E BAR & LOUNGE</h6>
+    {% regionblock entertainment_subheading, type:header %}
+      <h6>AT THE TWO E BAR & LOUNGE</h6>
+    {% endregionblock %}
   </div>
 </section>
 
@@ -70,10 +74,10 @@ meta_tags:
                 <div class="wrapper">
                   <p>{{ event.event_detail }}</p>
                   <div class="opentable-widget">
-                    <h6>Make a Reservation</h6>
+                    <h6>{% t 'make_a_reservation' %}</h6>
                     <div class="d-xl-flex justify-content-center">
                       <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
-                      <a class="secondary-btn" href="{{ event.view_menu_url }}">View menus</a>
+                      <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
                     </div>
                     {{ event.event_contact }}
                   </div>
