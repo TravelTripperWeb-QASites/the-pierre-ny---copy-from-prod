@@ -18,8 +18,9 @@ meta_tags:
 
 <section class="sitemap">
   <div class="sitemap-content">
-
+      {% regionblock pagnotfound_description, type:header %}
       <h5>We're sorry but it looks like that page you are looking for doesn't exist anymore. Please view the Sitemap below or go back to the homepage.</h5>
+      {% endregionblock %}
 
     {% assign links = site.data.navigation.main.en %}
 
