@@ -20,12 +20,12 @@ meta_tags:
 <section class="page-banner inner background-center" style="background-image:url('/assets/images/weddings-rfp-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">{% regionblock rfp_title, type:header %}Request for<br>Proposal{% endregionblock %}</h1>
+    <h1 class="variant">{% regionblock rfp_title, type:text %}Request for<br>Proposal{% endregionblock %}</h1>
   </div>
 </section>
 
 <section class="rfp-form">
-  {% regionblock rfp_content, type:header %}
+  {% regionblock rfp_content, type:text %}
   <h6>Please fill in below details for us to serve you better.</h6>
   {% endregionblock %}
   <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}" accept-charset="utf-8">
@@ -134,7 +134,7 @@ meta_tags:
         <input type="email" class="form-control" name="q4_email" placeholder="Email" aria-label="Type your email" required >
       </div>
     </div>
-    {% regionblock rfp_form_subheading, type:header %}
+    {% regionblock rfp_form_subheading, type:text %}
     <h4>Wedding Details</h4>
     {% endregionblock %}
     <div class="form-row">
