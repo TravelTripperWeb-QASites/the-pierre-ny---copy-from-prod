@@ -11,8 +11,8 @@ layout: default
   <div class="banner-content">
     <h1 tabindex="0">{{ page.venue_name }}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
-    <h6 tabindex="0">Call Our Team<br><a href="tel:212-940-8111">+1 212 940 8111</a></h6>
-    <a class="primary-btn inverse" href="/request-for-proposal/">Request for Proposal</a>
+    <h6 tabindex="0">{% t 'call_our_team' %}<br><a href="tel:212-940-8111">+1 212 940 8111</a></h6>
+    <a class="primary-btn inverse" href="/request-for-proposal/">{% t 'request_for_proposal' %}</a>
   </div>
 </div>
 
@@ -51,16 +51,16 @@ layout: default
 
 <!-- Facility Chart -->
 <div class="table-grid">
-  <h2 tabindex="0">Facility Chart</h2>
+  <h2 tabindex="0">{% t 'facility_chart' %}</h2>
   <div class="wrapper table-responsive-md" tabindex="0">
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Venues</th>
-          <th scope="col">Dimension</th>
-          <th scope="col">Area</th>
-          <th scope="col">Height</th>
-          <th scope="col">Location</th>
+          <th scope="col">{% t 'venues' %}</th>
+          <th scope="col">{% t 'dimension' %}</th>
+          <th scope="col">{% t 'area' %}</th>
+          <th scope="col">{% t 'height' %}</th>
+          <th scope="col">{% t 'location' %}</th>
         </tr>
       </thead>
       <tbody>
@@ -75,38 +75,38 @@ layout: default
     </table>
   </div>
   <div class="d-sm-flex justify-content-center">
-    <a class="border-btn dark wp-more" href="{{ page.floor_plan_pdf.url }}" target="_blank">View Individual Floor Plan</a>
-    <a class="border-btn dark wp-more" href="{{ page.event_space_pdf.url }}" target="_blank">View Event Space</a>
+    <a class="border-btn dark wp-more" href="{{ page.floor_plan_pdf.url }}" target="_blank">{% t 'view_individual_floorplan' %}</a>
+    <a class="border-btn dark wp-more" href="{{ page.event_space_pdf.url }}" target="_blank">{% t 'view_event_space' %}</a>
   </div>
 </div>
 
 <!-- Seating Style -->
 <div class="table-grid content-center no-bg">
-  <h2 tabindex="0">Seating Style</h2>
+  <h2 tabindex="0">{% t 'seating_style' %}</h2>
   <div class="wrapper table-responsive-md" tabindex="0">
     <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col">
-            Venue
+            {% t 'venue' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="Theater"><br>Theater
+            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="{% t 'theater' %}"><br>{% t 'theater' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="Theater"><br>Circular
+            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="{% t 'circular' %}"><br>{% t 'circular' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="U-Shaped"><br>U-Shaped
+            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="{% t 'ushaped' %}"><br>{% t 'ushaped' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="Boardroom"><br>Boardroom
+            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="{% t 'boardroom' %}"><br>{% t 'boardroom' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="Classroom"><br>Classroom
+            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="{% t 'classroom' %}"><br>{% t 'classroom' %}
           </th>
           <th scope="col">
-            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="Reception"><br>Reception
+            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="{% t 'reception' %}"><br>{% t 'reception' %}
           </th>
         </tr>
       </thead>
