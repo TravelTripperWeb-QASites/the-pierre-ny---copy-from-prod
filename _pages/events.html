@@ -15,7 +15,11 @@ published_localized:
 meta_tags:
   robots:
 ---
-
+{% if site.active_lang == "en" %}
+{% assign neweventlink = '/events/' %}
+{% else %}
+{% assign  neweventlink = '/zh/events/' %}
+{% endif %}
 <!-- Events Banner here -->
 <section class="page-banner inner" style="background-image:url('/assets/images/events/event_hero.jpg');">
   <div class="overlay-bg"></div>
@@ -70,7 +74,7 @@ meta_tags:
           <p tabindex="0">The Pierre has long played host to extraordinary meetings and events. Coupled with our dedication to five star service and exemplary cuisine, the hotel is a natural fit for high-level conferences.</p>
         {% endregionblock %}
         <div class="btn-holder">
-          <a class="border-btn light mb-3" href="/events/meetings/">Discover More</a>
+          <a class="border-btn light mb-3" href="{{ neweventlink }}meetings/">{% t 'learn_more' %}</a>
           {% regionblock meetings_resources_url, type:text %}
             <a class="border-btn light" href="https://cdn.traveltripper.io/site-assets/413_380_9854/media/2017-12-04-190532/WinterGroupPromo2018.pdf" target="_blank">View winter group offer</a>
           {% endregionblock %}
@@ -98,7 +102,7 @@ meta_tags:
           {% endregionblock %}
         </div>
         <div class="btn-holder">
-          <a class="border-btn light" href="/events/weddings/">Discover More</a>
+          <a class="border-btn light" href="{{ neweventlink }}weddings/">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>
@@ -123,7 +127,7 @@ meta_tags:
           {% endregionblock %}
         </div>
         <div class="btn-holder">
-          <a class="border-btn light" href="/events/venues/">Discover More</a>
+          <a class="border-btn light" href="{{ neweventlink }}venues/">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>
