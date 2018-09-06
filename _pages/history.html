@@ -21,16 +21,16 @@ meta_tags:
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock history_title, type:header %}
-      <h1 class="variant">THE PIERRE HISTORY</h1>
+      <h1 class="variant" tabindex="0">THE PIERRE HISTORY</h1>
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock history_subtitle, type:header %}
-      <h6>THE MAKING OF A LEGEND</h6>
+      <h6 tabindex="0">THE MAKING OF A LEGEND</h6>
     {% endregionblock %}
   </div>
 </div>
 
-<div class="quote">
+<div class="quote" tabindex="0">
   <q>
     {% regionblock history_details, type:text %}
       For over 85 years, The Pierre has set the standard for <span>timeless elegance</span> and <span>unrivaled hospitality in New York city</span>.
@@ -75,7 +75,7 @@ meta_tags:
             </div>
           </div>
           <div class="history-content">
-            <div class="wrap">
+            <div class="wrap" tabindex="0">
               <h2>{{ details.from_year_to_year }}</h2>
               <p>{{ details.year_intro }}</p>
             </div>
