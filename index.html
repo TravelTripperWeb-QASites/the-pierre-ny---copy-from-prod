@@ -14,6 +14,13 @@ published_localized:
 meta_tags:
   robots:
 ---
+
+{% if site.active_lang == "en" %}
+  {% assign eventlink = '/entertainment/' %}
+{% else %}
+  {% assign  eventlink = '/zh/entertainment/' %}
+{% endif %}
+
 <!-- Home banner here -->
 <section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
@@ -90,7 +97,7 @@ meta_tags:
           <div class="s-image mr-15" style="background-image:url('{{ item.category_image.url }}');">
             <div class="heading">
               <h6 tabindex="0">{{ item.category_title }}</h6>
-              <a class="secondary-btn inverse" href="/entertainment/#{{ item.category_id }}" title="{{ item.category_title }}">{% t 'view_details' %}</a>
+              <a class="secondary-btn inverse" href="{{ eventlink }}#{{ item.category_id }}" title="{{ item.category_title }}">{% t 'view_details' %}</a>
             </div>
           </div>
         </div>
