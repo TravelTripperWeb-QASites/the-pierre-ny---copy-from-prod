@@ -15,7 +15,7 @@
     <span> </span>
 	</button>
   <div class="form-select">
-    <select class="selectpicker" data-width="fit" id="language" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
+    <select class="selectpicker" data-width="fit" id="language1" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
       <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
       <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
     </select>
@@ -76,7 +76,7 @@
         <span> </span>
     	</button>
       <div class="form-select">
-        <select class="selectpicker" data-width="fit" id="language" onchange="location = this.options[this.selectedIndex].value;">
+        <select class="selectpicker" data-width="fit" id="language2" onchange="location = this.options[this.selectedIndex].value;">
           <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
           <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
         </select>

@@ -1,10 +1,10 @@
 <!-- RFP -->
 <section class="rfp-wrap">
   <div class="rfp-inner">
-    <h6>{% t 'lets_plan' %}</h6>
-    <h4>{% t 'request_for_proposal' %}</h4>
+    <h6 tabindex="0">{% t 'lets_plan' %}</h6>
+    <h4 tabindex="0">{% t 'request_for_proposal' %}</h4>
     <a class="primary-btn inverse" href="{% if page.url contains '/events/' %}/meetings-rfp/{% elsif page.url contains '/events/meetings/' %}/meetings-rfp/{% elsif page.url contains '/events/weddings/' %}/request-for-proposal/{% endif %}">{% t 'start_here' %}</a>
-    <p>{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
+    <p tabindex="0">{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
     </p>
   </div>
 </section>
