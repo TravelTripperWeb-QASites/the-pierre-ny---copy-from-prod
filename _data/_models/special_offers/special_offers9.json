@@ -55,8 +55,8 @@
       "caption": ""
     }
   ],
-  "offer_includes_en": "<ul>\n<li>Complimentary Basic Wi-Fi</li>\n<li>Fitness Center access</li>\n<li>Jaguar courtesy car, subject to availability</li>\n<li>Daily Newspaper</li>\n</ul>",
-  "terms_en": "<ul>\n<li>Three night stay required</li>\n<li>Rate adjusted at check-in</li>\n<li>Rate excludes taxes</li>\n<li>Please&nbsp;<span style=\"text-indent: -0.25in;\">cancel within 24 hrs of arrival to avoid a late cancellation charge of one night's room and tax</span></li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee</span><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span><span style=\"text-indent: -0.25in;\">/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span>\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>",
+  "offer_includes_en": "<ul tabindex=\"0\">\n<li>Complimentary Basic Wi-Fi</li>\n<li>Fitness Center access</li>\n<li>Jaguar courtesy car, subject to availability</li>\n<li>Daily Newspaper</li>\n</ul>",
+  "terms_en": "<ul tabindex=\"0\">\n<li>Three night stay required</li>\n<li>Rate adjusted at check-in</li>\n<li>Rate excludes taxes</li>\n<li>Please&nbsp;<span style=\"text-indent: -0.25in;\">cancel within 24 hrs of arrival to avoid a late cancellation charge of one night's room and tax</span></li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee</span><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span><span style=\"text-indent: -0.25in;\">/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span>\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>",
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139024&vr=3",
   "order": 1,
   "unpublish": true

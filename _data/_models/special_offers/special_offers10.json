@@ -23,7 +23,7 @@
   },
   "date": "December 31, 2017",
   "short_description_en": "Attend one of the spectacular New Year’s Eve events at The Pierre and receive 15% off any room or suite for the night of December 31, 2017.  Choose from a sumptuous four-course dinner in Perrine with live entertainment, or three-hour open bar and DJ music in Two E Lounge.  Ring in 2018 in Perfectly Pierre style.",
-  "offer_includes_en": "<ul>\n<li>Receive 15% off any room or suite for the night of December 31, 2017&nbsp;&nbsp;</li>\n</ul>",
+  "offer_includes_en": "<ul tabindex=\"0\">\n<li>Receive 15% off any room or suite for the night of December 31, 2017&nbsp;&nbsp;</li>\n</ul>",
   "slider_images": [
     {
       "name": "Extend Your Celebration 585x550",
@@ -68,6 +68,6 @@
   ],
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=295341&vr=3",
   "order": 1,
-  "terms_en": "<ul>\n<li>24 hours cancellation</li>\n<li>Must attend one of the New Year's Even events at The Pierre on December 31st, 2017</li>\n</ul>",
+  "terms_en": "<ul tabindex=\"0\">\n<li>24 hours cancellation</li>\n<li>Must attend one of the New Year's Even events at The Pierre on December 31st, 2017</li>\n</ul>",
   "unpublish": true
 }

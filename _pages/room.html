@@ -32,7 +32,7 @@ meta_tags:
       <div class="carousel-item" ng-class="{active: $first}" ng-repeat="photo in details.photos" style="background-image:url([[photo.large]]);"></div>
     </div>
     <div class="banner-content">
-      <h1 class="variant">[[details.name]]</h1>
+      <h1 class="variant" tabindex="0">[[details.name]]</h1>
       <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != '{% t 'check_avail' %}' ? '{% t 'book_now'%}' : '{% t 'check_avail' %}']]</a>
     </div>
   </div>
@@ -84,10 +84,10 @@ meta_tags:
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
+    <li class="nav-item" role="tab">
       <a class="nav-link active" data-toggle="tab" href="#room_features">{% t 'features'%}</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" role="tab">
       <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">{% t 'floorplan'%}</a>
     </li>
   </ul>
@@ -95,7 +95,7 @@ meta_tags:
   <!-- Tab panes -->
     <div class="tab-content">
 
-      <div id="room_features" class="container tab-pane active">
+      <div id="room_features" class="container tab-pane active" role="tabpanel">
 
         <article {% if site.active_lang == "en" %}room-detail{% endif %} tabindex="0">
           <h3>{% t 'room_features' %}</h3>
@@ -116,7 +116,7 @@ meta_tags:
 
       </div>
 
-      <div id="room_floor_plan" class="container tab-pane fade">
+      <div id="room_floor_plan" class="container tab-pane fade" role="tabpanel">
 
         <article {% if site.active_lang == "en" %}addition-detail{% endif %}></article>
 
@@ -126,10 +126,10 @@ meta_tags:
              </div>
 
             <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#floorplans-pdf" data-slide="prev">
+            <a class="carousel-control-prev" href="#floorplans-pdf" data-slide="prev" title="Previous Slide">
               <span class="carousel-control-prev-icon"></span>
             </a>
-            <a class="carousel-control-next" href="#floorplans-pdf" data-slide="next">
+            <a class="carousel-control-next" href="#floorplans-pdf" data-slide="next" title="Next Slide">
               <span class="carousel-control-next-icon"></span>
             </a>
 

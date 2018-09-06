@@ -20,7 +20,7 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/home/banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">{% t 'special_offers' %}</h1>
+    <h1 class="variant" tabindex="0">{% t 'special_offers' %}</h1>
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock page_desciption, type:header %}
     <h6>Enjoy a Luxurious experience for exceptional value at the pierre. Browse our special offers below.</h6>
@@ -45,20 +45,20 @@ meta_tags:
             <figure>
               {% if offer.listing_image and offer.listing_image.url_medium !="" %}
               <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
-                <h3>{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
+                <h3 tabindex="0">{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
               </div>
               {% else %}
               <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
-                <h3>{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
+                <h3 tabindex="0">{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
               </div>
               {% endif %}
             </figure>
           </a>
           <div class="offer-content">
             {% if site.active_lang == "en" %}
-            <p>{{ offer.short_description_en | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            <p tabindex="0">{{ offer.short_description_en | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
             {% else %}
-            <p>{{ offer.short_description_zh | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            <p tabindex="0">{{ offer.short_description_zh | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
             {% endif %}
             <a class="border-btn light" href="{{ offerspage }}{{ offer.url_friendly_name }}/">{% t 'view_details' %}</a>
           </div>
