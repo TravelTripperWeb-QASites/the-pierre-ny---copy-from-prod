@@ -1,0 +1,55 @@
+{
+  "category_intro_localized": {
+    "en": "Our outdoor event series continues! Join Perrine and Château Miraval on July 26th for A Midsummer Night's Soirée featuring food, music and endless Miraval Côtes de Provence Rosé! Tickets now on sale. ",
+    "zh": " 我们的户外活动系列继续！ 7月26日加入Perrine和ChâteauMiraval，参加仲夏夜之旅，包括美食，音乐和无尽的MiravalCôtesdeProvenceRosé！门票现已发售。"
+  },
+  "category_id": "summerrose",
+  "category_image": {
+    "name": "event-sample",
+    "file_name": "event-sample.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/event-sample.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-22-054832",
+    "file_type": "image/jpeg",
+    "width": 1400,
+    "height": 600,
+    "file_size": 395983,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/large_event-sample.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/medium_event-sample.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/small_event-sample.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/xsmall_event-sample.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/thumb_event-sample.jpg",
+    "git_file_name": "_assets/image_data/event-sample.json",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-054832/event-sample.jpg",
+    "alt": "Summer Rose",
+    "caption": ""
+  },
+  "sort_order": 2,
+  "category_title_localized": {
+    "en": "Summer of Rosé",
+    "zh": " 玫瑰之夏"
+  },
+  "event_listing": [
+    {
+      "event_name": {
+        "en": "A Midsummer Night's Soirée!"
+      },
+      "event_heading_id": "midsummer",
+      "event_collapse_id": "soiree",
+      "event_detail": {
+        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "start_day": "Monday",
+      "end_day": "Thursday",
+      "from_time": "6:30",
+      "to_time": "9:30",
+      "am_or_pm": "PM",
+      "event_contact": {
+        "en": "<p>Contact Two E Bar &amp; Lounge, at&nbsp;<a href=\"tel:646-396-3303\">646 396 3303</a>&nbsp;or&nbsp;<a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>"
+      },
+      "event_booking_id": "34024",
+      "view_menu_url": "#"
+    }
+  ]
+}
