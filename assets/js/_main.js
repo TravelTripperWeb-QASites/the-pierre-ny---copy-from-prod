@@ -3,6 +3,13 @@
    ========================================================================== */
 
 //For Preloader
+$(document).ready(function(){
+  $('.card').keypress(function(event){
+    if(event.keyCode == 13){
+      $(this).find(".card-header").click();
+    }
+  });  
+});
 
 $(window)
   .on('load', function () { // makes sure the whole site is loaded
@@ -409,3 +416,6 @@ var iframeFound = setInterval(function () {
     console.log("found");
   }
 }, 60);
+
+//tabindex 0
+$(".pierre-slider .slick-arrow").attr('tabindex',-1);

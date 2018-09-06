@@ -21,11 +21,11 @@ meta_tags:
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock entertainment_heading, type:header %}
-      <h1 class="variant">Entertainment at the pierre</h1>
+      <h1 class="variant" tabindex="0">Entertainment at the pierre</h1>
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock entertainment_subheading, type:header %}
-      <h6>AT THE TWO E BAR & LOUNGE</h6>
+      <h6 tabindex="0">AT THE TWO E BAR & LOUNGE</h6>
     {% endregionblock %}
   </div>
 </section>
@@ -40,8 +40,8 @@ meta_tags:
       <div class="event-category-intro" id="{{ item.category_id }}" style="background-image:url('{{ item.category_image.url }}');">
         <div class="overlay-bg reverse"></div>
         <div class="intro-text">
-          <h2>{{ item.category_title }}</h2>
-          <p>{{ item.category_intro }}</p>
+          <h2 tabindex="0">{{ item.category_title }}</h2>
+          <p tabindex="0">{{ item.category_intro }}</p>
         </div>
       </div>
 
@@ -50,17 +50,17 @@ meta_tags:
 
         {% for event in item.event_listing %}
           <!-- Event -->
-          <div class="card">
-            <div class="card-header collapsed" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" aria-controls="collapseOne">
+          <div class="card" tabindex="0">
+            <div class="card-header collapsed" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" >
 
               <!-- Event Schedule -->
-              <div class="schedule">
+              <div class="schedule" tabindex="0">
                 <span>{{ event.start_day }}{% if event.end_day and event.end_day != "" %} - {{ event.end_day }}{% endif %}</span>
                 <h4>{{ event.from_time }} - {{ event.to_time }} {{ event.am_or_pm }}</h4>
               </div>
 
               <!-- Event Title -->
-              <h3>{{ event.event_name }}</h3>
+              <h3 tabindex="0">{{ event.event_name }}</h3>
 
               <!-- Accordion Control -->
               <div class="controls">
@@ -72,14 +72,14 @@ meta_tags:
             <div id="{{ event.event_collapse_id }}" class="collapse" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
-                  <p>{{ event.event_detail }}</p>
+                  <p tabindex="0">{{ event.event_detail }}</p>
                   <div class="opentable-widget">
-                    <h6>{% t 'make_a_reservation' %}</h6>
-                    <div class="d-xl-flex justify-content-center">
+                    <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
+                    <div class="d-xl-flex justify-content-center" tabindex="0">
                       <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
                       <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
                     </div>
-                    {{ event.event_contact }}
+                    <div tabindex="0">{{ event.event_contact }}</div>
                   </div>
 
                 </div>
