@@ -27,7 +27,7 @@ meta_tags:
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock meetings_events_heading, type:header %}
-      <h1 class="variant">Meetings & Events</h1>
+      <h1 class="variant" tabindex="0">Meetings & Events</h1>
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
   </div>
@@ -41,7 +41,7 @@ meta_tags:
     {% else %}
     <a class="primary-btn inverse" href="/zh/meetings-rfp/">{% t 'request_for_proposal' %}</a>
     {% endif %}
-    <p>{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
+    <p tabindex="0">{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
     </p>
   </div>
 </section>
@@ -154,10 +154,10 @@ meta_tags:
   <div class="intro-text intro-two">
     <img src="/assets/images/p-icon.png" alt="The Pierre">
     {% regionblock planner_title, type:header %}
-      <h4 class="line">Our experienced planners will ensure the success of your event</h4>
+      <h4 class="line" tabindex="0">Our experienced planners will ensure the success of your event</h4>
     {% endregionblock %}
     {% regionblock planner_content, type:text %}
-      <p>For additional information, please contact:</p>
+      <p tabindex="0">For additional information, please contact:</p>
       <p><a href="tel:+1 212 838 8000">+1 212 838 8000</a></p>
       <p><a href="mailto:thepierreevents.ny@tajhotels.com">thepierreevents.ny@tajhotels.com</a></p>
     {% endregionblock %}
@@ -176,8 +176,8 @@ meta_tags:
         <div class="holder">
           <div class="image" style="background-image:url('{{ event.image.url_large }}')"></div>
           <div class="content">
-            <i>{{ event.posted_date | date: "%B %Y" }}</i>
-            <h4>{{ event.title }}</h4>
+            <i tabindex="0">{{ event.posted_date | date: "%B %Y" }}</i>
+            <h4 tabindex="0">{{ event.title }}</h4>
             <a href="{{ event.reference_url }}" target="_blank">{% t 'read_more' %}</a>
           </div>
         </div>

@@ -21,16 +21,16 @@ meta_tags:
   <div class="overlay-bg"></div>
   <div class="banner-content">
     {% regionblock news_title, type:header %}
-      <h1 class="variant">IN THE NEWS</h1>
+      <h1 class="variant" tabindex="0">IN THE NEWS</h1>
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock news_subtitle, type:header %}
-      <h6>A NEW YORK ICON, THE PIERRE IS CONTINUALLY RECOGNIZED IN THE MEDIA FOR ITS AWARD-WINNING FIVE-STAR SERVICE, ELEGANT ACCOMMODATIONS AND FINE DINING.</h6>
+      <h6 tabindex="0">A NEW YORK ICON, THE PIERRE IS CONTINUALLY RECOGNIZED IN THE MEDIA FOR ITS AWARD-WINNING FIVE-STAR SERVICE, ELEGANT ACCOMMODATIONS AND FINE DINING.</h6>
     {% endregionblock %}
   </div>
 </div>
 
-<div class="quote">
+<div class="quote" tabindex="0">
   <q>
     {% regionblock news_inro, type:text %}
       Discover more about The Pierre in coverage from prestigious magazines such as <span>VOGUE, The New York Times and Forbes</span> highlighting interesting features at the hotel.
@@ -41,7 +41,7 @@ meta_tags:
 <!-- Print media coverage here -->
 
 <div class="intro-text">
-  <h2>Print Media Coverage</h2>
+  <h2 tabindex="0">Print Media Coverage</h2>
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
@@ -57,8 +57,8 @@ meta_tags:
           </a>
         </div>
         <div class="content">
-          <h5>{{ post.title }}</h5>
-          <p>{{ post.description }}</p>
+          <h5 tabindex="0">{{ post.title }}</h5>
+          <p tabindex="0">{{ post.description }}</p>
         </div>
       </div>
     {% endfor %}
@@ -66,7 +66,7 @@ meta_tags:
 </div>
 
 <div class="intro-text">
-  <h2>Online Media Coverage</h2>
+  <h2 tabindex="0">Online Media Coverage</h2>
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
@@ -81,11 +81,11 @@ meta_tags:
           </a>
         </div>
         <div class="content">
-          <h5>{{ post.title }}</h5>
+          <h5 tabindex="0">{{ post.title }}</h5>
           {% if post.posted_date and post.posted_date != "" %}
-            <h6>{{ post.posted_date | date: "%B %Y" }}</h6>
+            <h6 tabindex="0">{{ post.posted_date | date: "%B %Y" }}</h6>
           {% endif %}
-          <p>{{ post.description }}</p>
+          <p tabindex="0">{{ post.description }}</p>
         </div>
       </div>
     {% endfor %}

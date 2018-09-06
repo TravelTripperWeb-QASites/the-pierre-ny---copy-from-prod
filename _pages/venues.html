@@ -24,7 +24,7 @@ meta_tags:
 <div class="page-banner inner" style="background-image:url('/assets/images/events/venues/venues-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">
+    <h1 class="variant" tabindex="0">
       {% regionblock venues_title, type:header %}
         WORLD - CLASS VENUES
       {% endregionblock %}
@@ -59,12 +59,12 @@ meta_tags:
 </div>
 
 <!-- Facility Chart -->
-<div class="table-grid">
-  <h2 tabindex="0">
+<div class="table-grid" tabindex="-1">
+  <h2>
     {% t 'facility_chart' %}
   </h2>
   <div class="wrapper table-responsive-md">
-    <table class="table table-striped" tabindex="0">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col">{% t 'venues' %}</th>
@@ -88,17 +88,17 @@ meta_tags:
     </table>
   </div>
   <div class="d-sm-flex justify-content-center">
-    <a class="border-btn dark wp-more" href="{{ pageurl }}venues/facility-chart/">{% t 'download_facility_chart' %}</a>
-    <a class="border-btn dark wp-more" href="/assets/pdf/floor-plans.pdf" target="_blank">{% t 'download_floor_plan' %}</a>
+    <a class="border-btn dark wp-more" href="{{ pageurl }}venues/facility-chart/" tabindex="-1">{% t 'download_facility_chart' %}</a>
+    <a class="border-btn dark wp-more" href="/assets/pdf/floor-plans.pdf" target="_blank" tabindex="-1">{% t 'download_floor_plan' %}</a>
   </div>
 </div>
 
 <!-- Seating Style -->
-<div class="table-grid content-center no-bg">
-  <h2 tabindex="0">
+<div class="table-grid content-center no-bg" tabindex="-1">
+  <h2>
     {% t 'seating_style' %}
   </h2>
-  <div class="wrapper table-responsive-md" tabindex="0">
+  <div class="wrapper table-responsive-md">
     <table class="table table-striped">
       <thead>
         <tr>
