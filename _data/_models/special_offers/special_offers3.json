@@ -8,10 +8,10 @@
   "order": 5,
   "short_description_en": "Enjoy a second room for your family getaway at 50% off and complimentary tickets to Central Park Zoo.",
   "short_description_zh": "预订一个房间后，不超出同等价位的第二间房将优惠 50%",
-  "offer_includes_en": "<ul>\n<li>Continental Breakfast for two persons daily in Perrine</li>\n<li>Four (4) tickets (2 adults, 2 children) to Central Park Zoo</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n<li>Wi-Fi service for resident guests</li>\n</ul>",
-  "offer_includes_zh": "<ul>\n<li>为入住宾客提供的 Wi-Fi 服务</li>\n<li>Perrine 每天提供两份欧式早餐</li>\n<li>Two E Bar/Lounge 提供两杯免费的鸡尾酒</li>\n</ul>",
-  "terms_en": "<ul>\n<li>Displayed rate is for one room&nbsp;</li>\n<li>Minimum two night length of stay with one night non-refundable deposit at time of booking per room</li>\n<li>Cancellation within 24 hours of arrival to avoid late cancellation charge of one night's room and tax</li>\n</ul>",
-  "terms_zh": "<ul>\n<li>一晚不可退款，不可转让，不可取消。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>",
+  "offer_includes_en": "<ul tabindex=\"0\">\n<li>Continental Breakfast for two persons daily in Perrine</li>\n<li>Four (4) tickets (2 adults, 2 children) to Central Park Zoo</li>\n<li>Two complimentary cocktails in Two E Bar/Lounge</li>\n<li>Wi-Fi service for resident guests</li>\n</ul>",
+  "offer_includes_zh": "<ul tabindex=\"0\">\n<li>为入住宾客提供的 Wi-Fi 服务</li>\n<li>Perrine 每天提供两份欧式早餐</li>\n<li>Two E Bar/Lounge 提供两杯免费的鸡尾酒</li>\n</ul>",
+  "terms_en": "<ul tabindex=\"0\">\n<li>Displayed rate is for one room&nbsp;</li>\n<li>Minimum two night length of stay with one night non-refundable deposit at time of booking per room</li>\n<li>Cancellation within 24 hours of arrival to avoid late cancellation charge of one night's room and tax</li>\n</ul>",
+  "terms_zh": "<ul tabindex=\"0\">\n<li>一晚不可退款，不可转让，不可取消。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>\n</ul>",
   "slider_images": [
     {
       "name": "Suite Family Package Twin Room 585x550",

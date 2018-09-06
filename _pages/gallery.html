@@ -48,13 +48,13 @@ meta_tags:
   </div>
 
   <!-- Gallery Image Listing -->
-  <div class="gallery-listing" id="lightgallery" data-offergallery="show">
+  <div class="gallery-listing" data-offergallery="show">
     <div class="wrapper">
       {% for category in categories %}
         {% assign catname = category[0] %}
         {% for photo in site.data._galleries[catname].photos %}
         <div class="gallery-item fancybox item" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
-          <div class="image" style="background-image: url('{{ photo.url_small }}')"><img src="{{ photo.url_small }}" class="hidden"></div>
+          <div class="image" style="background-image: url('{{ photo.url_small }}')"><img src="{{ photo.url_small }}" class="hidden" alt="{{ photo.alt }}"></div>
           <div class="overlay">
             <i class="fas fa-search-plus"></i>
           </div>
