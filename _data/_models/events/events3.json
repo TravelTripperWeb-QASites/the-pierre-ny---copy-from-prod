@@ -25,31 +25,29 @@
     "alt": "Summer Rose",
     "caption": ""
   },
-  "sort_order": 2,
+  "sort_order": 1,
   "category_title_localized": {
     "en": "Summer of Rosé",
     "zh": " 玫瑰之夏"
   },
-  "event_listing": [
-    {
-      "event_name": {
-        "en": "A Midsummer Night's Soirée!"
-      },
-      "event_heading_id": "midsummer",
-      "event_collapse_id": "soiree",
-      "event_detail": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      "start_day": "Monday",
-      "end_day": "Thursday",
-      "from_time": "6:30",
-      "to_time": "9:30",
-      "am_or_pm": "PM",
-      "event_contact": {
-        "en": "<p>Contact Two E Bar &amp; Lounge, at&nbsp;<a href=\"tel:646-396-3303\">646 396 3303</a>&nbsp;or&nbsp;<a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>"
-      },
-      "event_booking_id": "34024",
-      "view_menu_url": "#"
-    }
-  ]
+  "event_listing": [{
+    "event_name": {
+      "en": "A Midsummer Night's Soirée!"
+    },
+    "event_heading_id": "midsummer",
+    "event_collapse_id": "soiree",
+    "event_detail": {
+      "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "start_day": "Monday",
+    "end_day": "Thursday",
+    "from_time": "6:30",
+    "to_time": "9:30",
+    "am_or_pm": "PM",
+    "event_contact": {
+      "en": "<p>Contact Two E Bar &amp; Lounge, at&nbsp;<a href=\"tel:646-396-3303\">646 396 3303</a>&nbsp;or&nbsp;<a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>"
+    },
+    "event_booking_id": "34024",
+    "view_menu_url": "#"
+  }]
 }
