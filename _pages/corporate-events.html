@@ -60,7 +60,7 @@ meta_tags:
       		<div class="slash"></div>
       		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
       	</div>
-      	<img src="{{ photo.url_large }}" class="width-full" alt="The Cotillion in 1950" />
+      	<img src="{{ photo.url_large }}" class="width-full" alt="{{ photo.alt }}" />
       	<div class="img-title">{{ photo.alt }}</div>
     	</div>
     {% endfor %}
