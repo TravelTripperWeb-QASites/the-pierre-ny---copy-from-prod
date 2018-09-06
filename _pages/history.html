@@ -92,6 +92,28 @@ meta_tags:
   <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
 </div>
 
+
+{% assign categories = site.data._galleries | sort: sort_order %}
+
+<!-- Gallery carousel here -->
+<div class="pierre-slider mb-5" tabindex="-1">
+  {% for category in categories %}
+    {% assign catname = 'pierre_history' %}
+    {% for photo in site.data._galleries[catname].photos %}
+    	<div>
+      	<div class="slide-pageno" tabindex="0">
+      		<div class="current-slide">{{ forloop.index }}</div>
+      		<div class="slash"></div>
+      		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
+      	</div>
+      	<img src="{{ photo.url_large }}" class="width-full" alt="{{ photo.alt }}" />
+      	<div class="img-title">{{ photo.alt }}</div>
+    	</div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+
 <!-- Gallery carousel here -->
 <div class="pierre-slider">
 	<div>
