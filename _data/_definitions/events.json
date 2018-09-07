@@ -29,6 +29,7 @@
   "event_listing": {
     "type": "nested",
     "multiple": true,
+    "localizable": true,
     "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
     "fields": {
       "event_name": {
