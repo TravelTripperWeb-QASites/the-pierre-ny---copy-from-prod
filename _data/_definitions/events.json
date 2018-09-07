@@ -30,10 +30,10 @@
     "type": "nested",
     "multiple": true,
     "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
+    "localizable": true,
     "fields": {
       "event_name": {
-        "required": true,
-        "localizable": true
+        "required": true
       },
       "event_heading_id": {
         "required": true,
@@ -44,8 +44,7 @@
         "hint": "Should be in lowercase without spaces"
       },
       "event_detail": {
-        "required": true,
-        "localizable": true
+        "required": true
       },
       "start_day": {
         "required": true,
@@ -71,8 +70,7 @@
       "event_contact": {
         "required": true,
         "type": "richtext",
-        "hint": "Please add text with urls if any. To do so, get into code mode.",
-        "localizable": true
+        "hint": "Please add text with urls if any. To do so, get into code mode."
       },
       "event_booking_id": {
         "required": true,
