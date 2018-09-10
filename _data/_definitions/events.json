@@ -30,6 +30,7 @@
     "type": "nested",
     "multiple": true,
     "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
+    "localizable": true,
     "fields": {
       "event_name": {
         "required": true

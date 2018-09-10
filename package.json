@@ -19,6 +19,10 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "uglify": "uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-thumbnail.js assets/js/lg-share.js assets/js/tt-widgets.js assets/js/scrollPosStyler.js assets/js/vendor/angular.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/rt3/rt3-models.js assets/js/_main.js -o assets/js/main.min.js"
+    "uglify": "uglifyjs assets/js/functions.js assets/js/slick.min.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-thumbnail.js assets/js/lg-share.js assets/js/tt-widgets.js assets/js/scrollPosStyler.js assets/js/vendor/angular.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/rt3/rt3-models.js assets/js/_main.js -c -m -o assets/js/main.min.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0"
   }
 }
