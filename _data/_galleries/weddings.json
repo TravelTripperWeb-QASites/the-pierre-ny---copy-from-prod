@@ -1,11 +1,7 @@
 {
-  "name": "WEDDINGS" ,
-  "name_localized":
-  {
-    "en": "WEDDINGS",
-    "zh": "婚礼"
-  },
-  "photos": [{
+  "name": "Weddings",
+  "photos": [
+    {
       "name": "wedding-gallery5",
       "file_name": "wedding-gallery5.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-03-041158/wedding-gallery5.jpg",
@@ -106,6 +102,5 @@
       "alt": "Wedding Events At The Pierre"
     }
   ],
-  "description": "",
-  "sort_order": "6"
+  "description": ""
 }
