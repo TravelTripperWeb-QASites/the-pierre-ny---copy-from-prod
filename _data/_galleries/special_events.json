@@ -1,11 +1,7 @@
 {
-  "name": "SPECIAL EVENTS" ,
-  "name_localized":
-  {
-    "en": "SPECIAL EVENTS",
-    "zh": "特别活动"
-  },
-  "photos": [{
+  "name": "Special Events",
+  "photos": [
+    {
       "name": "events-12",
       "file_name": "events-12.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-080225/events-12.jpg",
@@ -186,6 +182,5 @@
       "alt": "events-4"
     }
   ],
-  "description": "",
-  "sort_order": "4"
+  "description": ""
 }
