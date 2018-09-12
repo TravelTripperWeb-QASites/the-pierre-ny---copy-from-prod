@@ -1,11 +1,7 @@
 {
-  "name": "ROOMS & SUITES" ,
-  "name_localized":
-  {
-    "en": "ROOMS & SUITES",
-    "zh": "客房和套房"
-  },
-  "photos": [{
+  "name": "Rooms & Suites",
+  "photos": [
+    {
       "name": "rooms-9",
       "file_name": "rooms-9.jpg",
       "url": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-075040/rooms-9.jpg",
@@ -186,6 +182,5 @@
       "alt": "rooms-1"
     }
   ],
-  "description": "",
-  "sort_order": "2"
+  "description": ""
 }
