@@ -69,8 +69,7 @@ module Jekyll
     end
 
     def process_active_language
-      #@dest = @dest + '/' + @active_lang
-      @dest = '_site/' + @active_lang
+      @dest = @dest + '/' + @active_lang
       process_orig
     end
 

@@ -343,11 +343,10 @@
 }
 
 .testimonials {
+  max-width: 80%;
+  margin: 0 auto;
   color: $text-color;
-
   .carousel-item {
-    max-width: 80%;
-    margin: 0 auto;
     padding: 10px 15px;
     text-align: center;
   }
