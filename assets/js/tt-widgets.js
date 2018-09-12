@@ -359,19 +359,17 @@
 
                 //reset lightgallery
                 //
-
-                gallery.data('lightGallery')
-                  .destroy(true); // destroy gallery
-
-                setTimeout(function () {
+                if(gallery.length > 0){
+                  gallery.data('lightGallery').destroy(true); // destroy gallery
+                  setTimeout(function () {
                   gallery.lightGallery({
-                    selector: _this.settings.offer_gallery.galleryselector,
-                    counter: _this.settings.offer_gallery.counter,
-                    fullScreen: _this.settings.offer_gallery.fullScreen,
-                    share: false
-                  }); //re-initiate gallery
-                }, 500);
-
+                      selector: _this.settings.offer_gallery.galleryselector,
+                      counter: _this.settings.offer_gallery.counter,
+                      fullScreen: _this.settings.offer_gallery.fullScreen,
+                      share: false
+                    }); //re-initiate gallery
+                  }, 500);
+                }
               }
 
             });
