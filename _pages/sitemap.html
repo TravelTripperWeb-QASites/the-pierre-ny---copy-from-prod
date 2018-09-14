@@ -18,9 +18,7 @@ meta_tags:
   <div class="sitemap-content">
 
     {% assign links = site.data.navigation.main.en %}
-
     {% assign offers = site.data._models.special_offers | sort: "order" %}
-
     {% assign quick_links = site.data.navigation.footer.en %}
 
     <ul class="sitemap-links" rt3-rooms-browser="browser" rt3-special-rates= "offers">

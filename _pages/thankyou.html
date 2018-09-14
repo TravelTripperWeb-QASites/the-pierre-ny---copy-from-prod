@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 title_localized:
   en: The Pierre, A Taj Hotel, New York -  Newsletter-Signup
   zh: 纽约皮埃尔泰姬陵酒店 - 时事通讯-注册
@@ -19,10 +19,18 @@ meta_tags:
 <section class="page-banner inner" style="background-image:url('/assets/images/thank-you.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
-    <h1 class="variant">Thank You</h1>
+    <h1 class="variant">
+      {% regionblock page_title, type:header %}
+        Thank You
+      {% endregionblock %}
+    </h1>
   </div>
 </section>
 
 <section class="intro-text">
-  <h2 class="mt-2 mb-5">We will get in touch with you soon....</h2>
+  <h2 class="mt-2 mb-5">
+    {% regionblock page_description, type:text %}
+      We will get in touch with you soon....
+    {% endregionblock %}
+  </h2>
 </section>

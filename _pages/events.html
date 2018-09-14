@@ -29,7 +29,9 @@ meta_tags:
     {% regionblock meetings_events_heading, type:header %}
       <h1 class="variant" tabindex="0">Meetings & Events</h1>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" />
+    </div>
   </div>
 </section>
 
@@ -37,12 +39,11 @@ meta_tags:
 <section class="rfp-wrap">
   <div class="rfp-inner">
     {% if site.active_lang =="en" %}
-    <a class="primary-btn inverse" href="/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+      <a class="primary-btn inverse" href="/meetings-rfp/">{% t 'request_for_proposal' %}</a>
     {% else %}
-    <a class="primary-btn inverse" href="/zh/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+      <a class="primary-btn inverse" href="/zh/meetings-rfp/">{% t 'request_for_proposal' %}</a>
     {% endif %}
-    <p tabindex="0">{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a>
-    </p>
+    <p tabindex="0">{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a></p>
   </div>
 </section>
 
@@ -50,7 +51,7 @@ meta_tags:
 <section class="intro mb-0">
   <div class="intro-text">
     {% regionblock events_intro_title, type:header %}
-    <h2 tabindex="0">THE PERFECT LOCATION</h2>
+      <h2 tabindex="0">THE PERFECT LOCATION</h2>
     {% endregionblock %}
     <div tabindex="0">
       {% regionblock events_intro_description, type:text %}

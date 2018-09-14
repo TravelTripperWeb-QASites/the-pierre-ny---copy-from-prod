@@ -9,20 +9,22 @@
 <section class="common-carousel">
   <h2 class="text-center mb-4" tabindex="0">{% t 'explore_venues' %}</h2>
   <p class="text-center" tabindex="0">{% t 'explore_venues_intro' %}</p>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+  <div class="divider">
+    <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+  </div>
   <div class="common-carousel-inner">
     {% assign venues = site.data._models.venues %}
-    <div class="slick-controls" id="commonCarousel" role="listbox">
-      {% for venue in venues %}
-        <div class="item" role="option">
-          <div class="img-block" style="background-image:url('{{ venue.venue_thumbnail.url_large }}');"></div>
-          <div class="content">
-            <h4>{{ venue.venue_name }}</h4>
-            <a href="{{ eventurl }}venues/{{ venue.url_friendly_name }}/" class="secondary-btn">{% t 'view_this_venue' %}</a>
+      <div class="slick-controls" id="commonCarousel" role="listbox">
+        {% for venue in venues %}
+          <div class="item" role="option">
+            <div class="img-block" style="background-image:url('{{ venue.venue_thumbnail.url_large }}');"></div>
+            <div class="content">
+              <h4>{{ venue.venue_name }}</h4>
+              <a href="{{ eventurl }}venues/{{ venue.url_friendly_name }}/" class="secondary-btn">{% t 'view_this_venue' %}</a>
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
   </div>
   <div class="text-center">
     <a class="primary-btn" href="{{ eventurl }}venues/">{% t 'view_more_venues' %}</a>

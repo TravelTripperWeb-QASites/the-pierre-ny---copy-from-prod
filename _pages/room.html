@@ -81,7 +81,6 @@ meta_tags:
     <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
   </div>
   <div class="room-single__content">
-
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item" role="tab">
@@ -91,10 +90,8 @@ meta_tags:
       <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">{% t 'floorplan'%}</a>
     </li>
   </ul>
-
   <!-- Tab panes -->
     <div class="tab-content">
-
       <div id="room_features" class="container tab-pane active" role="tabpanel">
 
         <article {% if site.active_lang == "en" %}room-detail{% endif %} tabindex="0">
@@ -113,7 +110,6 @@ meta_tags:
         <div class="btn-holder">
           <a class="primary-btn" href="{{ site.reztripUrl }}search?selected_room_category=[[ details.category ]]&selected_room=[[ details.code ]]" target="_blank">{% t 'book_now' %}</a>
         </div>
-
       </div>
 
       <div id="room_floor_plan" class="container tab-pane fade" role="tabpanel">
@@ -122,23 +118,18 @@ meta_tags:
 
         <div id="floorplans-pdf" class="carousel slide" data-ride="carousel">
             <!-- The slideshow -->
-             <div class="carousel-inner">
-             </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#floorplans-pdf" data-slide="prev" title="Previous Slide">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#floorplans-pdf" data-slide="next" title="Next Slide">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-
-</div>
+           <div class="carousel-inner"></div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#floorplans-pdf" data-slide="prev" title="Previous Slide">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#floorplans-pdf" data-slide="next" title="Next Slide">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
 
       </div>
     </div>
-  </div>
-
   </div>
 </section>
 

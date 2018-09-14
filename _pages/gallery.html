@@ -23,7 +23,9 @@ meta_tags:
     {% regionblock gallery_title, type:header %}
       <h1 class="variant">{% t 'gallery' %}</h1>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock gallery_subtitle, type:header %}
       <h6>Photos of the Luxuriuos Pierre</h6>
     {% endregionblock %}
@@ -32,7 +34,6 @@ meta_tags:
 
 <!-- Gallery listing here -->
 <div class="gallery-wrapper" id="lightgallery">
-
   <!-- Gallery Filter -->
   <div class="sub-nav table-responsive-xl">
     {% assign categories = site.data._galleries | sort: sort_order %}
@@ -46,7 +47,6 @@ meta_tags:
       {% endfor %}
     </ul>
   </div>
-
   <!-- Gallery Image Listing -->
   <div class="gallery-listing" data-offergallery="show">
     <div class="wrapper">
@@ -63,5 +63,4 @@ meta_tags:
       {% endfor %}
     </div>
   </div>
-
 </div>

@@ -38,7 +38,6 @@ meta_tags:
   {% include forms/jotform/events-rfp.html %}
 </div>
 
-
 <!-- Gallery carousel heading here -->
 <div class="intro-text pt-0 mt-5">
   {% regionblock corporate_events_spaces_heading, type:header %}
@@ -48,7 +47,6 @@ meta_tags:
 </div>
 
 {% assign categories = site.data._galleries | sort: sort_order %}
-
 <!-- Gallery carousel here -->
 <div class="pierre-slider mb-5" tabindex="-1">
   {% for category in categories %}

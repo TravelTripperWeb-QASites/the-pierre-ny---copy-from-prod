@@ -35,7 +35,6 @@ meta_tags:
 {% assign event_categories = site.data._models.events | sort: "sort_order" %}
 {% for item in event_categories %}
   <div class="events-listing">
-
       <!-- Category section -->
       <div class="event-category-intro" id="{{ item.category_id }}" style="background-image:url('{{ item.category_image.url }}');">
         <div class="overlay-bg reverse"></div>
@@ -44,31 +43,25 @@ meta_tags:
           <p tabindex="0">{{ item.category_intro }}</p>
         </div>
       </div>
-
       <!-- Event Details Accordion -->
       <div class="event-details accordion">
-
         {% for event in item.event_listing %}
           <!-- Event -->
           <div class="card" tabindex="0">
             <div class="card-header collapsed" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" >
-
               <!-- Event Schedule -->
               <div class="schedule" tabindex="0">
                 <span>{{ event.start_day }}{% if event.end_day and event.end_day != "" %} - {{ event.end_day }}{% endif %}</span>
                 <h4>{{ event.from_time }} - {{ event.to_time }} {{ event.am_or_pm }}</h4>
               </div>
-
               <!-- Event Title -->
               <h3 tabindex="0">{{ event.event_name }}</h3>
-
               <!-- Accordion Control -->
               <div class="controls">
                 <i class="fa fa-minus"></i>
                 <i class="fa fa-plus"></i>
               </div>
             </div>
-
             <div id="{{ event.event_collapse_id }}" class="collapse" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
@@ -81,14 +74,12 @@ meta_tags:
                     </div>
                     <div tabindex="0">{{ event.event_contact }}</div>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
         {% endfor %}
       </div>
-
   </div>
 {% endfor %}
 </section>
