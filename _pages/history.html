@@ -89,7 +89,9 @@ meta_tags:
 <!-- Gallery carousel heading here -->
 <div class="intro-text pt-0">
   <h2>{% t 'gallery' %}</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+  <div class="divider">
+    <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+  </div>
 </div>
 
 
@@ -147,7 +149,9 @@ meta_tags:
   </div>
 </div>
 
-<div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+<div class="divider">
+  <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+</div>
 
 <!-- Testimonials here -->
 {% assign feedback = site.data._models.testimonials | sort:'sort_order' %}
@@ -159,8 +163,12 @@ meta_tags:
           <q tabindex="0">{{ feed.testimonial }}</q>
           <h6 tabindex="0">{{ feed.guest_info }}</h6>
           <div class="controls">
-            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev" title="Previous"><i class="fa fa-angle-left"></i></a>
-            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next" title="Next"><i class="fa fa-angle-right"></i></a>
+            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev" title="Previous">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next" title="Next">
+              <i class="fa fa-angle-right"></i>
+            </a>
             <h4 class="slides" target="-1">{{ forloop.index }}/{{ feedback | size }}</h4>
           </div>
         </div>

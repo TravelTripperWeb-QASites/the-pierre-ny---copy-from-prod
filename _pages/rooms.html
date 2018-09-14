@@ -24,6 +24,8 @@ meta_tags:
 {% endif %}
 <input type="hidden" id="listing" name="listing" value="[[browser.roomsv  ? true : false]]">
 
+<!-- Rooms banner here -->
+
 <section class="page-banner inner" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');">
   <div class="overlay-bg"></div>
   <div class="banner-content">
@@ -34,6 +36,8 @@ meta_tags:
     {% endregionblock %}
   </div>
 </section>
+
+<!-- Rooms categories here -->
 
 <section class="categories sps sps--abv">
   <div class="categories__container">
@@ -53,13 +57,14 @@ meta_tags:
     {% regionblock rooms_classic_title, type:text %}
       <h2>Classic</h2>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock rooms_classic_description, type:text %}
       <p tabindex="0">An intimate respite from bustling New York City, our Classic Collection features soft, elegant rooms & suites with lofty ceilings and peaceful interior views.</p>
     {% endregionblock %}
   </div>
   <div class="rooms__row">
-
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif%}>
         <a ng-href="{{roomlink}}" class="rooms__head">
@@ -76,7 +81,6 @@ meta_tags:
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -85,13 +89,14 @@ meta_tags:
     {% regionblock rooms_cityview_title, type:text %}
       <h2>City View</h2>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock rooms_cityview_description, type:text %}
       <p tabindex="0">Captivating views of the Manhattan skyline and inspired, residential touches define the luxurious rooms & suites in our City View Collection.</p>
     {% endregionblock %}
   </div>
   <div class="rooms__row">
-
     <div class="rooms__item" ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
         <a ng-href="{{roomlink}}" class="rooms__head">
@@ -108,7 +113,6 @@ meta_tags:
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -117,13 +121,14 @@ meta_tags:
     {% regionblock rooms_parkview_title, type:text %}
       <h2>Park View</h2>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock rooms_parkview_description, type:text %}
-    <p>Central Park views offer a serene touch of nature amidst soaring skyscrapers and lend an irresistible sense of romance to our stunning Park View Collection of rooms & suites.</p>
+      <p>Central Park views offer a serene touch of nature amidst soaring skyscrapers and lend an irresistible sense of romance to our stunning Park View Collection of rooms & suites.</p>
     {% endregionblock %}
   </div>
   <div class="rooms__row">
-
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
         <a ng-href="{{roomlink}}" class="rooms__head">
@@ -140,23 +145,23 @@ meta_tags:
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <section class="rooms fancybox" id="grandsuites" data-filter="grand">
   <div class="rooms__intro">
     {% regionblock rooms_grandsuites_title, type:text %}
-    <h2 tabindex="0">Grand Suites</h2>
+      <h2 tabindex="0">Grand Suites</h2>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock rooms_grandsuites_description, type:text %}
-    <p tabindex="0">Grand Suites Collection offers the ultimate in exclusivity and tranquility.</p>
-    <p tabindex="0">During the month of June, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman.</p>
+      <p tabindex="0">Grand Suites Collection offers the ultimate in exclusivity and tranquility.</p>
+      <p tabindex="0">During the month of June, guests who book a Signature Grand Suite will receive an engraved limited-edition bottle of Armani Privé New York and complimentary makeover application at Bergdorf Goodman.</p>
     {% endregionblock %}
   </div>
   <div class="rooms__row">
-
     <div class="rooms__item rooms__item--twocol" ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
       <div {% if site.active_lang == "en" %}data-rt3room="[[room.code]]"{% endif %}>
         <a ng-href="{{roomlink}}" class="rooms__head">
@@ -173,41 +178,40 @@ meta_tags:
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <section class="rooms fancybox" id="residences" data-filter="residences">
   <div class="rooms__intro">
     {% regionblock rooms_residences_title, type:text %}
-    <h2 tabindex="0">Residences</h2>
+      <h2 tabindex="0">Residences</h2>
     {% endregionblock %}
-    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+    </div>
     {% regionblock rooms_residences_description, type:text %}
-    <p tabindex="0">Home to some of modern history’s most illustrious individuals - past and present - living at The Pierre has long stood as a mark of Upper East Side exclusivity.</p>
+      <p tabindex="0">Home to some of modern history’s most illustrious individuals - past and present - living at The Pierre has long stood as a mark of Upper East Side exclusivity.</p>
     {% endregionblock %}
   </div>
   <div class="rooms__row">
-
-<div class="rooms__luxury">
-  <div class="rooms__luxury__image bg-cover" style="background-image:url('/assets/images/rooms/pierre-live-suite.jpg');">
-    <div class="rooms__luxury__content">
-      {% regionblock rooms_residences_intro_title, type:text %}
-      <h2 tabindex="0">Luxury Defined</h2>
-      {% endregionblock %}
-      {% regionblock rooms_residences_intro_description, type:text %}
-      <p tabindex="0">Enjoy our spacious and elegant Grand Suites through a long-term residential stay, making The Pierre a true home away from home. Our representative at The Corcoran Group will assist to make your stay memorable.</p>
-      {% endregionblock %}
-      {% regionblock rooms_residences_content, type:text %}
-      <p><strong tabindex="0">Andres Perea-Garzon</strong><br>
-        <a href="mailto:apg@corcoran.com">apg@corcoran.com</a><br>
-        d: <a href="tel:212.572.3186" aria-label="Desk phone number 212.572.3186">212.572.3186</a><br>
-        f: <a href="tel:212.230.4055" aria-label="Fax Number 212.230.4055">212.230.4055</a><br>
-        ph: <a href="tel:646.580.0198" aria-label="Phone Number 646.580.0198">646.580.0198</a></p>
-      {% endregionblock %}
+    <div class="rooms__luxury">
+      <div class="rooms__luxury__image bg-cover" style="background-image:url('/assets/images/rooms/pierre-live-suite.jpg');">
+        <div class="rooms__luxury__content">
+          {% regionblock rooms_residences_intro_title, type:text %}
+            <h2 tabindex="0">Luxury Defined</h2>
+          {% endregionblock %}
+          {% regionblock rooms_residences_intro_description, type:text %}
+            <p tabindex="0">Enjoy our spacious and elegant Grand Suites through a long-term residential stay, making The Pierre a true home away from home. Our representative at The Corcoran Group will assist to make your stay memorable.</p>
+          {% endregionblock %}
+          {% regionblock rooms_residences_content, type:text %}
+            <p><strong tabindex="0">Andres Perea-Garzon</strong><br>
+            <a href="mailto:apg@corcoran.com">apg@corcoran.com</a><br>
+            d: <a href="tel:212.572.3186" aria-label="Desk phone number 212.572.3186">212.572.3186</a><br>
+            f: <a href="tel:212.230.4055" aria-label="Fax Number 212.230.4055">212.230.4055</a><br>
+            ph: <a href="tel:646.580.0198" aria-label="Phone Number 646.580.0198">646.580.0198</a></p>
+          {% endregionblock %}
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
   </div>
 </section>

@@ -41,8 +41,12 @@ meta_tags:
 <!-- Print media coverage here -->
 
 <div class="intro-text">
-  <h2 tabindex="0">Print Media Coverage</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+  {% regionblock news_list_header_one, type:header %}
+    <h2 tabindex="0">Print Media Coverage</h2>
+  {% endregionblock %}
+  <div class="divider">
+    <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+  </div>
 </div>
 
 {% assign print = site.data._models.news | where: "category", "Print Media Coverage" %}
@@ -66,8 +70,12 @@ meta_tags:
 </div>
 
 <div class="intro-text">
-  <h2 tabindex="0">Online Media Coverage</h2>
-  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+  {% regionblock news_list_header_two, type:header %}
+    <h2 tabindex="0">Online Media Coverage</h2>
+  {% endregionblock %}
+  <div class="divider">
+    <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+  </div>
 </div>
 
 {% assign online = site.data._models.news | where: "category", "Online Media Coverage" | sort: 'posted_date' %}
