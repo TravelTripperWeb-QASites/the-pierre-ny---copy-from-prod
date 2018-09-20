@@ -1,5 +1,5 @@
 {
-  "category_title": {
+  "title": {
     "label": "Category Name",
     "required": true,
     "hint": "Enter event categroy name",
