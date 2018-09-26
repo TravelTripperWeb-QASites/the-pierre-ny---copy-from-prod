@@ -46,11 +46,10 @@
         "required": true
       },
       "date": {
-        "type": "date",
-        "Instructions": "Enter either date or time. If time's given, then date won't be visible on site."
+        "hint": "Enter date in 'eg. Jan 06th' format."
       },
       "time": {
-        "Instructions": "Enter either date or time. If time's given, then date won't be visible on site."
+        "hint": "Enter either date or time. If time's given, then date won't be visible on site."
       },
 
       "event_contact": {
