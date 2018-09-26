@@ -52,7 +52,7 @@ meta_tags:
               <!-- Event Schedule -->
               <div class="schedule" tabindex="0">
                 <span>{{ event.day }}</span>
-                <h4>{% if event.time and event.time != "" %}{{ event.time }}{% else %}{{ event.date | date: "%D %B" }}{% endif %}</h4>
+                <h4>{% if event.time and event.time != "" %}{{ event.time }}{% else %}{{ event.date | date: "%B %-d" }}{% endif %}</h4>
               </div>
               <!-- Event Title -->
               <h3 tabindex="0">{{ event.event_name }}</h3>
