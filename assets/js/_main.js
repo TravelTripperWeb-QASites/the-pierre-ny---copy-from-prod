@@ -1,13 +1,13 @@
-/*
-   Settings and other scripts
-   ========================================================================== */
-$(document).ready(function() {
+// Settings and other scripts
+//=================================================================
+
+$(document).ready(function () {
 
   // Navigation Change on page Scroll
   navOnScroll();
 
   //For History timeline navigation active state
-  $(".history-nav a").click(function() {
+  $(".history-nav a").click(function () {
     $(".history-nav a").removeClass("active");
     $(this).addClass("active");
   });
@@ -24,7 +24,7 @@ $(document).ready(function() {
     altField: '#arrival_date',
     altFormat: 'yy-mm-dd',
     minDate: 0,
-    onSelect: function(date) {
+    onSelect: function (date) {
       var date2 = $('#arrival_date').datepicker('getDate');
       date2.setDate(date2.getDate() + 1);
       $('#departure_date').datepicker('setDate', date2);
@@ -36,7 +36,7 @@ $(document).ready(function() {
     dateFormat: "yy-mm-dd",
     altField: '#departure_dates',
     altFormat: 'yy-mm-dd',
-    onClose: function() {
+    onClose: function () {
       var dt1 = $('#v').datepicker('getDate');
       var dt2 = $('#departure_date').datepicker('getDate');
       if (dt2 <= dt1) {
@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
   }
   // filter tab action for other pages
-  $(".filter").on("click", function() {
+  $(".filter").on("click", function () {
     var $this = $(this);
     // if we click the active tab, do nothing
     if (!$this.hasClass("active")) {
@@ -64,17 +64,17 @@ $(document).ready(function() {
       $this.addClass("active"); // set the active tab
       var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
       $filter == 'all' ? // if we select "view all", return to initial settings and show all
-      $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn() : // otherwise
-      $(".fancybox").fadeOut(0).filter(function() {
-        return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
-      }).attr("data-fancybox-group", $filter).fadeIn('slow');// set data-fancybox-group and show filtered elements
+        $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn() : // otherwise
+        $(".fancybox").fadeOut(0).filter(function () {
+          return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+        }).attr("data-fancybox-group", $filter).fadeIn('slow'); // set data-fancybox-group and show filtered elements
     } // end if
   }); // end filter
 
   // Gallery and Events Filter Function
-  $(".gallery-wrapper .sub-nav li a").on("click", function() {
+  $(".gallery-wrapper .sub-nav li a").on("click", function () {
     // Remove active class from everything
-    $(".gallery-wrapper .sub-nav li a").each(function() {
+    $(".gallery-wrapper .sub-nav li a").each(function () {
       $(this).removeClass('active');
     });
     // Add active class to selected option
@@ -85,20 +85,20 @@ $(document).ready(function() {
     if ($filter == 'all') {
       $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn();
     } else {
-      $(".fancybox").fadeOut(0).filter(function() {
-          // set data-filter value as the data-rel value of selected
-          return $(this).data("filter") == $filter;
-        }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+      $(".fancybox").fadeOut(0).filter(function () {
+        // set data-filter value as the data-rel value of selected
+        return $(this).data("filter") == $filter;
+      }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
       //reset lightgallery after filtering
-      setTimeout(function() {
+      setTimeout(function () {
         var lightgallery = $('[data-offergallery]');
         if (lightgallery) {
           lightgallery.data('lightGallery').destroy(true);
           $('[data-offergallery]').lightGallery({
-              selector: ".item:visible",
-              counter: false,
-              share: false
-            });
+            selector: ".item:visible",
+            counter: false,
+            share: false
+          });
         }
       }, 1000);
     } // if
@@ -160,11 +160,11 @@ $(document).ready(function() {
     ]
   });
 
-  /*
-  ADA Issues fixed
-  */
+
+  //ADA Issues
+
   //if some hit enter on card will be clicked on card header
-  $('.card').keypress(function(event) {
+  $('.card').keypress(function (event) {
     if (event.keyCode == 13) {
       $(this).find(".card-header").click();
     }
@@ -173,16 +173,16 @@ $(document).ready(function() {
   $(".pierre-slider .slick-arrow").attr('tabindex', -1);
 
   // For Tab Ordering / Accessibility in Navigation
-  $(document).on("focus", '.navbar-nav .nav-item > a', function() {
-      $('.dropdown-menu').hide();
-      var parentListItem = $(this).closest("li");
-      if (parentListItem.hasClass("dropdown")) {
-        $(this).closest(".dropdown").find('.dropdown-menu').show();
-      }
+  $(document).on("focus", '.navbar-nav .nav-item > a', function () {
+    $('.dropdown-menu').hide();
+    var parentListItem = $(this).closest("li");
+    if (parentListItem.hasClass("dropdown")) {
+      $(this).closest(".dropdown").find('.dropdown-menu').show();
+    }
   });
 
   //Get rid of Iframes without title - Accessibility fix
-  var iframeFound = setInterval(function() {
+  var iframeFound = setInterval(function () {
     if ($("#gtsgig").length > 0) {
       $("#gtsgig").attr("title", "gts gig");
       clearInterval(iframeFound);
@@ -193,10 +193,10 @@ $(document).ready(function() {
 
 
 // On Window load
-$(window).on('load', function() {
+$(window).on('load', function () {
   // if window is loaded will hide on load
   if ($('#preloader')) {
-    $('#preloader').delay(350).fadeOut('slow', function() {
+    $('#preloader').delay(350).fadeOut('slow', function () {
       $(this).remove();
     });
   }
@@ -205,35 +205,35 @@ $(window).on('load', function() {
   $('ul.navbar-nav li.dropdown a').attr('data-toggle', 'disable');
   if ($(window).width() > 1200) {
     //Add Hover effect to menus
-    $('ul.navbar-nav li.dropdown').hover(function() {
+    $('ul.navbar-nav li.dropdown').hover(function () {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-    }, function() {
+    }, function () {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
     });
 
   } else {
 
-    $('ul.navbar-nav li.dropdown').click(function(e) {
+    $('ul.navbar-nav li.dropdown').click(function (e) {
       e.preventDefault();
       $(this).find('.dropdown-menu').fadeToggle();
       $(this).find(".nav-link").toggleClass("open");
     });
 
-    $('ul.navbar-nav li.dropdown a span').click(function() {
+    $('ul.navbar-nav li.dropdown a span').click(function () {
       var link = $(this).closest('a').attr("href");
       window.location.href = link;
     });
 
-    $('ul.navbar-nav li.dropdown .dropdown-item').click(function() {
-        var link = $(this).closest('a').attr("href");
-        window.location.href = link;
+    $('ul.navbar-nav li.dropdown .dropdown-item').click(function () {
+      var link = $(this).closest('a').attr("href");
+      window.location.href = link;
     });
 
   }
 
-  $(".categories__list li").hover(function() {
+  $(".categories__list li").hover(function () {
     $(this).find(".list-dropdown").slideDown(100);
-  }, function() {
+  }, function () {
     $(this).find(".list-dropdown").slideUp(100);
   });
 
@@ -244,11 +244,12 @@ $(window).on('load', function() {
   $.ajax({
     url: instaurl,
     dataType: "json",
-    success: function(response) {
-      var showInstaFeeds = [], feedCount = 0;
+    success: function (response) {
+      var showInstaFeeds = [],
+        feedCount = 0;
       var allFeeds = response.graphql.user.edge_owner_to_timeline_media.edges;
 
-      showInstaFeeds = $.grep(allFeeds, function(ele, i) {
+      showInstaFeeds = $.grep(allFeeds, function (ele, i) {
         return ele.node.owner.id == ownerId;
       });
 
@@ -263,8 +264,8 @@ $(window).on('load', function() {
         }
       }
 
-      setTimeout(function() {
-        $.each(showInstaFeeds, function(i, item) {
+      setTimeout(function () {
+        $.each(showInstaFeeds, function (i, item) {
           if ($(window).width() >= 767) {
             if (i > 3) return false;
           } else {
@@ -274,9 +275,9 @@ $(window).on('load', function() {
             .appendTo('.instagram-feed');
         });
         var heightDIV = $('.instagram-feed div:first-child').innerWidth();
-        $('.instagram-feed div').each(function() {
-            $(this).css('height', heightDIV + 'px');
-          });
+        $('.instagram-feed div').each(function () {
+          $(this).css('height', heightDIV + 'px');
+        });
         $('.instagram-feed').slideDown('slow');
       }, 500);
 
@@ -298,7 +299,7 @@ function pinterestShare(img, desc) {
     "?url=" + window.location.href +
     "&media=" + img +
     "&description=" + desc,
-    "pinIt","toolbar=no, scrollbars=no, resizable=no, top=0, right=0"
+    "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0"
   );
   return false;
 }
@@ -306,20 +307,20 @@ function pinterestShare(img, desc) {
 //scroll navigation changes function
 function navOnScroll() {
   var navigationClass = $('header');
-  $(window).on('load resize scroll', function() {
-      if ($(window).width() < 1201) {
+  $(window).on('load resize scroll', function () {
+    if ($(window).width() < 1201) {
+      navigationClass.addClass('scroll-head');
+    } else {
+      if (navigationClass.offset().top > 100) {
         navigationClass.addClass('scroll-head');
       } else {
-        if (navigationClass.offset().top > 100) {
-          navigationClass.addClass('scroll-head');
-        } else {
-          navigationClass.removeClass('scroll-head');
-        }
-        if ($(window).scrollTop() > 100) {
-          navigationClass.addClass('scroll-head');
-        } else {
-          navigationClass.removeClass('scroll-head');
-        }
+        navigationClass.removeClass('scroll-head');
       }
-    });
+      if ($(window).scrollTop() > 100) {
+        navigationClass.addClass('scroll-head');
+      } else {
+        navigationClass.removeClass('scroll-head');
+      }
+    }
+  });
 }
