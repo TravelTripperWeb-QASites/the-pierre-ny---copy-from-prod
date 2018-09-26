@@ -35,38 +35,24 @@
       "event_name": {
         "required": true
       },
-      "event_heading_id": {
-        "required": true,
-        "hint": "Should be in lowercase without spaces"
-      },
-      "event_collapse_id": {
+      "event_id": {
         "required": true,
         "hint": "Should be in lowercase without spaces"
       },
       "event_detail": {
         "required": true
       },
-      "start_day": {
-        "required": true,
-        "type": "select",
-        "options": ["Everyday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-      },
-      "end_day": {
-        "type": "select",
-        "options": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "hint": "Select this only if it's a multiple day event"
-      },
-      "from_time": {
+      "day": {
         "required": true
       },
-      "to_time": {
-        "required": true
+      "date": {
+        "type": "date",
+        "Instructions": "Enter either date or time. If time's given, then date won't be visible on site."
       },
-      "am_or_pm": {
-        "required": true,
-        "type": "select",
-        "options": ["AM", "PM"]
+      "time": {
+        "Instructions": "Enter either date or time. If time's given, then date won't be visible on site."
       },
+
       "event_contact": {
         "required": true,
         "type": "richtext",

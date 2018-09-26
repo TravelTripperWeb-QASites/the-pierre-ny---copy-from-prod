@@ -48,11 +48,11 @@ meta_tags:
         {% for event in item.event_listing %}
           <!-- Event -->
           <div class="card" tabindex="0">
-            <div class="card-header collapsed" id="{{ event.event_heading_id }}" data-toggle="collapse" data-target="#{{ event.event_collapse_id }}" aria-expanded="true" >
+            <div class="card-header collapsed" id="{{ event.event_id }}heading" data-toggle="collapse" data-target="#{{ event.event_id }}collapse" aria-expanded="true" >
               <!-- Event Schedule -->
               <div class="schedule" tabindex="0">
-                <span>{{ event.start_day }}{% if event.end_day and event.end_day != "" %} - {{ event.end_day }}{% endif %}</span>
-                <h4>{{ event.from_time }} - {{ event.to_time }} {{ event.am_or_pm }}</h4>
+                <span>{{ event.day }}</span>
+                <h4>{% if event.time and event.time != "" %}{{ event.time }}{% else %}{{ event.date | date: "%D %B" }}{% endif %}</h4>
               </div>
               <!-- Event Title -->
               <h3 tabindex="0">{{ event.event_name }}</h3>
@@ -62,7 +62,7 @@ meta_tags:
                 <i class="fa fa-plus"></i>
               </div>
             </div>
-            <div id="{{ event.event_collapse_id }}" class="collapse" aria-labelledby="{{ event.event_heading_id }}" data-parent="#{{ item.category_id }}">
+            <div id="{{ event.event_id }}collapse" class="collapse" aria-labelledby="{{ event.event_id }}heading" data-parent="#{{ item.category_id }}">
               <div class="card-body">
                 <div class="wrapper">
                   <p tabindex="0">{{ event.event_detail }}</p>
