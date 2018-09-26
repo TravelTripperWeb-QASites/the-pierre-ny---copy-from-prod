@@ -1,6 +1,7 @@
 {
   "event_listing_localized": {
-    "en": [{
+    "en": [
+      {
         "event_name": "Broadway Sings For Pride ",
         "event_id": "prideheading",
         "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -8,7 +9,9 @@
         "time": "2:00 - 3:00 PM",
         "event_contact": "<p>Test content..</p>",
         "event_booking_id": "#",
-        "view_menu_url": "#"
+        "view_menu_url": "#",
+        "date": {
+        }
       },
       {
         "event_name": "WICKED Ozdust Series",
@@ -18,7 +21,9 @@
         "time": "3:00 - 5:00PM",
         "event_contact": "<p>Test..</p>",
         "event_booking_id": "#",
-        "view_menu_url": "#"
+        "view_menu_url": "#",
+        "date": {
+        }
       }
     ]
   },
