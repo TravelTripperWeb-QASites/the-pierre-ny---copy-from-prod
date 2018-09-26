@@ -45,13 +45,10 @@
       "day": {
         "required": true
       },
-      "date": {
-        "hint": "Enter date in 'eg. Jan 06th' format."
+      "date_time": {
+        "required": true,
+        "hint": "Enter date or time. Not both."
       },
-      "time": {
-        "hint": "Enter either date or time. If time's given, then date won't be visible on site."
-      },
-
       "event_contact": {
         "required": true,
         "type": "richtext",

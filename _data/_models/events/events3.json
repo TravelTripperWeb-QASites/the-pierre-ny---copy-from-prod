@@ -35,7 +35,7 @@
     "event_id": "midsummer",
     "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "day": "Monday - Thursday",
-    "time": "6:30 - 9:30 PM",
+    "date_time": "6:30 - 9:30 PM",
     "event_contact": "<p>Contact Two E Bar &amp; Lounge, at&nbsp;<a href=\"tel:646-396-3303\">646 396 3303</a>&nbsp;or&nbsp;<a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
     "event_booking_id": "34024",
     "view_menu_url": "#"
