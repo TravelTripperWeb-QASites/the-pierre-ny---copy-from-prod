@@ -1,0 +1,46 @@
+{
+  "event_listing_localized": {
+    "en": [
+      {
+        "event_name": "Broadway Sings For Pride ",
+        "event_id": "sing",
+        "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "day": "Monday",
+        "date": {
+        },
+        "event_contact": "<p>test</p>",
+        "event_booking_id": "#",
+        "view_menu_url": "#"
+      }
+    ]
+  },
+  "category_id": "broadway",
+  "category_image": {
+    "name": "broadway",
+    "file_name": "broadway.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/broadway.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-26-062951",
+    "file_type": "image/jpeg",
+    "width": 1399,
+    "height": 599,
+    "file_size": 211039,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/large_broadway.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/medium_broadway.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/small_broadway.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/xsmall_broadway.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/thumb_broadway.jpg",
+    "git_file_name": "_assets/image_data/broadway.json",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-09-26-062951/broadway.jpg",
+    "alt": "Broadway",
+    "caption": ""
+  },
+  "sort_order": 3,
+  "title_localized": {
+    "en": "Broadway at the Pierre"
+  },
+  "category_intro_localized": {
+    "en": "Enjoy great performances every month, from an exclusive Broadway Musicle to a Latin Jazz celebration of the tango!"
+  }
+}
