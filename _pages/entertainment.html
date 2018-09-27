@@ -36,7 +36,7 @@ meta_tags:
 {% for item in event_categories %}
   <div class="events-listing">
       <!-- Category section -->
-      <div class="event-category-intro" id="{{ item.category_id }}" style="background-image:url('{{ item.category_image.url }}');">
+      <div class="event-category-intro" id="{{ item.category_id }}-scroll" style="background-image:url('{{ item.category_image.url }}');">
         <div class="overlay-bg reverse"></div>
         <div class="intro-text">
           <h2 tabindex="0">{{ item.title }}</h2>
@@ -44,7 +44,7 @@ meta_tags:
         </div>
       </div>
       <!-- Event Details Accordion -->
-      <div class="event-details accordion">
+      <div class="event-details accordion"  id="{{ item.category_id }}">
         {% for event in item.event_listing %}
           <!-- Event -->
           <div class="card" tabindex="0">
