@@ -35,51 +35,51 @@ meta_tags:
 {% assign event_categories = site.data._models.events | sort: "sort_order" %}
 {% for item in event_categories %}
   <div class="events-listing">
-      <!-- Category section -->
-      <div class="event-category-intro" id="{{ item.category_id }}-scroll" style="background-image:url('{{ item.category_image.url }}');">
-        <div class="overlay-bg reverse"></div>
-        <div class="intro-text">
-          <h2 tabindex="0">{{ item.title }}</h2>
-          <p tabindex="0">{{ item.category_intro }}</p>
-        </div>
+    <!-- Category section -->
+    <div class="event-category-intro" id="{{ item.category_id }}-scroll" style="background-image:url('{{ item.category_image.url }}');">
+      <div class="overlay-bg reverse"></div>
+      <div class="intro-text">
+        <h2 tabindex="0">{{ item.title }}</h2>
+        <p tabindex="0">{{ item.category_intro }}</p>
       </div>
-      <!-- Event Details Accordion -->
-      <div class="event-details accordion"  id="{{ item.category_id }}">
-        {% for event in item.event_listing %}
-          <!-- Event -->
-          <div class="card" tabindex="0">
-            <div class="card-header collapsed" id="{{ event.event_id }}heading" data-toggle="collapse" data-target="#{{ event.event_id }}collapse" aria-expanded="true" >
-              <!-- Event Schedule -->
-              <div class="schedule" tabindex="0">
-                <span>{{ event.day }}</span>
-                <h4>{{ event.date_time }}</h4>
-              </div>
-              <!-- Event Title -->
-              <h3 tabindex="0">{{ event.event_name }}</h3>
-              <!-- Accordion Control -->
-              <div class="controls">
-                <i class="fa fa-minus"></i>
-                <i class="fa fa-plus"></i>
-              </div>
+    </div>
+    <!-- Event Details Accordion -->
+    <div class="event-details accordion"  id="{{ item.category_id }}">
+      {% for event in item.event_listing %}
+        <!-- Event -->
+        <div class="card" tabindex="0">
+          <div class="card-header collapsed" id="{{ event.event_id }}heading" data-toggle="collapse" data-target="#{{ event.event_id }}collapse" aria-expanded="true" >
+            <!-- Event Schedule -->
+            <div class="schedule" tabindex="0">
+              <span>{{ event.day }}</span>
+              <h4>{{ event.date_time }}</h4>
             </div>
-            <div id="{{ event.event_id }}collapse" class="collapse" aria-labelledby="{{ event.event_id }}heading" data-parent="#{{ item.category_id }}">
-              <div class="card-body">
-                <div class="wrapper">
-                  <p tabindex="0">{{ event.event_detail }}</p>
-                  <div class="opentable-widget">
-                    <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
-                    <div class="d-xl-flex justify-content-center" tabindex="0">
-                      <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
-                      <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
-                    </div>
-                    <div tabindex="0">{{ event.event_contact }}</div>
+            <!-- Event Title -->
+            <h3 tabindex="0">{{ event.event_name }}</h3>
+            <!-- Accordion Control -->
+            <div class="controls">
+              <i class="fa fa-minus"></i>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div id="{{ event.event_id }}collapse" class="collapse" aria-labelledby="{{ event.event_id }}heading" data-parent="#{{ item.category_id }}">
+            <div class="card-body">
+              <div class="wrapper">
+                <p tabindex="0">{{ event.event_detail }}</p>
+                <div class="opentable-widget">
+                  <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
+                  <div class="d-xl-flex justify-content-center" tabindex="0">
+                    <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+                    <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
                   </div>
+                  <div tabindex="0">{{ event.event_contact }}</div>
                 </div>
               </div>
             </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 {% endfor %}
 </section>

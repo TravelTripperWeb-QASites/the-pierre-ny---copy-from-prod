@@ -61,6 +61,7 @@ meta_tags:
             <p tabindex="0">{{ offer.short_description_zh | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
             {% endif %}
             <a class="border-btn light" href="{{ offerspage }}{{ offer.url_friendly_name }}/">{% t 'view_details' %}</a>
+            <a class="border-btn light" href="{% if site.active_lang == "en" %}{{ offer.booking_link_en }}{% else %}{{ offer.booking_link_zh }}{% endif %}">{% t 'book_now' %}</a>
           </div>
         </div>
       {% endunless %}
