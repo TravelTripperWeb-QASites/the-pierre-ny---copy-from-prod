@@ -97,5 +97,5 @@
   "order": 7,
   "booking_link_en": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
   "booking_link_zh": "https://thepierreny.reztrip.com/classic/en/searches/5a9422498b076b4277860560/hotels/NYCTP/rooms?action=show&adults[]=1&arrival_date=2018-02-26&children[]=0&controller=landings&departure_date=2018-02-27&locale=en&starting_page=search",
-  "unpublish": ""
+  "unpublish": true
 }

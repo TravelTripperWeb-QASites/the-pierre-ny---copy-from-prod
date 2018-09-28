@@ -32,7 +32,7 @@
   "terms_zh": "<ul tabindex=\"0\">\n<li>预订后 100% 不可退款，不可取消。不可以任何方式转让或修改预订。</li>\n<li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination. \n</li>\n</ul>",
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=179238&vr=3",
   "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=T07T",
-  "order": 10,
+  "order": 5,
   "slider_images": [
     {
       "name": "Early Bird Advance Purchase 585x550",
@@ -76,6 +76,5 @@
       "alt": "Early Bird Advanced Purchase",
       "caption": ""
     }
-  ],
-  "unpublish": ""
+  ]
 }

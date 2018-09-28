@@ -77,5 +77,5 @@
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=205932&vr=3 ",
   "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=T02T",
   "order": 6,
-  "unpublish": ""
+  "unpublish": true
 }

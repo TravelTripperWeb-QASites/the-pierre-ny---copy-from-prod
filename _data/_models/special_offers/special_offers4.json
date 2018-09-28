@@ -1,7 +1,7 @@
 {
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139039&vr=3",
   "booking_link_zh": "https://thepierreny.reztrip.com/zh-CN/special_offer?rate_code=S6T",
-  "order": 9,
+  "order": 4,
   "title": "Soiree and Valet",
   "title_zh": "晚会和泊车员",
   "url_friendly_name": "soiree-and-valet",
@@ -76,6 +76,5 @@
       "alt": "Soiree and Valet",
       "caption": ""
     }
-  ],
-  "unpublish": ""
+  ]
 }
