@@ -55,5 +55,6 @@
   "terms_zh": "<ul tabindex=\"0\">\n<li>Offer is&nbsp;available from now through&nbsp;August 19th, 2018</li>\n<li>Offer requires 24-hour advance purchase</li>\n<li>Maximum&nbsp;of two tickets per room. Call our Reservations team on +1.212.838.8000 for&nbsp;this offer</li>\n<li>VIP tickets will be provided at check-in&nbsp;</li>\n</ul>",
   "order": 4,
   "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=185296&vr=3 ",
-  "booking_link_zh": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=185296&vr=3 "
+  "booking_link_zh": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=185296&vr=3 ",
+  "unpublish": true
 }
