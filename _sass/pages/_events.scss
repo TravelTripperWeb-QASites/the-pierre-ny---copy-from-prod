@@ -28,6 +28,11 @@
       bottom: 100px;
       left: 0;
 
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+
       h2,p {
         color: $white;
       }
@@ -379,7 +384,7 @@
         margin-bottom: 20px;
       }
     }
-    
+
     @include media-breakpoint-up(md) {
       &:nth-child(even) {
         .image {

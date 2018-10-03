@@ -12,6 +12,7 @@
   },
   "category_intro": {
     "label": "Category Intro",
+    "type": "richtext",
     "required": true,
     "hint": "Short description of event category here",
     "localizable": true

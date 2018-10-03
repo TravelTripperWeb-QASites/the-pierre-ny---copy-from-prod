@@ -16,6 +16,9 @@ meta_tags:
   robots:
 ---
 
+<!-- EventBrite widget script -->
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <!-- Events Banner here -->
 <section class="page-banner inner" style="background-image:url('/assets/images/events/events-banner.jpg');">
   <div class="overlay-bg"></div>
@@ -40,7 +43,7 @@ meta_tags:
       <div class="overlay-bg reverse"></div>
       <div class="intro-text">
         <h2 tabindex="0">{{ item.title }}</h2>
-        <p tabindex="0">{{ item.category_intro }}</p>
+        <div tabindex="0">{{ item.category_intro }}</div>
       </div>
     </div>
     <!-- Event Details Accordion -->
@@ -74,7 +77,9 @@ meta_tags:
                     {% else %}
                       <div id="eventbrite-widget-container-{{ event.event_booking_id }}"></div>
                     {% endif %}
-                    <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
+                    {% if event.view_menu_url and event.view_menu_url != "" %}
+                      <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
+                    {% endif %}
                   </div>
                   <div tabindex="0">{{ event.event_contact }}</div>
                 </div>

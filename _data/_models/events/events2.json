@@ -25,16 +25,16 @@
     "en": "Jazz & Two E Hours"
   },
   "category_intro_localized": {
-    "en": "Discover Two E's new Icons of Jazz  series featuring Antonio & special guests!"
+    "en": "<p>Discover Two E's new Icons of Jazz  series featuring Antonio & special guests!</p>"
   },
   "event_listing_localized": {
     "en": [
       {
         "event_name": "Live jazz with Antonio Ciacca",
         "event_id": "livejazz",
-        "event_detail": "Enjoy live jazz, Thursday - Saturday from 6:30pm - 9:30pm with our artist-in-residence, internationally renowned musician Antonio Ciacca and discover Two E's new Icons of Jazz  series featuring Antonio & special guests! Food & beverage minimum and advance reservations required",
-        "day": "Everyday",
-        "date_time": "2:00 - 10:00 PM",
+        "event_detail": "Enjoy complimentary live jazz Thursday, Friday and Saturday evenings with our artist-in-residence, internationally renowned musician Antonio Ciacca.<br>Returning this winter, Two E's monthly Icons of Jazz  series featuring Antonio with special guests!",
+        "day": "Thursday - Saturday",
+        "date_time": "6:30 - 9:30 PM",
         "event_booking_id": "34024",
         "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
         "view_menu_url": "#",
