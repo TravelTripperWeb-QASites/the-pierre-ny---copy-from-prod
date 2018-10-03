@@ -25,7 +25,7 @@ meta_tags:
     {% endregionblock %}
     <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
     {% regionblock entertainment_subheading, type:header %}
-      <h6 tabindex="0">AT THE TWO E BAR & LOUNGE</h6>
+      <h6 tabindex="0">AT TWO E BAR & LOUNGE</h6>
     {% endregionblock %}
   </div>
 </section>
@@ -69,7 +69,11 @@ meta_tags:
                 <div class="opentable-widget">
                   <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
                   <div class="d-xl-flex justify-content-center" tabindex="0">
-                    <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+                    {% if event.widget == "OpenTable" %}
+                      <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
+                    {% else %}
+                      <div id="eventbrite-widget-container-{{ event.event_booking_id }}"></div>
+                    {% endif %}
                     <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
                   </div>
                   <div tabindex="0">{{ event.event_contact }}</div>
@@ -78,6 +82,22 @@ meta_tags:
             </div>
           </div>
         </div>
+        <script type="text/javascript">
+          var exampleCallback = function() {
+            console.log('Order complete!');
+          };
+
+          window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '{{ event.event_booking_id }}',
+            iframeContainerId: 'eventbrite-widget-container-{{ event.event_booking_id }}',
+
+            // Optional
+            //iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+          });
+        </script>
       {% endfor %}
     </div>
   </div>

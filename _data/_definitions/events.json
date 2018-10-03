@@ -54,6 +54,12 @@
         "type": "richtext",
         "hint": "Please add text with urls if any. To do so, get into code mode."
       },
+      "widget": {
+        "label": "Select Event Widget",
+        "required": true,
+        "type": "select",
+        "options": ["OpenTable", "EventBrite"]
+      },
       "event_booking_id": {
         "required": true,
         "hint": "Enter booking id from OpentTable widget here"
