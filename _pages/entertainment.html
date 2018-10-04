@@ -68,7 +68,9 @@ meta_tags:
           <div id="{{ event.event_id }}collapse" class="collapse" aria-labelledby="{{ event.event_id }}heading" data-parent="#{{ item.category_id }}">
             <div class="card-body">
               <div class="wrapper">
-                <p tabindex="0">{{ event.event_detail }}</p>
+                {% if event.event_detail and event.event_detail != "" %}
+                  <p tabindex="0">{{ event.event_detail }}</p>
+                {% endif %}
                 <div class="opentable-widget">
                   <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
                   <div class="d-xl-flex justify-content-center" tabindex="0">

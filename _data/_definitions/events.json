@@ -40,9 +40,7 @@
         "required": true,
         "hint": "Should be in lowercase without spaces"
       },
-      "event_detail": {
-        "required": true
-      },
+      "event_detail": {},
       "day": {
         "required": true
       },
