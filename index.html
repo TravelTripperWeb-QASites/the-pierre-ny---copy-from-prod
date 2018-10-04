@@ -63,14 +63,20 @@ meta_tags:
       </div>
     </div>
     <div class="images">
+      {% assign first_one = 0 %}
       {% assign offers = site.data._models.special_offers | sort: "order" %}
-      {% for offer in offers | limit: 1 %}
-        <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
-          <div class="heading">
-            <h6 tabindex="0">{% t 'special_offers' %}</h6>
-            <a class="secondary-btn inverse" href="{{ pageurl }}special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
+      {% for offer in offers %}
+        {% unless offer.unpublish == true %}
+        {% assign first_one = first_one | plus: 1 %}
+        {% if first_one == 1 %}
+          <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
+            <div class="heading">
+              <h6 tabindex="0">{% t 'special_offers' %}</h6>
+              <a class="secondary-btn inverse" href="{{ pageurl }}special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
+            </div>
           </div>
-        </div>
+        {% endif %}
+        {% endunless %}
       {% endfor %}
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
         <div class="heading">
