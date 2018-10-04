@@ -4,22 +4,16 @@
       {
         "event_name": "Broadway Sings For Pride ",
         "event_id": "sing",
-        "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "day": "Monday",
-        "event_contact": "<p>test</p>",
         "event_booking_id": "34024",
-        "view_menu_url": "#",
         "date_time": "June 11th",
         "widget": "OpenTable"
       },
       {
         "event_name": "WICKED Ozdust Series",
         "event_id": "ozdust",
-        "event_detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "day": "Monday",
-        "event_contact": "<p>Test..</p>",
         "event_booking_id": "34024",
-        "view_menu_url": "@",
         "date_time": "June 25th",
         "widget": "OpenTable"
       }
