@@ -65,7 +65,7 @@ meta_tags:
     <div class="images">
       {% assign offers = site.data._models.special_offers | sort: "order" %}
       {% for offer in offers | limit: 1 %}
-        <div class="image-text" style="background-image:url('{{ offer.banner_image.url_large }}');">
+        <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
           <div class="heading">
             <h6 tabindex="0">{% t 'special_offers' %}</h6>
             <a class="secondary-btn inverse" href="{{ pageurl }}special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
