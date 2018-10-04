@@ -83,7 +83,9 @@ meta_tags:
                       <a class="secondary-btn" href="{{ event.view_menu_url }}">{% t 'view_menus' %}</a>
                     {% endif %}
                   </div>
-                  <div tabindex="0">{{ event.event_contact }}</div>
+                  {% if event.event_contact and event.event_contact != "" %}
+                    <div tabindex="0">{{ event.event_contact }}</div>
+                  {% endif %}
                 </div>
               </div>
             </div>

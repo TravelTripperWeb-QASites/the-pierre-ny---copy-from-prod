@@ -49,7 +49,6 @@
         "hint": "Enter date or time. Not both."
       },
       "event_contact": {
-        "required": true,
         "type": "richtext",
         "hint": "Please add text with urls if any. To do so, get into code mode."
       },
