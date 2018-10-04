@@ -6,7 +6,6 @@
         "event_id": "sing",
         "day": "Monday",
         "event_booking_id": "34024",
-        "view_menu_url": "#",
         "date_time": "June 11th",
         "widget": "OpenTable"
       },
@@ -15,7 +14,6 @@
         "event_id": "ozdust",
         "day": "Monday",
         "event_booking_id": "34024",
-        "view_menu_url": "@",
         "date_time": "June 25th",
         "widget": "OpenTable"
       }
