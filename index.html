@@ -64,7 +64,7 @@ meta_tags:
     </div>
     <div class="images">
       {% assign offers = site.data._models.special_offers | sort: "order" %}
-      {% for offer in offers | limit: 1 %}
+      {% for offer in offers | limit: 1%}
         {% unless offer.unpublish == true %}
         <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
           <div class="heading">
