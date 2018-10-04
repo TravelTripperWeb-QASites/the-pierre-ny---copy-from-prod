@@ -16,9 +16,11 @@ meta_tags:
 ---
 
 {% if site.active_lang == "en" %}
+  {% assign pageurl ="/" %}
   {% assign eventlink = '/entertainment/' %}
 {% else %}
-  {% assign  eventlink = '/zh/entertainment/' %}
+  {% assign pageurl ="/zh/" %}
+  {% assign eventlink = '/zh/entertainment/' %}
 {% endif %}
 
 <!-- Home banner here -->
@@ -33,7 +35,7 @@ meta_tags:
       <h6 tabindex="0">FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>
     {% endregionblock %}
     {% regionblock banner_url, type:text %}
-      <a class="border-btn mx-auto" href="../location/">View Location</a>
+      <a class="border-btn mx-auto" href="{{ pageurl }}location/">View Location</a>
     {% endregionblock %}
   </div>
 </section>
@@ -56,21 +58,24 @@ meta_tags:
       <div class="image-full mr-15" style="background-image:url('/assets/images/home/rooms.jpg');">
         <div class="heading">
           <h6 tabindex="0">{% t 'rooms_suites' %}</h6>
-          <a class="secondary-btn inverse" href="../rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
+          <a class="secondary-btn inverse" href="{{ pageurl }}rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
         </div>
       </div>
     </div>
     <div class="images">
-      <div class="image-text" style="background-image:url('/assets/images/home/special.jpg');">
+      {% assign offers = site.data._models.special_offers | sort: "order" %}
+      {% for offer in offers | limit: 1 %}
+      <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
         <div class="heading">
           <h6 tabindex="0">{% t 'special_offers' %}</h6>
-          <a class="secondary-btn inverse" href="../special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
+          <a class="secondary-btn inverse" href="{{ pageurl }}special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
         </div>
       </div>
+      {% endfor %}
       <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
         <div class="heading">
           <h6 tabindex="0">{% t 'dining' %}</h6>
-          <a class="secondary-btn inverse" href="../dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
+          <a class="secondary-btn inverse" href="{{ pageurl }}dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
         </div>
       </div>
     </div>
@@ -85,7 +90,7 @@ meta_tags:
     {% endregionblock %}
     <div tabindex="0">
       {% regionblock entertainment_detail, type:text %}
-        <p>Enjoy great performances in May, from an exclusive Mother's Day show with principal cast members of THE PHANTOM OF THE OPERA to a Latin Jazz celebration of the tango!</p>
+        <p>From festive seasonal events on Perrine's outdoor terrace to live music in Two E Bar & Lounge, The Pierre offers exceptional entertainment programming all year long.</p>
       {% endregionblock %}
     </div>
   </div>
@@ -126,7 +131,7 @@ meta_tags:
            <h6 tabindex="0">Meetings</h6>
           {% endregionblock %}
           {% regionblock meetings_url, type:text %}
-           <a class="secondary-btn inverse" href="/meetings/" title="Discover more">{% t 'learn_more' %}</a>
+           <a class="secondary-btn inverse" href="{{ pageurl }}meetings/" title="Discover more">{% t 'learn_more' %}</a>
           {% endregionblock %}
         </div>
       </div>
@@ -136,7 +141,7 @@ meta_tags:
            <h6 tabindex="0">Venues</h6>
           {% endregionblock %}
           {% regionblock venues_url, type:text %}
-           <a class="secondary-btn inverse" href="/venues/" title="Dining">{% t 'learn_more' %}</a>
+           <a class="secondary-btn inverse" href="{{ pageurl }}venues/" title="Dining">{% t 'learn_more' %}</a>
           {% endregionblock %}
         </div>
       </div>
@@ -148,7 +153,7 @@ meta_tags:
            <h6 tabindex="0">Weddings & Social Events</h6>
           {% endregionblock %}
           {% regionblock weddings_url, type:text %}
-           <a class="secondary-btn inverse" href="/rfp/" title="REQUEST FOR PROPOSAL">REQUEST FOR PROPOSAL</a>
+           <a class="secondary-btn inverse" href="{{ pageurl }}rfp/" title="REQUEST FOR PROPOSAL">REQUEST FOR PROPOSAL</a>
           {% endregionblock %}
         </div>
       </div>
