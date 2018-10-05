@@ -37,7 +37,8 @@
         "date_time": "6:30 - 9:30 PM",
         "event_booking_id": "34024",
         "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
-        "widget": "OpenTable"
+        "widget": "OpenTable",
+        "cta_text": "Make Reservations"
       },
       {
         "event_name": "Theater Pizzazz Review",
@@ -46,7 +47,8 @@
         "date_time": "8:30 - 2:30 AM",
         "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
         "event_booking_id": "34024",
-        "widget": "OpenTable"
+        "widget": "OpenTable",
+        "cta_text": "Make Reservations"
       }
     ]
   }
