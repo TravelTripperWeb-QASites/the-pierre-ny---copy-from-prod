@@ -2,20 +2,13 @@
   "event_listing_localized": {
     "en": [
       {
-        "event_name": "Broadway Sings For Pride ",
+        "event_name": "Broadway at The Pierre",
         "event_id": "sing",
         "day": "Monday",
         "event_booking_id": "34024",
         "date_time": "June 11th",
-        "widget": "OpenTable"
-      },
-      {
-        "event_name": "WICKED Ozdust Series",
-        "event_id": "ozdust",
-        "day": "Monday",
-        "event_booking_id": "34024",
-        "date_time": "June 25th",
-        "widget": "OpenTable"
+        "widget": "OpenTable",
+        "cta_text": "Make Reservations"
       }
     ]
   },
