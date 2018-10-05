@@ -1,2 +1,16 @@
-// Header Elements
-// ==========================================================================
+// Header Elements ==========================================================================
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+
+  .wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+  }
+}

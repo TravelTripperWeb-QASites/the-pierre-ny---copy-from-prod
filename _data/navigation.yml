@@ -1,23 +1,109 @@
 main:
-  - title: About
-    url: /about/
-  - title: Amenities
-    url: /amenities/
-  - title: Attractions
-    url: /attractions/
-  - title: Rooms
-    url: /rooms/
-  - title: Offers
-    url: /offers/
-  - title: Location
-    url: /location/
-  - title: Dining
-    url: /dining/
-  - title: Events
-    url: /events/
-  - title: Gallery
-    url: /gallery/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
+  en:
+    - title: Hotel
+      url: /history/
+      dropdown:
+        - title: History
+          url: /history/
+        - title: Location
+          url: /location/
+        - title: News
+          url: /news/
+    - title: Rooms & Suites
+      url: /rooms-suites/
+      dropdown:
+        - title: Amenities
+          url: /luxury-manhattan-hotel-amenities/
+        - title: Residences
+          url: /rooms-suites/#residences
+    - title: Dining
+      url: /dining/
+      dropdown:
+        - title: Perrine
+          url: http://www.perrinenyc.com/
+          external: true
+        - title: The Rotunda
+          url: /dining/the-rotunda/
+        - title: Two E Bar & Lounge
+          url: /dining/twoebar-lounge/
+        - title: Afternoon Tea
+          url: /dining/twoetea/
+        - title: Cocktails & Music
+          url: /dining/twoebar/
+    - title: Events
+      url: /events/
+      dropdown:
+        - title: Weddings
+          url: /events/weddings/
+        - title: Meetings
+          url: /events/meetings/
+        - title: Venues
+          url: /events/venues/
+        - title: Meet the Team
+          url: /meet-the-team/
+    - title: Entertainment
+      url: /entertainment/
+    - title: Special Offers
+      url: /special-offers/
+    - title: Awards
+      url: /awards/
+    - title: Gallery
+      url: /gallery/
+  zh:
+    - title: 客房和套房
+      url: /zh/rooms-suites/
+      dropdown:
+        - title: 便利设施
+          url: /zh/luxury-manhattan-hotel-amenities/
+        - title: 居住条件
+          url: /zh/rooms-suites/#residences
+    - title: 特别优惠
+      url: /zh/special-offers/
+    - title: 餐饮
+      url: /zh/dining/
+      dropdown:
+        - title: Perrine
+          url: http://www.perrinenyc.com/
+          external: true
+        - title: 圆形大厅
+          url: /zh/dining/the-rotunda/
+        - title: 下午茶
+          url: /zh/dining/twoetea/
+        - title: 鸡尾酒和爵士乐
+          url: /zh/dining/twoebar/
+    - title: 活动
+      url: /zh/events/
+      dropdown:
+        - title: 婚礼
+          url: /zh/events/weddings/
+        - title: 会议
+          url: /zh/events/meetings/
+        - title: 场馆
+          url: /zh/events/venues/
+    - title: 位置
+      url: /zh/location/
+    - title: 画廊
+      url: /zh/gallery/
+footer:
+  en:
+    - title: Contact us
+      url: mailto:thepierre.ny@tajhotels.com
+    - title: Discover Taj Hotels
+      url: https://www.tajhotels.com/
+      external: true
+    - title: Join Taj Inner Circle
+      url: https://tajinnercircle.tajhotels.com/reward-programmes/tajinnercircle/index.html
+      external: true
+    - title: Privacy Policy
+      url: /privacy-policy/
+  zh:
+    - title: 联系我们
+      url: mailto:thepierre.ny@tajhotels.com
+    - title: Discover Taj Hotels
+      url: https://www.tajhotels.com/
+      external: true
+    - title: Join Taj Inner Circle
+      url: https://tajinnercircle.tajhotels.com/reward-programmes/tajinnercircle/index.html
+      external: true
+    - title: Privacy Policy
+      url: /privacy-policy/

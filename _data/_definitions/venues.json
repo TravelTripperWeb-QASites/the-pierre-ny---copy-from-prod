@@ -1,0 +1,111 @@
+{
+  "venue_name": {
+    "label": "Venue Name",
+    "required": true
+  },
+  "title": {
+    "label": "SEO Title",
+    "required": true
+  },
+  "meta_description": {
+    "label": "SEO Description",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "label": "SEO Friendly Name",
+    "required": true
+  },
+  "venue_thumbnail": {
+    "label": "Venue Thumbnal",
+    "type": "image",
+    "instructions": "Image size should be 362px X 325px",
+    "required": true
+  },
+  "venue_image": {
+    "label": "Venue Image",
+    "type": "image",
+    "instructions": "Image size should be 362px X 325px",
+    "required": true
+  },
+  "venue_intro": {
+    "type": "richtext",
+    "label": "Venue Intro",
+    "required": true,
+    "localizable": true
+  },
+  "facility_chart": {
+    "type": "nested",
+    "hint": "Enter all the facility chart details",
+    "fields": {
+      "dimensions": {
+        "required": true,
+        "label": "Dimensions",
+        "localizable": true
+      },
+      "area": {
+        "required": true,
+        "label": "Area",
+        "hint": "Area in both Sq.ft & m^2",
+        "localizable": true
+      },
+      "height": {
+        "required": true,
+        "label": "Height",
+        "hint": "Height in both Feet & m",
+        "localizable": true
+      },
+      "location": {
+        "required": true,
+        "label": "Location",
+        "type": "select",
+        "options": ["Lower Level", "Main Floor", "2nd Floor", "3rd Floor", "4th Floor"],
+        "localizable": true
+      }
+    }
+  },
+  "floor_plan": {
+    "required": true,
+    "type": "nested",
+    "hint": "Enter all the floor plan details",
+    "fields": {
+      "theater": {
+        "label": "Theater"
+      },
+      "circular": {
+        "label": "Circular"
+      },
+      "ushaped": {
+        "label": "U-Shaped"
+      },
+      "boardroom": {
+        "label": "Boardroom"
+      },
+      "classroom": {
+        "label": "Classroom"
+      },
+      "reception": {
+        "label": "Reception"
+      }
+    }
+  },
+  "floor_plan_pdf": {
+    "required": true,
+    "label": "Floor Plan PDF",
+    "type": "image"
+  },
+  "event_space_pdf": {
+    "required": true,
+    "label": "Event Space PDF",
+    "type": "image"
+  },
+  "sort_order": {
+    "label": "Order",
+    "type": "integer"
+  },
+  "dont_show_inlist": {
+    "label": "Don't Show in List",
+    "type": "boolean",
+    "hint": "Check, if this Venue should show up only in facility chart."
+  }
+}

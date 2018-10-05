@@ -1,0 +1,126 @@
+// Global Button Styles
+// ==========================================================================
+
+.primary-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-8;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: .038rem;
+  background: $primary-color;
+  @include transition (all .5s);
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background: $text-color;
+  }
+
+  &.inverse {
+    color: $primary-color;
+    background: $white;
+
+    &:hover {
+      color: $white;
+      background: $primary-color;
+    }
+  }
+  &[type= 'submit'] {
+    cursor: pointer;
+    border: 0;
+  }
+}
+
+.secondary-btn {
+  display: inline-block;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-9;
+  line-height: 2.5rem;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &::after {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 20px;
+    content: '';
+    background-image: url('../images/arrow-dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+
+  &.inverse {
+    color: $white;
+
+    &:after {
+      background-image: url('../images/arrow-light.png');
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.border-btn {
+  display: block;
+  width: auto;
+  height: fit-content;
+  margin-left: 10px;
+  padding: 7px;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-10;
+  color: $white !important;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px rgba(255,255,255,.4);
+  @include transition (all .5s);
+
+  &:hover {
+    text-decoration: none;
+    border-color: rgba(255,255,255,1);
+  }
+
+  &.dark {
+    color: $primary-color !important;
+    border-color: $primary-color;
+
+    &:hover {
+      color: $white !important;
+      background: $primary-color;
+    }
+  }
+
+  &.wp-more {
+    width: auto;
+    padding: 10px 25px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 130px;
+    padding: 7px 0;
+  }
+  
+  &.light {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px 25px;
+    color: $primary-color !important;
+    border-color: $primary-color;
+    &:hover {
+      color: $white !important;
+      background: $primary-color;
+    }
+  }
+}

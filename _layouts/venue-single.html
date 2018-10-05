@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+{% assign venues = page %}
+{% assign model = page %}
+
+{% if site.active_lang =="en" %}
+{% assign pageurl ="/events/" %}
+{% else %}
+{% assign pageurl ="/zh/events/" %}
+{% endif %}
+
+<!-- Venue details banner here -->
+<div class="page-banner" style="background-image:url('{{ page.venue_image.url_large }}');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 tabindex="0">{{ page.venue_name }}</h1>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" />
+    </div>
+    <h6 tabindex="0">{% t 'call_our_team' %}<br><a href="tel:212-940-8111">+1 212 940 8111</a></h6>
+    <a class="primary-btn inverse" href="/request-for-proposal/">{% t 'request_for_proposal' %}</a>
+  </div>
+</div>
+
+<!-- Venues Sub Nav -->
+<div class="sub-nav">
+  {% assign venues = site.data._models.venues | where: "dont_show_inlist", undefined | sort: "sort_order " %}
+  <ul class="d-flex justify-content-center">
+    {% for venue in venues %}
+      <li>
+        <a {% if page.url_friendly_name != venue.url_friendly_name %}href="{{ pageurl }}venues/{{ venue.url_friendly_name }}/"{% endif%}>{{ venue.venue_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- Venue Intro & Share -->
+
+<div class="quote light">
+  <div tabindex="0">
+    {{ page.venue_intro }}
+  </div>
+  <div class="social-share">
+    {% if site.data.social.facebook.username %}
+      <a href="https://www.facebook.com/sharer.php?caption={{ page.title }}&description={{ page.venue_intro | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&u={{site.url}}{{ page.url }}&picture=https:{{ page.venue_image.url_large }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.twitter.username %}
+      <a href="javascript:void(0);" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" title="Share on Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if site.data.social.pinterest.username %}
+      <a href="javascript:void(0);" onClick="pinterestShare('{{ page.venue_image.url_large }}', '{{site.url}}{{ page.url }}');" title="Share on Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+    {% endif %}
+    <a href="mailto:thepierre.ny@tajhotels.com?Subject=Venue%20Proposal" title="Share over mail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="javascript:window.print()" title="Print this venue page"><i class="fa fa-print" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<!-- Facility Chart -->
+<div class="table-grid">
+  <h2 tabindex="0">{% t 'facility_chart' %}</h2>
+  <div class="wrapper table-responsive-md" tabindex="0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">{% t 'venues' %}</th>
+          <th scope="col">{% t 'dimension' %}</th>
+          <th scope="col">{% t 'area' %}</th>
+          <th scope="col">{% t 'height' %}</th>
+          <th scope="col">{% t 'location' %}</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td scope="row">{{ page.venue_name }}</td>
+            <td>{{ page.facility_chart.dimensions }}</td>
+            <td>{{ page.facility_chart.area }}</td>
+            <td>{{ page.facility_chart.height }}</td>
+            <td>{{ page.facility_chart.location }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="d-sm-flex justify-content-center">
+    <a class="border-btn dark wp-more" href="{{ page.floor_plan_pdf.url }}" target="_blank">{% t 'view_individual_floorplan' %}</a>
+    <a class="border-btn dark wp-more" href="{{ page.event_space_pdf.url }}" target="_blank">{% t 'view_event_space' %}</a>
+  </div>
+</div>
+
+<!-- Seating Style -->
+<div class="table-grid content-center no-bg">
+  <h2 tabindex="0">{% t 'seating_style' %}</h2>
+  <div class="wrapper table-responsive-md" tabindex="0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">
+            {% t 'venue' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="{% t 'theater' %}"><br>{% t 'theater' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="{% t 'circular' %}"><br>{% t 'circular' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="{% t 'ushaped' %}"><br>{% t 'ushaped' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="{% t 'boardroom' %}"><br>{% t 'boardroom' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="{% t 'classroom' %}"><br>{% t 'classroom' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="{% t 'reception' %}"><br>{% t 'reception' %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">{{ page.venue_name }}</td>
+          <td>{{ page.floor_plan.theater }}</td>
+          <td>{{ page.floor_plan.circular }}</td>
+          <td>{{ page.floor_plan.ushaped }}</td>
+          <td>{{ page.floor_plan.boardroom }}</td>
+          <td>{{ page.floor_plan.classroom }}</td>
+          <td>{{ page.floor_plan.reception }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% include explore-venues-carousel.html %}

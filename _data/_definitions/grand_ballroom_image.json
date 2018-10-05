@@ -1,0 +1,6 @@
+{
+    "Image": { "required": true, "type": "image" },
+    "Hero_Image": { "required": true, "type": "image" }
+
+
+}

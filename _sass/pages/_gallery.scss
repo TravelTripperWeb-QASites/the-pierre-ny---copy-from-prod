@@ -1,2 +1,75 @@
 // Gallery Page Elements
 // ==========================================================================
+
+.gallery-wrapper {
+  @include fluid-layout;
+  padding: 0;
+
+  .sub-nav {
+    margin-bottom: 30px;
+
+    a {
+      padding: 30px 15px 22px;
+
+      &.active {
+        color: $text-color;
+      }
+    }
+  }
+}
+.gallery-listing {
+  @include fixed-width-layout;
+
+  .wrapper {
+    @include make-row;
+
+    .gallery-item {
+      @include make-col-ready;
+      position: relative;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(3);
+      }
+
+      &.hidden {
+        display: none !important;
+      }
+
+      .image {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .overlay {
+        @include transition(all .3s);
+        position: absolute;
+        top: 0;
+        right: 15px;
+        bottom: 0;
+        left: 15px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,.8);
+        opacity: 0;
+        .fas, svg {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          color: $white;
+        }
+      }
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

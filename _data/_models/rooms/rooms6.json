@@ -1,0 +1,49 @@
+{
+  "room-id": "C1K",
+  "language": "en",
+  "short_info": "The City View King Rooms offer elegant residential grace with four-fixture bathrooms and beautiful Manhattan views. These rooms feature 350 square feet and are situated on floors 5 to 21.",
+  "room_features": "<h3>Room Feature</h3>\n<p>The City View King Rooms offer elegant residential grace with four-fixture bathrooms and beautiful Manhattan views. These rooms feature 350 square feet and are situated on floors 5 to 21.</p>\n<h3>Bed &amp; Bath Experience</h3>\n<p>The City View Rooms are spacious and feature a plush and comfortable king bed with unparalleled view of Manhattan&rsquo;s iconic skyline. The room also features a nightstand, Bose Wave studio featuring Bluetooth connectivity and alarm clock and an executive writing desk and chair. A 40&rdquo; wall mounted TV and console with minibar is located across the bed.The Turkish marble-clad bathroom features glass enclosed shower, soaking tub, plush bathrobes and towels and Etro bath amenities.</p>\n<h3>&nbsp;</h3>",
+  "additional-info": "<p>Featuring&nbsp;350 square feet, City View King Rooms offer elegant residential grace with four-fixture bathrooms and beautiful Manhattan views. These rooms are situated on floors 5 to 21.</p>",
+  "service_amenities": "<p>Service includes 24 hour&nbsp;white gloved elevator attendants,&nbsp;Complimentary hotel Jaguar service&nbsp;subject to availability,&nbsp; an Award-winning Les Clefs d'Or Concierge team to assist guests.</p>\n<p>In-room comforts feature&nbsp;Complimentary high speed wi fi for upto 4 devices, 24 hour in-room dining service, Housekeeping daily service twice, Overnight complimentary shoe shine, Plush terry cloth robes &amp; Pierre slippers, Exclusive Etro toiletries, On site 24-hour valet and hand-laundry services, complimentary dog amenities (for pets upto 15 pounds), Complimentary online newspapers and magazines on check in.&nbsp; For a full list of our guest services and amenities click&nbsp;<a href=\"https://www.thepierreny.com/luxury-manhattan-hotel-amenities/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p>\n<p>&nbsp;</p>",
+  "title": "City View King Room Manhattan View",
+  "gallery": [
+    {
+      "url": "",
+      "alt": "",
+      "caption": "",
+      "description": ""
+    }
+  ],
+  "replace-reztrip-details": true,
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "City-View-Room-King",
+      "file_name": "City-View-Room-King.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-Room-King.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123117",
+      "file_size": 192988,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/City-View-Room-King.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-Room-King.pdf",
+      "alt": "City View Room King",
+      "caption": ""
+    },
+    {
+      "name": "City-View-Room-King-2",
+      "file_name": "City-View-Room-King-2.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-Room-King-2.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123117",
+      "file_size": 194247,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/City-View-Room-King-2.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123117/City-View-Room-King-2.pdf",
+      "alt": "City View Room King 2",
+      "caption": ""
+    }
+  ]
+}

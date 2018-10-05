@@ -1,0 +1,49 @@
+{
+  "room-id": "E1K",
+  "language": "en",
+  "short_info": " The Classic King Room offers a peaceful retreat with its interior views and elegant three-fixture bathrooms.  These 350 square foot rooms are situated on floors 4 to 14. ",
+  "room_features": "<h3>Room Features</h3>\n<p>The Classic King Room offers a peaceful retreat with its interior views and elegant three-fixture bathrooms.&nbsp; These 350 square foot rooms are situated on floors 4 to 14.&nbsp;</p>\n<h3>Bed &amp; Bath Experience</h3>\n<p>The Classic Rooms features a comfortable king size bed with a nightstand, Bose Wave Studio radio featuring Bluetooth connectivity and alarm clock. An executive writing desk and chair is located on the far side of the room. An armchair with side table, 40&rdquo; wall mounted TV and console with minibar is located across the bed.&nbsp;&nbsp; The marble four-fixture bathroom features a pedestal sink, glass enclosed shower, soaking tub, plush bathrobes and towels and Etro bath amenities.</p>",
+  "additional-info": "<p>Featuring four-fixture bathrooms and peaceful interior views, our 350 square foot Classic Rooms offer a blend of charm and discreet romance. These rooms are situated on floors 5 to 14.</p>",
+  "service_amenities": "<p>Service includes 24 hour&nbsp;white gloved elevator attendants,&nbsp;Complimentary hotel Jaguar service&nbsp;subject to availability, an Award-winning Les Clefs d'Or Concierge team to assist guests.</p>\n<p>In-room comforts feature Complimentary high speed wi-fi for up to 4 devices, 24 hour in-room dining service, Housekeeping daily service twice, Overnight complimentary shoe shine, Plush terry cloth robes &amp; Pierre slippers, Exclusive Etro toiletries, On site 24-hour valet and hand-laundry services, complimentary dog amenities (for pets&nbsp;up to 15 pounds), Complimentary online newspapers and magazines on check in. For a full list of our guest services and amenities click&nbsp;<a href=\"https://www.thepierreny.com/luxury-manhattan-hotel-amenities/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p>",
+  "title": "Classic King Room Interior View",
+  "gallery": [
+    {
+      "url": "",
+      "alt": "",
+      "caption": "",
+      "description": ""
+    }
+  ],
+  "replace-reztrip-details": true,
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "Classic-Room-King",
+      "file_name": "Classic-Room-King.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Classic-Room-King.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123120",
+      "file_size": 145420,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Classic-Room-King.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Classic-Room-King.pdf",
+      "alt": "Classic Room King",
+      "caption": ""
+    },
+    {
+      "name": "Classic-Room",
+      "file_name": "Classic-Room.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Classic-Room.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123120",
+      "file_size": 194496,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Classic-Room.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Classic-Room.pdf",
+      "alt": "Classic Room",
+      "caption": ""
+    }
+  ]
+}

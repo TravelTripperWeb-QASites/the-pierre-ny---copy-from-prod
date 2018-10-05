@@ -1,0 +1,153 @@
+---
+layout: default
+title_localized:
+  en: Luxury Meeting Venue Central Park | Meetings at the Pierre
+  zh: 中央公园奢华的会议场馆 | 在皮埃尔召开的会议
+meta_description_localized:
+  en: The privacy and exclusivity of our meeting and event space provides an ideal surrounding for important business transactions right in the heart of New York.
+  zh: The privacy and exclusivity of our meeting and event space provides an ideal surrounding for important business transactions right in the heart of New York.
+permalink_localized:
+  en: /events/meetings/
+  zh: /events/meetings/
+published_localized:
+  en: true
+  zh: true
+meta_tags:
+  robots:
+---
+
+{% if site.active_lang == "en" %}
+{% assign neweventlink = '/events/' %}
+{% else %}
+{% assign  neweventlink = '/zh/events/' %}
+{% endif %}
+
+<!-- Meetings Banner here -->
+<section class="page-banner inner background-center" style="background-image:url('/assets/images/meetings/meetings-banner2.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock meetings_banner_title, type:header %}
+      <h1 class="variant" tabindex="0">Meetings &<br>Conferences</h1>
+    {% endregionblock %}
+  </div>
+</section>
+
+<!-- RFP -->
+<section class="rfp-wrap">
+  <div class="rfp-inner">
+    {% if site.active_lang =="en" %}
+      <a class="primary-btn inverse" href="/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+    {% else %}
+      <a class="primary-btn inverse" href="/zh/meetings-rfp/">{% t 'request_for_proposal' %}</a>
+    {% endif %}
+      <p tabindex="0">{% t 'call_our_team' %} <a href="tel:+1 212 940 8111">+1 212 940 8111</a></p>
+  </div>
+</section>
+
+<!-- Intro section here -->
+<section class="intro mb-0">
+  <div class="intro-text">
+    {% regionblock meetings_title1, type:header %}
+      <h2 tabindex="0">Ideal Surroundings</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock meetings_text1, type:text %}
+        <p>The privacy and exclusivity of our meeting and event space provides an ideal surrounding for important business transactions. The Pierre offers 20,000 square feet of multi-purpose meeting space that can accommodate a variety of corporate events, ranging from small board meetings to large multi track conferences.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<div class="pinterest-wrapper">
+  <a data-pin-do="embedUser" data-pin-board-width="1600" data-pin-scale-height="750" data-pin-scale-width="80" href="https://www.pinterest.com/thepierreatajhotel/" title="The Pierre Hotel on Pinterest"></a>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+</div>
+
+<section class="twocol pb-5">
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      {% regionblock meetings_image1, type:image %}
+        <img src="/assets/images/meetings/setting-table-plating.jpg" alt="Experienced Professionals">
+      {% endregionblock %}
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock meetings_title2, type:header %}
+          <h6 tabindex="0">Timeless Opulence</h6>
+        {% endregionblock %}
+        {% regionblock meetings_sub_title2, type:header %}
+          <h4 tabindex="0">Experienced<br>Professionals</h4>
+        {% endregionblock %}
+          <div tabindex="0">
+          {% regionblock meetings_text2, type:text %}
+            <p>Our dedicated team of event and catering experts specialize in coordinating both large-scale and intimate meetings. From small private receptions to a 700 person stakeholder presentation, the team at The Pierre can create a uniquely impactful experience for your attendees.</p>
+          {% endregionblock %}
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      {% regionblock meetings_image2, type:image %}
+        <img src="/assets/images/meetings/central-location.jpg" alt="Central Location">
+      {% endregionblock %}
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock meetings_title3, type:header %}
+          <h6 tabindex="0">The Heart of Manhattan</h6>
+        {% endregionblock %}
+        {% regionblock meetings_sub_title3, type:header %}
+          <h4 tabindex="0">Central Location</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock meetings_text3, type:text %}
+            <p>Located on Central Park & 61st Street, The Pierre offers an exclusive address at the intersection of Midtown Manhattan and the Upper East Side. The ultimate venue for a high-level event, The Pierre and its surroundings make a powerful impression.</p>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      {% regionblock meetings_image3, type:image %}
+        <img src="/assets/images/meetings/cotillion-room.jpg" alt="Unforgettable Events">
+      {% endregionblock %}
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock meetings_title4, type:header %}
+          <h6 tabindex="0">Exquisite Perfection</h6>
+        {% endregionblock %}
+        {% regionblock meetings_sub_title4, type:header %}
+          <h4 tabindex="0">Unforgettable<br>Events</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock meetings_text4, type:text %}
+            <p>The Pierre offers 20,000 square feet of multi-purpose meeting space that can accommodate a variety of corporate events, ranging from small board meetings to large multi track conferences.</p>
+          {% endregionblock %}
+        </div>
+        <a class="primary-btn" href="{{ neweventlink }}venues/">{% t 'learn_more' %}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro mb-0">
+  <div class="intro-text intro-two">
+    <img src="/assets/images/p-icon.png" alt="The Pierre">
+      {% regionblock meetings_title5, type:header %}
+        <h4 class="line" tabindex="0">Our experienced planners will ensure the success of your event</h4>
+      {% endregionblock %}
+    <div>
+      {% regionblock meetings_text5, type:text %}
+        <p tabindex="0">For additional information, please contact:</p>
+        <p><a href="tel:+1 212 838 8000">+1 212 838 8000</a></p>
+        <p><a href="mailto:thepierreevents.ny@tajhotels.com">thepierreevents.ny@tajhotels.com</a></p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+{% include explore-venues-carousel.html %}
+{% include rfp_crosscell.html %}

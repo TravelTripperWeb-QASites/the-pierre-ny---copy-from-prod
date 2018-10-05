@@ -1,0 +1,63 @@
+{
+  "title": "Third Night Complimentary ",
+  "url_friendly_name": "third-night-complimentary",
+  "banner_image": {
+    "url": "https://thepierreny---brad-532-10367.traveltripper.io/assets/images/the-hotel-1.jpg",
+    "path": "/assets/images/the-hotel-1.jpg",
+    "name": "the-hotel-1.jpg",
+    "alt": "Third Night Complimentary",
+    "caption": "",
+    "description": ""
+  },
+  "date": "Valid until March 31, 2018",
+  "short_description_en": "Stay two nights and receive the 3rd night complimentary.",
+  "slider_images": [
+    {
+      "name": "3rd night com 1714 living room 585x550",
+      "file_name": "3rd night com 1714 living room 585x550.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/3rd-night-com-1714-living-room-585x550.jpg",
+      "tags": "",
+      "file_size": 263168,
+      "width": 585,
+      "height": 550,
+      "description": "",
+      "date_added": "2017-12-22-145229",
+      "url_large": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/large_3rd_night_com_1714_living_room_585x550.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/medium_3rd_night_com_1714_living_room_585x550.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/small_3rd_night_com_1714_living_room_585x550.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/xsmall_3rd_night_com_1714_living_room_585x550.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/thumb_3rd_night_com_1714_living_room_585x550.jpg",
+      "git_file_name": "_assets/image_data/3rd night com 1714 living room 585x550.json",
+      "path": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-22-145229/3rd-night-com-1714-living-room-585x550.jpg",
+      "alt": "THIRD NIGHT COMPLIMENTARY",
+      "caption": ""
+    },
+    {
+      "name": "II Third night complimentary 585x550",
+      "file_name": "II Third night complimentary 585x550.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/II-Third-night-complimentary-585x550.jpg",
+      "tags": "",
+      "file_size": 196725,
+      "width": 585,
+      "height": 550,
+      "description": "",
+      "date_added": "2017-12-27-131240",
+      "url_large": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/large_II_Third_night_complimentary_585x550.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/medium_II_Third_night_complimentary_585x550.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/small_II_Third_night_complimentary_585x550.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/xsmall_II_Third_night_complimentary_585x550.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/thumb_II_Third_night_complimentary_585x550.jpg",
+      "git_file_name": "_assets/image_data/II Third night complimentary 585x550.json",
+      "path": "//cdn.traveltripper.io/site-assets/413_380_10367/media/2017-12-27-131240/II-Third-night-complimentary-585x550.jpg",
+      "alt": "Third Night Complimentary",
+      "caption": ""
+    }
+  ],
+  "offer_includes_en": "<ul tabindex=\"0\">\n<li>Complimentary Basic Wi-Fi</li>\n<li>Fitness Center access</li>\n<li>Jaguar courtesy car, subject to availability</li>\n<li>Daily Newspaper</li>\n</ul>",
+  "terms_en": "<ul tabindex=\"0\">\n<li>Three night stay required</li>\n<li>Rate adjusted at check-in</li>\n<li>Rate excludes taxes</li>\n<li>Please&nbsp;<span style=\"text-indent: -0.25in;\">cancel within 24 hrs of arrival to avoid a late cancellation charge of one night's room and tax</span></li>\n<li><span style=\"text-indent: -0.25in;\">Guarantee</span><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';\">&nbsp;</span><span style=\"text-indent: -0.25in;\">/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination</span>\n<p class=\"MsoListParagraph\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\">&nbsp;</p>\n</li>\n</ul>",
+  "booking_link_en": "https://thepierreny.reztrip.com/ext/promoRate?property=973&mode=b&pm=true&sr=139024&vr=3",
+  "order": 1,
+  "unpublish": true
+}

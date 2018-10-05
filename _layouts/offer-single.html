@@ -1,0 +1,88 @@
+---
+layout: default
+title: Offer Details
+meta_description:
+meta_tags:
+  robots:
+---
+
+{% assign offers = site.data._models.special_offers | sort: "order" %}
+<!-- Offers Banner here -->
+<section class="page-banner" style="background-image: url('{{ page.banner_image.url }}');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant" tabindex="0">{% if site.active_lang == "en"%}{{ page.title }}{% else %}{{ page.title_zh }}{% endif%}</h1>
+    {% if page.date %}
+      <p class="theme-line-3">{{ page.date }}</p>
+    {% endif %}
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" />
+    </div>
+    {% if site.active_lang == "en"%}
+      <a class="primary-btn inverse mt-4" href="{{ page.booking_link_en }}" target="_blank">Book this offer</a>
+    {% else %}
+      <a class="primary-btn inverse mt-4" href="{{ page.booking_link_zh }}" target="_blank">预订此优惠</a>
+    {% endif %}
+  </div>
+</section>
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/special-offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/special-offers/' %}
+{% endif %}
+<!-- Offers Menu -->
+<div class="sub-nav">
+  <ul class="d-flex justify-content-center flex-wrap full-width">
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <li>
+          <a {% if page.url_friendly_name != offer.url_friendly_name %}href="{{ offerspage }}{{ offer.url_friendly_name }}/"{% endif %}>{% if site.active_lang == "en"%}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif%}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</div>
+
+<section class="offer-details mt-5">
+  <div class="offers-desc">
+    <h2 tabindex="0">{% if site.active_lang == "en"%}{{ page.title }}{% else %}{{ page.title_zh }}{% endif%}</h2>
+    <div class="divider">
+      <img class="w-100" src="/assets/images/linebig.png" alt="Divider between sections" tabindex="-1" />
+    </div>
+    {% if site.active_lang == "en" %}
+      <p tabindex="0">{{ page.short_description_en }}</p>
+    {% else %}
+      <p tabindex="0">{{ page.short_description_zh }}</p>
+    {% endif%}
+  </div>
+  <div class="offer-details-inner m-0 align-items-center">
+    <div id="offerDetailImages" class="carousel slide img-carousel p-0" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        {% for image in page.slider_images %}
+          <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background-image:url('{{ image.url }}');" role="option"></div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#offerDetailImages" data-slide="prev" title="Carousel Prev"></a>
+      <a class="carousel-control-next" href="#offerDetailImages" data-slide="next" title="Carousel Next"></a>
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        {% if site.active_lang == "en" %}
+          <h6 tabindex="0">OFFER INCLUDES</h6>
+          {{ page.offer_includes_en }}
+          <h6 tabindex="0">TERMS & CONDITIONS</h6>
+          {{ page.terms_en }}
+          <a class="primary-btn" href="{{ page.booking_link_en }}">Book this Offer</a>
+        {% else %}
+          <h6 tabindex="0">优惠包括</h6>
+          {{ page.offer_includes_zh }}
+          <h6 tabindex="0">条款和条件</h6>
+          {{ page.terms_zh }}
+          <a class="primary-btn" href="{{ page.booking_link_zh }}">预订此优惠</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include more-offers-carousel.html %}

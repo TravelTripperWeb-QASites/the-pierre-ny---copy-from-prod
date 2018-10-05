@@ -2,13 +2,17 @@
 ---
 
 @import "bootstrap/bootstrap";
+@import "lightgallery/lightgallery";
 @import "variables";
+@import "mixins";
+@import "fonts";
 @import "base";
+@import "buttons";
 @import "navigation";
 @import "header";
 @import "footer";
-@import "mixins";
 @import "utilities";
+@import "pages/home";
 @import "pages/shared";
 @import "pages/about";
 @import "pages/contact";
@@ -18,4 +22,14 @@
 @import "pages/location";
 @import "pages/offers";
 @import "pages/rooms";
+@import 'pages/history';
+@import "pages/news";
+@import "pages/twoebar";
+@import "pages/venues";
+@import "pages/rfp";
+@import "pages/privacy";
+@import "pages/sitemap";
 @import "shame";
+@import 'slick-theme';
+@import 'slick';
+@import 'pages/weddings';

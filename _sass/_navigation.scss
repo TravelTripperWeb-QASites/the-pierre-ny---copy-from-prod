@@ -1,30 +1,483 @@
 // Navigation Elements
-// ========================================================================== */
+// ==========================================================================
 
-// Removes margins, padding, and bullet points from navigation lists
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
+//Bootstrap Select Dropdown fix
+.bootstrap-select {
+
+  .dropdown-menu {
+    left: calc(50% - 94px);
+
+    &.inner {
+      display: block;
+      padding: 10px !important;
+
+      li {
+        text-align: center;
+
+        a {
+          padding: 15px;
+          font-family: $tertiary-header-font;
+          font-size: $type-size-10;
+          color: $primary-color !important;
+          text-align: center;
+          text-transform: uppercase;
+          outline: 0;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      top: -4px;
+      left: calc(50% - 7px);
+      display: block;
+      content: '';
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #fff;
+      border-left: 6px solid transparent;
+    }
   }
+}
+
+//Select menu styling
+.btn-transparent {
+  display: block;
+  width: 130px;
+  height: fit-content;
+  margin-left: 10px;
+  padding: 7px 0;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-10;
+  color: $white !important;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+
+  &:before {
+    display: none;
+    width: 16px;
+    height: 18px;
+    margin-right: 7px;
+    content: '';
+    background: url('/assets/images/globe.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-up(xl) {
+      display: inline-block;
+    }
+  }
+}
+
+// Top right navigation styling here
+.top-nav {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 1;
+
+  select {
+    max-width: 150px;
+  }
+}
+
+
+//Header Logo
+.navbar-brand {
+  width: 185px;
+  height: 185px;
+  margin-right: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+//Navigation styling
+.navbar {
+  margin-top: 20px;
+  padding: 0;
+
+  .top-nav {
+    display: none !important;
+  }
+}
+
+.navbar-nav {
+  width: 100%;
+  margin: 20px auto;
 
   li {
-    list-style: none;
+    width: 80%;
+    padding: 5px 0;
+    border-bottom: solid 1px $border-color;
   }
 
-  a {
-    text-decoration: none;
+  @include media-breakpoint-up(xl) {
+    margin: 0 auto;
+
+    li {
+      width: auto;
+      padding: 0;
+      border: 0;
+    }
+  }
+}
+
+.nav-item {
+  min-width: 100px;
+  text-align: center;
+
+  .nav-link {
+    padding: 0 !important;
+    font-family: $tertiary-header-font;
+    font-size: $type-size-9;
+    font-weight: normal;
+    color: $white;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+    }
+
+    &:after {
+      display: block;
+      width: 0;
+      height: 1px;
+      content: '';
+      @include transition(all .3s ease-in-out);
+    }
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+
+      &:after {
+        width: 100%;
+        background: $white;
+      }
+    }
   }
 
-  // Override white-space for nested lists
+  &.dropdown {
+    .nav-link {
+      &:before {
+        position: absolute;
+        top: 13px;
+        right: -15px;
+        left: auto;
+        content: '';
+        border-top: .3em solid $white;
+        border-right: .3em solid transparent;
+        border-left: .3em solid transparent;
+        transition: $global-transition;
+        transform: rotate(0deg);
+      }
+      &:hover {
+        &:after {
+          width: 0;
+        }
+      }
+    }
+    &:hover {
+      .nav-link {
+        &:before {
+          @include media-breakpoint-up(xl) {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+  }
+}
 
-  ol li,
-  ul li {
-    margin-bottom: 0;
+.logo-mobile {
+  display: block;
+  width: 50px;
+  margin-top: 5px;
+
+  img {
+    width: 100%;
   }
 
-  li ol,
-  li ul {
-    margin-top: 0;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+
+
+//Mobile Navigation styling
+
+.navbar-toggler {
+  margin-top: -5px;
+  outline: 0;
+
+  span {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: $text-color;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    &:nth-child(1), &:nth-child(3) {
+      -webkit-transition: transform .35s ease-in-out;
+      -moz-transition: transform .35s ease-in-out;
+      -o-transition: transform .35s ease-in-out;
+      transition: transform .35s ease-in-out;
+    }
+  }
+
+  &:not(.collapsed) {
+    span {
+      &:nth-child(1) {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        opacity: .9;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        height: 12px;
+        visibility: hidden;
+        background-color: transparent;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        opacity: .9;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}
+
+.dropdown-toggle {
+  margin-left: 10px !important;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: 0;
+  }
+
+  &:after {
+    margin-left: -5px !important;
+    vertical-align: .4em !important;
+
+    @include media-breakpoint-up(xl) {
+      margin-left: -30px !important;
+    }
+  }
+
+}
+
+.dropdown-menu {
+  padding: 0;
+  font-family: $tertiary-header-font;
+  font-size: $type-size-10;
+  text-align: center;
+  text-transform: uppercase;
+  background: $secondary-color;
+  border: 0;
+  border-bottom: solid 3px $primary-color;
+  border-radius: 0;
+
+  &:before {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    display: block;
+    content: '';
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+  }
+
+  .dropdown-item {
+    padding: 15px 0;
+    color: $primary-color !important;
+    border-bottom: solid 1px $border-color;
+    @include transition(all .3s ease-in-out);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      color: $white !important;
+      background: $primary-color;
+    }
+  }
+}
+
+.scroll-logo {
+  display: none;
+  width: 60px;
+  height: 60px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.scroll-head {
+  position: fixed;
+  top: 0;
+  background: $white;
+
+  .scroll-logo {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+
+  .top-nav {
+    display: flex !important;
+
+    .btn-transparent {
+      color: $text-color !important;
+    }
+
+    .border-btn {
+      color: $primary-color !important;
+      border-color: $primary-color;
+
+      &:hover {
+        color: $white !important;
+        background: $primary-color;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: none !important;
+
+      .btn-transparent {
+        color: $white !important;
+      }
+    }
+  }
+
+  .navbar-brand {
+    display: none !important;
+  }
+
+  .nav-link {
+    font-size: $type-size-10;
+    color: $text-color;
+
+    &:before {
+      top: 11px;
+      left: 200px;
+      border-top: .28em solid $text-color !important;
+      border-right: .28em solid transparent !important;
+      border-left: .28em solid transparent !important;
+    }
+
+    &:hover {
+      color: $text-color;
+
+      &:after {
+        background: $text-color;
+      }
+    }
+  }
+
+  .nav-item {
+    min-width: auto;
+
+    &.dropdown {
+      .nav-link {
+        &:before {
+          top: 11px;
+          right: 10px;
+
+          @include media-breakpoint-up(xl) {
+            right: -11px;
+          }
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        .dropdown-menu {
+          top: 55px !important;
+          &:before {
+            top: -6px;
+            border-bottom-color: $text-color;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    margin: 0 0 5px;
+
+    .top-nav {
+      position: relative;
+      top: 3px;
+      right: 0;
+      display: none !important;
+
+      .btn-transparent {
+        color: $text-color !important;
+
+        &:before {
+          background: url('/assets/images/globe-dark.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .bootstrap-select {
+        width: 107px !important;
+
+        .dropdown-menu {
+          left: calc(50% - 50px);
+        }
+      }
+
+      .border-btn {
+        color: $primary-color !important;
+        border-color: $primary-color;
+
+        &:hover {
+          color: $white !important;
+          background: $primary-color;
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        display: flex !important;
+      }
+
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin: 15px 0;
+
+      .nav-item {
+        margin-bottom: 0;
+      }
+    }
   }
 }

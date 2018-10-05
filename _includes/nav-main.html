@@ -1,17 +1,89 @@
-{% assign links = site.data.navigation.main %}
+<!-- Hotel logo mobile only visibility -->
+{% if site.active_lang == 'en' %}
+  {% assign homeurl = '/' %}
+{% else %}
+  {% assign homeurl = '/zh/' %}
+{% endif %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Bedrock</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+<a class="logo-mobile" href="{{ homeurl }}"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
+
+<!-- Top right nav -->
+<div class="top-nav d-flex justify-content-end">
+  <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span> </span>
+    <span> </span>
+    <span> </span>
 	</button>
+  <div class="form-select">
+    <select class="selectpicker" data-width="fit" id="language1" onchange="location = this.options[this.selectedIndex].value;" aria-label="Select Language">
+      <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+      <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
+    </select>
+  </div>
+    <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+  <a class="border-btn d-none d-xl-block" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
+</div>
+
+<!-- Main nav -->
+{% if site.active_lang == "en" %}
+  {% assign links = site.data.navigation.main.en %}
+{% else %}
+  {% assign links = site.data.navigation.main.zh %}
+{% endif %}
+<nav class="navbar navbar-expand-xl">
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav d-flex justify-content-between align-items-center">
+    <a class="scroll-logo" href="{{ homeurl }}"><img src="/assets/images/logo-symbol.png" alt="The Pierre NY" /></a>
+
+    {% assign halfmenu = links.size | divided_by: 2 %}
     {% for link in links %}
-      <li class="nav-item{% if page.url == link.url %} active{% endif%}">
-        <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+     {% if forloop.index <= halfmenu %}
+      <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}">
+        <a class="nav-link" href="{{ link.url | absolute_url }}" {% if link.dropdown %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}><span>{{ link.title }}</span>{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        {% if link.dropdown %}
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            {% for sublink in link.dropdown %}
+              <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}" {% if sublink.external %}target="_blank"{% endif %}>{{ sublink.title }} </a>
+            {% endfor %}
+          </div>
+        {% endif %}
       </li>
+     {% endif %}
     {% endfor %}
+
+    <a class="navbar-brand d-none d-xl-block" href="{{ homeurl }}"><img src="/assets/images/logo.png" alt="The Pierre NY" /></a>
+    {% for link in links %}
+      {% if forloop.index > halfmenu %}
+        <li class="nav-item{% if page.url == link.url %} active{% endif%} {% if link.dropdown %}dropdown{% endif %}" >
+          <a class="nav-link" href="{{ link.url | absolute_url }}" {% if link.dropdown %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}><span>{{ link.title }}</span>{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+          {% if link.dropdown %}
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              {% for sublink in link.dropdown %}
+                <a class="dropdown-item" href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+    <li class="nav-item d-lg-block d-xl-none">
+      <a class="nav-link" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
+    </li>
+    <div class="top-nav d-flex justify-content-end">
+      <button class="navbar-toggler collapsed d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+    	</button>
+      <div class="form-select">
+        <select class="selectpicker" data-width="fit" id="language2" onchange="location = this.options[this.selectedIndex].value;">
+          <option {% if site.active_lang == "en" %} selected="true" {% endif %} value="{{ page | permalink: locale: lang }}">English</option>
+          <option {% if site.active_lang == "zh" %} selected="true" {% endif %} value="/zh{{ page | permalink: locale: lang }}">中文</option>
+        </select>
+      </div>
+      <a class="border-btn" href="javascript:void(0);" show-booking-widget>{% t 'book_now' %}</a>
+      <a class="border-btn d-none d-xl-block" href="mailto:thepierre.ny@tajhotels.com">{% t 'contact' %}</a>
+    </div>
     </ul>
   </div>
 </nav>

@@ -1,7 +1,6 @@
 // Mixins
 // ==========================================================================
 
-
 // Vertical Center (Includes IE9)
 
 @mixin vertical-center {
@@ -75,4 +74,20 @@
   @include optional-at-root(':-ms-input-placeholder') {
     @content;
   }
+}
+// background image
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+//Common Title
+
+@mixin header-title() {
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

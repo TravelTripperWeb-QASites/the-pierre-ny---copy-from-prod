@@ -1,20 +1,138 @@
 ---
 layout: default
-title: Room Details
-meta_description:
-permalink: /room-details/
+title_localized:
+  en: The Grand Suite at The Pierre NY | Luxury 5 Star Hotel in NY
+  zh: 纽约皮埃尔的大套房 | 纽约奢华的 5 星酒店
+meta_description_localized:
+  en: Take a look at the Luxurious 5 Star Accommodation available to choose from at the Pierre NY Hotel, a Taj Hotel. Choose from Central Park Views and much more!
+  zh: Take a look at the Luxurious 5 Star Accommodation available to choose from at the Pierre NY Hotel, a Taj Hotel. Choose from Central Park Views and much more!
+permalink_localized:
+  en: /room/
+  zh: /room/
+published_localized:
+  en: true
+  zh: true
 meta_tags:
   robots:
 ---
+{% if site.active_lang == "zh" %}
+  <input type="hidden" id="siteLang" value="zh-CN">
+{% endif %}
+<div ng-controller="roomDetail" rt3-room-details="details">
+<input type="hidden" id="roomCode" value="[[ details.code ]]">
 
-{% comment %}
+<section class="page-banner inner">
+  <div class="overlay-bg"></div>
+  <input type="hidden" id="totPhotos" value="[[details.photos.length]]">
+  <div id="room-details-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators" rt3-roomcarousel-indicator>
+      <li data-target="#room-details-carousel" data-slide-to="[[$index]]" ng-class="{active: $first}" ng-repeat="photo in details.photos"></li>
+    </ol>
+    <div class="carousel-inner" room-gallery>
+      <div class="carousel-item" ng-class="{active: $first}" ng-repeat="photo in details.photos" style="background-image:url([[photo.large]]);"></div>
+    </div>
+    <div class="banner-content">
+      <h1 class="variant" tabindex="0">[[details.name]]</h1>
+      <a class="primary-btn inverse" ng-href="https://thepierreny.reztrip.com/search?selected_room_category=[[details.category]]&selected_room=[[details.code]]" target="_blank">[[details.todayRate != '{% t 'check_avail' %}' ? '{% t 'book_now'%}' : '{% t 'check_avail' %}']]</a>
+    </div>
+  </div>
+</section>
 
-  Name:
+<section class="categories sps sps--abv">
+  <div class="categories__container">
+    <ul class="categories__list" tabindex="0">
+      <li><a href="/rooms-suites/#all" class="active">{% t 'all' %}</a></li>
+      <li><a href="/rooms-suites/#classic">{% t 'classic' %}</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Classic'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#cityview">{% t 'cityview' %}</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'City View'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#parkview">{% t 'parkview' %}</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Park View'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#grandsuites">{% t 'grandsuites' %}</a>
+        <ul class="list-dropdown">
+          <li ng-repeat="room in browser.roomsv | filter : {'category' : 'Suites'}">
+            <a href="/room/#[[room.name | formatNameForLink ]]">[[room.name]]</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/rooms-suites/#residences">{% t 'residences' %}</a></li>
+    </ul>
+  </div>
+</section>
 
-    Room Details Page
+<section class="room-single">
+  <div class="room-single__intro">
+    <h2 tabindex="0">{% t 'inroom_service' %}</h2>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+  </div>
+  <div class="room-single__content">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="tab">
+      <a class="nav-link active" data-toggle="tab" href="#room_features">{% t 'features'%}</a>
+    </li>
+    <li class="nav-item" role="tab">
+      <a class="nav-link" data-toggle="tab" href="#room_floor_plan" tabindex="-1">{% t 'floorplan'%}</a>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="room_features" class="container tab-pane active" role="tabpanel">
 
-  Description:
+        <article {% if site.active_lang == "en" %}room-detail{% endif %} tabindex="0">
+          <h3>{% t 'room_features' %}</h3>
+          [[ details.description ]]
+        </article>
 
-    Display a single room from RezTrip.
+        <h3 tabindex="0">{% t 'amenities' %}</h3>
 
-{% endcomment %}
+        <article {% if site.active_lang == "en" %}room-amenities{% endif %} tabindex="0">
+           <ul>
+              <li ng-repeat="amenity in details.amenities">[[ amenity ]]</li>
+            </ul>
+        </article>
+
+        <div class="btn-holder">
+          <a class="primary-btn" href="{{ site.reztripUrl }}search?selected_room_category=[[ details.category ]]&selected_room=[[ details.code ]]" target="_blank">{% t 'book_now' %}</a>
+        </div>
+      </div>
+
+      <div id="room_floor_plan" class="container tab-pane fade" role="tabpanel">
+
+        <article {% if site.active_lang == "en" %}addition-detail{% endif %}></article>
+
+        <div id="floorplans-pdf" class="carousel slide" data-ride="carousel">
+            <!-- The slideshow -->
+           <div class="carousel-inner"></div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#floorplans-pdf" data-slide="prev" title="Previous Slide">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#floorplans-pdf" data-slide="next" title="Next Slide">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+{% include offers-carousel.html %}

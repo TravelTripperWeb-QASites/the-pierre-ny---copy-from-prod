@@ -1,28 +1,332 @@
 ---
 layout: default
-title: Location
-meta_description:
-permalink: /location/
+title_localized:
+  en: Luxury Hotel in New York City | 5 Star Hotel Central Park
+  zh: 纽约的豪华酒店 | 中央公园 5 星酒店
+meta_description_localized:
+  en: The Luxurious 5 Star Pierre Hotel is located in the heart of New York City, overlooking Central Park. Just a few steps from the infamous Madison Avenue.
+  zh: The Luxurious 5 Star Pierre Hotel is located in the heart of New York City, overlooking Central Park. Just a few steps from the infamous Madison Avenue.
+permalink_localized:
+  en: /location/
+  zh: /location/
+published_localized:
+  en: true
+  zh: true
 meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Location Banner here -->
+<section class="page-banner inner background-center" style="background-image:url('/assets/images/location/banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock location_banner_title, type:header %}
+      <h1 class="variant" tabindex="0">Prime Destination</h1>
+    {% endregionblock %}
+    <div class="divider">
+      <img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" />
+    </div>
+    {% regionblock location_banner_tagline, type:header %}
+      <h6 tabindex="0">Location</h6>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+<!-- Intro section here -->
+<section class="intro mb-0">
+  <div class="intro-text" tabindex="0">
+    {% regionblock location_intro_heading, type:header %}
+      <h2>The City That Never Sleeps</h2>
+    {% endregionblock %}
+    {% regionblock location_intro, type:text %}
+      <p>A landmark hotel in a prime destination, a city resplendent in lights and brimming with diversity, New York offers travelers endless opportunities to experience her storied avenues. From acclaimed musicals to world-renowned museums, from couture fashion to cutting edge cuisine, Manhattan offers culture in abundance.</p>
+    {% endregionblock %}
+  </div>
+</section>
 
-    Location Page
+<!-- Three images here -->
+<section class="three-images">
+  <div class="three-images-inner m-0">
+    <div class="img-block">
+      {% regionblock location_img1, type:image %}
+        <img src="/assets/images/location/three-holer-1.jpg" alt="One">
+      {% endregionblock %}
+    </div>
+    <div class="img-block">
+      {% regionblock location_img2, type:image %}
+        <img src="/assets/images/location/three-holer-2.jpg" alt="Two">
+      {% endregionblock %}
+    </div>
+    <div class="img-block">
+      {% regionblock location_img3, type:image %}
+        <img src="/assets/images/location/three-holer-3.jpg" alt="Three">
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
 
-  Description:
+<!-- Content here -->
+<section class="content-wrapper">
+  <div class="content-wrapper-inner m-0">
+    <div class="left-content">
+      <div class="left-content-inner">
+        {% regionblock location_place1_heading, type:header %}
+          <h4 tabindex="0">central park location</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock location_place1_content, type:text %}
+            <p><a title="Luxury Central Park hotel" href="https://www.thepierreny.com">The Pierre</a> occupies nearly an entire city block on the southeast end of Central Park. The main entrance is on East 61st Street, and a second entrance sits on 5th Avenue, directly across the street from Central Park. Its eastern side fronts Madison Avenue, a famed stretch of luxury shopping. The hotel's close neighbors include Barneys New York, Bergdorf Goodman and Tiffany &amp; Co, as well as the Metropolitan Club, one of New York City's most exclusive private social clubs. The Pierre's much coveted Upper East Side location is also within close proximity of Manhattan’s famed Museum Mile.</p>
+            <p>In 1981, The Pierre was designated as a historic landmark by the New York City Landmarks Preservation Commission.&nbsp; Landmark status recognizes buildings that have a special character, historical or aesthetic interest or value as part of the development, heritage or cultural characteristics of the city.&nbsp; As a part of its landmark designation, The Pierre is responsible for maintaining and preserving the hotel's exterior architectural elements.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock location_place1_accessibility_heading, type:header %}
+          <h4 tabindex="0">Accessibility</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+        {% regionblock location_place1_accessibility_content, type:text %}
+          <p>Stately doorman are stationed outside the hotel entrances, and can assist in hailing taxi cabs.</p>
+          <p>Numerous subway lines are situated near the hotel. The N, Q and R station on Fifth Avenue is on the same block as the hotel, with a number of additional lines within easy walking distance of a few blocks.</p>
+        {% endregionblock %}
+        </div>
+        {% regionblock location_direction_heading, type:header %}
+          <h4 tabindex="0">Directions to the pierre</h4>
+        {% endregionblock %}
+        <div tabindex="0">
+        {% regionblock location_direction_content, type:text %}
+          <p>The hotel is located within easy distance of three major airports: John F. Kennedy Airport (45-60 minutes, 20 miles), LaGuardia Airport (30-45 minute drive, 10 miles) and Newark Airport (45-60 minute drive, 13 miles).</p>
+          <p>The Pierre offers valet parking at the 61st street entrance, or guests may choose to self-park in the public garage located directly in front of the hotel.</p>
+          <p>Grand Central Station and Penn Station offer comfortable train service and are minutes away from the hotel by cab.</p>
+        {% endregionblock %}
+        </div>
+        {% regionblock location_transfer_heading, type:header %}
+          <h4 tabindex="0">Transfer Service</h4>
+        {% endregionblock %}
+        {% regionblock location_transfer_content, type:text %}
+          <p tabindex="0">The exceptional Les Clefs d’Or Concierge team at The Pierre can coordinate transfers in and around New York City. Our courtesy car, a luxury Jaguar sedan, offers luxury drop-offs for guests, based on availability and destination.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="right-content-inner">
+        {% regionblock address_title, type:header %}
+          <h6 tabindex="0">Address</h6>
+        {% endregionblock %}
+        {% regionblock address_detail, type:text %}
+          <p tabindex="0">
+            <span>2 East 61st Street at Fifth Avenue</span>
+            <span>New York, NY 10065</span>
+            <span>U.S.A.</span>
+          </p>
+        {% endregionblock %}
+      </div>
+      <div class="right-content-inner">
+        {% regionblock contact_title, type:header %}
+          <h6 tabindex="0">Contact</h6>
+        {% endregionblock %}
+        {% regionblock contact_detail, type:text %}
+          <p tabindex="0">
+            <span>Tel 1 212 838 8000</span>
+            <span>Fax 1 212 940 8109</span>
+            <span>
+              <a href="mailto:thepierre.ny@tajhotels.com">thepierre.ny@tajhotels.com</a>
+            </span>
+            <span>
+              <a href="mailto:thepierreresv.ny@tajhotels.com">thepierreresv.ny@tajhotels.com</a>
+            </span>
+          </p>
+        {% endregionblock %}
+      </div>
+      <div class="right-content-inner">
+        {% regionblock checkin_title, type:header %}
+          <h6 tabindex="0">Check - In</h6>
+        {% endregionblock %}
+        {% regionblock checkin_detail, type:text %}
+          <p tabindex="0">
+            <span>Check-in time:</span>
+            <span>15:00 hours / 3:00 pm</span>
+            <span>Check-out time:</span>
+            <span>12:00 hours / 12:00 noon </span>
+          </p>
+        {% endregionblock %}
+      </div>
+      <div class="right-content-inner">
+        {% regionblock gps_title, type:header %}
+          <h6 tabindex="0">GPS</h6>
+        {% endregionblock %}
+        {% regionblock gps_detail, type:text %}
+          <p tabindex="0">
+            <span>40° 45' 54.8752'' N</span>
+            <span>73° 58' 27.0901'' W</span>
+          </p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
 
-    Static content that can be modified by editable regions.
+<!-- Categories here -->
+<section class="twocol mb-5">
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      <img src="/assets/images/location/culinary-excellence.jpg" alt="Culinary Excellence">
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock restaurant_tagline, type:header %}
+          <h6 tabindex="0">RESTAURANTS & BARS</h6>
+        {% endregionblock %}
+        {% regionblock restaurant_title, type:header %}
+          <h4 tabindex="0">CULINARY EXCELLENCE</h4>
+        {% endregionblock %}
+        {% regionblock restaurant_detail, type:text %}
+          <p tabindex="0">Celebrating a rich history of celebrated cuisine, The Pierre continues its culinary traditions with inspired, elegant fare by Executive Chef Ashfer Biju.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      <img src="/assets/images/location/fashionable-affair.jpg" alt="Fashionable Affair">
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock shopping_tagline, type:header %}
+          <h6 tabindex="0">SHOPPING</h6>
+        {% endregionblock %}
+        {% regionblock restaurant_heading, type:header %}
+          <h4 tabindex="0">FASHIONABLE AFFAIR</h4>
+        {% endregionblock %}
+        {% regionblock restaurant_detail, type:text %}
+          <p tabindex="0">Captivating design, catwalk chic - New York Fashion Week is a year-round event. Luxury department stores like Barneys and Saks Fifth Avenue are steps away from The Pierre. High-end boutiques dot the avenues surrounding the hotel.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+  <div class="twocol-row">
+    <div class="twocol-image p-0 bg-cover">
+      {% regionblock exchibit_image, type:image %}
+        <img src="/assets/images/location/essential-exhibitions.jpg" alt="Essential Exhibitions">
+      {% endregionblock %}
+    </div>
+    <div class="twocol-content p-0">
+      <div class="content-holder">
+        {% regionblock exchibit_tagline, type:header %}
+          <h6 tabindex="0">CULTURE & ARTS</h6>
+        {% endregionblock %}
+        {% regionblock exchibit_title, type:header %}
+          <h4 tabindex="0">ESSENTIAL EXHIBITIONS</h4>
+        {% endregionblock %}
+        {% regionblock exchibit_detail, type:text %}
+          <p tabindex="0">New York City is rich in culture & arts from all manner of genres. The avid art connoisseur can move from Monet at The Met to a sidewalk sketch artist in a matter of blocks. Music, art, literature are celebrated in the most Manhattan of ways - with boundless enthusiasm.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
+{% regionblock directions_title, type:header %}
+  <h2 class="mb-5 pt-5 text-center" tabindex="0">Proximity at its best</h2>
+{% endregionblock %}
+<section class="map-wrapper">
+  <div class="map-inner">
+    <div class="map-wrapper-inner align-items-center">
+      <div class="map-block">
+        {% regionblock map, type:image %}
+          <img src="/assets/images/location/map.jpg" alt="Map">
+        {% endregionblock %}
+      </div>
+      <div class="content">
+        {% regionblock directions_detail, type:text %}
+          <img src="/assets/images/location/proxy-logo.png" alt="THE PIERRE HOTEL NEW YORK" class="logo">
+          <p tabindex="0"><img src="/assets/images/location/pierre-hexagon.png" alt="THE PIERRE HOTEL NEW YORK">THE PIERRE HOTEL NEW YORK</p>
+          <h6 tabindex="0">in walking distance</h6>
+          <ul tabindex="0">
+            <li><em class="num">1</em>Barneys new york | 2 min</li>
+            <li><em class="num">2</em>Bergdorf goodman | 4 min</li>
+            <li><em class="num">3</em>Tiffany &amp; company | 5 min</li>
+            <li><em class="num">4</em>Bloomingdale’s | 9 min</li>
+            <li><em class="num">5</em>Metropolitan museum of modern art | 20 min</li>
+            <li><em class="num">6</em>Central park zoo | 3 min</li>
+            <li><em class="num">7</em>Rockefeller center | 12 min</li>
+            <li><em class="num">8</em>Lincoln center | 19 min</li>
+            <li><em class="num">9</em>Apple store | 3 min</li>
+            <li><em class="num">10</em>Bvlgari | 3 min</li>
+            <li><em class="num">11</em>Times Square | 22 min</li>
+          </ul>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
 
-  Usage:
+<!-- Three images here -->
+<section class="three-images">
+  <div class="three-images-inner m-0">
+    <div class="img-block">
+      {% regionblock showcase1, type:image %}
+        <img src="/assets/images/location/three-holer-2-1.jpg" alt="One">
+      {% endregionblock %}
+    </div>
+    <div class="img-block">
+      {% regionblock showcase2, type:image %}
+        <img src="/assets/images/location/three-holer-2-2.jpg" alt="Two">
+      {% endregionblock %}
+    </div>
+    <div class="img-block">
+      {% regionblock showcase3, type:image %}
+        <img src="/assets/images/location/three-holer-2-3.jpg" alt="Three">
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
 
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<!-- More Taj Hotels -->
+<section class="more-hotels-wrapper">
+  {% regionblock more_title, type:header %}
+    <h2 class="mb-5 text-center" tabindex="0">DISCOVER MORE TAJ HOTELS</h2>
+  {% endregionblock %}
+  <div class="more-hotels">
+    <div class="more-hotels-inner">
+      <div class="hotel-block">
+        <div class="hotel-img">
+          {% regionblock more_img, type:image %}
+            <img src="/assets/images/location/taj-boston.jpg" alt="Taj Boston">
+          {% endregionblock %}
+        </div>
+        <div class="hotel-content">
+          {% regionblock taj_title, type:header %}
+            <h4><a href="http://www.thetajboston.com/" target="_blank">Taj Boston</a></h4>
+          {% endregionblock %}
+          {% regionblock taj_detail, type:text %}
+            <p tabindex="0">Taj Boston is the most iconic and longstanding hotel in the city, with a history every bit as rich as Boston itself.</p>
+          {% endregionblock %}
+          {% regionblock taj_url, type:text %}
+            <a class="secondary-btn" href="http://www.thetajboston.com/" target="_blank">View This property</a>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="hotel-block">
+        <div class="hotel-img">
+          {% regionblock taj_image, type:image %}
+            <img src="/assets/images/location/taj-boston.jpg" alt="Taj Boston">
+          {% endregionblock %}
+        </div>
+        <div class="hotel-content">
+          {% regionblock taj_campton_title, type:header %}
+            <h4><a href="https://www.tajcamptonplace.com/" target="_blank">Taj Campton Place</a></h4>
+          {% endregionblock %}
+          {% regionblock taj_campton_details, type:text %}
+            <p tabindex="0">One of San Francisco’s most prominent landmarks along Stockton Street at Union Square.</p>
+          {% endregionblock %}
+          {% regionblock taj_campton_url, type:text %}
+            <a class="secondary-btn" href="https://www.tajcamptonplace.com/" target="_blank">View This property</a>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    {% regionblock taj_worldwide_url, type:text %}
+      <a class="primary-btn" href="http://www.tajhotels.com/" target="_blank">View taj hotels worldwide</a>
+    {% endregionblock %}
+  </div>
+</section>

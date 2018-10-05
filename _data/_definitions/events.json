@@ -1,0 +1,73 @@
+{
+  "title": {
+    "label": "Category Name",
+    "required": true,
+    "hint": "Enter event categroy name",
+    "localizable": true
+  },
+  "category_id": {
+    "label": "Category Id",
+    "required": true,
+    "hint": "Should be in lowercase without spaces"
+  },
+  "category_intro": {
+    "label": "Category Intro",
+    "type": "richtext",
+    "required": true,
+    "hint": "Short description of event category here",
+    "localizable": true
+  },
+  "category_image": {
+    "label": "Category Image",
+    "required": true,
+    "type": "image"
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true,
+    "hint": "Enter sort order for sub categories"
+  },
+  "event_listing": {
+    "type": "nested",
+    "multiple": true,
+    "localizable": true,
+    "hint": "Enter events in this category. Click on 'Add New Menu Items' below to add more events.",
+    "fields": {
+      "event_name": {
+        "required": true
+      },
+      "event_id": {
+        "required": true,
+        "hint": "Should be in lowercase without spaces"
+      },
+      "event_detail": {},
+      "cta_text": {
+        "label": "CTA Text"
+      },
+      "day": {
+        "required": true
+      },
+      "date_time": {
+        "required": true,
+        "hint": "Enter date or time. Not both."
+      },
+      "event_contact": {
+        "type": "richtext",
+        "hint": "Please add text with urls if any. To do so, get into code mode."
+      },
+      "widget": {
+        "label": "Select Event Widget",
+        "required": true,
+        "type": "select",
+        "options": ["OpenTable", "EventBrite"]
+      },
+      "event_booking_id": {
+        "required": true,
+        "hint": "Enter booking id from OpentTable widget here"
+      },
+      "view_menu_url": {
+        "hint": "Enter menu url here"
+      }
+    }
+  }
+}

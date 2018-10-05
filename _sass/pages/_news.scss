@@ -1,0 +1,59 @@
+// News Page Elements
+// ==========================================================================
+.news-listing {
+  @include fixed-width-layout;
+
+  .wrapper {
+    @include make-row;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+
+    .news-item {
+      @include make-col-ready;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include make-col(3);
+      }
+
+      .image {
+        display: block;
+        cursor: pointer;
+        @include transition(all .5s);
+
+        img {
+          width: 100%;
+        }
+
+        a {
+          display: inline-block;
+        }
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+      .content {
+        h5 {
+          margin-top: 15px;
+          color: $primary-color;
+        }
+        h6 {
+          font-size: $type-size-10;
+          line-height: 1rem;
+        }
+        p {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

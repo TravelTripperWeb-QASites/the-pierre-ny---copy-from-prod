@@ -1,0 +1,105 @@
+{
+  "title": "Luxury Ballroom Venues in New York | The Grand Ballroom",
+  "meta_description": "The Grand Ballroom, one of the most desired venues in Manhattan, plays host to memorable weddings, illustrious galas, fashion shows, and corporate conferences.",
+  "venue_name": "The Grand Ballroom",
+  "url_friendly_name": "grand-ballroom",
+  "sort_order": 1,
+  "venue_thumbnail": {
+    "name": "The-Grand-Ballroom-small",
+    "file_name": "The-Grand-Ballroom-small.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/The-Grand-Ballroom-small.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-033626",
+    "file_type": "image/jpeg",
+    "width": 362,
+    "height": 325,
+    "file_size": 50930,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/large_The-Grand-Ballroom-small.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/medium_The-Grand-Ballroom-small.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/small_The-Grand-Ballroom-small.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/xsmall_The-Grand-Ballroom-small.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/thumb_The-Grand-Ballroom-small.jpg",
+    "git_file_name": "_assets/image_data/The-Grand-Ballroom-small.json",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033626/The-Grand-Ballroom-small.jpg",
+    "alt": "The-Grand-Ballroom-small",
+    "caption": ""
+  },
+  "venue_image": {
+    "name": "Grand-Ballroom",
+    "file_name": "Grand-Ballroom.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/Grand-Ballroom.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-033612",
+    "file_type": "image/jpeg",
+    "width": 1862,
+    "height": 1241,
+    "file_size": 817900,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/large_Grand-Ballroom.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/medium_Grand-Ballroom.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/small_Grand-Ballroom.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/xsmall_Grand-Ballroom.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/thumb_Grand-Ballroom.jpg",
+    "git_file_name": "_assets/image_data/Grand-Ballroom.json",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-033612/Grand-Ballroom.jpg",
+    "alt": "Grand-Ballroom",
+    "caption": ""
+  },
+  "venue_intro_localized": {
+    "en": "<p>The Grand Ballroom, one of the most <span class=\"ve\">sought-after</span> venues in <span class=\"ve\">Manhattan</span>, plays host to such events as high society weddings, illustrious galas, haute couture fashion shows, and prestigious corporate conferences.</p>",
+    "zh": "<p>Grand Ballroom 是<span class=\"ve\">曼哈顿最</span><span class=\"ve\">受欢迎的</span>场馆之一，承办上流社会婚礼、著名的庆祝活动、高级时装秀和久负盛名的公司会议等类似活动。</p> "
+  },
+  "facility_chart": {
+    "dimensions_localized": {
+      "en": "86'-5\" x 86'-8\"",
+      "zh": "98X87 英尺 | 29.87X26.52 米"
+    },
+    "area_localized": {
+      "en": "7,430 sq. ft. / 690.27 m2",
+      "zh": "8526.0 平方英尺 | 792.09 平方米"
+    },
+    "height_localized": {
+      "en": "20'-8 | 6.34 m",
+      "zh": "18 英尺 | 5.49 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
+  },
+  "floor_plan": {
+    "theater": "750",
+    "circular": "700",
+    "ushaped": "60",
+    "boardroom": "-",
+    "classroom": "300",
+    "reception": "1500"
+  },
+  "floor_plan_pdf": {
+    "name": "01-Pierre-Grand Ballroom",
+    "file_name": "01-Pierre-Grand Ballroom.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034428/01-Pierre-Grand-Ballroom.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-034428",
+    "file_size": 316483,
+    "file_type": "application/pdf",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034428/01-Pierre-Grand-Ballroom.pdf",
+    "alt": "Pierre-Grand Ballroom",
+    "caption": ""
+  },
+  "event_space_pdf": {
+    "name": "The-Pierre-Conference-Configuration",
+    "file_name": "The-Pierre-Conference-Configuration.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034516/The-Pierre-Conference-Configuration.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-034516",
+    "file_size": 371629,
+    "file_type": "application/pdf",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034516/The-Pierre-Conference-Configuration.pdf",
+    "alt": "The-Pierre-Conference-Configuration",
+    "caption": ""
+  }
+}

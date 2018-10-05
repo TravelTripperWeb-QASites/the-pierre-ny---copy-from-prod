@@ -1,0 +1,105 @@
+{
+  "sort_order": 5,
+  "venue_name": "Wedgwood",
+  "title": "Luxury Event Space in New York City | The Wedgewood Room",
+  "meta_description": "A private pre-function space, The Salon at The Pierre NY adjoins The Wedgewood Room and is an ideal location for a cocktail reception before your main event.",
+  "url_friendly_name": "wedgewood",
+  "venue_thumbnail": {
+    "name": "Wedgwood-Room-Small",
+    "file_name": "Wedgwood-Room-Small.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/Wedgwood-Room-Small.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-051508",
+    "file_type": "image/jpeg",
+    "width": 362,
+    "height": 325,
+    "file_size": 30922,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/large_Wedgwood-Room-Small.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/medium_Wedgwood-Room-Small.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/small_Wedgwood-Room-Small.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/xsmall_Wedgwood-Room-Small.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/thumb_Wedgwood-Room-Small.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051508/Wedgwood-Room-Small.jpg",
+    "alt": "Wedgwood-Room-Small",
+    "caption": ""
+  },
+  "venue_image": {
+    "name": "Wedgwood-Room",
+    "file_name": "Wedgwood-Room.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/Wedgwood-Room.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-051607",
+    "file_type": "image/jpeg",
+    "width": 1400,
+    "height": 933,
+    "file_size": 207513,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/large_Wedgwood-Room.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/medium_Wedgwood-Room.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/small_Wedgwood-Room.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/xsmall_Wedgwood-Room.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/thumb_Wedgwood-Room.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051607/Wedgwood-Room.jpg",
+    "alt": "Wedgwood-Room",
+    "caption": ""
+  },
+  "venue_intro": "<p>Having once served as The Pierre's <span class=\"ve\">private nightclub</span>, the Wedgewood Room - an <span class=\"ve\">elegant blue &amp; white patterned room</span> reminiscent of the famed Wedgewood pattern - is now the perfect setting for private, high-powered executive breakfasts, press conferences or intimate gatherings.</p>",
+  "venue_intro_localized": {
+    "en": "<p>Having once served as The Pierre's <span class=\"ve\">private nightclub</span>, the Wedgewood Room - an <span class=\"ve\">elegant blue &amp; white patterned room</span> reminiscent of the famed Wedgewood pattern - is now the perfect setting for private, high-powered executive breakfasts, press conferences or intimate gatherings.</p>",
+    "zh": "<p>皮埃尔曾经的<span class=\"ve\">私人夜总会</span>，Wedgewood Room - 一间<span class=\"ve\">优雅的蓝白图案房间</span>，令人回忆起著名的 Wedgewood 图案 - 现在是私密聚会、顶层高管早餐、记者招待会或私人聚会的绝佳选择。</p>"
+  },
+  "facility_chart": {
+    "dimensions_localized": {
+      "en": "45'-1\" x 53'-8\"",
+      "zh": "45X53 英尺 | 13.72X16.15 米"
+    },
+    "area_localized": {
+      "en": "2,420 sq. ft. / 224.83 m2\t",
+      "zh": "2385.0 平方英尺 | 221.57 平方米"
+    },
+    "height_localized": {
+      "en": "15'-4\" | 4.69 m",
+      "zh": "11.5 英尺 | 3.51 米"
+    },
+    "location_localized": {
+      "en": "Lower Level",
+      "zh": "向下一层"
+    }
+  },
+  "floor_plan": {
+    "theater": "150",
+    "circular": "200",
+    "ushaped": "80",
+    "boardroom": "50",
+    "classroom": "100",
+    "reception": "300"
+  },
+  "floor_plan_pdf": {
+    "name": "06-Pierre Wedgwood Room",
+    "file_name": "06-Pierre Wedgwood Room.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051838/06-Pierre-Wedgwood-Room.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-051838",
+    "file_size": 284924,
+    "file_type": "application/pdf",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051838/06-Pierre-Wedgwood-Room.pdf",
+    "alt": "06-Pierre Wedgwood Room",
+    "caption": ""
+  },
+  "event_space_pdf": {
+    "name": "The-Pierre-Conference-Configuration",
+    "file_name": "The-Pierre-Conference-Configuration.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051010/The-Pierre-Conference-Configuration.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-051010",
+    "file_size": 371629,
+    "file_type": "application/pdf",
+    "git_file_name": "_assets/image_data/The-Pierre-Conference-Configuration.json",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-051010/The-Pierre-Conference-Configuration.pdf",
+    "alt": "The-Pierre-Conference-Configuration",
+    "caption": ""
+  }
+}

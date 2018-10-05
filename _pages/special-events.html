@@ -1,0 +1,71 @@
+---
+layout: default
+title_localized:
+  en: Event Venues in New York City | Events at The Pierre NY
+  zh: 纽约的活动场馆 | 在纽约皮埃尔举办活动
+meta_description_localized:
+  en: An Historic NYC Venue. A dedicated Event Planner. Take your Gala from Special to Unforgettable with The Pierre, located in the heart of New York City.
+  zh: An Historic NYC Venue. A dedicated Event Planner. Take your Gala from Special to Unforgettable with The Pierre, located in the heart of New York City.
+permalink_localized:
+  en: /special-events/
+  zh: /special-events/
+published_localized:
+  en: true
+  zh: true
+meta_tags:
+  robots:
+---
+
+<!-- Events Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/entertainment/special-events-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">
+      {% regionblock special_events_heading, type:header %}
+        Special events at the Pierre
+      {% endregionblock %}
+    </h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <h6 tabindex="0">
+      {% regionblock special_events_tagline, type:header %}
+        AN HISTORIC VENUE. A DEDICATED EVENT PLANNER. TAKE YOUR GALA FROM SPECIAL TO UNFORGETTABLE.
+      {% endregionblock %}
+    </h6>
+  </div>
+</div>
+
+<div class="events-rfp-form">
+  {% include forms/jotform/events-rfp.html %}
+</div>
+
+<!-- Gallery carousel heading here -->
+<div class="intro-text pt-0 mt-5">
+  {% regionblock special_events_spaces_heading, type:header %}
+    <h2>Legendary Spaces</h2>
+  {% endregionblock %}
+  <div class="divider">
+    <img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" />
+  </div>
+</div>
+
+{% assign categories = site.data._galleries | sort: sort_order %}
+
+<!-- Gallery carousel here -->
+<div class="pierre-slider mb-5" tabindex="-1">
+  {% for category in categories %}
+    {% assign catname = 'spaces' %}
+    {% for photo in site.data._galleries[catname].photos %}
+    	<div>
+      	<div class="slide-pageno" tabindex="0">
+      		<div class="current-slide">{{ forloop.index }}</div>
+      		<div class="slash"></div>
+      		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
+      	</div>
+      	<img src="{{ photo.url_large }}" class="width-full" alt="{{ photo.alt }}" />
+      	<div class="img-title">{{ photo.alt }}</div>
+    	</div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+{% include explore-venues-carousel.html %}

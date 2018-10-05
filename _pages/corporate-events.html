@@ -1,0 +1,68 @@
+---
+layout: default
+title_localized:
+  en: Luxurious Corporate Event Venue in NYC | The Pierre NY
+  zh: Luxurious Corporate Event Venue in NYC | The Pierre NY
+meta_description_localized:
+  en: The Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown.
+  zh: The Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown.
+permalink_localized:
+  en: /corporate-events/
+  zh: /corporate-events/
+published_localized:
+  en: true
+  zh: false
+meta_tags:
+  robots:
+---
+
+<!-- Events Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/entertainment/corporate-events-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">
+      {% regionblock corporate_events_heading, type:header %}
+        Corporate events at the Pierre
+      {% endregionblock %}
+    </h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    <h6 tabindex="0">
+      {% regionblock corporate_events_tagline, type:header %}
+        A HISTORIC VENUE. A DEDICATED MEETING PLANNER. MAKE YOUR NEXT CORPORATE EVENT ONE TO REMEMBER.
+      {% endregionblock %}
+    </h6>
+  </div>
+</div>
+
+<div class="events-rfp-form">
+  {% include forms/jotform/events-rfp.html %}
+</div>
+
+<!-- Gallery carousel heading here -->
+<div class="intro-text pt-0 mt-5">
+  {% regionblock corporate_events_spaces_heading, type:header %}
+    <h2>Legendary Spaces</h2>
+  {% endregionblock %}
+  <div class="divider"><img class="w-100" src="/assets/images/seperator-dark.png" alt="Divider between sections" tabindex="-1" /></div>
+</div>
+
+{% assign categories = site.data._galleries | sort: sort_order %}
+<!-- Gallery carousel here -->
+<div class="pierre-slider mb-5" tabindex="-1">
+  {% for category in categories %}
+    {% assign catname = 'venues' %}
+    {% for photo in site.data._galleries[catname].photos %}
+    	<div>
+      	<div class="slide-pageno" tabindex="-1">
+      		<div class="current-slide">{{ forloop.index }}</div>
+      		<div class="slash"></div>
+      		<div class="total-slides">{{ site.data._galleries[catname].photos.size }}</div>
+      	</div>
+      	<img src="{{ photo.url_large }}" class="width-full" alt="{{ photo.alt }}" />
+      	<div class="img-title">{{ photo.alt }}</div>
+    	</div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+{% include explore-venues-carousel.html %}

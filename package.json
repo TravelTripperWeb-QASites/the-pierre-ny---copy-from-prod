@@ -1,0 +1,24 @@
+{
+  "name": "bedrock",
+  "description": "Bedrock Jekyll Template",
+  "version": "1.2.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TravelTripperWeb-Sites/ttweb_bedrock"
+  },
+  "keywords": [
+    "jekyll",
+    "bedrock"
+  ],
+  "author": "John Burkhard",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "uglify": "uglifyjs assets/js/slick.min.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-thumbnail.js assets/js/lg-share.js assets/js/tt-widgets.js assets/js/scrollPosStyler.js assets/js/vendor/angular.min.js assets/js/vendor/rt3/rt3api.js assets/js/vendor/rt3/rez-trip.js assets/js/vendor/rt3/rt3-services.js assets/js/vendor/rt3/rt3-directives.js assets/js/vendor/rt3/rt3-filters.js assets/js/rt3/rt3-models.js assets/js/_main.js -c -o assets/js/main.min.js"
+  }
+}

@@ -1,8 +1,12 @@
 # Social Sharing
 twitter:
-  username: traveltripper
+  username: ThePierreNY
+instagram:
+  username: thepierreny
+pinterest:
+  username: thepierreny
 facebook:
-  username: traveltripper
+  username: ThePierreNY
   app_id:
   publisher:
 og_image: # Open Graph/Twitter default site image

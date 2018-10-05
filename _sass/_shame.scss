@@ -1,2 +1,8 @@
 // Temporary Styles
 // ==========================================================================
+
+// Theme page styles
+
+.headings, .buttons {
+  @include fixed-width-content;
+}

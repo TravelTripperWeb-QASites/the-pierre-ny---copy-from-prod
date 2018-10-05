@@ -101,6 +101,10 @@
   {% endunless %}
 {% endfor %}
 
+{% if site.active_lang == "zh" and page.published_localized and page.published_localized.zh != true %}
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <meta http-equiv="refresh" content="0; url=/zh/" />
+{% endif %}
 {% if page.meta_tags.robots %}
   <meta name="robots" content="{{ page.meta_tags.robots }}">
 {% endif %}

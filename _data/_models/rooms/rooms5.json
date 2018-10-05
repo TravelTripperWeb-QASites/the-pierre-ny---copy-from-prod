@@ -1,0 +1,49 @@
+{
+  "room-id": "ADA",
+  "language": "en",
+  "short_info": "The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet and are situated on floors 5 to 21.",
+  "room_features": "<h3>Room Features</h3>\n<p>The ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. The rooms feature 350 square feet&nbsp;and are situated on floors 5 to 21.</p>\n<h3>Bed &amp; Bath Experience&nbsp;</h3>\n<p>The comfortable and spacious Deluxe Room overlooks the city&rsquo;s stunning Manhattan skyline. The room has a plush king sized bed, a nightstand with Bose Wave Studio radio featuring Bluetooth connectivity and alarm clock is located on one side and an executive writing desk and chair is located on the other side of the bed. An armchair with side table, 40&rdquo; wall mounted TV and console with minibar is located across the bed. The marble three fixture bathroom features a pedestal sink, 30 x 60&rdquo; roll-in shower removable bath seat, plush bathrobes and towels and exclusive Etro toiletries.</p>",
+  "service_amenities": "<p>Service includes 24 hour&nbsp;white gloved elevator attendants,&nbsp;Complimentary hotel Jaguar service&nbsp;subject to availability, an Award-winning Les Clefs d'Or Concierge team to assist guests.</p>\n<p>In-room comforts feature Complimentary high speed wi-fi for up to 4 devices, 24 hour in-room dining service, Housekeeping daily service twice, oOernight complimentary shoe shine, Plush terry cloth robes &amp; Pierre slippers, Exclusive Etro toiletries, On site 24-hour valet and hand-laundry services, complimentary dog amenities (for pets up to 15 pounds), Complimentary online newspapers and magazines on check in. For a full list of our guest services and amenities click&nbsp;<a href=\"https://www.thepierreny.com/luxury-manhattan-hotel-amenities/\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p>\n<p>&nbsp;</p>",
+  "additional-info": "<p>Featuring 350 square feet, ADA-compliant Deluxe Rooms evoke a spacious residential feel with three-fixture bathrooms and beautiful Manhattan views. These rooms are situated on floors 5 to 21.</p>",
+  "title": "Deluxe King ADA Room Manhattan View",
+  "gallery": [
+    {
+      "url": "",
+      "alt": "",
+      "caption": "",
+      "description": ""
+    }
+  ],
+  "replace-reztrip-details": true,
+  "replace-reztrip-amenities": true,
+  "floor_plan_pdf": [
+    {
+      "name": "Deluxe-Room",
+      "file_name": "Deluxe-Room.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Deluxe-Room.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123120",
+      "file_size": 207381,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Deluxe-Room.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Deluxe-Room.pdf",
+      "alt": "Deluxe Room",
+      "caption": ""
+    },
+    {
+      "name": "Deluxe-Room-2",
+      "file_name": "Deluxe-Room-2.pdf",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Deluxe-Room-2.pdf",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-30-123120",
+      "file_size": 194059,
+      "file_type": "application/pdf",
+      "git_file_name": "_assets/image_data/Deluxe-Room-2.json",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_18466/media/2018-08-30-123120/Deluxe-Room-2.pdf",
+      "alt": "Deluxe Room 2",
+      "caption": ""
+    }
+  ]
+}

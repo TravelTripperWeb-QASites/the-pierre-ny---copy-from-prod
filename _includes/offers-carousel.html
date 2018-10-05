@@ -1,0 +1,33 @@
+{% assign offers = site.data._models.special_offers | sort: "order" %}
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/special-offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/special-offers/' %}
+{% endif %}
+<section class="common-carousel other-carousel">
+  <div class="common-carousel-intro">
+    <h2 class="text-center" tabindex="0">{% t 'special_offers' %}</h2>
+    <p tabindex="0">{% t 'offers_text' %}</p>
+  </div>
+  <div class="crest-holder">
+		<img src="/assets/images/crest-gold.png" alt="Pierre Crest">
+	</div>
+  <div class="common-carousel-inner">
+    <div class="slick-controls" id="commonCarousel" role="listbox">
+      {% for offer in offers %} {% assign offer_url = offer.url_friendly_name | prepend: '{{ offerspage }}' | append: '/' %} {% unless page.url == offer_url %} {% unless offer.unpublish == true %}
+      <div class="item" role="option">
+        <a href="{{ offerspage }}{{ offer.url_friendly_name }}" title="{{ offer.title }}">
+          <div class="img-block" style="background-image:url('{{ offer.banner_image.url_small }}');"></div>
+        </a>
+        <div class="content">
+          <h4><a href="{{ offerspage }}{{ offer.url_friendly_name }}">{% if site.active_lang == "en"%}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif%}</a></h4>
+          <a href="{{ offerspage }}{{ offer.url_friendly_name }}" class="secondary-btn">{% t 'view_special' %}</a>
+        </div>
+      </div>
+      {% endunless %} {% endunless %} {% endfor %}
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="primary-btn" href="{{ offerspage }}">{% t 'view_more_offers' %}</a>
+  </div>
+</section>

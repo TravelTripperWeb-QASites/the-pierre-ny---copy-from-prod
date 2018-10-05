@@ -1,0 +1,145 @@
+---
+layout: default
+title_localized:
+  en: Stunning Event Venues in New York | Venues at The Pierre NY
+  zh: 纽约极好的活动场馆 | 纽约皮埃尔的场馆
+meta_description_localized:
+  en: The privacy and exclusivity of our meeting and event space provides an ideal surrounding for important business transactions right in the heart of New York.
+  zh: The privacy and exclusivity of our meeting and event space provides an ideal surrounding for important business transactions right in the heart of New York.
+permalink_localized:
+  en: /events/venues/
+  zh: /events/venues/
+published_localized:
+  en: true
+  zh: true
+meta_tags:
+  robots:
+---
+{% if site.active_lang =="en" %}
+{% assign pageurl ="/events/" %}
+{% else %}
+{% assign pageurl ="/zh/events/" %}
+{% endif %}
+<!-- Venues Banner here -->
+<div class="page-banner inner" style="background-image:url('/assets/images/events/venues/venues-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant" tabindex="0">
+      {% regionblock venues_title, type:header %}
+        WORLD - CLASS VENUES
+      {% endregionblock %}
+    </h1>
+
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+      <h6 tabindex="0"> 
+        {% regionblock venues_subtitle, type:header %}
+          Stunning Event Venues in NYC
+        {% endregionblock %}
+      </h6>
+  </div>
+</div>
+
+{% assign venues = site.data._models.venues | sort:'sort_order' %}
+
+<!-- Venues Listing here -->
+<div class="venues-listing">
+  <div class="wrapper" role="listbox">
+    {% for venue in venues %}
+      {% if venue.dont_show_inlist == undefined %}
+        <div class="item" role="option">
+          <img class="w-100" src="{{ venue.venue_thumbnail.url_large }}" alt="{{ venue.venue_thumbnail.alt }}">
+          <div class="content">
+            <h5 tabindex="0">{{ venue.venue_name }}</h5>
+            <a class="secondary-btn" href="{{ pageurl }}venues/{{ venue.url_friendly_name }}/">{% t 'view_this_venue' %}</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Facility Chart -->
+<div class="table-grid" tabindex="-1">
+  <h2>
+    {% t 'facility_chart' %}
+  </h2>
+  <div class="wrapper table-responsive-md">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">{% t 'venues' %}</th>
+          <th scope="col">{% t 'dimension' %}</th>
+          <th scope="col">{% t 'area' %}</th>
+          <th scope="col">{% t 'height' %}</th>
+          <th scope="col">{% t 'location' %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for venue in venues %}
+          <tr>
+            <td scope="row">{{ venue.venue_name }}</td>
+            <td>{{ venue.facility_chart.dimensions }}</td>
+            <td>{{ venue.facility_chart.area }}</td>
+            <td>{{ venue.facility_chart.height }}</td>
+            <td>{{ venue.facility_chart.location }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="d-sm-flex justify-content-center">
+    <a class="border-btn dark wp-more" href="{{ pageurl }}venues/facility-chart/" tabindex="-1">{% t 'download_facility_chart' %}</a>
+    <a class="border-btn dark wp-more" href="/assets/pdf/floor-plans.pdf" target="_blank" tabindex="-1">{% t 'download_floor_plan' %}</a>
+  </div>
+</div>
+
+<!-- Seating Style -->
+<div class="table-grid content-center no-bg" tabindex="-1">
+  <h2>
+    {% t 'seating_style' %}
+  </h2>
+  <div class="wrapper table-responsive-md">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">
+            {% t 'venue' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/theater-icon.png" alt="{% t 'theater' %}"><br>{% t 'theater' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/circular-icon.png" alt="{% t 'circular' %}"><br>{% t 'circular' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/u-shape-icon.png" alt="{% t 'ushaped' %}"><br>{% t 'ushaped' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/boardroom-icon.png" alt="{% t 'boardroom' %}"><br>{% t 'boardroom' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/classroom-icon.png" alt="{% t 'classroom' %}"><br>{% t 'classroom' %}
+          </th>
+          <th scope="col">
+            <img src="/assets/images/events/venues/icons/reception-icon.png" alt="{% t 'reception' %}"><br>{% t 'reception' %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for venue in venues %}
+          {% if venue.dont_show_inlist == undefined %}
+            <tr>
+              <td scope="row">{{ venue.venue_name }}</td>
+              <td>{{ venue.floor_plan.theater }}</td>
+              <td>{{ venue.floor_plan.circular }}</td>
+              <td>{{ venue.floor_plan.ushaped }}</td>
+              <td>{{ venue.floor_plan.boardroom }}</td>
+              <td>{{ venue.floor_plan.classroom }}</td>
+              <td>{{ venue.floor_plan.reception }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

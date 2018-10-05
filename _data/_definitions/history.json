@@ -1,0 +1,34 @@
+{
+  "year": {
+    "type": "integer",
+    "label": "Year",
+    "required": true,
+    "hint": "Enter Year"
+  },
+  "year_id": {
+    "label": "Timeline Id",
+    "required": true,
+    "hint": "Should be in lowercase without spaces"
+  },
+  "year_ada_id": {
+    "label": "ADA Id",
+    "required": true,
+    "hint": "Should be in lowercase without spaces"
+  },
+  "from_year_to_year": {
+    "label": "Timeline Period",
+    "required": true,
+    "hint": "Enter from & to Years"
+  },
+  "year_intro": {
+    "type": "richtext",
+    "label": "Category Intro",
+    "required": true,
+    "hint": "Short description of event category here"
+  },
+  "timeline_images": {
+    "type": "image",
+    "multiple": true,
+    "hint": "Enter images of this particualr period."
+  }
+}

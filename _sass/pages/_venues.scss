@@ -1,0 +1,137 @@
+// Venues Page Elements
+// ==========================================================================
+
+.venues-listing {
+  @include fixed-width-layout;
+  margin: 15px auto 25px;
+
+  .wrapper {
+    @include make-row;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+
+    .item {
+      @include make-col-ready;
+      margin: 20px 0 10px;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(4);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include make-col(3);
+      }
+
+      .content {
+        padding: 20px;
+        background: $secondary-color;
+
+      }
+      h5 {
+        line-height: 1.7rem;
+        color: $primary-color;
+      }
+
+      .secondary-btn {
+        line-height: normal;
+        color: $text-color;
+
+        &:after {
+          background-image: url('../images/arrow-darker.png');
+        }
+      }
+    }
+  }
+}
+
+//Facility chart
+
+.table-grid {
+  width: 100%;
+  padding: 50px 0;
+  background-color: $secondary-color;
+
+  &.no-bg {
+    background-color: $white;
+  }
+
+  .wrapper {
+    @include fixed-width-layout;
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 15px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  table {
+    margin-bottom: 50px;
+    font-family: $secondary-header-font;
+  }
+
+  th {
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  &.content-center {
+    th,td {
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  .border-btn {
+    margin: 0 10px;
+  }
+}
+
+//Venues Sub nav
+
+.sub-nav {
+  width: 100%;
+  background: $secondary-color;
+
+  ul {
+    @include fixed-width-content;
+    max-width: 90%;
+    padding: 30px 0 22px;
+
+    li {
+      a {
+        display: block;
+        padding: 0 15px;
+        font-family: $secondary-header-font;
+        font-size: $type-size-10;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.social-share {
+  h6 {
+    font-size: $type-size-8;
+  }
+  a {
+    display: inline-block;
+    padding: 50px 20px 0;
+    @include transition(all .5s);
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}

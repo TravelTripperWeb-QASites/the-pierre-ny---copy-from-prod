@@ -1,0 +1,70 @@
+{
+  "title": {
+    "label": "Title EN",
+    "required": true
+  },
+  "title_zh": {
+    "label": "Title zh-CN",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "banner_image": {
+    "type": "image",
+    "required": true
+  },
+  "listing_image": {
+    "type": "image"
+  },
+  "date": {
+  },
+  "short_description_en": {
+    "label": "Short description EN",
+    "type": "text",
+    "required": true
+  },
+  "short_description_zh": {
+    "label": "Short description zh-CN",
+    "type": "text",
+    "required": true
+  },
+  "slider_images": {
+    "type": "image",
+    "multiple": true
+  },
+  "offer_includes_en": {
+    "label": "Short description EN",
+    "type": "richtext",
+    "required": true
+  },
+  "offer_includes_zh": {
+    "label": "Short description zh-CN",
+    "type": "richtext",
+    "required": true
+  },
+  "terms_en": {
+    "label": "Terms EN",
+    "type": "richtext",
+    "required": true
+  },
+  "terms_zh": {
+    "label": "Terms zh-CN",
+    "type": "richtext",
+    "required": true
+  },
+  "booking_link_en": {
+    "required": true
+  },
+  "booking_link_zh": {
+    "required": true
+  },
+  "order": {
+    "type": "integer",
+    "required": true
+  },
+  "unpublish": {
+    "type": "boolean"
+  }
+}

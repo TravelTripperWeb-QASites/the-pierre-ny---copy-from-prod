@@ -1,14 +1,18 @@
-<!-- Setup conditional statement here for pages on which a map should load. -->
-{% if map == true %}
-  <!-- Leaflet -->
-  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
-  <script src="{{ '/assets/js/leaflet-plugin.js' | absolute_url }}"></script>
-{% endif %}
+<script>
+  // get user's ip address
+  function getIp(data) {
+    sessionStorage.ip_add = data.ip;
+  }
+</script>
 
 <!--[if gte IE 9]><!-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
 <!--<![endif]-->
 <!--[if IE 9]>
   <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie9.js"></script>
@@ -18,5 +22,94 @@
   <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie8.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js"></script>
 <![endif]-->
+
+<!-- Setup conditional statement here for pages on which a map should load. -->
+{% if map == true %}
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+  <script src="{{ '/assets/js/leaflet-plugin.js' | absolute_url }}"></script>
+{% endif %}
+
+<!-- Bootstrap Select JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<!--New booking widget-->
+
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+
+<script>
+  TTWeb.Config.configure({
+    hotelId: '{{site.data.tt_widgets.hotelId}}', //'orwhatever your values are',
+    portalId: '{{site.data.tt_widgets.portalId}}',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+    defaultLocale: '{% if site.active_lang =="zh" %}zh-CN{% else %}en{% endif%}'
+  });
+  $("[show-booking-widget]").bookingWidget({
+    // showRateCalendar: true,
+    showOfferCode: true
+  });
+</script>
+
+<!-- Reztrip Offers in Gallery and Versatile Popup Settings -->
+  <script type="text/javascript">
+   $(document).ready(function(){
+      $('body').TTwidgets({
+         {% if site.data.tt_widgets.hotelId and  site.data.tt_widgets.hotelId !="" %}
+         hotel_id: '{{site.data.tt_widgets.hotelId}}',
+         {% endif %}
+         {% if site.data.tt_widgets.portalId and site.data.tt_widgets.portalId !="" %}
+         portal_id: '{{site.data.tt_widgets.portalId}}',
+         {% endif %}
+         offer_popup_widget: {
+            {% if site.data.tt_widgets.versatile_popup == 'true'%}
+            show: true
+            {% endif %}
+          },
+          offer_gallery:{
+            galleryselector: '.item',
+            buttonClass: 'border-btn'
+            {% if site.data.tt_widgets.offers_gallery == 'true'%}
+            ,
+            show: true
+            {% endif %}
+          }
+      });
+    });
+  </script>
+
+{% if page.url contains 'room' %}
+  <script>
+    //* Add locale while submitting booking widget form
+    $(document).on('submit', 'form', function() {
+        var this_action = $(this).attr("action");
+        var localeEl = '';
+        var locale = $("#siteLang").val() || 'en';
+        if (this_action && this_action.indexOf('https://thepierreny.reztrip.com/') != -1 && $(".ttweb-booking-widget input[name='locale']").length == 0) {
+            localeEl = localeEl + "<input type='hidden' name='locale' value='" + locale + "'>";
+        }
+        if (localeEl != '') {
+            localeEl = $(localeEl);
+            $(this).prepend(localeEl);
+        }
+    });
+
+    $(document).on("click", "a", function() {
+        var this_href = $(this).attr("href");
+        var locale = $("#siteLang").val() || 'en';
+        if (this_href && this.href.indexOf('https://thepierreny.reztrip.com/calendar') != -1 && this_href.indexOf('locale') == -1) {
+            if (this_href.indexOf('?') != -1)
+                this_href = this_href + "&";
+            else
+                this_href = this_href + "?";
+            this_href = this_href + 'locale=' + locale;
+            $(this).attr('href', this_href);
+        }
+    });
+  </script>
+{% endif %}

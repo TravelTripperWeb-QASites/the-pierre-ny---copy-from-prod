@@ -1,0 +1,103 @@
+{
+  "sort_order": 2,
+  "url_friendly_name": "garden-foyer",
+  "venue_name": "Garden Foyer",
+  "title": "Cocktail Reception Venues at Central Park |The Garden Foyer",
+  "meta_description": "A private pre-function space in New York, The Garden Foyer adjoins The Grand Ballroom and is an ideal location for a cocktail reception before the main event.",
+  "venue_thumbnail": {
+    "name": "Garden-Foyer-small",
+    "file_name": "Garden-Foyer-small.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/Garden-Foyer-small.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-034935",
+    "file_type": "image/jpeg",
+    "width": 362,
+    "height": 325,
+    "file_size": 41097,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/large_Garden-Foyer-small.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/medium_Garden-Foyer-small.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/small_Garden-Foyer-small.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/xsmall_Garden-Foyer-small.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/thumb_Garden-Foyer-small.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034935/Garden-Foyer-small.jpg",
+    "alt": "Garden-Foyer",
+    "caption": ""
+  },
+  "venue_image": {
+    "name": "Garden-Foyer-large",
+    "file_name": "Garden-Foyer-large.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/Garden-Foyer-large.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-034953",
+    "file_type": "image/jpeg",
+    "width": 5468,
+    "height": 3645,
+    "file_size": 4543629,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/large_Garden-Foyer-large.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/medium_Garden-Foyer-large.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/small_Garden-Foyer-large.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/xsmall_Garden-Foyer-large.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/thumb_Garden-Foyer-large.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-034953/Garden-Foyer-large.jpg",
+    "alt": "Garden Foyer",
+    "caption": ""
+  },
+  "venue_intro_localized": {
+    "en": "<p>A private <span class=\"ve\">pre-function</span> space featuring antique chandeliers and exquisite hand-painted murals inspired by Versailles,The Garden Foyer adjoins The Grand Ballroom and is an ideal location for a <span class=\"ve\">cocktail reception</span> before the main event.</p>",
+    "zh": "<p>私密的<span class=\"ve\">前厅</span>空间，Garden Foyer 与 Grand Ballroom 相邻，是主要活动开幕前举行<span class=\"ve\">鸡尾酒会</span>的理想地点。</p>"
+  },
+  "facility_chart": {
+    "dimensions_localized": {
+      "en": "56'-2\" x 68'-11\"",
+      "zh": "52X53 英尺 | 15.85X16.15 米"
+    },
+    "area_localized": {
+      "en": "2,913 sq. ft. / 270.63 m2",
+      "zh": "2756.0 平方英尺 | 256.04 平方米"
+    },
+    "height_localized": {
+      "en": "11'-4\" | 3.47 m",
+      "zh": "12 英尺 | 3.66 米"
+    },
+    "location_localized": {
+      "en": "2nd Floor",
+      "zh": "二层"
+    }
+  },
+  "floor_plan": {
+    "theater": "75",
+    "circular": "150",
+    "ushaped": "-",
+    "boardroom": "-",
+    "classroom": "50",
+    "reception": "400"
+  },
+  "floor_plan_pdf": {
+    "name": "02-Pierre Garden Foyer",
+    "file_name": "02-Pierre Garden Foyer.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-035144/02-Pierre-Garden-Foyer.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-035144",
+    "file_size": 297585,
+    "file_type": "application/pdf",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-035144/02-Pierre-Garden-Foyer.pdf",
+    "alt": "Pierre Garden Foyer",
+    "caption": ""
+  },
+  "event_space_pdf": {
+    "name": "The-Pierre-Conference-Configuration",
+    "file_name": "The-Pierre-Conference-Configuration.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-035202/The-Pierre-Conference-Configuration.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-28-035202",
+    "file_size": 371629,
+    "file_type": "application/pdf",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18548/media/2018-08-28-035202/The-Pierre-Conference-Configuration.pdf",
+    "alt": "The Pierre Conference Configuration",
+    "caption": ""
+  }
+}

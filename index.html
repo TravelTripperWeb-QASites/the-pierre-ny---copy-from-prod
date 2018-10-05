@@ -1,12 +1,169 @@
 ---
-layout: default
-title:
-meta_description:
-permalink:
+layout_localized:
+  en: default
+  zh: default
+title_localized:
+  en: The Pierre Hotel New York | A Taj Hotel | Luxury NYC Hotel
+  zh: 纽约皮埃尔酒店 | 泰姬陵酒店 | 奢华的纽约酒店
+meta_description_localized:
+  en: The Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown.
+  zh: the Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown.
+published_localized:
+  en: true
+  zh: true
 meta_tags:
   robots:
 ---
 
-<div class="jumbotron mt-5">
-  <h1 class="display-3">Hello, World!</h1>
-</div>
+{% if site.active_lang == "en" %}
+  {% assign pageurl ="/" %}
+  {% assign eventlink = '/entertainment/' %}
+{% else %}
+  {% assign pageurl ="/zh/" %}
+  {% assign eventlink = '/zh/entertainment/' %}
+{% endif %}
+
+<!-- Home banner here -->
+<section class="page-banner" style="background-image:url('/assets/images/home/banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    {% regionblock banner_title, type:text %}
+      <h1 tabindex="0">Central Park at your doorstep</h1>
+    {% endregionblock %}
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1"/></div>
+    {% regionblock banner_subtitle, type:text %}
+      <h6 tabindex="0">FIFTH AVENUE’S MOST EXCLUSIVE ADDRESS</h6>
+    {% endregionblock %}
+    {% regionblock banner_url, type:text %}
+      <a class="border-btn mx-auto" href="{{ pageurl }}location/">View Location</a>
+    {% endregionblock %}
+  </div>
+</section>
+
+<!-- Intero section here -->
+<section class="intro">
+  <div class="intro-text">
+    {% regionblock page_title, type:text %}
+      <h2>The Pierre New York</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock page_description, type:text %}
+        <p>Originally founded more than 85 years ago, The Pierre, A Taj Hotel is the only AAA Five Diamond and Forbes Five-Star rated property on Manhattan's Upper East Side. Situated beside Central Park steps from the luxury boutiques of Fifth & Madison Avenues, the landmark hotel is a white-gloved oasis for the discerning traveler. Known for sophisticated decor, celebrated cuisine and unforgettable events, The Pierre continues to set the standard for timeless elegance and unrivaled hospitality in New York City.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="images-section m-0">
+    <div class="images">
+      <div class="image-full mr-15" style="background-image:url('/assets/images/home/rooms.jpg');">
+        <div class="heading">
+          <h6 tabindex="0">{% t 'rooms_suites' %}</h6>
+          <a class="secondary-btn inverse" href="{{ pageurl }}rooms-suites/" title="{% t 'view_all_rooms' %}">{% t 'view_all_rooms' %}</a>
+        </div>
+      </div>
+    </div>
+    <div class="images">
+      {% assign first_one = 0 %}
+      {% assign offers = site.data._models.special_offers | sort: "order" %}
+      {% for offer in offers %}
+        {% unless offer.unpublish == true %}
+        {% assign first_one = first_one | plus: 1 %}
+        {% if first_one == 1 %}
+          <div class="image-text" style="background-image:url('{{ offer.banner_image.url }}');">
+            <div class="heading">
+              <h6 tabindex="0">{% t 'special_offers' %}</h6>
+              <a class="secondary-btn inverse" href="{{ pageurl }}special-offers/" title="{% t 'see_all_offer' %}">{% t 'see_all_offer' %}</a>
+            </div>
+          </div>
+        {% endif %}
+        {% endunless %}
+      {% endfor %}
+      <div class="image-text mt-15" style="background-image:url('/assets/images/home/dining.jpg');">
+        <div class="heading">
+          <h6 tabindex="0">{% t 'dining' %}</h6>
+          <a class="secondary-btn inverse" href="{{ pageurl }}dining/" title="{% t 'dining' %}">{% t 'learn_more' %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Entertainment section here -->
+<section class="entertainment" style="background-image: url('/assets/images/home/entertainment-bg.jpg');">
+  <div class="intro-text">
+    {% regionblock entertainment_title, type:text %}
+      <h2>Entertainment at The Pierre</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock entertainment_detail, type:text %}
+        <p>From festive seasonal events on Perrine's outdoor terrace to live music in Two E Bar & Lounge, The Pierre offers exceptional entertainment programming all year long.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="shows">
+    <div class="shows-row m-0">
+      {% assign event_categories = site.data._models.events | sort: "sort_order" %}
+      {% for item in event_categories | limit:3 %}
+        <div class="shows-image">
+          <div class="s-image mr-15" style="background-image:url('{{ item.category_image.url }}');">
+            <div class="heading">
+              <h6 tabindex="0">{{ item.title }}</h6>
+              <a class="secondary-btn inverse" href="{{ eventlink }}#{{ item.category_id }}-scroll" title="{{ item.title }}">{% t 'view_details' %}</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Events section here -->
+<section class="home-events">
+  <div class="intro-text">
+    {% regionblock events_title, type:text %}
+      <h2 tabindex="0">Events</h2>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock events_detail, type:text %}
+       <p>A New York landmark located on Central Park in the heart of Manhattan’s most prestigious business, residential and shopping district, the hotel features neo-Georgian architecture and opulent décor that will add sophistication and elegance to your social or business function.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="images-section m-0">
+    <div class="images">
+      <div class="image-text" style="background-image:url('/assets/images/home/meetings.jpg');">
+        <div class="heading">
+          {% regionblock meetings_title, type:text %}
+           <h6 tabindex="0">Meetings</h6>
+          {% endregionblock %}
+          {% regionblock meetings_url, type:text %}
+           <a class="secondary-btn inverse" href="{{ pageurl }}meetings/" title="Discover more">{% t 'learn_more' %}</a>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="image-text mt-15" style="background-image:url('/assets/images/home/venues.jpg');">
+        <div class="heading">
+          {% regionblock venues_title, type:text %}
+           <h6 tabindex="0">Venues</h6>
+          {% endregionblock %}
+          {% regionblock venues_url, type:text %}
+           <a class="secondary-btn inverse" href="{{ pageurl }}venues/" title="Dining">{% t 'learn_more' %}</a>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+    <div class="images">
+      <div class="image-full ml-15 mt--15" style="background-image:url('/assets/images/home/weddings.jpg');">
+        <div class="heading">
+          {% regionblock weddings_title, type:text %}
+           <h6 tabindex="0">Weddings & Social Events</h6>
+          {% endregionblock %}
+          {% regionblock weddings_url, type:text %}
+           <a class="secondary-btn inverse" href="{{ pageurl }}rfp/" title="REQUEST FOR PROPOSAL">REQUEST FOR PROPOSAL</a>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include instagram.html%}

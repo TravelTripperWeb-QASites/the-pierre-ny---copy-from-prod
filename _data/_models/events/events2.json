@@ -1,0 +1,45 @@
+{
+  "category_id": "twoehours",
+  "category_image": {
+    "name": "jazz-n-twoehours",
+    "file_name": "jazz-n-twoehours.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/jazz-n-twoehours.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-22-063949",
+    "file_type": "image/jpeg",
+    "width": 1400,
+    "height": 600,
+    "file_size": 164488,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/large_jazz-n-twoehours.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/medium_jazz-n-twoehours.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/small_jazz-n-twoehours.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/xsmall_jazz-n-twoehours.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/thumb_jazz-n-twoehours.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-22-063949/jazz-n-twoehours.jpg",
+    "alt": "Jazz and Two E Hours",
+    "caption": ""
+  },
+  "sort_order": 2,
+  "title_localized": {
+    "en": "Jazz & Two E Hours"
+  },
+  "category_intro_localized": {
+    "en": "<p>Discover Two E's new Icons of Jazz  series featuring Antonio & special guests!</p>"
+  },
+  "event_listing_localized": {
+    "en": [
+      {
+        "event_name": "Live jazz with Antonio Ciacca",
+        "event_id": "livejazz",
+        "event_detail": "Enjoy complimentary live jazz Thursday, Friday and Saturday evenings with our artist-in-residence, internationally renowned musician <strong>Antonio Ciacca</strong>.<br>Returning this winter, Two E's monthly Icons of Jazz  series featuring Antonio with special guests!",
+        "day": "Thursday - Saturday",
+        "date_time": "6:30 - 9:30 PM",
+        "event_booking_id": "34024",
+        "event_contact": "<p>Contact Two E Bar &amp; Lounge, at <a href=\"tel:646-396-3303\">646 396 3303</a> or <a href=\"mailto:TwoE@tajhotels.com\">TwoE@tajhotels.com</a></p>",
+        "widget": "OpenTable",
+        "cta_text": "Make Reservations"
+      }
+    ]
+  }
+}

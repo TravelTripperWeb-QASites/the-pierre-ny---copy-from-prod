@@ -1,0 +1,31 @@
+---
+layout: default
+title_localized:
+  en: Meeting and Event Space at Central Park | The Pierre NY
+  zh: 中央公园的会议和活动场所 | 纽约皮埃尔
+meta_description_localized:
+  en: Our experienced planners will ensure the success of your meetings and events - just complete the request for proposal form and we'll get back to you shortly.
+  zh: Our experienced planners will ensure the success of your meetings and events - just complete the request for proposal form and we'll get back to you shortly.
+permalink_localized:
+  en: /meetings-rfp/
+  zh: /meetings-rfp/
+published_localized:
+  en: true
+  zh: true
+meta_tags:
+  robots:
+---
+
+<!-- Meetings RFP Banner here -->
+<section class="page-banner inner background-center" style="background-image:url('/assets/images/meetings/meetings-banner2.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant">{% regionblock meetings_rfp_title, type:text %}Meetings RFP{% endregionblock %}</h1>
+  </div>
+</section>
+
+{% if site.active_lang == 'en' %}
+{% include forms/jotform/meetings-rfp.html %}
+{% else %}
+{% include forms/jotform/meetings-rfp-zh.html %}
+{% endif %}

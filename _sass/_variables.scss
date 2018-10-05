@@ -1,42 +1,51 @@
 // Variables
 // ==========================================================================
 
-
 // Typography
 $font-size-base: 1rem !default;
 $base-font-family: 'Roboto', sans-serif;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-$primary-header-font: 'TrajanPro-Bold';
+$primary-header-font: 'TrajanPro-Regular';
 $secondary-header-font: 'roboto_condensedlight';
 $tertiary-header-font: 'roboto_condensedbold';
 $tag-line-font: 'roboto_condensedregular';
 $rare-heading-font: 'TrajanPro-Regular';
-
 
 $global-font-family: $base-font-family !default;
 $header-font-family: $primary-header-font !default;
 $caption-font-family: $tag-line-font !default;
 
 // Type scale
-$type-size-1: 2.441rem !default; // ~39.056px
-$type-size-2: 1.953rem !default; // ~31.248px
-$type-size-3: 1.563rem !default; // ~25.008px
-$type-size-4: 1.25rem !default; // ~20px
-$type-size-5: 1rem !default; // ~16px
-$type-size-6: .75rem !default; // ~12px
-$type-size-7: .6875rem !default; // ~11px
-$type-size-8: .625rem !default; // ~10px
+$type-size-1: 4.375rem !default; // ~70px
+$type-size-2: 3.438rem !default; // ~55px
+$type-size-3: 2.5rem !default; // ~40px
+$type-size-4: 2.188rem !default; // ~35px
+$type-size-5: 1.875rem !default; // ~30px
+$type-size-6: 1.563rem !default; // ~25px
+$type-size-7: 1.375rem !default; // ~22px
+$type-size-8: 1.25rem !default; // ~20px
+$type-size-9: 1rem !default; // ~16px
+$type-size-10: .875rem !default; // ~14px
+$type-size-11: .8125rem !default; // ~13px
+$type-size-12: .75rem !default; // ~12px
 
 // Colors
 $primary-color: #74503a;
 $primary-color-light: #b18b74;
 $secondary-color: #f7f7f7;
+$tertiary-color: #3f3531;
 $text-color: #231f20;
 $gray: #747474;
 $body-color: $white;
 $info-color: $primary-color !default;
+$border-color: #dad3cf;
+$border-secondary-color: #4f4c4d;
+$signup-button-color: #b18b74;
+$item-border-color: #d0baab;
+$item-border-color-light: #9d8577;
+$item-bg-color: #73503c;
 
 // Brands
 $facebook-color: #3b5998 !default;
@@ -47,11 +56,9 @@ $twitter-color: #55acee !default;
 $youtube-color: #b00 !default;
 
 // Links
-$link-color: $info-color !default;
-$link-color-hover: mix(#000, $link-color, 25%) !default;
-$link-color-visited: mix(#fff, $link-color, 25%) !default;
+$link-color: $primary-color !default;
 
 // Other
-$border-radius: 4px !default;
+$border-radius: 0 !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, .125) !default;
 $global-transition: all .2s ease-in-out !default;

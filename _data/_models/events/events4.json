@@ -1,0 +1,30 @@
+{
+  "category_id": "broadway",
+  "category_image": {
+    "name": "trio",
+    "file_name": "trio.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/trio.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-10-03-085919",
+    "file_type": "image/jpeg",
+    "width": 1400,
+    "height": 600,
+    "file_size": 106942,
+    "url_large": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/large_trio.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/medium_trio.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/small_trio.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/xsmall_trio.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/thumb_trio.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-10-03-085919/trio.jpg",
+    "alt": "Trio",
+    "caption": ""
+  },
+  "sort_order": 3,
+  "title_localized": {
+    "en": "Broadway at the Pierre"
+  },
+  "category_intro_localized": {
+    "en": "<p>Featured in The New York Times and Playbill, our acclaimed monthly cabaret series presented by Taittinger Champagne features intimate performances from musical theater's brightest stars. $75 cover charge includes set menu of light bites, welcome glass of Champagne and performance.</p><p>   Watch video clips from previous performances on our <a href=\"https://www.youtube.com/playlist?list=PL_JCpt6tqVDT85vkwudzdkZ_IpIJjLxp2\" target=\"_blank\">YouTube page.</a></p>"
+  }
+}

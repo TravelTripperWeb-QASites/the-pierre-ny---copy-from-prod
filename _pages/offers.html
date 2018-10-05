@@ -1,20 +1,71 @@
 ---
 layout: default
-title: Offers
-meta_description:
-permalink: /offers/
+title_localized:
+  en: New York Luxury Hotel Deals | Special Offers at The Pierre
+  zh: 纽约豪华酒店优惠 | 皮埃尔的特别优惠
+meta_description_localized:
+  en: The Pierre continues to set the standard for outstanding hospitality around the world, offering an unparalleled array of signature amenities.
+  zh: The Pierre, situated on the doorstep of Central Park steps from the luxury boutiques of Fifth & Madison Avenues, is a white-gloved oasis for the discerning traveler. Playing host to royalty, heads of state, titans of industry, and Hollywood glitterati, The Pierre is unquestionably a jewel in Manhattan's crown.
+permalink_localized:
+  en: /special-offers/
+  zh: /special-offers/
+published_localized:
+  en: true
+  zh: true
 meta_tags:
   robots:
 ---
 
-{% comment %}
+<!-- Offers Banner here -->
+<section class="page-banner inner" style="background-image:url('/assets/images/home/banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant" tabindex="0">{% t 'special_offers' %}</h1>
+    <div class="divider"><img class="w-100" src="/assets/images/seperator.png" alt="Divider between sections" tabindex="-1" /></div>
+    {% regionblock page_desciption, type:header %}
+      <h6>Enjoy a Luxurious experience for exceptional value at the pierre. Browse our special offers below.</h6>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+{% assign offers = site.data._models.special_offers | sort: "order" %}
 
-    Offers Listing Page
+{% if site.active_lang == "en" %}
+ {% assign offerspage = '/special-offers/' %}
+{% else %}
+ {% assign offerspage = '/zh/special-offers/' %}
+{% endif %}
 
-  Description:
-
-    Display offer list from RezTrip.
-
-{% endcomment %}
+<!-- Offers Listing -->
+<section class="offers-listing mt-5">
+  <div class="offers-listing-inner">
+    {% for offer in offers %}
+      {% unless offer.unpublish == true %}
+        <div class="offer-block">
+          <a href="{{ offerspage }}{{ offer.url_friendly_name }}/" title="{{ offer.title }}">
+            <figure>
+              {% if offer.listing_image and offer.listing_image.url_medium !="" %}
+              <div class="offer-img" style="background-image: url('{{ offer.listing_image.url_medium }}')">
+                <h3 tabindex="0">{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
+              </div>
+              {% else %}
+              <div class="offer-img" style="background-image: url('{{ offer.banner_image.url_medium }}')">
+                <h3 tabindex="0">{% if site.active_lang == "en" %}{{ offer.title }}{% else %}{{ offer.title_zh }}{% endif %}</h3>
+              </div>
+              {% endif %}
+            </figure>
+          </a>
+          <div class="offer-content">
+            {% if site.active_lang == "en" %}
+            <p tabindex="0">{{ offer.short_description_en | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            {% else %}
+            <p tabindex="0">{{ offer.short_description_zh | truncate: 80 | markdownify | strip_html | normalize_whitespace | escape_once }}</p>
+            {% endif %}
+            <a class="border-btn light" href="{{ offerspage }}{{ offer.url_friendly_name }}/">{% t 'view_details' %}</a>
+            <a class="border-btn light" href="{% if site.active_lang == "en" %}{{ offer.booking_link_en }}{% else %}{{ offer.booking_link_zh }}{% endif %}">{% t 'book_now' %}</a>
+          </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>

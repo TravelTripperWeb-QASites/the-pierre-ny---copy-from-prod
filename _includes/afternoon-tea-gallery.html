@@ -1,0 +1,13 @@
+{% assign items = site.data._galleries.afternoon_tea_gallery.photos %}
+<section class="common-carousel gallery-carousel mt-5">
+  <h2 class="text-center">{% t 'afternoon_tea_gallery' %}</h2>
+  <div class="common-carousel-inner">
+    <div class="slick-controls" id="commonCarousel">
+      {% for item in items %}
+      <div class="item">
+        <div class="img-block" style="background-image:url('{{ item.url_small }}');"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

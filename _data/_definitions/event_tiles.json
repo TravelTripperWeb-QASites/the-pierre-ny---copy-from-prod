@@ -1,0 +1,21 @@
+{
+  "title": {
+    "label": "Event Title",
+    "required": true,
+    "localizable": true
+  },
+  "image": {
+    "type": "image",
+    "label": "Event Image",
+    "required": true
+  },
+  "posted_date": {
+    "label": "Event Date",
+    "type": "date",
+    "required": true
+  },
+  "reference_url": {
+    "label": "Source URL",
+    "required": true
+  }
+}

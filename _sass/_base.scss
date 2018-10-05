@@ -9,41 +9,84 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
   font-family: $global-font-family;
+  font-size: $type-size-10;
   line-height: 1.5;
-}
+  color: $text-color;
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 2rem 0 0.5rem;
-  line-height: 1.2;
-  font-family: $header-font-family;
-  font-weight: bold;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+  }
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $type-size-3;
+  font-family: $header-font-family;
+  font-size: $type-size-2;
+  line-height: 3.938rem;
+  text-transform: lowercase;
+  letter-spacing: .131rem;
+
+  &.variant {
+    font-size: $type-size-3;
+    line-height: 2.5rem;
+    letter-spacing: .103rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-1;
+    line-height: 4.8rem;
+
+    &.variant {
+      font-size: $type-size-2;
+      line-height: 3.938rem;
+    }
+  }
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  line-height: 1.875rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-3;
+    line-height: 2.5rem;
+  }
 }
 
 h3 {
+  font-family: $secondary-header-font;
   font-size: $type-size-5;
+  line-height: 2.188rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-4;
+    line-height: 2.5rem;
+  }
 }
 
 h4 {
+  font-family: $header-font-family;
   font-size: $type-size-6;
+  line-height: 2rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: $type-size-5;
+    line-height: 2.188rem;
+  }
 }
 
 h5 {
+  font-family: $secondary-header-font;
   font-size: $type-size-6;
+  line-height: 2rem;
+  letter-spacing: .031rem;
 }
 
 h6 {
-  font-size: $type-size-6;
+  font-family: $header-font-family;
+  font-size: $type-size-7;
+  line-height: 1.875rem;
 }
 
 small, .small {
@@ -52,6 +95,24 @@ small, .small {
 
 p {
   margin-bottom: 1.3rem;
+}
+
+q {
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: $secondary-header-font;
+  font-size: $type-size-4;
+  line-height: 2.5rem;
+  color: $text-color;
+
+  &::before, &::after {
+    display: none;
+  }
+
+  span {
+    color: $primary-color;
+  }
 }
 
 u,
@@ -70,8 +131,12 @@ del a {
 // Links
 
 a {
+  color: $primary-color;
+
   &:hover,
   &:active {
+    color: $primary-color;
+    text-decoration: underline;
     outline: 0;
   }
 }
@@ -80,13 +145,13 @@ a {
 
 ul li,
 ol li {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   list-style: none;
 }
 
 li ul,
 li ol {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   list-style: none;
 }
 
@@ -94,4 +159,13 @@ li ol {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+.text-muted {
+  color: #7f7e7e !important;
+}
+
+//For Anuglar ng-cloak
+[ng\:cloak], [ng-cloak] {
+  display: none !important;
 }

@@ -1,28 +1,86 @@
 ---
 layout: default
-title: Page Not Found
-meta_description:
+title: Page Not Found | The Pierre Hotel New York City
+meta_description: Situated on the doorstep of Central Park, The Pierre Hotel New York is a Stunning, 5 Star Taj Resort. Book your stay at The Pierre NYC on the Official Website.
 permalink: /page-not-found/
 meta_tags:
   robots:
 ---
 
-{% comment %}
+<section class="page-banner inner bg-cover" style="background-image:url('/assets/images/404-banner.jpg');">
+  <div class="overlay-bg"></div>
+  <div class="banner-content">
+    <h1 class="variant" tabindex="0">
+      {% regionblock pagnotfound_title, type:header %}404<br>Page Not Found{% endregionblock %}
+    </h1>
+  </div>
+</section>
 
-  Name:
+<section class="sitemap">
+  <div class="sitemap-content">
+      {% regionblock pagnotfound_description, type:header %}
+      <h5>We're sorry but it looks like that page you are looking for doesn't exist anymore. Please view the Sitemap below or go back to the homepage.</h5>
+      {% endregionblock %}
 
-    404 (Page Not Found)
+    {% assign links = site.data.navigation.main.en %}
 
-  Description:
+    {% assign offers = site.data._models.special_offers | sort: "order" %}
+    {% assign quick_links = site.data.navigation.footer.en %}
 
-    Static content that can be modified by editable regions.
+    <ul class="sitemap-links" rt3-rooms-browser="browser" rt3-special-rates= "offers">
+    	<li><a href="/">Home</a></li>
+      {% for link in links %}
+      <li><a href="{{ link.url | absolute_url }}" class="parent">{{ link.title }}</a>
+        {% if link.dropdown %}
+        <ul>
+          {% for sublink in link.dropdown %}
+          <li><a href="{{ sublink.url }}" {% if sublink.external %}target="_blank"{% endif %}>{{ sublink.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if link.url == '/rooms-suites/' %}
+        <ul>
+            <li><a href="#" class="parent">Classic</a>
+                <ul>
+                    <li ng-repeat="roomd in browser.roomsv | filter: { category : ('classic' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
+                  </ul>
+              </li>
+              <li><a href="#" class="parent">City View</a>
+                <ul>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('city view' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
-  Usage:
+                  </ul>
+              </li>
+              <li><a href="#" class="parent">Park View</a>
+                <ul>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('park view' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
+                  </ul>
+              </li>
+              <li><a href="/special-offers/" class="parent">Grand Suites</a>
+                <ul>
+                  <li ng-repeat="roomd in browser.roomsv | filter: { category : ('grand suites' | lowercase) }"><a href="/room/#[[ roomd.name | lowercase | nospace | spacetohyphen ]]">[[roomd.name]]</a></li>
 
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
+                  </ul>
+              </li>
+          </ul>
+        {% endif %}
+        {% if link.url == '/special-offers/' %}
+        <ul>
+          {% for offer in offers %}
+          {% unless offer.unpublish == true %}
+            <li><a href="/special-offers/{{ offer.url_friendly_name }}/">{{ offer.title }}</a></li>
+          {% endunless %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+        </li>
 
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
+        {% for link in quick_links %}
+        <li><a href="{{ link.url | absolute_url }}" class="parent" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+    </ul>
 
-{% endcomment %}
+  </div>
+</section>
