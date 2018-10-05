@@ -46,6 +46,12 @@ meta_tags:
         <div tabindex="0">{{ item.category_intro }}</div>
       </div>
     </div>
+
+    {% assign counter = 0 %}
+    {% for event in item.event_listing %}
+    {% assign counter=counter | plus:1 %}
+    {% endfor %}
+    {% if counter > 0 %}
     <!-- Event Details Accordion -->
     <div class="event-details accordion"  id="{{ item.category_id }}">
       {% for event in item.event_listing %}
@@ -111,6 +117,7 @@ meta_tags:
         </script>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
 {% endfor %}
 </section>

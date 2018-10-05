@@ -11,7 +11,7 @@ booking_widget_url: https://thepierreny.reztrip.com/mobile
 email: thepierre.ny@tajhotels.com
 
 plugins_dir:
-  - _plugins-core
+  - _plugins
 
 # Language Settings
 default_lang: 'en'

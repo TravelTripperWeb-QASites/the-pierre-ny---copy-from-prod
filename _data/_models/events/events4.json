@@ -1,17 +1,4 @@
 {
-  "event_listing_localized": {
-    "en": [
-      {
-        "event_name": "Broadway at The Pierre",
-        "event_id": "sing",
-        "day": "Monday",
-        "event_booking_id": "34024",
-        "date_time": "June 11th",
-        "widget": "OpenTable",
-        "cta_text": "Make Reservations"
-      }
-    ]
-  },
   "category_id": "broadway",
   "category_image": {
     "name": "trio",
