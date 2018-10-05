@@ -41,6 +41,7 @@
         "hint": "Should be in lowercase without spaces"
       },
       "event_detail": {},
+      "cta_text": {},
       "day": {
         "required": true
       },

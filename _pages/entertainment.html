@@ -72,7 +72,9 @@ meta_tags:
                   <p tabindex="0">{{ event.event_detail }}</p>
                 {% endif %}
                 <div class="opentable-widget">
-                  <h6 tabindex="0">{% t 'make_a_reservation' %}</h6>
+                  {% if event.cta_text and event.cta_text != "" %}
+                    <h6 tabindex="0">{{ event.cta_text }}</h6>
+                  {% endif %}
                   <div class="d-xl-flex justify-content-center" tabindex="0">
                     {% if event.widget == "OpenTable" %}
                       <script async type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid={{ event.event_booking_id }}&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
