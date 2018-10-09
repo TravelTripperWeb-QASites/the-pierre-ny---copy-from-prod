@@ -220,6 +220,25 @@
       "git_file_name": "_assets/image_data/58526-1-yankee-large.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18634/media/2018-08-30-074629/58526_1_yankee_large.jpg",
       "alt": "58526_1_yankee_large"
+    },
+    {
+      "name": "5th_Ave_no_sign",
+      "file_name": "5th_Ave_no_sign.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/5th_Ave_no_sign.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-09-113249",
+      "file_type": "image/jpeg",
+      "width": 3000,
+      "height": 2000,
+      "file_size": 1944698,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/large_5th_Ave_no_sign.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/medium_5th_Ave_no_sign.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/small_5th_Ave_no_sign.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/xsmall_5th_Ave_no_sign.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/thumb_5th_Ave_no_sign.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/5th_Ave_no_sign.jpg",
+      "alt": "Exterior of The Pierre"
     }
   ],
   "description": ""
