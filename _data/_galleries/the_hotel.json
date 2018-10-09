@@ -239,6 +239,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/thumb_5th_Ave_no_sign.jpg",
       "path": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113249/5th_Ave_no_sign.jpg",
       "alt": "Exterior of The Pierre"
+    },
+    {
+      "name": "House car",
+      "file_name": "House car.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/House_car.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-09-113315",
+      "file_type": "image/jpeg",
+      "width": 4128,
+      "height": 6192,
+      "file_size": 2032004,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/large_House_car.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/medium_House_car.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/small_House_car.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/xsmall_House_car.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/thumb_House_car.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113315/House_car.jpg",
+      "alt": "House car picking up a guest"
     }
   ],
   "description": ""
