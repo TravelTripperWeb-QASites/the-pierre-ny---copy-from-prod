@@ -100,6 +100,25 @@
       "git_file_name": "_assets/image_data/corporate-gallery2.json",
       "path": "//cdn.traveltripper.io/site-assets/357_906_18210/media/2018-08-31-084116/corporate-gallery2.jpg",
       "alt": "Corporate Events At The Pierre"
+    },
+    {
+      "name": "Rotunda wide NEW 2018",
+      "file_name": "Rotunda wide NEW 2018.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/Rotunda_wide_NEW_2018.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-09-113417",
+      "file_type": "image/jpeg",
+      "width": 2000,
+      "height": 1333,
+      "file_size": 1054304,
+      "url_large": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/large_Rotunda_wide_NEW_2018.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/medium_Rotunda_wide_NEW_2018.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/small_Rotunda_wide_NEW_2018.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/xsmall_Rotunda_wide_NEW_2018.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/thumb_Rotunda_wide_NEW_2018.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/357_906_19732/media/2018-10-09-113417/Rotunda_wide_NEW_2018.jpg",
+      "alt": "Rotunda interior"
     }
   ],
   "description": ""
