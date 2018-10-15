@@ -30,6 +30,9 @@ h1 {
     font-size: $type-size-3;
     line-height: 2.5rem;
     letter-spacing: .103rem;
+    @include media-breakpoint-down(xs) {
+      font-size: $type-size-5;
+    }
   }
 
   @include media-breakpoint-up(md) {
